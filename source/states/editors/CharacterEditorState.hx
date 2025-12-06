@@ -19,6 +19,14 @@ import states.editors.content.PsychJsonPrinter;
 
 class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent
 {
+    public var hasMissAnimations:Bool = false;
+
+    public var idleSuffix:String = "";
+
+    public var danceEveryNumBeats:Int = 2;
+
+    public var stunned:Bool = false;
+
 	var character:Character;
 	var ghost:FlxSprite;
 	var animateGhost:FlxAnimate;
@@ -1311,4 +1319,36 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			_file.save(data, '$_char.json');
 		}
 	}
+
+
+    public function dance():Void {
+        if (specialAnim) return;
+        if (danceIdle) {
+            danced = !danced;
+            playAnim(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
+        } else {
+            playAnim("idle" + idleSuffix);
+        }
+    }
+
+
+    public function recalculateDanceIdle():Void {
+        danceIdle = hasAnimation("danceLeft" + idleSuffix) && hasAnimation("danceRight" + idleSuffix);
+    }
+
+
+    public function isAnimationNull():Bool {
+        return (animation == null || animation.curAnim == null);
+    }
+
+
+    public function isAnimationFinished():Bool {
+        return animation != null && animation.curAnim != null ? animation.curAnim.finished : true;
+    }
+
+
+    public function finishAnimation():Void {
+        if (animation != null && animation.curAnim != null)
+            animation.curAnim.finish();
+    }
 }

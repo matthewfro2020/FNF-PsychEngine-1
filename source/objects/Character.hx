@@ -15,7 +15,7 @@ import sys.FileSystem;
 import sys.io.File;
 
 #if flxanimate
-import flxanimate.FlxAnimate;
+import flxanimate._PsychFlxAnimate.FlxAnimate;
 #end
 
 /**
@@ -59,6 +59,14 @@ typedef CharacterFile = {
 
 class Character extends FlxSprite
 {
+    public var hasMissAnimations:Bool = false;
+
+    public var idleSuffix:String = "";
+
+    public var danceEveryNumBeats:Int = 2;
+
+    public var stunned:Bool = false;
+
     public static final DEFAULT_CHARACTER:String = "bf";
 
     public var curCharacter:String = DEFAULT_CHARACTER;
@@ -178,7 +186,7 @@ class Character extends FlxSprite
 
                 animateZIPChar = new AnimateCharacter(zipPath);
 
-                for (a in json.animations)
+                for (a in (json.animations : Array<Dynamic>))
                 {
                     var off = a.offsets;
                     addOffset(a.anim, off[0], off[1]);
@@ -210,7 +218,7 @@ class Character extends FlxSprite
 
             Paths.loadAnimateAtlas(atlas, json.image);
 
-            for (a in json.animations)
+            for (a in (json.animations : Array<Dynamic>))
             {
                 addOffset(a.anim, a.offsets[0], a.offsets[1]);
 
@@ -426,5 +434,37 @@ class Character extends FlxSprite
         #end
 
         super.draw();
+    }
+
+
+    public function dance():Void {
+        if (specialAnim) return;
+        if (danceIdle) {
+            danced = !danced;
+            playAnim(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
+        } else {
+            playAnim("idle" + idleSuffix);
+        }
+    }
+
+
+    public function recalculateDanceIdle():Void {
+        danceIdle = hasAnimation("danceLeft" + idleSuffix) && hasAnimation("danceRight" + idleSuffix);
+    }
+
+
+    public function isAnimationNull():Bool {
+        return (animation == null || animation.curAnim == null);
+    }
+
+
+    public function isAnimationFinished():Bool {
+        return animation != null && animation.curAnim != null ? animation.curAnim.finished : true;
+    }
+
+
+    public function finishAnimation():Void {
+        if (animation != null && animation.curAnim != null)
+            animation.curAnim.finish();
     }
 }
