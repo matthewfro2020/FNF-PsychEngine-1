@@ -39,7 +39,7 @@ class Paths
 	public static function clearUnusedMemory()
 	{
 		// clear non local assets in the tracked assets list
-		for (key in currentTrackedAssets.keys())
+		for (key in cast(currentTrackedAssets.keys(), Iterable<String>))
 		{
 			// if it is not currently contained within the used local assets
 			if (!localTrackedAssets.contains(key) && !dumpExclusions.contains(key))
@@ -119,7 +119,7 @@ class Paths
 			for (member in FlxG.state.subState.members)
 				checkForGraphics(member);
 
-		for (key in currentTrackedAssets.keys())
+		for (key in cast(currentTrackedAssets.keys(), Iterable<String>))
 		{
 			// if it is not currently contained within the used local assets
 			if (!dumpExclusions.contains(key))

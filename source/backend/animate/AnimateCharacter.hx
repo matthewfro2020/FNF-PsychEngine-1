@@ -165,7 +165,7 @@ class AnimateCharacter extends FlxSprite
 
     function getFirstAnim():String
     {
-        for (key in animations.keys()) return key;
+        for (key in cast(animations.keys(), Iterable<String>)) return key;
         return "idle";
     }
 

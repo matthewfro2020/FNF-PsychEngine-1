@@ -118,7 +118,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			}
 		}
 
-		for (individualChar in charsMap.keys()) {
+		for (individualChar in cast(charsMap.keys(), Iterable<String>)) {
 			var x:Float = LEFT_CHAR_X;
 			var y:Float = DEFAULT_CHAR_Y;
 			var char:DialogueCharacter = new DialogueCharacter(x + offsetPos, y, individualChar);

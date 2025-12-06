@@ -1036,7 +1036,7 @@ class StageEditorState extends MusicBeatState implements PsychUIEventHandler.Psy
 			openSubState(new PreloadListSubState(function(newSave:Map<String, LoadFilters>)
 			{
 				var len:Int = 0;
-				for (name in newSave.keys())
+				for (name in cast(newSave.keys(), Iterable<String>))
 					len++;
 
 				stageJson.preload = {};
