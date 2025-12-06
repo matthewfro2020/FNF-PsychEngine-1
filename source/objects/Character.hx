@@ -473,31 +473,54 @@ class Character extends FlxSprite {
 	public override function draw() {
 		var lastAlpha:Float = alpha;
 		var lastColor:FlxColor = color;
-		if (missingCharacter) {
-			alpha *= 0.6;
-			color = FlxColor.BLACK;
-		}
-		// -----------------------------------
-		// ZIP Animate drawing
-		// -----------------------------------
+
+		// ----------------------------------------------------
+		// 1. ZIP-BASED ANIMATE CHARACTER DRAWING (NEW)
+		// ----------------------------------------------------
 		if (isAnimateZIP && animateZIPChar != null) {
+			// Copy transform values
 			animateZIPChar.x = x;
 			animateZIPChar.y = y;
 			animateZIPChar.flipX = flipX;
 			animateZIPChar.flipY = flipY;
 			animateZIPChar.scale = scale;
 			animateZIPChar.alpha = alpha;
-
+			animateZIPChar.color = color;
+			animateZIPChar.visible = visible;
 			animateZIPChar.cameras = cameras;
+
+			// Draw ZIP animated character
 			animateZIPChar.draw();
+
+			// Draw missing character error if needed
+			if (missingCharacter && visible) {
+				missingText.x = getMidpoint().x - 150;
+				missingText.y = getMidpoint().y - 10;
+				missingText.draw();
+			}
 			return;
 		}
+
+		// ----------------------------------------------------
+		// 2. Missing character tinting
+		// ----------------------------------------------------
+		if (missingCharacter) {
+			alpha *= 0.6;
+			color = FlxColor.BLACK;
+		}
+
+		// ----------------------------------------------------
+		// 3. FlxAnimate ATLAS DRAW
+		// ----------------------------------------------------
 		if (isAnimateAtlas) {
 			if (atlas.anim.curInstance != null) {
 				copyAtlasValues();
 				atlas.draw();
+
+				// restore values
 				alpha = lastAlpha;
 				color = lastColor;
+
 				if (missingCharacter && visible) {
 					missingText.x = getMidpoint().x - 150;
 					missingText.y = getMidpoint().y - 10;
@@ -506,7 +529,13 @@ class Character extends FlxSprite {
 			}
 			return;
 		}
+
+		// ----------------------------------------------------
+		// 4. Normal PNG sprite draw()
+		// ----------------------------------------------------
 		super.draw();
+
+		// Draw missing character error on top
 		if (missingCharacter && visible) {
 			alpha = lastAlpha;
 			color = lastColor;
