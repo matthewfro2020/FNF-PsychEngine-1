@@ -1,10 +1,11 @@
 package backend.animate;
 
-import haxe.zip.Reader;
-import haxe.Json;
-import haxe.io.Bytes;
 import sys.io.File;
-import sys.FileSystem;
+import haxe.io.Bytes;
+import haxe.io.BytesInput;
+import haxe.zip.Reader;
+import haxe.zip.Entry;
+import haxe.Json;
 
 class AnimateZipReader
 {
@@ -14,22 +15,28 @@ class AnimateZipReader
 
     public function new(path:String)
     {
-        if (!FileSystem.exists(path))
-            throw 'Animate ZIP not found: $path';
+        // Read all bytes of zip file
+        var bytes:Bytes = File.getBytes(path);
 
-        var bytes = File.getBytes(path);
-        var entries = Reader.readZip(bytes);
+        // Convert to Input (required by Reader.readZip)
+        var input:BytesInput = new BytesInput(bytes);
 
+        // Read ZIP entries as Array<Entry>
+        var entries:Array<Entry> = Reader.readZip(input);
+
+        // Iterate normally (NO dynamic errors)
         for (entry in entries)
         {
-            var name = entry.fileName;
+            var name:String = entry.fileName;
 
             switch (name)
             {
                 case "library.json":
                     library = Json.parse(entry.data.toString());
+
                 case "data.json":
                     data = Json.parse(entry.data.toString());
+
                 default:
                     if (name.startsWith("symbols/") && name.endsWith(".png"))
                     {
@@ -40,8 +47,8 @@ class AnimateZipReader
         }
     }
 
-    public function getPNG(symbol:String):Bytes
+    public function getPNG(symbolName:String):Bytes
     {
-        return symbols.get(symbol);
+        return symbols.get(symbolName);
     }
 }
