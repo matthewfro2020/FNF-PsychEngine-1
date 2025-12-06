@@ -39,16 +39,16 @@ class AnimateZipReader
                     data = Json.parse(entry.data.toString());
 
                 default:
-                    if (name.startsWith("symbols/") && name.endsWith(".png"))
+                    if (name.indexOf("symbols/") == 0 && name.indexOf(".png") == name.length - 4)
                     {
-                        var key = name.substr("symbols/".length);
+                        var key = name.substring("symbols/".length);
                         symbols.set(key, entry.data);
                     }
             }
         }
     }
 
-    public function getPNG(symbol:String):Bytes
+    public function getPNG(symbol:String):Null<Bytes>
     {
         return symbols.get(symbol);
     }
