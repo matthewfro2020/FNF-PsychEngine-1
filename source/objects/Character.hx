@@ -382,6 +382,11 @@ class Character extends FlxSprite {
 
 	public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void {
 		specialAnim = false;
+		if (isAnimateZIP) {
+			animateZIPChar.play(AnimName);
+			_lastPlayedAnimation = AnimName;
+			return;
+		}
 		if (!isAnimateAtlas) {
 			animation.play(AnimName, Force, Reversed, Frame);
 		} else {
@@ -470,7 +475,21 @@ class Character extends FlxSprite {
 			alpha *= 0.6;
 			color = FlxColor.BLACK;
 		}
+		// -----------------------------------
+		// ZIP Animate drawing
+		// -----------------------------------
+		if (isAnimateZIP && animateZIPChar != null) {
+			animateZIPChar.x = x;
+			animateZIPChar.y = y;
+			animateZIPChar.flipX = flipX;
+			animateZIPChar.flipY = flipY;
+			animateZIPChar.scale = scale;
+			animateZIPChar.alpha = alpha;
 
+			animateZIPChar.cameras = cameras;
+			animateZIPChar.draw();
+			return;
+		}
 		if (isAnimateAtlas) {
 			if (atlas.anim.curInstance != null) {
 				copyAtlasValues();
