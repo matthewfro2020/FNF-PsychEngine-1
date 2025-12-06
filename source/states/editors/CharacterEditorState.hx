@@ -21,7 +21,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 {
 	var specialAnim:Bool = false;
 	var danceIdle:Bool = false;
-	var animation:FlxAnimationController;
+	var animation:PsychAnimationController;
 
     public var hasMissAnimations:Bool = false;
 
@@ -1342,7 +1342,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 
     public function isAnimationNull():Bool {
-        return (animation == null || animation.curAnim == null);
+        return (animation = char.animation;
     }
 
 
