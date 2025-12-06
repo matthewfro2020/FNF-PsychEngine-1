@@ -304,69 +304,112 @@ class Character extends FlxSprite {
 }
 
 override function update(elapsed:Float) {
-	if (isAnimateAtlas)
-		atlas.update(elapsed);
+	//
+	// ---------------------------------------------------------
+	// ZIP Animate character update
+	// ---------------------------------------------------------
+	//
+	if (isAnimateZIP) {
+		// Advance ZIP animation frames
+		animateZIPChar.update(elapsed);
 
-	if (debugMode
-		|| (!isAnimateAtlas && animation.curAnim == null)
-		|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null))) {
-		super.update(elapsed);
-		return;
-	}
+		// Handle "hey" timer and special animations
+		if (heyTimer > 0) {
+			var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
+			heyTimer -= elapsed * rate;
 
-	if (heyTimer > 0) {
-		var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
-		heyTimer -= elapsed * rate;
-		if (heyTimer <= 0) {
-			var anim:String = getAnimationName();
-			if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
-				specialAnim = false;
-				dance();
+			if (heyTimer <= 0) {
+				var anim = getAnimationName();
+				if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
+					specialAnim = false;
+					dance();
+				}
+				heyTimer = 0;
 			}
-			heyTimer = 0;
+		} else if (specialAnim && animateZIPChar.isFinished()) {
+			specialAnim = false;
+			dance();
+		} else if (getAnimationName().endsWith("miss") && animateZIPChar.isFinished()) {
+			dance();
 		}
-	} else if (specialAnim && isAnimationFinished()) {
-		specialAnim = false;
-		dance();
-	} else if (getAnimationName().endsWith('miss') && isAnimationFinished()) {
-		dance();
-		finishAnimation();
+
+		// Singing -> hold behavior
+		if (getAnimationName().startsWith("sing"))
+			holdTimer += elapsed;
+		else if (isPlayer)
+			holdTimer = 0;
+
+		if (!isPlayer
+			&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end) * singDuration {
+			dance();
+			holdTimer = 0;
+		})
+			super.update(elapsed);
+		return; // VERY IMPORTANT → prevents running normal PNG logic
 	}
-
-	switch (curCharacter) {
-		case 'pico-speaker':
-			if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0]) {
-				var noteData:Int = 1;
-				if (animationNotes[0][1] > 2)
-					noteData = 3;
-
-				noteData += FlxG.random.int(0, 1);
-				playAnim('shoot' + noteData, true);
-				animationNotes.shift();
-			}
-			if (isAnimationFinished())
-				playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
-	}
-
-	if (getAnimationName().startsWith('sing'))
-		holdTimer += elapsed;
-	else if (isPlayer)
-		holdTimer = 0;
-
-	if (!isPlayer
-		&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end) * singDuration) {
-		dance();
-		holdTimer = 0;
-	}
-
-	var name:String = getAnimationName();
-	if (isAnimationFinished() && hasAnimation('$name-loop'))
-		playAnim('$name-loop');
-
-	super.update(elapsed);
 }
+} //
+// ---------------------------------------------------------
+// ANIMATE ATLAS UPDATE
+// ---------------------------------------------------------
+//
+if (isAnimateAtlas)
+	atlas.update(elapsed);
+//
+// ---------------------------------------------------------
+// ORIGINAL PSYCH ENGINE UPDATE LOGIC
+// ---------------------------------------------------------
+//
+if (debugMode
+	|| (!isAnimateAtlas && animation.curAnim == null)
+	|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null))) {
+	super.update(elapsed);
+	return;
+}
+if (heyTimer > 0) {
+	var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
+	heyTimer -= elapsed * rate;
+	if (heyTimer <= 0) {
+		var anim:String = getAnimationName();
+		if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
+			specialAnim = false;
+			dance();
+		}
+		heyTimer = 0;
+	}
+} else if (specialAnim && isAnimationFinished()) {
+	specialAnim = false;
+	dance();
+} else if (getAnimationName().endsWith('miss') && isAnimationFinished()) {
+	dance();
+	finishAnimation();
+}
+switch (curCharacter) {
+	case 'pico-speaker':
+		if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0]) {
+			var noteData:Int = (animationNotes[0][1] > 2) ? 3 : 1;
+			noteData += FlxG.random.int(0, 1);
+			playAnim('shoot' + noteData, true);
+			animationNotes.shift();
+		}
+		if (isAnimationFinished())
+			playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
+}
+if (getAnimationName().startsWith('sing'))
+	holdTimer += elapsed;
+else if (isPlayer)
+	holdTimer = 0;
+if (!isPlayer
+	&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end) * singDuration) {
+	dance();
+	holdTimer = 0;
+});
+var name:String = getAnimationName();
 
-inline public function isAnimationNull():Bool {
+if (isAnimationFinished() && hasAnimation('$name-loop'))
+	playAnim('$name-loop');
+super.update(elapsed);
+} inline public function isAnimationNull():Bool {
 	return !isAnimateAtlas ? (animation.curAnim == null) : (atlas.anim.curInstance == null || atlas.anim.curSymbol == null);
 }
 
@@ -437,81 +480,73 @@ public function dance() {
 			playAnim('idle' + idleSuffix);
 	}
 }
-public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void 
-{
-    specialAnim = false;
 
-    //
-    // ---------------------------------------------------------
-    // ZIP-based Animate playback
-    // ---------------------------------------------------------
-    //
-    if (isAnimateZIP)
-    {
-        // Play the animation inside AnimateCharacter
-        animateZIPChar.play(AnimName);
+public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void {
+	specialAnim = false;
 
-        // Register animation name for Psych behaviors
-        _lastPlayedAnimation = AnimName;
+	//
+	// ---------------------------------------------------------
+	// ZIP-based Animate playback
+	// ---------------------------------------------------------
+	//
+	if (isAnimateZIP) {
+		// Play the animation inside AnimateCharacter
+		animateZIPChar.play(AnimName);
 
-        // Apply JSON offsets (VERY IMPORTANT)
-        if (hasAnimation(AnimName))
-        {
-            var off = animOffsets.get(AnimName);
-            offset.set(off[0], off[1]);
-        }
+		// Register animation name for Psych behaviors
+		_lastPlayedAnimation = AnimName;
 
-        //
-        // GF DANCING LOGIC MUST STILL WORK
-        //
-        if (curCharacter.startsWith('gf') || curCharacter == 'gf')
-        {
-            if (AnimName == 'singLEFT') 
-                danced = true;
-            else if (AnimName == 'singRIGHT') 
-                danced = false;
+		// Apply JSON offsets (VERY IMPORTANT)
+		if (hasAnimation(AnimName)) {
+			var off = animOffsets.get(AnimName);
+			offset.set(off[0], off[1]);
+		}
 
-            if (AnimName == 'singUP' || AnimName == 'singDOWN')
-                danced = !danced;
-        }
+		//
+		// GF DANCING LOGIC MUST STILL WORK
+		//
+		if (curCharacter.startsWith('gf') || curCharacter == 'gf') {
+			if (AnimName == 'singLEFT')
+				danced = true;
+			else if (AnimName == 'singRIGHT')
+				danced = false;
 
-        return; // Stop normal sprite animation system
-    }
+			if (AnimName == 'singUP' || AnimName == 'singDOWN')
+				danced = !danced;
+		}
 
-    //
-    // ---------------------------------------------------------
-    // Normal PNG/multi-atlas playAnim
-    // ---------------------------------------------------------
-    //
-    if (!isAnimateAtlas)
-    {
-        animation.play(AnimName, Force, Reversed, Frame);
-    }
-    else
-    {
-        atlas.anim.play(AnimName, Force, Reversed, Frame);
-        atlas.update(0);
-    }
+		return; // Stop normal sprite animation system
+	}
 
-    _lastPlayedAnimation = AnimName;
+	//
+	// ---------------------------------------------------------
+	// Normal PNG/multi-atlas playAnim
+	// ---------------------------------------------------------
+	//
+	if (!isAnimateAtlas) {
+		animation.play(AnimName, Force, Reversed, Frame);
+	} else {
+		atlas.anim.play(AnimName, Force, Reversed, Frame);
+		atlas.update(0);
+	}
 
-    if (hasAnimation(AnimName))
-    {
-        var daOffset = animOffsets.get(AnimName);
-        offset.set(daOffset[0], daOffset[1]);
-    }
+	_lastPlayedAnimation = AnimName;
 
-    // GF dancing logic
-    if (curCharacter.startsWith('gf-') || curCharacter == 'gf')
-    {
-        if (AnimName == 'singLEFT') 
-            danced = true;
-        else if (AnimName == 'singRIGHT') 
-            danced = false;
+	if (hasAnimation(AnimName)) {
+		var daOffset = animOffsets.get(AnimName);
+		offset.set(daOffset[0], daOffset[1]);
+	}
 
-        if (AnimName == 'singUP' || AnimName == 'singDOWN')
-            danced = !danced;
-    }
+	// GF dancing logic
+	if (curCharacter.startsWith('gf-') || curCharacter == 'gf') {
+		if (AnimName == 'singLEFT')
+			danced = true;
+		else if (AnimName == 'singRIGHT')
+			danced = false;
+
+		if (AnimName == 'singUP' || AnimName == 'singDOWN')
+			danced = !danced;
+	}
 }
 
 function loadMappedAnims():Void {
