@@ -623,7 +623,9 @@ public function recalculateDanceIdle() {
 	}
 	settingCharacterUp = false;
 }
-
+// ------------------------------------------------------------
+// ADD OFFSET + QUICK ANIM
+// ------------------------------------------------------------
 public function addOffset(name:String, x:Float = 0, y:Float = 0) {
 	animOffsets[name] = [x, y];
 }
@@ -632,26 +634,155 @@ public function quickAnimAdd(name:String, anim:String) {
 	animation.addByPrefix(name, anim, 24, false);
 }
 
-// Atlas support
-// special thanks ne_eo for the references, you're the goat!!
-
+// ------------------------------------------------------------
+// ANIMATE SYSTEM FLAGS
+// ------------------------------------------------------------
 @:allow(states.editors.CharacterEditorState)
 public var isAnimateAtlas(default, null):Bool = false;
 
 public var isAnimateZIP:Bool = false;
 public var animateZIPChar:AnimateCharacter;
+
 #if flxanimate
 public var atlas:FlxAnimate;
+#end
 
-public override function draw() {
+// ------------------------------------------------------------
+// UPDATE OVERRIDE
+// ------------------------------------------------------------
+override function update(elapsed:Float) {
+
+	// ---------------------------------------------------------
+	// ZIP-BASED ANIMATION UPDATE
+	// ---------------------------------------------------------
+	if (isAnimateZIP) {
+		animateZIPChar.update(elapsed);
+
+		// handle hey / special animations
+		if (heyTimer > 0) {
+			var rate = (PlayState.instance != null ? PlayState.instance.playbackRate : 1);
+			heyTimer -= elapsed * rate;
+
+			if (heyTimer <= 0) {
+				var anim = getAnimationName();
+				if (specialAnim && (anim == "hey" || anim == "cheer")) {
+					specialAnim = false;
+					dance();
+				}
+				heyTimer = 0;
+			}
+		}
+		else if (specialAnim && animateZIPChar.isFinished()) {
+			specialAnim = false;
+			dance();
+		}
+		else if (getAnimationName().endsWith("miss") && animateZIPChar.isFinished()) {
+			dance();
+		}
+
+		// singing hold
+		if (getAnimationName().startsWith("sing")) holdTimer += elapsed;
+		else if (isPlayer) holdTimer = 0;
+
+		if (!isPlayer &&
+			holdTimer >= Conductor.stepCrochet *
+				(0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end)
+				* singDuration)
+		{
+			dance();
+			holdTimer = 0;
+		}
+
+		super.update(elapsed);
+		return;
+	}
+
+	// ---------------------------------------------------------
+	// ATLAS UPDATE
+	// ---------------------------------------------------------
+	#if flxanimate
+	if (isAnimateAtlas)
+		atlas.update(elapsed);
+	#end
+
+	// ---------------------------------------------------------
+	// FALLBACK NORMAL BEHAVIOR
+	// ---------------------------------------------------------
+	if (debugMode
+		|| (!isAnimateAtlas && animation.curAnim == null)
+		|| (isAnimateAtlas && #if flxanimate (atlas.anim.curInstance == null || atlas.anim.curSymbol == null) #else true #end))
+	{
+		super.update(elapsed);
+		return;
+	}
+
+	// HEY TIMER / SPECIAL
+	if (heyTimer > 0) {
+		var rate = (PlayState.instance != null ? PlayState.instance.playbackRate : 1);
+		heyTimer -= elapsed * rate;
+
+		if (heyTimer <= 0) {
+			var anim = getAnimationName();
+			if (specialAnim && (anim == "hey" || anim == "cheer")) {
+				specialAnim = false;
+				dance();
+			}
+			heyTimer = 0;
+		}
+	}
+	else if (specialAnim && isAnimationFinished()) {
+		specialAnim = false;
+		dance();
+	}
+	else if (getAnimationName().endsWith("miss") && isAnimationFinished()) {
+		dance();
+		finishAnimation();
+	}
+
+	// pico speaker logic
+	switch (curCharacter) {
+		case "pico-speaker":
+			if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0]) {
+				var noteData = (animationNotes[0][1] > 2) ? 3 : 1;
+				noteData += FlxG.random.int(0, 1);
+				playAnim("shoot" + noteData, true);
+				animationNotes.shift();
+			}
+
+			if (isAnimationFinished())
+				playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
+	}
+
+	// sing hold logic
+	if (getAnimationName().startsWith("sing")) holdTimer += elapsed;
+	else if (isPlayer) holdTimer = 0;
+
+	if (!isPlayer &&
+		holdTimer >= Conductor.stepCrochet *
+			(0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end)
+			* singDuration)
+	{
+		dance();
+		holdTimer = 0;
+	}
+
+	// loop animations
+	var nm = getAnimationName();
+	if (isAnimationFinished() && hasAnimation(nm + "-loop"))
+		playAnim(nm + "-loop");
+
+	super.update(elapsed);
+}
+
+// ------------------------------------------------------------
+// DRAW OVERRIDE (ZIP + ATLAS + PNG)
+// ------------------------------------------------------------
+override public function draw() {
 	var lastAlpha:Float = alpha;
 	var lastColor:FlxColor = color;
 
-	// ----------------------------------------------------
-	// 1. ZIP-BASED ANIMATE CHARACTER DRAWING (NEW)
-	// ----------------------------------------------------
+	// ZIP DRAW
 	if (isAnimateZIP && animateZIPChar != null) {
-		// Copy transform values
 		animateZIPChar.x = x;
 		animateZIPChar.y = y;
 		animateZIPChar.flipX = flipX;
@@ -662,53 +793,47 @@ public override function draw() {
 		animateZIPChar.visible = visible;
 		animateZIPChar.cameras = cameras;
 
-		// Draw ZIP animated character
 		animateZIPChar.draw();
 
-		// Draw missing character error if needed
 		if (missingCharacter && visible) {
 			missingText.x = getMidpoint().x - 150;
 			missingText.y = getMidpoint().y - 10;
 			missingText.draw();
 		}
+
 		return;
 	}
 
-	// ----------------------------------------------------
-	// 2. Missing character tinting
-	// ----------------------------------------------------
+	// missing tint
 	if (missingCharacter) {
 		alpha *= 0.6;
 		color = FlxColor.BLACK;
 	}
 
-	// ----------------------------------------------------
-	// 3. FlxAnimate ATLAS DRAW
-	// ----------------------------------------------------
-	if (isAnimateAtlas) {
+	// ATLAS DRAW
+	#if flxanimate
+	if (isAnimateAtlas && atlas != null) {
 		if (atlas.anim.curInstance != null) {
 			copyAtlasValues();
 			atlas.draw();
-
-			// restore values
-			alpha = lastAlpha;
-			color = lastColor;
-
-			if (missingCharacter && visible) {
-				missingText.x = getMidpoint().x - 150;
-				missingText.y = getMidpoint().y - 10;
-				missingText.draw();
-			}
 		}
+
+		alpha = lastAlpha;
+		color = lastColor;
+
+		if (missingCharacter && visible) {
+			missingText.x = getMidpoint().x - 150;
+			missingText.y = getMidpoint().y - 10;
+			missingText.draw();
+		}
+
 		return;
 	}
+	#end
 
-	// ----------------------------------------------------
-	// 4. Normal PNG sprite draw()
-	// ----------------------------------------------------
+	// PNG draw
 	super.draw();
 
-	// Draw missing character error on top
 	if (missingCharacter && visible) {
 		alpha = lastAlpha;
 		color = lastColor;
@@ -718,9 +843,11 @@ public override function draw() {
 	}
 }
 
+#if flxanimate
 public function copyAtlasValues() {
-	@:privateAccess
-	{
+	if (atlas == null) return;
+
+	@:privateAccess {
 		atlas.cameras = cameras;
 		atlas.scrollFactor = scrollFactor;
 		atlas.scale = scale;
@@ -739,10 +866,14 @@ public function copyAtlasValues() {
 		atlas.color = color;
 	}
 }
+#end
 
-public override function destroy() {
-	atlas = FlxDestroyUtil.destroy(atlas);
+override public function destroy() {
+	#if flxanimate
+	if (atlas != null)
+		atlas = FlxDestroyUtil.destroy(atlas);
+	#end
+
 	super.destroy();
 }
-#end
 }
