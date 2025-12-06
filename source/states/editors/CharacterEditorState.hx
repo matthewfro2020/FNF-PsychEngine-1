@@ -17,11 +17,13 @@ import objects.Bar;
 import states.editors.content.Prompt;
 import states.editors.content.PsychJsonPrinter;
 
+import backend.animation.PsychAnimationController;
+
 class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent
 {
 	var specialAnim:Bool = false;
 	var danceIdle:Bool = false;
-	var animation:FlxAnimationController;
+	var animation:PsychAnimationController;
 
     public var hasMissAnimations:Bool = false;
 
