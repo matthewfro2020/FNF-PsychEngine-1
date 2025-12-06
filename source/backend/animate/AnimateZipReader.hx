@@ -5,6 +5,7 @@ import haxe.io.Bytes;
 import haxe.io.BytesInput;
 import haxe.zip.Reader;
 import haxe.zip.Entry;
+import haxe.ds.List;
 import haxe.Json;
 
 class AnimateZipReader
@@ -15,16 +16,16 @@ class AnimateZipReader
 
     public function new(path:String)
     {
-        // Read all bytes of zip file
+        // Read entire ZIP file into bytes
         var bytes:Bytes = File.getBytes(path);
 
-        // Convert to Input (required by Reader.readZip)
+        // Convert bytes → Input (required by Reader)
         var input:BytesInput = new BytesInput(bytes);
 
-        // Read ZIP entries as Array<Entry>
-        var entries:Array<Entry> = Reader.readZip(input);
+        // Psych Engine returns: List<Entry>
+        var entries:List<Entry> = Reader.readZip(input);
 
-        // Iterate normally (NO dynamic errors)
+        // Iterate properly
         for (entry in entries)
         {
             var name:String = entry.fileName;
@@ -47,8 +48,8 @@ class AnimateZipReader
         }
     }
 
-    public function getPNG(symbolName:String):Bytes
+    public function getPNG(symbol:String):Bytes
     {
-        return symbols.get(symbolName);
+        return symbols.get(symbol);
     }
 }
