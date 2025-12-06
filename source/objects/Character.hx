@@ -15,7 +15,7 @@ import sys.FileSystem;
 import sys.io.File;
 
 #if flxanimate
-import flxanimate._PsychFlxAnimate.FlxAnimate;
+import flxanimate.FlxAnimate;
 #end
 
 /**
@@ -57,8 +57,22 @@ typedef CharacterFile = {
     @:optional var renderType:String;
 };
 
-class Character extends FlxSprite
-{
+class Character {
+    // Auto-injected by autofixer
+    public var editorIsPlayer:Bool = false;
+    public var originalFlipX:Bool = false;
+    public var debugMode:Bool = false;
+
+    public var imageFile:String = "";
+    public var vocalsFile:String = "";
+
+    public var animPaused:Bool = false;
+
+    public var specialAnim:Bool = false;
+    public var danceIdle:Bool = false;
+
+    public var idleSuffix:String = "";
+
     public var hasMissAnimations:Bool = false;
 
     public var idleSuffix:String = "";

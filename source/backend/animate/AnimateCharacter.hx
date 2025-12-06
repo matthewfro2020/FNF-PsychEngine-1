@@ -68,7 +68,7 @@ class AnimateCharacter extends FlxSprite
         // animations: { "idle": [0,1,2], "singLEFT": [3,4] }
         if (reader.data.animations != null)
         {
-            for (key in reader.data.animations.keys())
+            for (key in (cast reader.data.animations : Map<String, Dynamic>).keys())
             {
                 var arr:Array<Int> = reader.data.animations.get(key);
                 if (arr != null)
@@ -79,7 +79,7 @@ class AnimateCharacter extends FlxSprite
         // fps: { "idle": 24, "singLEFT": 24 }
         if (reader.data.fps != null)
         {
-            for (key in reader.data.fps.keys())
+            for (key in (cast reader.data.fps : Map<String, Dynamic>).keys())
             {
                 animFPS.set(key, reader.data.fps.get(key));
             }
@@ -88,7 +88,7 @@ class AnimateCharacter extends FlxSprite
         // loops: { "idle": true, "singLEFT": false }
         if (reader.data.loops != null)
         {
-            for (key in reader.data.loops.keys())
+            for (key in (cast reader.data.loops : Map<String, Dynamic>).keys())
             {
                 animLoop.set(key, reader.data.loops.get(key));
             }
@@ -102,7 +102,7 @@ class AnimateCharacter extends FlxSprite
     {
         if (reader.data == null || reader.data.frames == null) return;
 
-        for (frame in reader.data.frames)
+        for (frame in (cast reader.data.frames : Array<Dynamic>))
         {
             var layers:Array<Dynamic> = cast frame;
             if (layers == null || layers.length == 0)
