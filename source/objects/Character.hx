@@ -1,6 +1,8 @@
 package objects;
 
 import backend.animation.PsychAnimationController;
+import backend.animate.AnimateCharacter;
+import backend.animate.AnimateZipReader;
 import flixel.util.FlxSort;
 import flixel.util.FlxDestroyUtil;
 import openfl.utils.AssetType;
