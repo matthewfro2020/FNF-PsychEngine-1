@@ -3,7 +3,6 @@ package backend.animate;
 import openfl.display.BitmapData;
 import openfl.geom.Matrix;
 import flixel.FlxSprite;
-import haxe.Json;
 
 class AnimateCharacter extends FlxSprite
 {
@@ -23,12 +22,23 @@ class AnimateCharacter extends FlxSprite
 
     var reader:AnimateZipReader;
     var fallbackFrame:BitmapData;
+    var canvasWidth:Int = 2000;
+    var canvasHeight:Int = 2000;
 
     public function new(zipPath:String)
     {
         super();
 
         reader = new AnimateZipReader(zipPath);
+
+        if (reader == null || reader.data == null)
+        {
+            trace("Error: AnimateZipReader failed to initialize");
+            fallbackFrame = new BitmapData(1, 1, true, 0x00000000);
+            bitmapFrames.push(fallbackFrame);
+            pixels = fallbackFrame;
+            return;
+        }
 
         fallbackFrame = new BitmapData(1, 1, true, 0x00000000);
 
@@ -42,7 +52,8 @@ class AnimateCharacter extends FlxSprite
         pixels = bitmapFrames[0];
 
         // default animation
-        play(reader.data.defaultAnim != null ? reader.data.defaultAnim : "idle");
+        var defaultAnim = reader.data.defaultAnim != null ? reader.data.defaultAnim : "idle";
+        play(defaultAnim);
     }
 
     // --------------------------------------------------------
@@ -50,6 +61,9 @@ class AnimateCharacter extends FlxSprite
     // --------------------------------------------------------
     function parseAnimationData()
     {
+        if (reader.data == null)
+            return;
+
         // animations {...}
         if (reader.data.animations != null)
         {
@@ -57,7 +71,8 @@ class AnimateCharacter extends FlxSprite
             for (key in map.keys())
             {
                 var arr:Array<Int> = cast map.get(key);
-                animations.set(key, arr);
+                if (arr != null)
+                    animations.set(key, arr);
             }
         }
 
@@ -66,7 +81,11 @@ class AnimateCharacter extends FlxSprite
         {
             var mapFPS:Map<String, Dynamic> = cast reader.data.fps;
             for (key in mapFPS.keys())
-                animFPS.set(key, cast mapFPS.get(key));
+            {
+                var fpsVal:Dynamic = mapFPS.get(key);
+                if (fpsVal != null)
+                    animFPS.set(key, cast fpsVal);
+            }
         }
 
         // loops {...}
@@ -74,7 +93,11 @@ class AnimateCharacter extends FlxSprite
         {
             var loopMap:Map<String, Dynamic> = cast reader.data.loops;
             for (key in loopMap.keys())
-                animLoop.set(key, cast loopMap.get(key));
+            {
+                var loopVal:Dynamic = loopMap.get(key);
+                if (loopVal != null)
+                    animLoop.set(key, cast loopVal);
+            }
         }
     }
 
@@ -83,6 +106,9 @@ class AnimateCharacter extends FlxSprite
     // --------------------------------------------------------
     function buildFrames()
     {
+        if (reader.data == null || reader.data.frames == null)
+            return;
+
         var framesList:Array<Dynamic> = cast reader.data.frames;
 
         for (frameData in framesList)
@@ -96,25 +122,46 @@ class AnimateCharacter extends FlxSprite
                 continue;
             }
 
-            var canvas = new BitmapData(2000, 2000, true, 0x00000000);
+            var canvas = new BitmapData(canvasWidth, canvasHeight, true, 0x00000000);
 
             for (layer in layers)
             {
+                if (layer == null || layer.symbol == null)
+                    continue;
+
                 var pngName = layer.symbol + ".png";
                 var bytes = reader.getPNG(pngName);
                 if (bytes == null)
                     continue;
 
-                var bmp = BitmapData.fromBytes(bytes);
+                var bmp:BitmapData = null;
+                try
+                {
+                    bmp = BitmapData.fromBytes(bytes);
+                }
+                catch (e:Dynamic)
+                {
+                    trace("Error loading PNG: " + pngName);
+                    continue;
+                }
+
+                if (bmp == null)
+                    continue;
 
                 var t = layer.transformation;
+                if (t == null)
+                {
+                    t = { sx: 1, sy: 1, x: 0, y: 0 };
+                }
+
                 var m = new Matrix();
-                m.a = t.sx;
-                m.d = t.sy;
-                m.tx = t.x;
-                m.ty = t.y;
+                m.a = t.sx != null ? t.sx : 1;
+                m.d = t.sy != null ? t.sy : 1;
+                m.tx = t.x != null ? t.x : 0;
+                m.ty = t.y != null ? t.y : 0;
 
                 canvas.draw(bmp, m);
+                bmp.dispose();
             }
 
             bitmapFrames.push(canvas);
@@ -126,7 +173,7 @@ class AnimateCharacter extends FlxSprite
     // --------------------------------------------------------
     public function play(name:String)
     {
-        if (!animations.exists(name))
+        if (name == null || !animations.exists(name))
         {
             trace("Missing animation: " + name + ", falling back to idle");
 
@@ -158,16 +205,19 @@ class AnimateCharacter extends FlxSprite
     override function update(elapsed:Float)
     {
         var fps = animFPS.exists(curAnim) ? animFPS.get(curAnim) : 24;
-        timer += elapsed;
+        if (fps <= 0)
+            fps = 24;
 
-        if (timer >= 1 / fps)
+        timer += elapsed;
+        var frameTime = 1 / fps;
+
+        if (timer >= frameTime)
         {
-            timer = 0;
+            timer -= frameTime;
 
             var group = animations.get(curAnim);
             if (group == null || group.length == 0)
             {
-                // No valid frames? → show fallback frame
                 pixels = fallbackFrame;
                 return;
             }
@@ -190,40 +240,21 @@ class AnimateCharacter extends FlxSprite
     }
 
     // --------------------------------------------------------
-    // UPDATE PIXELS WITH SAFETY CHECKS
+    // UPDATE BITMAP
     // --------------------------------------------------------
     function updateBitmap()
     {
-        if (!animations.exists(curAnim))
-        {
-            pixels = fallbackFrame;
-            dirty = true;
-            return;
-        }
-
         var group = animations.get(curAnim);
-
         if (group == null || group.length == 0)
         {
             pixels = fallbackFrame;
-            dirty = true;
             return;
         }
 
-        var index = group[curFrame];
-
-        if (index < 0 || index >= bitmapFrames.length)
-        {
-            pixels = bitmapFrames[0]; // safe fallback
-            dirty = true;
-            return;
-        }
-
-        var bmp = bitmapFrames[index];
-        if (bmp == null)
-            bmp = fallbackFrame;
-
-        pixels = bmp;
-        dirty = true;
+        var frameIndex = group[curFrame];
+        if (frameIndex >= 0 && frameIndex < bitmapFrames.length)
+            pixels = bitmapFrames[frameIndex];
+        else
+            pixels = fallbackFrame;
     }
 }
