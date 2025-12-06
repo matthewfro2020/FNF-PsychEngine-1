@@ -249,7 +249,9 @@ class Character extends FlxSprite {
 		#end
 		// trace('Loaded file to character ' + curCharacter);
 	}
-	} override function update(elapsed:Float) {
+} 
+
+override function update(elapsed:Float) {
 
 		//
 		// ---------------------------------------------------------
