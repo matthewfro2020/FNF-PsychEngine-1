@@ -75,8 +75,6 @@ class Character {
 
     public var hasMissAnimations:Bool = false;
 
-    public var idleSuffix:String = "";
-
     public var danceEveryNumBeats:Int = 2;
 
     public var stunned:Bool = false;
