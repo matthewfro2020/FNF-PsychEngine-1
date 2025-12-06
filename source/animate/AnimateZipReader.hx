@@ -1,9 +1,10 @@
-package animate;
+package backend.animate;
 
-import haxe.io.Bytes;
 import haxe.zip.Reader;
 import haxe.Json;
+import haxe.io.Bytes;
 import sys.io.File;
+import sys.FileSystem;
 
 class AnimateZipReader
 {
@@ -11,33 +12,36 @@ class AnimateZipReader
     public var data:Dynamic;
     public var symbols:Map<String, Bytes> = new Map();
 
-    public function new(zipPath:String)
+    public function new(path:String)
     {
-        var bytes = File.getBytes(zipPath);
+        if (!FileSystem.exists(path))
+            throw 'Animate ZIP not found: $path';
 
+        var bytes = File.getBytes(path);
         var entries = Reader.readZip(bytes);
+
         for (entry in entries)
         {
             var name = entry.fileName;
 
-            if (name == "library.json")
+            switch (name)
             {
-                library = Json.parse(entry.data.toString());
-            }
-            else if (name == "data.json")
-            {
-                data = Json.parse(entry.data.toString());
-            }
-            else if (name.startsWith("symbols/") && name.endsWith(".png"))
-            {
-                var key = name.substr("symbols/".length);
-                symbols.set(key, entry.data);
+                case "library.json":
+                    library = Json.parse(entry.data.toString());
+                case "data.json":
+                    data = Json.parse(entry.data.toString());
+                default:
+                    if (name.startsWith("symbols/") && name.endsWith(".png"))
+                    {
+                        var key = name.substr("symbols/".length);
+                        symbols.set(key, entry.data);
+                    }
             }
         }
     }
 
-    public function getSymbolPNG(name:String):Bytes
+    public function getPNG(symbol:String):Bytes
     {
-        return symbols.get(name);
+        return symbols.get(symbol);
     }
 }
