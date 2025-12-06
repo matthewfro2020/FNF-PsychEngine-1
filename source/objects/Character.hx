@@ -257,17 +257,18 @@ class Character extends FlxSprite {
 			// ---------------------------------------------------------
 			//
 			if (isAnimateZIP) {
-				// Advance ZIP animation frames
 				animateZIPChar.update(elapsed);
 
+				// ------------------------------------------
 				// Handle "hey" timer and special animations
+				// ------------------------------------------
 				if (heyTimer > 0) {
 					var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
 					heyTimer -= elapsed * rate;
 
 					if (heyTimer <= 0) {
 						var anim = getAnimationName();
-						if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
+						if (specialAnim && (anim == "hey" || anim == "cheer")) {
 							specialAnim = false;
 							dance();
 						}
@@ -280,86 +281,170 @@ class Character extends FlxSprite {
 					dance();
 				}
 
-				// Singing -> hold behavior
+				// ------------------------------------------
+				// Singing hold behavior
+				// ------------------------------------------
 				if (getAnimationName().startsWith("sing"))
 					holdTimer += elapsed;
 				else if (isPlayer)
 					holdTimer = 0;
 
 				if (!isPlayer
-					&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end) * singDuration {
+					&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end
+					) * singDuration) {
 					dance();
 					holdTimer = 0;
-				})
-					super.update(elapsed);
-				return; // VERY IMPORTANT → prevents running normal PNG logic
-			}
-		}
-	} //
+				}
 
-	// ---------------------------------------------------------
-	// ANIMATE ATLAS UPDATE
-	// ---------------------------------------------------------
-	//
-	if (isAnimateAtlas)
-		atlas.update(elapsed);
-	//
-	// ---------------------------------------------------------
-	// ORIGINAL PSYCH ENGINE UPDATE LOGIC
-	// ---------------------------------------------------------
-	//
-	if (debugMode
-		|| (!isAnimateAtlas && animation.curAnim == null)
-		|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null))) {
-		super.update(elapsed);
-		return;
-	}
-	if (heyTimer > 0) {
-		var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
-		heyTimer -= elapsed * rate;
-		if (heyTimer <= 0) {
-			var anim:String = getAnimationName();
-			if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
+				super.update(elapsed);
+				return; // VERY IMPORTANT → stops PNG/Atlas logic from running
+			}
+
+			//
+			// ---------------------------------------------------------
+			// FLXANIMATE ATLAS UPDATE
+			// ---------------------------------------------------------
+			//
+			if (isAnimateAtlas)
+				atlas.update(elapsed);
+
+			//
+			// ---------------------------------------------------------
+			// NORMAL PSYCH ENGINE ANIMATION UPDATE
+			// ---------------------------------------------------------
+			//
+			if (debugMode
+				|| (!isAnimateAtlas && animation.curAnim == null)
+				|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null))) {
+				super.update(elapsed);
+				return;
+			}
+
+			// ------------------------------------------
+			// hey timer logic
+			// ------------------------------------------
+			if (heyTimer > 0) {
+				var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
+				heyTimer -= elapsed * rate;
+
+				if (heyTimer <= 0) {
+					var anim:String = getAnimationName();
+					if (specialAnim && (anim == "hey" || anim == "cheer")) {
+						specialAnim = false;
+						dance();
+					}
+					heyTimer = 0;
+				}
+			} else if (specialAnim && isAnimationFinished()) {
 				specialAnim = false;
 				dance();
+			} else if (getAnimationName().endsWith("miss") && isAnimationFinished()) {
+				dance();
+				finishAnimation();
 			}
-			heyTimer = 0;
+
+			// ------------------------------------------
+			// special pico-speaker logic
+			// ------------------------------------------
+			switch (curCharacter) {
+				case "pico-speaker":
+					if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0]) {
+						var noteData:Int = (animationNotes[0][1] > 2) ? 3 : 1;
+						noteData += FlxG.random.int(0, 1);
+						playAnim("shoot" + noteData, true);
+						animationNotes.shift();
+					}
+
+					if (isAnimationFinished())
+						playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
+			}
+
+			// ------------------------------------------
+			// singing hold duration (normal psy engine code)
+			// ------------------------------------------
+			if (getAnimationName().startsWith("sing"))
+				holdTimer += elapsed;
+			else if (isPlayer)
+				holdTimer = 0;
+
+			if (!isPlayer
+				&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end
+				) * singDuration) {
+				dance();
+				holdTimer = 0;
+			}
+
+			// ------------------------------------------
+			// loop animations (anim-loop)
+			// ------------------------------------------
+			var name:String = getAnimationName();
+			if (isAnimationFinished() && hasAnimation('$name-loop'))
+				playAnim('$name-loop');
+
+			super.update(elapsed);
 		}
-	} else if (specialAnim && isAnimationFinished()) {
-		specialAnim = false;
-		dance();
-	} else if (getAnimationName().endsWith('miss') && isAnimationFinished()) {
-		dance();
-		finishAnimation();
-	}
-	switch (curCharacter) {
-		case 'pico-speaker':
-			if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0]) {
-				var noteData:Int = (animationNotes[0][1] > 2) ? 3 : 1;
-				noteData += FlxG.random.int(0, 1);
-				playAnim('shoot' + noteData, true);
-				animationNotes.shift();
+
+		// ---------------------------------------------------------
+		// ANIMATE ATLAS UPDATE
+		// ---------------------------------------------------------
+		//
+		if (isAnimateAtlas)
+			atlas.update(elapsed);
+		//
+		// ---------------------------------------------------------
+		// ORIGINAL PSYCH ENGINE UPDATE LOGIC
+		// ---------------------------------------------------------
+		//
+		if (debugMode
+			|| (!isAnimateAtlas && animation.curAnim == null)
+			|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null))) {
+			super.update(elapsed);
+			return;
+		}
+		if (heyTimer > 0) {
+			var rate:Float = (PlayState.instance != null ? PlayState.instance.playbackRate : 1.0);
+			heyTimer -= elapsed * rate;
+			if (heyTimer <= 0) {
+				var anim:String = getAnimationName();
+				if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
+					specialAnim = false;
+					dance();
+				}
+				heyTimer = 0;
 			}
-			if (isAnimationFinished())
-				playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
-	}
-	if (getAnimationName().startsWith('sing'))
-		holdTimer += elapsed;
-	else if (isPlayer)
-		holdTimer = 0;
-	if (!isPlayer
-		&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end) * singDuration) {
-		dance();
-		holdTimer = 0;
-	});
+		} else if (specialAnim && isAnimationFinished()) {
+			specialAnim = false;
+			dance();
+		} else if (getAnimationName().endsWith('miss') && isAnimationFinished()) {
+			dance();
+			finishAnimation();
+		}
+		switch (curCharacter) {
+			case 'pico-speaker':
+				if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0]) {
+					var noteData:Int = (animationNotes[0][1] > 2) ? 3 : 1;
+					noteData += FlxG.random.int(0, 1);
+					playAnim('shoot' + noteData, true);
+					animationNotes.shift();
+				}
+				if (isAnimationFinished())
+					playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
+		}
+		if (getAnimationName().startsWith('sing'))
+			holdTimer += elapsed;
+		else if (isPlayer)
+			holdTimer = 0;
+		if (!isPlayer
+			&& holdTimer >= Conductor.stepCrochet * (0.0011 #if FLX_PITCH / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1) #end) * singDuration) {
+			dance();
+			holdTimer = 0;
+		});
 	var name:String = getAnimationName();
 
 	if (isAnimationFinished() && hasAnimation('$name-loop'))
 		playAnim('$name-loop');
 	super.update(elapsed);
-}
-
-inline public function isAnimationNull():Bool {
+} inline public function isAnimationNull():Bool {
 	return !isAnimateAtlas ? (animation.curAnim == null) : (atlas.anim.curInstance == null || atlas.anim.curSymbol == null);
 }
 
