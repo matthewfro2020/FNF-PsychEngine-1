@@ -1,0 +1,21 @@
+import flixel.math.FlxMath;
+
+var c = new AnimController(24);
+var sym;
+
+function create() {
+	c.callback.add(updateFrames);
+	sym = character.animateAtlas.anim.symbolDictionary.get('combi combo ohungi/pyramid/pyramid slow');
+	sym.forceFrame = true;
+}
+function update(e:Float) {
+	c.update(e);
+}
+function updateFrames(frame) {
+	if (sym == null || sym.name == '')
+		return;
+	sym.forcedFrame = FlxMath.wrap(frame, 0, sym.length - 1);
+}
+function onDestroy() {
+	c.destroy();
+}

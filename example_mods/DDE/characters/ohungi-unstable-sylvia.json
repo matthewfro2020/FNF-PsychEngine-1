@@ -1,0 +1,118 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft",
+			"fps": 28,
+			"name": "export/idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight",
+			"fps": 28,
+			"name": "export/idle",
+			"indices": [
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-35,
+				268
+			],
+			"anim": "singDOWN-alt",
+			"fps": 28,
+			"name": "export/down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				73,
+				20
+			],
+			"anim": "singUP-alt",
+			"fps": 28,
+			"name": "export/up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				170,
+				20
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 28,
+			"name": "export/right",
+			"indices": [],
+			"holdFrame": 7
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				130
+			],
+			"anim": "singLEFT-alt",
+			"fps": 28,
+			"name": "export/left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/unstable-ohungis/asciihungiiii",
+	"position": [
+		132,
+		120
+	],
+	"note_style": "",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "ohungistartled",
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		171,
+		36
+	],
+	"camera_position": [
+		-80,
+		-30
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

@@ -1,0 +1,82 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				140,
+				120
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				3,
+				35
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down",
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				1,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right",
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				226,
+				19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left",
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "characters/tango_mad",
+	"position": [
+		-400,
+		-663
+	],
+	"healthicon": "tango-mad",
+	"flip_x": false,
+	"healthbar_colors": [
+		67,
+		163,
+		245
+	],
+	"camera_position": [
+		90,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

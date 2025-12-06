@@ -1,0 +1,169 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				88,
+				81
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				76,
+				-1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RIGHT",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				263,
+				13
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LEFT",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				54,
+				114
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UP",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				173,
+				-60
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DOWN",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				146,
+				72
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "think",
+			"indices": [],
+			"name": "ponder"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				65,
+				45
+			],
+			"anim": "thinking",
+			"fps": 24,
+			"name": "staticpondre",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				138,
+				68
+			],
+			"anim": "correct",
+			"singAnim": true,
+			"fps": 24,
+			"name": "ahamoment",
+			"indices": [],
+			"holdFrame": 3
+		},
+		{
+			"loop": false,
+			"offsets": [
+				155,
+				50
+			],
+			"anim": "incorrect",
+			"singAnim": true,
+			"fps": 24,
+			"name": "dumbass",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				90,
+				-40
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "fumbleright",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				144,
+				-62
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "fumbleleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				78,
+				18
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "fumbleup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				114,
+				-129
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "fumbledown",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/preparedave_smug",
+	"position": [
+		210,
+		189
+	],
+	"healthicon": "dave",
+	"flip_x": true,
+	"healthbar_colors": [56, 97, 237],
+	"camera_position": [
+		374,
+		-190
+	],
+	"sing_duration": 6.1,
+	"scale": 1.5
+}

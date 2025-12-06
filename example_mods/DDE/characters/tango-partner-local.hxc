@@ -1,0 +1,32 @@
+import flixel.graphics.frames.FlxFrameCollectionType;
+
+var ANNOY_IDLE_ID = 9;
+var ANNOY_IDLE = true;
+
+var textFrames:FlxFramesCollection;
+var originalFrame:FlxFrame;
+var copiedFrame:FlxFrame;
+function create() {
+	trace('hi');
+	originalFrame = character.animateAtlas.frames.getByName("0082");
+	copiedFrame = originalFrame.copyTo();
+	textFrames = Paths.getSparrowAtlas('characters/tango-partner/shirt_texts');
+	character.frames = textFrames;
+	randomizeText();
+}
+
+function randomizeText() {
+	final id = FlxG.random.int(0, textFrames.frames.length - 1);
+	ANNOY_IDLE = id == ANNOY_IDLE_ID;
+	final frame = textFrames.frames[id];
+	frame.copyTo(originalFrame);
+}
+
+function destroy() {
+	copiedFrame.copyTo(originalFrame);
+}
+
+function update(elapsed:Float) {
+	if (ANNOY_IDLE && character.dancing)
+		character.dance();
+}

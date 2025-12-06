@@ -1,0 +1,84 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 30,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				311,
+				124
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "down",
+			"holdFrame": 5
+		},
+		{
+			"offsets": [
+				274,
+				506
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "up",
+			"holdFrame": 8
+		},
+		{
+			"offsets": [
+				-89,
+				11
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "right",
+			"holdFrame": 5
+		},
+		{
+			"offsets": [
+				480,
+				214
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "left",
+			"holdFrame": 5
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/unstable-ohungis/pizzaboy",
+	"position": [
+		-21,
+		-57
+	],
+	"note_style": "",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "ohungistartled",
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		171,
+		36
+	],
+	"camera_position": [
+		-80,
+		-30
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

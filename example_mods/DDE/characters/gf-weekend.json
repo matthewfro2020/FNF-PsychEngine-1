@@ -1,0 +1,453 @@
+{
+    "animations": [
+        {
+            "anim": "idle",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/sad/sadgigiidle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singDOWN",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/sad/sadgigidown",
+            "offsets": [
+                -1,
+                -4
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singUP",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/sad/sadgigiup",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singLEFT",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/sad/sadgigileft",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singRIGHT",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/sad/sadgigiright",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singDOWN-beg",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/beg/beggigidown",
+            "offsets": [
+                -1,
+                -4
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singUP-beg",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/beg/beggigiup",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singLEFT-beg",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/beg/beggigileft",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singRIGHT-beg",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/beg/beggigiright",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceLeft-happy",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [
+                28,
+                29,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            "loop": false,
+            "name": "gigi/happy/hapgigiidle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceRight-happy",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27
+            ],
+            "loop": false,
+            "name": "gigi/happy/hapgigiidle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singDOWN-happy",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/happy/hapgigidown",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singUP-happy",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/happy/hapgigiup",
+            "offsets": [
+                -6,
+                -2
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singLEFT-happy",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/happy/hapgigileft",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singRIGHT-happy",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/happy/hapgigiright",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceLeft-smug",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [
+                28,
+                29,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            "loop": false,
+            "name": "smug/smuggigiidle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceRight-smug",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27
+            ],
+            "loop": false,
+            "name": "smug/smuggigiidle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singDOWN-smug",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "smug/smuggigidown",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singUP-smug",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "smug/smuggigiup",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singLEFT-smug",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "smug/smuggigileft",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singRIGHT-smug",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "smug/smuggigiright",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "idle-beg",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": true,
+            "name": "gigi/beg/begginggigiidle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "mukoenter",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/sad/gigi mukoenter",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "picoenter",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/happy/gigi picoenter",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "spikeenter",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "gigi/beg/gigi spikeenter",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        }
+    ],
+    "image": "characters/girlfriend-weekend",
+    "scale": 1,
+    "sing_duration": 5,
+    "healthicon": "gf",
+    "note_style": null,
+    "position": [
+        0,
+        0
+    ],
+    "camera_position": [
+        -70,
+        310
+    ],
+    "cameraZoomMult": 1,
+    "swfRenderScale": null,
+    "renderType": null,
+    "flip_x": true,
+    "no_antialiasing": false,
+    "healthbar_colors": [
+        165,
+        0,
+        77
+    ],
+    "extraSheets": null,
+    "songSheets": null,
+    "gameOver": null,
+    "origin": [
+        213.5,
+        357
+    ],
+    "fileAssetOffset": [
+        0,
+        0
+    ],
+    "credits": null
+}

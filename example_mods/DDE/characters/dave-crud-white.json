@@ -1,0 +1,148 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-40,
+				-140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "daveidle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "davealtidle"
+		},
+		{
+			"offsets": [
+				255,
+				-25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "daveleft"
+		},
+		{
+			"offsets": [
+				108,
+				-35
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "davedown"
+		},
+		{
+			"offsets": [
+				136,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "daveup"
+		},
+		{
+			"offsets": [
+				-14,
+				-29
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "daveright"
+		},
+		{
+			"offsets": [
+				-15,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "cutscene",
+			"indices": [],
+			"name": "cutscene"
+		},
+		{
+			"offsets": [
+				-40,
+				-140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "daveidle"
+		},
+		{
+			"offsets": [
+				-40,
+				-140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "daveidle"
+		},
+		{
+			"offsets": [
+				-40,
+				-140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "daveidle"
+		},
+		{
+			"offsets": [
+				-40,
+				-140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "daveidle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "crud_dave",
+	"position": [
+		40,
+		-180
+	],
+	"note_style": "crudNOTE_assets",
+	"renderType": "swf",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "dave-crud-pixel",
+	"flip_x": true,
+	"healthbar_colors": [
+		56,
+		97,
+		237
+	],
+	"camera_position": [
+		50,
+		430
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"swfRenderScale": 0.5
+}

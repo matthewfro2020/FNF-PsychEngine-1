@@ -1,0 +1,356 @@
+{
+	"animations": [
+		{
+			"holdFrame": 0,
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-193,
+				-42
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-275,
+				-39
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-232,
+				-21
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-5,
+				-115
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-213,
+				-52
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singLEFT-miss",
+			"loop": false,
+			"name": "missleft",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-234,
+				-22
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singDOWN-miss",
+			"loop": false,
+			"name": "missdown",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-262,
+				-202
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singUP-miss",
+			"loop": false,
+			"name": "missup",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-22,
+				-287
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singRIGHT-miss",
+			"loop": false,
+			"name": "missright",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-350,
+				130
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "smash1",
+			"loop": false,
+			"name": "phone1",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-258,
+				50
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "smash2",
+			"loop": false,
+			"name": "phone2",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-115,
+				5
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "smash3",
+			"loop": false,
+			"name": "phone3",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-281,
+				41
+			],
+			"indices": [],
+			"fps": 26,
+			"singAnim": null,
+			"anim": "guitar",
+			"loop": false,
+			"name": "guitarplay",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-368,
+				-345
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "guitaridle",
+			"song": null
+		},
+		{
+			"holdFrame": 4,
+			"offsets": [
+				-259,
+				-342
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "guitarleft",
+			"song": null
+		},
+		{
+			"holdFrame": 3,
+			"offsets": [
+				-342,
+				-138
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "guitardown",
+			"song": null
+		},
+		{
+			"holdFrame": 7,
+			"offsets": [
+				-341,
+				-315
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "guitarup",
+			"song": null
+		},
+		{
+			"holdFrame": 5,
+			"offsets": [
+				-424,
+				-264
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "guitarright0",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-267,
+				-159
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "throw",
+			"loop": false,
+			"name": "guitarthrow",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-407,
+				-312
+			],
+			"indices": [],
+			"fps": 30,
+			"singAnim": null,
+			"anim": "idle-wait",
+			"loop": true,
+			"name": "guitarwait",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-338,
+				91
+			],
+			"indices": [],
+			"fps": 35,
+			"singAnim": null,
+			"anim": "shutup",
+			"loop": false,
+			"name": "guitarshut",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				-338,
+				91
+			],
+			"indices": [
+				44,
+				45,
+				46
+			],
+			"fps": 15,
+			"singAnim": null,
+			"anim": "shutup-loop",
+			"loop": true,
+			"name": "guitarshut",
+			"song": null
+		}
+	],
+	"image": "characters/shucked/bambi_paper",
+	"scale": 1,
+	"sing_duration": 4,
+	"healthicon": "bambi",
+	"note_style": "",
+	"position": [
+		-420,
+		-340
+	],
+	"camera_position": [
+		-316.5,
+		185.5
+	],
+	"cameraZoomMult": 1,
+	"swfRenderScale": null,
+	"renderType": null,
+	"flip_x": false,
+	"no_antialiasing": false,
+	"healthbar_colors": [
+		11,
+		113,
+		54
+	],
+	"extraSheets": [
+		"characters/shucked/bambi_paper_guitar",
+		"characters/shucked/bambi_paper_extra"
+	],
+	"songSheets": null,
+	"gameOver": null,
+	"origin": [
+		0,
+		0
+	],
+	"fileAssetOffset": [
+		0,
+		0
+	],
+	"credits": [
+		"riko"
+	]
+}

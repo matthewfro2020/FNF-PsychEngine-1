@@ -1,0 +1,247 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-42
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle-start",
+			"loop": false,
+			"name": "anims pico/idle_1",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": false,
+			"name": "anims pico/idle_2",
+			"song": null
+		},
+		{
+			"offsets": [
+				17,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "anims pico/left",
+			"song": null
+		},
+		{
+			"offsets": [
+				1,
+				42
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "anims pico/down",
+			"song": null
+		},
+		{
+			"offsets": [
+				49,
+				63
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "anims pico/up",
+			"song": null
+		},
+		{
+			"offsets": [
+				-10,
+				-51
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "anims pico/right",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				-42
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "transition",
+			"loop": false,
+			"name": "anims pico/idle_transition",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "anims pico/idle_3",
+			"song": null
+		},
+		{
+			"offsets": [
+				45,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "anims pico/missleft",
+			"song": null
+		},
+		{
+			"offsets": [
+				-12,
+				43
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "anims pico/missdown",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				70
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "anims pico/missup",
+			"song": null
+		},
+		{
+			"offsets": [
+				-11,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "anims pico/missright",
+			"song": null
+		},
+		{
+			"offsets": [
+				-209,
+				-126
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "haha",
+			"loop": false,
+			"name": "anims pico/haha",
+			"song": null
+		},
+		{
+			"offsets": [
+				16,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "anims pico/alt_left",
+			"song": null
+		},
+		{
+			"offsets": [
+				1,
+				42
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "anims pico/alt_down",
+			"song": null
+		},
+		{
+			"offsets": [
+				48,
+				62
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "anims pico/alt_up",
+			"song": null
+		},
+		{
+			"offsets": [
+				-9,
+				-51
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "anims pico/alt_right",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"image": "characters/shucked/pico",
+	"position": [
+		40,
+		-130
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		84, 232, 86
+	],
+	"origin": [
+		692.5,
+		400
+	],
+	"camera_position": [
+		-690,
+		280
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -1,0 +1,82 @@
+{
+    "animations": [
+        {
+            "anim": "idle",
+            "fps": 20,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": true,
+            "name": "idle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "sad",
+            "fps": 20,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "miss",
+            "offsets": [
+                2,
+                5
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "cheer",
+            "fps": 20,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "combo",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        }
+    ],
+    "image": "characters/worm_eater-partner",
+    "scale": 1,
+    "sing_duration": 6.1,
+    "healthicon": "worm-eater",
+    "note_style": null,
+    "position": [
+        315,
+        75
+    ],
+    "camera_position": [
+        -115,
+        50
+    ],
+    "cameraZoomMult": 1,
+    "swfRenderScale": null,
+    "renderType": null,
+    "flip_x": false,
+    "no_antialiasing": false,
+    "healthbar_colors": [
+        50,
+        41,
+        220
+    ],
+    "extraSheets": null,
+    "songSheets": null,
+    "gameOver": null,
+    "origin": [
+        -188.5,
+        190.5
+    ],
+    "fileAssetOffset": [
+        -250,
+        150
+    ],
+    "credits": null,
+    "danceEveryNumBeats": null
+}

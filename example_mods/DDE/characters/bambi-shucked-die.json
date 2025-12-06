@@ -1,0 +1,83 @@
+{
+	"animations": [
+		{
+			"holdFrame": 0,
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "death",
+			"loop": false,
+			"name": "bambi dies first",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				1563,
+				25
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "bambi dies retry",
+			"song": null
+		},
+		{
+			"holdFrame": 0,
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "bambi dies loop",
+			"song": null
+		}
+	],
+	"image": "characters/shucked/bambi-death",
+	"scale": 1,
+	"sing_duration": 4,
+	"healthicon": "bambi",
+	"note_style": "",
+	"position": [
+		260,
+		-130
+	],
+	"camera_position": [
+		-100,
+		520
+	],
+	"cameraZoomMult": 1,
+	"swfRenderScale": null,
+	"renderType": null,
+	"flip_x": true,
+	"no_antialiasing": false,
+	"healthbar_colors": [
+		11,
+		113,
+		54
+	],
+	"extraSheets": null,
+	"songSheets": null,
+	"gameOver": null,
+	"origin": [
+		0,
+		0
+	],
+	"fileAssetOffset": [
+		0,
+		0
+	],
+	"credits": [
+		"statictigers"
+	]
+}

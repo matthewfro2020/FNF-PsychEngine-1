@@ -1,0 +1,108 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "cuble idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-50
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "cuble up",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-10
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "cuble down",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				-30
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "cuble right",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "cuble left",
+			"indices": [],
+			"holdFrame": 1
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "die",
+			"fps": 24,
+			"name": "fullmicgrab",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "die-static",
+			"fps": 0,
+			"name": "fullmicgrab",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/cuble_gooble_3D",
+	"renderType": "sparrow",
+	"position": [
+		0,
+		-200
+	],
+	"note_style": "",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "cuble-gooble",
+	"flip_x": false,
+	"healthbar_colors": [
+		32,
+		180,
+		73
+	],
+	"camera_position": [
+		-420,
+		-550
+	],
+	"sing_duration": 4,
+	"scale": 2.6,
+	"credits": "wildythomas"
+}

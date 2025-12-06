@@ -1,0 +1,236 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle_pissed"
+		},
+		{
+			"offsets": [
+				279,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "singLEFT_pissed"
+		},
+		{
+			"offsets": [
+				83,
+				-40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "singDOWN_pissed"
+		},
+		{
+			"offsets": [
+				65,
+				11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "singRIGHT_pissed"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				134
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "singUP_pissed",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				201,
+				0
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "singLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				-16
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "singDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-43,
+				59
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "singUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-46,
+				38
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "singRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				279,
+				-5
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "msingLEFT_pissed",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				83,
+				-40
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "msingDOWN_pissed",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-22,
+				110
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "msingUP_pissed",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				116
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "msingUP_pissed",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				75,
+				49
+			],
+			"anim": "transition",
+			"fps": 24,
+			"name": "pissedtolesspissedtransition",
+			"indices": []
+		},
+		{
+			"offsets": [
+				203,
+				-27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-altmiss",
+			"indices": [],
+			"name": "msingLEFT"
+		},
+		{
+			"offsets": [
+				10,
+				-43
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-altmiss",
+			"indices": [],
+			"name": "msingDOWN"
+		},
+		{
+			"offsets": [
+				-30,
+				66
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-altmiss",
+			"indices": [],
+			"name": "msingUP"
+		},
+		{
+			"offsets": [
+				-12,
+				34
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-altmiss",
+			"indices": [],
+			"name": "msingRIGHT"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "crud_dave",
+	"position": [
+		-80,
+		-185
+	],
+	"note_style": "crudNOTE_assets",
+	"renderType": "swf",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "dave-crud-pissed-pixel",
+	"flip_x": true,
+	"healthbar_colors": [
+		56,
+		97,
+		237
+	],
+	"camera_position": [
+		-80,
+		400
+	],
+	"sing_duration": 4,
+	"swfRenderScale": 0.25,
+	"scale": 1
+}

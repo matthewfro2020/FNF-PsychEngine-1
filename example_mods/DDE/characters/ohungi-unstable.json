@@ -1,0 +1,154 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "dperiodic/singLEFT",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "dperiodic/singRIGHT",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "dperiodic/singUP",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "dperiodic/singDOWN",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "dperiodic/mini singLEFT scared",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "dperiodic/mini singUP scared",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "dperiodic/mini singDOWN scared",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "dperiodic/mini singRIGHT scared",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": true,
+			"name": "dperiodic/idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				193,
+				149
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "bite",
+			"loop": false,
+			"name": "dperiodic/bite",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "characters/unstable-ohungis/ohungistartled",
+	"position": [
+		178,
+		104
+	],
+	"healthicon": "ohungistartled",
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		171,
+		36
+	],
+	"camera_position": [
+		120,
+		-200
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -1,0 +1,45 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				0,
+				42
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "yell",
+			"indices": [],
+			"name": "SCREAM"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/tango_yell",
+	"position": [
+		-399,
+		-663
+	],
+	"healthicon": "tango-mad",
+	"flip_x": false,
+	"healthbar_colors": [
+		67,
+		163,
+		245
+	],
+	"camera_position": [
+		90,
+		200
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

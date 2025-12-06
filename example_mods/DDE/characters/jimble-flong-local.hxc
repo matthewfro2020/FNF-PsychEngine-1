@@ -1,0 +1,11 @@
+var idle:FlxAnimation;
+
+function onCharacter() {
+	idle = character.animation.getByName('idle');
+	character.onDancePost.add(recalcDance);
+}
+
+function recalcDance() {
+	idle.frameRate = idle.numFrames / beatTime(2);
+	idle.curFrame = 0;
+}

@@ -1,0 +1,102 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": false,
+			"name": "standout/davestandout storymode idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "cheer",
+			"loop": false,
+			"name": "standout/davestandout storymode hey",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "sad",
+			"loop": false,
+			"name": "standout/davestandout storymode shock",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "shock-less",
+			"loop": false,
+			"name": "standout/davestandout storymode less shock",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "nervous",
+			"loop": false,
+			"name": "standout/davestandout transition nervous",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle-nervous",
+			"loop": false,
+			"name": "standout/davestandout nervous",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"image": "characters/dave_standout",
+	"position": [
+		75,
+		-194
+	],
+	"healthicon": "dave",
+	"flip_x": false,
+	"healthbar_colors": [
+		56,
+		97,
+		237
+	],
+	"camera_position": [
+		-20,
+		340
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

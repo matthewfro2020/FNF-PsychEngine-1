@@ -1,0 +1,96 @@
+{
+    "animations": [
+        {
+            "anim": "idle",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "idle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "sad",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "miss",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "cheer",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "combo",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "select",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "select",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        }
+    ],
+    "image": "characters/tango-partner",
+    "scale": 0.87,
+    "sing_duration": 6.1,
+    "healthicon": "tango",
+    "note_style": null,
+    "position": [
+        -250,
+        60
+    ],
+    "camera_position": [
+        400,
+        0
+    ],
+    "cameraZoomMult": 1,
+    "swfRenderScale": null,
+    "renderType": null,
+    "flip_x": false,
+    "no_antialiasing": true,
+    "healthbar_colors": [
+        0,
+        0,
+        0
+    ],
+    "extraSheets": null,
+    "songSheets": null,
+    "gameOver": null,
+    "origin": [
+        391.5,
+        8
+    ],
+    "fileAssetOffset": [
+        350,
+        0
+    ],
+    "credits": "sporbb",
+	"danceEveryNumBeats": 1
+}

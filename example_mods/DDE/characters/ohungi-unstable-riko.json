@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				23,
+				70
+			],
+			"anim": "idle",
+			"fps": 30,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				51,
+				122
+			],
+			"anim": "singDOWN-alt",
+			"fps": 30,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				64,
+				176
+			],
+			"anim": "singUP-alt",
+			"fps": 30,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				101
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 30,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				167,
+				146
+			],
+			"anim": "singLEFT-alt",
+			"fps": 30,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				233,
+				74
+			],
+			"indices": [],
+			"fps": 30,
+			"anim": "inner_start",
+			"loop": false,
+			"name": "inner_start"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/unstable-ohungis/crazy1",
+	"position": [
+		19,
+		-17
+	],
+	"note_style": "",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "ohungistartled",
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		171,
+		36
+	],
+	"camera_position": [
+		-80,
+		-30
+	],
+	"sing_duration": 14,
+	"scale": 1.1
+}

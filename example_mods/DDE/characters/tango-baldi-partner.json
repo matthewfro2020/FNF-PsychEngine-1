@@ -1,0 +1,81 @@
+{
+    "animations": [
+        {
+            "anim": "idle",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "idle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "sad",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "missed",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "cheer",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "yay",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        }
+    ],
+    "image": "characters/tango_baldi_partner",
+    "scale": 2.7,
+    "sing_duration": 6.1,
+    "healthicon": "tango",
+    "note_style": null,
+    "position": [
+        60,
+        -20
+    ],
+    "camera_position": [
+        -400,
+        -280
+    ],
+    "cameraZoomMult": 1,
+    "swfRenderScale": null,
+    "renderType": null,
+    "flip_x": false,
+    "no_antialiasing": true,
+    "healthbar_colors": [
+        67,
+        163,
+        245
+    ],
+    "extraSheets": null,
+    "songSheets": null,
+    "gameOver": null,
+    "origin": [
+        19,
+        0.5
+    ],
+    "fileAssetOffset": [
+        -400,
+        0
+    ],
+    "credits": null
+}

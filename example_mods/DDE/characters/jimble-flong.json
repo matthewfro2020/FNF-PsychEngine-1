@@ -1,0 +1,179 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-70,
+				150
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up",
+			"song": null
+		},
+		{
+			"offsets": [
+				30,
+				-190
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down",
+			"song": null,
+			"holdFrame": 6
+		},
+		{
+			"offsets": [
+				-110,
+				-30
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "left",
+			"song": null,
+			"holdFrame": 3
+		},
+		{
+			"offsets": [
+				239,
+				80
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "right",
+			"song": null,
+			"holdFrame": 3
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "push",
+			"loop": true,
+			"name": "push",
+			"song": null
+		},
+		{
+			"offsets": [
+				600,
+				160
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "alt-up",
+			"song": null,
+			"holdFrame": 2
+		},
+		{
+			"offsets": [
+				600,
+				160
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "alt-down",
+			"song": null
+		},
+		{
+			"offsets": [
+				600,
+				160
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "alt-left",
+			"song": null
+		},
+		{
+			"offsets": [
+				600,
+				160
+			],
+			"indices": [],
+			"fps": 28,
+			"singAnim": null,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "alt-right",
+			"song": null
+		},
+		{
+			"offsets": [
+				600,
+				160
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle-alt",
+			"loop": true,
+			"name": "alt-idle",
+			"song": null
+		}
+	],
+	"cameraZoomMult": null,
+	"no_antialiasing": true,
+	"gameOver": null,
+	"image": "characters/jimble_flong",
+	"position": [
+		0,
+		0
+	],
+	"note_style": "",
+	"renderType": null,
+	"healthicon": "jimble-flong",
+	"extraSheets": [
+		"characters/jimble_flong_crashout"
+	],
+	"swfRenderScale": null,
+	"flip_x": false,
+	"healthbar_colors": [
+		250,
+		203,
+		15
+	],
+	"camera_position": [
+		10,
+		10
+	],
+	"sing_duration": 4,
+	"scale": 1.8,
+	"songSheets": null
+}

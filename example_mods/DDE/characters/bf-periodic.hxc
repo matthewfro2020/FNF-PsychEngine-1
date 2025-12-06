@@ -1,0 +1,5 @@
+function onCreatePost() {
+	if (inPartnerSelect) { // offset in script since theres no actual setting in the class for this varient // there actually is one now but im lazy
+		character.y += 100;
+	}
+}

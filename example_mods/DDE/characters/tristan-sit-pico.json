@@ -1,0 +1,169 @@
+{
+    "animations": [
+        {
+            "anim": "singLEFT",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "right",
+            "offsets": [
+                2,
+                -12
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singDOWN",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "down",
+            "offsets": [
+                0,
+                -16
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singUP",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "up",
+            "offsets": [
+                -6,
+                15
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "singRIGHT",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "left",
+            "offsets": [
+                -1,
+                32
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceLeft",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+            ],
+            "loop": false,
+            "name": "idle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceRight",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+            ],
+            "loop": false,
+            "name": "idle",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "bambiAnim",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "bambi breaking",
+            "offsets": [
+                65,
+                6
+            ],
+            "singAnim": null,
+            "song": null
+        }
+    ],
+    "image": "characters/tristan_pico",
+    "scale": 1,
+    "sing_duration": 6.1,
+    "healthicon": "tristanicon",
+    "note_style": "",
+    "position": [
+        22,
+        -7
+    ],
+    "camera_position": [
+        0,
+        0
+    ],
+    "cameraZoomMult": 1,
+    "swfRenderScale": null,
+    "renderType": null,
+    "flip_x": false,
+    "no_antialiasing": false,
+    "healthbar_colors": [
+        233,
+        39,
+        72
+    ],
+    "extraSheets": null,
+    "songSheets": null,
+    "gameOver": null,
+    "origin": [
+        0,
+        0
+    ],
+    "fileAssetOffset": [
+        0,
+        0
+    ],
+    "credits": null
+}

@@ -1,0 +1,95 @@
+{
+    "animations": [
+        {
+            "anim": "danceLeft",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "left",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "danceRight",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "right",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "sad",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "Lose",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        },
+        {
+            "anim": "cheer",
+            "fps": 24,
+            "holdFrame": 0,
+            "indices": [            ],
+            "loop": false,
+            "name": "win",
+            "offsets": [
+                0,
+                0
+            ],
+            "singAnim": null,
+            "song": null
+        }
+    ],
+    "image": "characters/splingos_3d",
+    "scale": 1,
+    "sing_duration": 6.1,
+    "healthicon": "splingos",
+    "note_style": null,
+    "position": [
+        -200,
+        -350
+    ],
+    "camera_position": [
+        0,
+        -100
+    ],
+    "cameraZoomMult": 1,
+    "swfRenderScale": null,
+    "renderType": null,
+    "flip_x": false,
+    "no_antialiasing": true,
+    "healthbar_colors": [
+        32,
+        180,
+        73
+    ],
+    "extraSheets": null,
+    "songSheets": null,
+    "gameOver": null,
+    "origin": [
+        3.5,
+        -36.998240740471
+    ],
+    "fileAssetOffset": [
+        150,
+        0
+    ],
+    "credits": null
+}

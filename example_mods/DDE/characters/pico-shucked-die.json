@@ -1,0 +1,67 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "death",
+			"loop": false,
+			"name": "pico dies",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "pico loop",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "pico confirm",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"image": "characters/shucked/pico-death",
+	"position": [
+		40,
+		-130
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		105,
+		235,
+		245
+	],
+	"origin": [
+		692.5,
+		400
+	],
+	"camera_position": [
+		-690,
+		280
+	],
+	"sing_duration": 4,
+	"scale": -1
+}

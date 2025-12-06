@@ -1,0 +1,161 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				13,
+				41
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "HEY"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-50,
+				31
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "singRIGHT"
+		},
+		{
+			"offsets": [
+				0,
+				92
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "singUP"
+		},
+		{
+			"offsets": [
+				17,
+				-21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "singDOWN"
+		},
+		{
+			"offsets": [
+				26,
+				13
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "singLEFT"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				31
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "msingRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				26,
+				13
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "msingLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				-22
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "msingDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				92
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "msingUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				53
+			],
+			"anim": "huh",
+			"fps": 24,
+			"name": "wuh",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				142,
+				858
+			],
+			"anim": "stage",
+			"fps": 24,
+			"name": "backonstage",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "crud_bf",
+	"position": [
+		0,
+		0
+	],
+	"note_style": "crudNOTE_assets",
+	"renderType": "swf",
+	"swfRenderScale": 0.5,
+	"camera_zoom_multiplier": 1,
+	"healthicon": "bf-crud-pixel",
+	"flip_x": true,
+	"healthbar_colors": [
+		105,
+		235,
+		245
+	],
+	"camera_position": [
+		-50,
+		225
+	],
+	"sing_duration": 6,
+	"scale": 1,
+	"gameOver": "bf",
+	"credits": "pointyyesm"
+}

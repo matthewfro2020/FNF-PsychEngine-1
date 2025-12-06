@@ -1,0 +1,90 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				679,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				192,
+				-200
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "left",
+			"song": null
+		},
+		{
+			"offsets": [
+				70,
+				-177
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "down",
+			"song": null
+		},
+		{
+			"offsets": [
+				90,
+				-140
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "right",
+			"song": null
+		},
+		{
+			"offsets": [
+				170,
+				50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "up",
+			"song": null
+		}
+	],
+	"cameraZoomMult": null,
+	"no_antialiasing": false,
+	"gameOver": null,
+	"image": "characters/unstable-ohungis/ohungicogset2",
+	"position": [
+		-60,
+		-259
+	],
+	"note_style": "",
+	"renderType": null,
+	"healthicon": "ohungistartled",
+	"extraSheets": null,
+	"swfRenderScale": null,
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		171,
+		36
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.8,
+	"songSheets": null
+}

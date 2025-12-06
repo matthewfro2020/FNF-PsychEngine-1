@@ -1,0 +1,94 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-2,
+				10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up",
+			"holdFrame": 2
+		},
+		{
+			"offsets": [
+				-5,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down",
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				-4,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right",
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left",
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				30,
+				10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "GOD",
+			"indices": [],
+			"name": "DAYUUUUUMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "characters/tango",
+	"position": [
+		-427,
+		-658
+	],
+	"healthicon": "tango",
+	"flip_x": false,
+	"healthbar_colors": [
+		67,
+		163,
+		245
+	],
+	"camera_position": [
+		90,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

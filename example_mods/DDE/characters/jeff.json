@@ -1,0 +1,200 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": true,
+			"name": "jeff_idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				227,
+				29
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left",
+			"song": null
+		},
+		{
+			"offsets": [
+				9,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down",
+			"song": null
+		},
+		{
+			"offsets": [
+				170,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up",
+			"song": null
+		},
+		{
+			"offsets": [
+				38,
+				11
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right",
+			"song": null
+		},
+		{
+			"offsets": [
+				36,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "thatsit",
+			"loop": false,
+			"name": "thatsit",
+			"song": null
+		},
+		{
+			"offsets": [
+				130,
+				30
+			],
+			"indices": [],
+			"fps": 23,
+			"singAnim": null,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "sleft",
+			"song": null
+		},
+		{
+			"offsets": [
+				19,
+				-100
+			],
+			"indices": [],
+			"fps": 22,
+			"singAnim": null,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "sdown",
+			"song": null
+		},
+		{
+			"offsets": [
+				170,
+				30
+			],
+			"indices": [],
+			"fps": 22,
+			"singAnim": null,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "sup",
+			"song": null
+		},
+		{
+			"offsets": [
+				10,
+				10
+			],
+			"indices": [],
+			"fps": 22,
+			"singAnim": null,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "sright",
+			"song": null
+		},
+		{
+			"offsets": [
+				4,
+				41
+			],
+			"indices": [],
+			"fps": 22,
+			"singAnim": null,
+			"anim": "fyou",
+			"loop": false,
+			"name": "fackYou",
+			"song": null
+		},
+		{
+			"offsets": [
+				235,
+				265
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "fuckinliar",
+			"loop": false,
+			"name": "fuckinLiar",
+			"song": null
+		},
+		{
+			"offsets": [
+				105,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "blast",
+			"loop": true,
+			"name": "blast",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "jeff",
+	"position": [
+		12,
+		2
+	],
+	"note_style": "crudNOTE_assets",
+	"renderType": "swf",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "jeff-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		197,
+		63
+	],
+	"origin": [
+		0,
+		0
+	],
+	"camera_position": [
+		110,
+		255
+	],
+	"sing_duration": 4,
+	"scale": 4
+}

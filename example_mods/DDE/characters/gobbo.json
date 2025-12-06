@@ -1,0 +1,96 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "yipy",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "ypyy2",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "sad",
+			"loop": false,
+			"name": "sad",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "cheer",
+			"loop": false,
+			"name": "cheer",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				8,
+				8,
+				8,
+				8
+			],
+			"fps": 24,
+			"anim": "stand",
+			"loop": false,
+			"name": "ypyy2"
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"image": "characters/gobbo",
+	"position": [
+		335,
+		120
+	],
+	"healthicon": "gobbo",
+	"flip_x": false,
+	"healthbar_colors": [
+		120,
+		165,
+		255
+	],
+	"origin": [
+		40,
+		99.5
+	],
+	"camera_position": [
+		-110,
+		200
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

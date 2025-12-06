@@ -1,0 +1,330 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				-55,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "singRIGHT",
+			"song": null
+		},
+		{
+			"offsets": [
+				-29,
+				49
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "singUP",
+			"song": null
+		},
+		{
+			"offsets": [
+				-10,
+				-35
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "singDOWN",
+			"song": null
+		},
+		{
+			"offsets": [
+				26,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "singLEFT",
+			"song": null
+		},
+		{
+			"offsets": [
+				-54,
+				12
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "msingRIGHT",
+			"song": null
+		},
+		{
+			"offsets": [
+				-11,
+				-11
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "msingDOWN",
+			"song": null
+		},
+		{
+			"offsets": [
+				-31,
+				47
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "msingUP",
+			"song": null
+		},
+		{
+			"offsets": [
+				28,
+				11
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "msingLEFT",
+			"song": null
+		},
+		{
+			"offsets": [
+				87,
+				34
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "death",
+			"loop": false,
+			"name": "BF dies",
+			"song": null
+		},
+		{
+			"offsets": [
+				-23,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "deathLoop",
+			"loop": false,
+			"name": "BF Dead Loop",
+			"song": null
+		},
+		{
+			"offsets": [
+				-23,
+				11
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "BF Dead confirm",
+			"song": null
+		},
+		{
+			"offsets": [
+				-12,
+				7
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "transitiontothinking",
+			"loop": false,
+			"name": "transitiontothinking",
+			"song": "Format"
+		},
+		{
+			"offsets": [
+				-19,
+				7
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "thinking",
+			"loop": true,
+			"name": "thinking",
+			"song": "Format"
+		},
+		{
+			"offsets": [
+				-9,
+				-5
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": true,
+			"anim": "answerwrong",
+			"loop": false,
+			"name": "answerwrong",
+			"song": "Format"
+		},
+		{
+			"offsets": [
+				-8,
+				-5
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": true,
+			"anim": "answercorrect",
+			"loop": false,
+			"name": "answercorrect",
+			"song": "Format"
+		},
+		{
+			"offsets": [
+				-23,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "confusedformat",
+			"loop": false,
+			"name": "boyfriend0",
+			"song": "Format"
+		},
+		{
+			"offsets": [
+				-12,
+				9
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "transitiontothinking_cuble",
+			"loop": false,
+			"name": "cubletransitiontothinking",
+			"song": "Splingo Groinglo Jam"
+		},
+		{
+			"offsets": [
+				-14,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "transitiontothinking_cublefast",
+			"loop": false,
+			"name": "cublefasttransitiontothinking",
+			"song": "Splingo Groinglo Jam"
+		},
+		{
+			"offsets": [
+				-22,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "thinking_cuble",
+			"loop": true,
+			"name": "cublethinking",
+			"song": "Splingo Groinglo Jam"
+		},
+		{
+			"offsets": [
+				-12,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": true,
+			"anim": "answermeh",
+			"loop": false,
+			"name": "answermeh",
+			"song": "Splingo Groinglo Jam"
+		},
+		{
+            "offsets": [
+                -10,
+                1
+            ],
+			"indices": [],
+			"fps": 24,
+			"singAnim": true,
+			"anim": "what",
+			"loop": false,
+			"name": "what",
+			"song": "Backstage"
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"gameOver": null,
+	"image": "characters/BOYFRIEND",
+	"position": [
+		0,
+		0
+	],
+	"note_style": "",
+	"renderType": null,
+	"healthicon": "bf",
+	"extraSheets": [
+		"characters/BOYFRIEND_DEAD"
+	],
+	"swfRenderScale": null,
+	"flip_x": true,
+	"healthbar_colors": [
+		105,
+		235,
+		245
+	],
+	"camera_position": [
+		50,
+		-40
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"songSheets": {
+		"Format": [
+			"characters/format/BOYFRIEND_math",
+			"characters/format/boyfriendconfused"
+		],
+		"Splingo Groinglo Jam": [
+			"characters/sgj/BOYFRIEND_math"
+		],
+		"Backstage": [
+			"characters/backstage/bfsurprisebackstage"
+		]
+	},
+	"credits": "pointyyesm"
+}

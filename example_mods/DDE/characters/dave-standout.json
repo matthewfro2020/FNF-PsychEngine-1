@@ -1,0 +1,68 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": false,
+			"name": "standout/davestandout idle",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "sad",
+			"loop": false,
+			"name": "standout/davestandout nervous",
+			"song": null
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "cheer",
+			"loop": false,
+			"name": "standout/davestandout hey",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"image": "characters/dave_standout",
+	"position": [
+		75,
+		-194
+	],
+	"healthicon": "dave",
+	"flip_x": false,
+	"healthbar_colors": [
+		56,
+		97,
+		237
+	],
+	"origin": [
+		102.5,
+		337.5
+	],
+	"camera_position": [
+		-30,
+		260
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"fileAssetOffset": [5, 25]
+}

@@ -1,0 +1,75 @@
+// if i have to fix this stupid ass script one more time ill kill the mod
+
+var bounds:FlxObject;
+var clicked:Bool;
+
+// partner select code
+function partnerSelectCreate() {
+	// custom bounds since graphic bounds include blank space
+	bounds = new FlxObject(character.x + 100, character.y + 75, character.width - 100, character.height - 50);
+	game.subState.add(bounds);
+	FlxG.mouse.visible = true; // have mouse visible only for standout
+}
+
+function update(elapsed:Float) {
+	// bf was clicked
+	if (!clicked && inPartnerSelect && FlxG.mouse.overlaps(bounds) && FlxG.mouse.justPressed) {
+		clicked = true;
+		trace('click do stuff');
+		FlxG.save.data.foundPeriodicBf = true;
+		FlxG.save.flush();
+		var lol = new FlxSprite().makeGraphic(1, 1);
+		lol.scale.set(FlxG.width, FlxG.height);
+		lol.updateHitbox();
+		character.color = FlxColor.BLACK;
+		if (ClientPrefs.flashing) 
+			game.subState.insert(game.subState.members.indexOf(character), lol);
+		var sound = FlxG.sound.play(Paths.sound('fnf_loss_sfx'));
+		sound.endTime = 900; // dont include mic drop part
+
+		trace('did that');
+
+		game.subState.cantSelect = true;
+		timer(1 / 24, _ -> {
+			trace('ok');
+			game.subState.cantSelect = false;
+			lol.destroy();
+			character.color = FlxColor.WHITE;
+			game.subState.reloadPartner('bf-periodic');
+			game.subState._formIndex = 1;
+			
+			// make little impact
+			var impact = new FlxSprite(FlxG.mouse.viewX, FlxG.mouse.viewY);
+			impact.frames = Paths.getFrames('impact');
+			impact.animation.addByPrefix('blam', 'blam', 24, false);
+			impact.animation.play('blam');
+			impact.animation.onFinish.add(_ -> game.pendingDestroy.push(impact));
+			impact.x -= impact.width * .5;
+			impact.y -= impact.height * .5;
+	
+			// new var easy way to check if characters been changed before shaking completed
+			var blud = game.subState.partner;
+			game.subState.insert(999, impact); // wow thanks
+			trace('ok ok');
+			timer(1 / 24, t -> {
+				trace('yeah');
+				if (blud.exists) {
+					blud.updateHitbox();
+					for (ofs in blud.animOffsets)
+						ofs.set(blud.offset.x, blud.offset.y);
+					blud.offset.x += FlxG.random.float(-3, 3);
+					blud.offset.y += FlxG.random.float(-3, 3);
+				} else {
+					t.cancel();
+					impact.destroy();
+				}
+			}, 6);
+		});
+	}
+}
+
+function partnerSelectClose() {
+	bounds.destroy();
+	game.subState.remove(bounds);
+	FlxG.mouse.visible = false;
+}

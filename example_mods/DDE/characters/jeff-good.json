@@ -1,0 +1,109 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": true,
+			"name": "niceidle",
+			"song": null
+		},
+		{
+			"offsets": [
+				10,
+				15
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "niceleft",
+			"song": null
+		},
+		{
+			"offsets": [
+				-42,
+				-18
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "nicedown",
+			"song": null
+		},
+		{
+			"offsets": [
+				-8,
+				42
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "niceup",
+			"song": null
+		},
+		{
+			"offsets": [
+				-22,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "niceright",
+			"song": null
+		},
+		{
+			"offsets": [
+				40,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "turninto",
+			"loop": false,
+			"name": "turninto",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "jeff",
+	"position": [
+		-70,
+		7
+	],
+	"note_style": "crudNOTE_assets",
+	"renderType": "swf",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "jeff-calm-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		197,
+		63
+	],
+	"origin": [
+		0,
+		0
+	],
+	"camera_position": [
+		180,
+		250
+	],
+	"sing_duration": 4,
+	"scale": 4
+}

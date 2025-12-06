@@ -1,0 +1,102 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				26
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "SplitIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				-19
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-23,
+				-8
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				-27
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "DubiousIdle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				178,
+				450
+			],
+			"anim": "nervous",
+			"fps": 24,
+			"name": "Nervous",
+			"indices": []
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "characters/cuble_gooble",
+	"renderType": "sparrow",
+	"position": [
+		-104,
+		-157
+	],
+	"healthicon": "cuble-gooble",
+	"flip_x": false,
+	"healthbar_colors": [
+		32,
+		180,
+		73
+	],
+	"camera_position": [
+		60,
+		-50
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -1,0 +1,148 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle",
+			"loop": false,
+			"name": "garyidle",
+			"song": null
+		},
+		{
+			"offsets": [
+				127,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "background_bop",
+			"song": null
+		},
+		{
+			"offsets": [
+				-1,
+				-39
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "garydown",
+			"song": null
+		},
+		{
+			"offsets": [
+				-15,
+				-21
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "garyright",
+			"song": null
+		},
+		{
+			"offsets": [
+				263,
+				32
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "garyleft",
+			"song": null
+		},
+		{
+			"offsets": [
+				110,
+				55
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "singUP",
+			"loop": false,
+			"name": "garyup",
+			"song": null
+		},
+		{
+			"offsets": [
+				540,
+				127
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "shutUp",
+			"loop": false,
+			"name": "SHADDUP",
+			"song": null
+		},
+		{
+			"offsets": [
+				60,
+				140
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "uh oh",
+			"loop": false,
+			"name": "UH_OH",
+			"song": null
+		},
+		{
+			"offsets": [
+				190,
+				917
+			],
+			"indices": [],
+			"fps": 24,
+			"singAnim": null,
+			"anim": "stage",
+			"loop": false,
+			"name": "garybackonstage",
+			"song": null
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": true,
+	"image": "gary",
+	"position": [
+		0,
+		-260
+	],
+	"note_style": "crudNOTE_assets",
+	"renderType": "swf",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "gary-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		193,
+		174
+	],
+	"origin": [
+		0,
+		0
+	],
+	"camera_position": [
+		150,
+		450
+	],
+	"sing_duration": 4,
+	"scale": 4.5
+}

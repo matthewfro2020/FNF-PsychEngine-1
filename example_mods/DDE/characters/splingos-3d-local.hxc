@@ -1,0 +1,5 @@
+import Math;
+
+function update(elapsed) {
+	character.y += (1.6 * Math.sin((FlxG.game.ticks / 1000) * 2) * (60 / FlxG.updateFramerate)) * character.scale.y * (inPartnerSelect ? .25 : 1.0);
+}

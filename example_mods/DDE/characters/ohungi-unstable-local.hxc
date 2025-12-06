@@ -1,0 +1,59 @@
+import flixel.math.FlxMath;
+
+var c = new AnimController(24);
+
+var FAST = 0;
+var SLOW = 1;
+
+var frames = [0, 0];
+var sym = [];
+var otherfast;
+
+
+var isFast = false;
+
+function create() {
+	c.callback.add(ohungiCallback);
+	var dir = character.animateAtlas.anim.symbolDictionary;
+	sym[SLOW] = dir.get("pyramid slow");
+	sym[SLOW].forceFrame = true;
+	sym[FAST] = dir.get("Duplicate Items Folder/pyramid slow"); // bruh
+	otherfast = dir.get("pyramid fast");
+	sym[FAST].forceFrame = true;
+	otherfast.forceFrame = true;
+	character.onPlayAnim.add(animChange);
+}
+function update(e:Float) {
+	c.update(e);
+}
+function ohungiCallback(frame) {
+	frames[SLOW] = wrap(++frames[SLOW], sym[SLOW]);
+	frames[FAST] = wrap(++frames[FAST], sym[FAST]);
+	updateFrames();
+}
+
+function wrap(v, s) {
+	return FlxMath.wrap(v, 0, s.length - 1);
+}
+
+var lastFast = false;
+function animChange(anim) {
+	isFast = (anim == 'idle' || StringTools.endsWith(anim, '-alt'));
+	if (lastFast != isFast) {
+		if (isFast)
+			frames[FAST] = Math.floor(frames[SLOW] / 2);
+		else
+			frames[SLOW] = frames[FAST] * 2;
+	}
+	lastFast = isFast;
+	c.exactFrame = Math.floor(c.exactFrame);
+	updateFrames();
+}
+function updateFrames() {
+	sym[SLOW].forcedFrame = frames[SLOW];
+	otherfast.forcedFrame = wrap(sym[FAST].forcedFrame = frames[FAST], otherfast);
+}
+
+function destroy() {
+	c.destroy();
+}

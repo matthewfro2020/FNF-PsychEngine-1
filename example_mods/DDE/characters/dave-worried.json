@@ -1,0 +1,165 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				48,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "msingLEFT",
+			"song": null
+		},
+		{
+			"offsets": [
+				23,
+				41
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "msingRIGHT",
+			"song": null
+		},
+		{
+			"offsets": [
+				-2,
+				-24
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "msingDOWN",
+			"song": null
+		},
+		{
+			"offsets": [
+				-2,
+				40
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "msingUP",
+			"song": null
+		},
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "worriedidle",
+			"song": null
+		},
+		{
+			"offsets": [
+				47,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "worriedleft",
+			"song": null
+		},
+		{
+			"offsets": [
+				-7,
+				-26
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "worrieddown",
+			"song": null,
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				-26,
+				39
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "worriedup",
+			"song": null
+		},
+		{
+			"offsets": [
+				85,
+				41
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "worriedright",
+			"song": null,
+			"holdFrame": 1
+		},
+		{
+			"offsets": [
+				109,
+				20
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "from3D",
+			"loop": false,
+			"name": "cutscene0",
+			"song": "Periodic"
+		},
+		{
+			"offsets": [
+				104,
+				35
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "to3D",
+			"loop": false,
+			"name": "cutscene2",
+			"song": "Periodic"
+		}
+	],
+	"cameraZoomMult": 1,
+	"no_antialiasing": false,
+	"gameOver": "dave-3D",
+	"image": "characters/dave_worried",
+	"position": [
+		-14,
+		-187
+	],
+	"note_style": "",
+	"renderType": "sparrow",
+	"healthicon": "dave",
+	"extraSheets": null,
+	"swfRenderScale": null,
+	"flip_x": true,
+	"healthbar_colors": [56, 97, 237],
+	"camera_position": [
+		120,
+		-20
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"songSheets": {
+		"Periodic": [
+			"characters/davefreakout",
+			"characters/davefreakout2"
+		]
+	}
+}

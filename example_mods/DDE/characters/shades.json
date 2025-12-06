@@ -1,0 +1,67 @@
+{
+  "animations": [
+    {
+      "anim": "danceLeft",
+      "fps": 24,
+      "holdFrame": 0,
+      "indices": [],
+      "loop": false,
+      "name": "danceLeft",
+      "offsets": [0, 0],
+      "singAnim": null,
+      "song": null
+    },
+    {
+      "anim": "danceRight",
+      "fps": 24,
+      "holdFrame": 0,
+      "indices": [],
+      "loop": false,
+      "name": "danceRight",
+      "offsets": [0, 0],
+      "singAnim": null,
+      "song": null
+    },
+    {
+      "anim": "sad",
+      "fps": 24,
+      "holdFrame": 0,
+      "indices": [],
+      "loop": false,
+      "name": "miss",
+      "offsets": [0, 0],
+      "singAnim": null,
+      "song": null
+    },
+    {
+      "anim": "cheer",
+      "fps": 24,
+      "holdFrame": 0,
+      "indices": [],
+      "loop": false,
+      "name": "win ",
+      "offsets": [0, 0],
+      "singAnim": null,
+      "song": null
+    }
+  ],
+  "image": "characters/spork_partner",
+  "scale": 1.75,
+  "sing_duration": 6.1,
+  "healthicon": "shades",
+  "note_style": null,
+  "position": [0, -20],
+  "camera_position": [-200, -280],
+  "cameraZoomMult": 1,
+  "swfRenderScale": null,
+  "renderType": null,
+  "flip_x": false,
+  "no_antialiasing": true,
+  "healthbar_colors": [172, 51, 236],
+  "extraSheets": null,
+  "songSheets": null,
+  "gameOver": null,
+  "origin": [0, 0],
+  "fileAssetOffset": [-250, 0],
+  "credits": "Its... riko? Want to be friends? Brooo sorry I don't know haha what the fuck"
+}

@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				14,
+				21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "picoup0"
+		},
+		{
+			"offsets": [
+				13,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "picoup alt"
+		},
+		{
+			"offsets": [
+				5,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "picodown0"
+		},
+		{
+			"offsets": [
+				6,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "picodown alt"
+		},
+		{
+			"offsets": [
+				-17,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "picoright0"
+		},
+		{
+			"offsets": [
+				-16,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "picoright alt"
+		},
+		{
+			"offsets": [
+				9,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "picoleft0"
+		},
+		{
+			"offsets": [
+				9,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "picoleft alt"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "picoidle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/weekendpico",
+	"position": [
+		0,
+		0
+	],
+	"note_style": "",
+	"camera_zoom_multiplier": 1,
+	"healthicon": "pico",
+	"flip_x": false,
+	"healthbar_colors": [
+		84, 232, 86
+	],
+	"camera_position": [
+		30,
+		33
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
