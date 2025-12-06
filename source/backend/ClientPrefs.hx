@@ -130,12 +130,12 @@ class ClientPrefs {
 	public static function resetKeys(controller:Null<Bool> = null) //Null = both, False = Keyboard, True = Controller
 	{
 		if(controller != true)
-			for (key in cast(keyBinds.keys(), Iterable<String>))
+			for (key in keyBinds.keys())
 				if(defaultKeys.exists(key))
 					keyBinds.set(key, defaultKeys.get(key).copy());
 
 		if(controller != false)
-			for (button in cast(gamepadBinds.keys(), Iterable<String>))
+			for (button in gamepadBinds.keys())
 				if(defaultButtons.exists(button))
 					gamepadBinds.set(button, defaultButtons.get(button).copy());
 	}

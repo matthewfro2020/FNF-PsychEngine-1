@@ -19,6 +19,10 @@ import states.editors.content.PsychJsonPrinter;
 
 class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent
 {
+	var specialAnim:Bool = false;
+	var danceIdle:Bool = false;
+	var animation:FlxAnimationController;
+
     public var hasMissAnimations:Bool = false;
 
     public var idleSuffix:String = "";

@@ -180,7 +180,7 @@ class PsychJsonPrinter extends JsonPrinter
 				} else if (c == haxe.ds.StringMap) {
 					var v:haxe.ds.StringMap<Dynamic> = v;
 					var o = {};
-					for (k in cast(v.keys(), Iterable<String>))
+					for (k in v.keys())
 						Reflect.setField(o, k, v.get(k));
 					fieldsStringEx(o, Reflect.fields(o), true);
 				} else if (c == Date) {
