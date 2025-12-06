@@ -7,7 +7,7 @@ import haxe.Json;
 
 class AnimateCharacter extends FlxSprite
 {
-    public var frames:Array<BitmapData> = [];
+    public var bitmapFrames:Array<BitmapData> = [];   // renamed to avoid conflict
     public var animations:Map<String, Array<Int>> = new Map();
     public var animFPS:Map<String, Int> = new Map();
     public var animLoop:Map<String, Bool> = new Map();
@@ -30,40 +30,55 @@ class AnimateCharacter extends FlxSprite
     }
 
     // --------------------------------------------------------
-    // LOAD ANIMATION GROUPS FROM data.json
+    // LOAD ANIMATION GROUPS
     // --------------------------------------------------------
     function parseAnimationData()
     {
+        // animations
         if (reader.data.animations != null)
         {
-            for (name => list in reader.data.animations)
-                animations.set(name, list);
+            var animMap:Map<String, Dynamic> = cast reader.data.animations;
+            for (key in animMap.keys())
+            {
+                var list:Array<Int> = cast animMap.get(key);
+                animations.set(key, list);
+            }
         }
 
+        // fps
         if (reader.data.fps != null)
         {
-            for (name => fps in reader.data.fps)
-                animFPS.set(name, fps);
+            var fpsMap:Map<String, Dynamic> = cast reader.data.fps;
+            for (key in fpsMap.keys())
+            {
+                animFPS.set(key, cast fpsMap.get(key));
+            }
         }
 
+        // loops
         if (reader.data.loops != null)
         {
-            for (name => loop in reader.data.loops)
-                animLoop.set(name, loop);
+            var loopMap:Map<String, Dynamic> = cast reader.data.loops;
+            for (key in loopMap.keys())
+            {
+                animLoop.set(key, cast loopMap.get(key));
+            }
         }
     }
 
-
     // --------------------------------------------------------
-    // REBUILD FRAME BITMAPS
+    // BUILD FRAMES (BITMAPS)
     // --------------------------------------------------------
     function buildFrames()
     {
-        for (frame in reader.data.frames)
+        var framesList:Array<Dynamic> = cast reader.data.frames;
+
+        for (frame in framesList)
         {
             var canvas = new BitmapData(2000, 2000, true, 0);
 
-            for (layer in frame)
+            var layers:Array<Dynamic> = cast frame;
+            for (layer in layers)
             {
                 var symbol = layer.symbol + ".png";
                 var bytes = reader.getPNG(symbol);
@@ -81,10 +96,9 @@ class AnimateCharacter extends FlxSprite
                 canvas.draw(bmp, m);
             }
 
-            frames.push(canvas);
+            bitmapFrames.push(canvas);
         }
     }
-
 
     // --------------------------------------------------------
     // PLAY ANIMATION
@@ -93,7 +107,7 @@ class AnimateCharacter extends FlxSprite
     {
         if (!animations.exists(name))
         {
-            trace("Missing animation: " + name);
+            trace('Missing animation: $name');
             return;
         }
 
@@ -104,13 +118,13 @@ class AnimateCharacter extends FlxSprite
         updateBitmap();
     }
 
-
     // --------------------------------------------------------
-    // UPDATE FRAME
+    // UPDATE LOGIC
     // --------------------------------------------------------
     override function update(elapsed:Float)
     {
         var fps = animFPS.exists(curAnim) ? animFPS.get(curAnim) : 24;
+
         timer += elapsed;
 
         if (timer >= 1 / fps)
@@ -123,12 +137,12 @@ class AnimateCharacter extends FlxSprite
 
             if (curFrame >= group.length)
             {
-                if (animLoop.get(curAnim))
+                var loop = animLoop.exists(curAnim) ? animLoop.get(curAnim) : false;
+
+                if (loop)
                     curFrame = 0;
                 else
-                {
-                    curFrame = group.length - 1; // stay on last frame
-                }
+                    curFrame = group.length - 1;
             }
 
             updateBitmap();
@@ -137,18 +151,14 @@ class AnimateCharacter extends FlxSprite
         super.update(elapsed);
     }
 
-
-    // --------------------------------------------------------
-    // DRAW FRAME
-    // --------------------------------------------------------
     function updateBitmap()
     {
         var group = animations.get(curAnim);
         var frameIndex = group[curFrame];
 
-        if (frameIndex >= 0 && frameIndex < frames.length)
+        if (frameIndex >= 0 && frameIndex < bitmapFrames.length)
         {
-            pixels = frames[frameIndex];
+            pixels = bitmapFrames[frameIndex];
             dirty = true;
         }
     }
