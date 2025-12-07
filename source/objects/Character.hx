@@ -379,157 +379,7 @@ class Character extends FlxSprite
             }
         }
     }
-    // =============================================================
-    //   LOAD CHARACTER FILE (JSON)
-    // =============================================================
-    public function loadCharacterFile(json:Dynamic):Void
-    {
-        // Reset animate modes
-        isAnimateAtlas = false;
-        isAnimateFolder = false;
-        isAnimateZIP = false;
-        isAnimate = false;
 
-        // ------------------------------
-        //  ZIP-BASED ANIMATE LOADING
-        // ------------------------------
-        if (json.animateZip != null)
-        {
-            var zipPath = Paths.modFolders("animate/" + json.animateZip);
-
-            #if MODS_ALLOWED
-            if (FileSystem.exists(zipPath))
-            #else
-            if (false)
-            #end
-            {
-                isAnimateZIP = true;
-                isAnimate = true;
-
-                animateZIPChar = new AnimateCharacter(zipPath);
-                return; // STOP normal PNG or Atlas loading
-            }
-        }
-
-        // ------------------------------
-        //   DETECT ANIMATE ATLAS
-        // ------------------------------
-        #if flxanimate
-        var animPath = Paths.getPath("images/" + json.image + "/Animation.json", TEXT);
-
-        #if MODS_ALLOWED
-        var atlasExists = FileSystem.exists(animPath);
-        #else
-        var atlasExists = Assets.exists(animPath);
-        #end
-
-        if (atlasExists)
-        {
-            isAnimateAtlas = true;
-            isAnimate = true;
-
-            atlas = new PsychFlxAnimate();
-            try {
-                Paths.loadAnimateAtlas(atlas, json.image);
-            }
-            catch (e:Dynamic) {
-                FlxG.log.warn("[Character] Failed to load Animate atlas '" + json.image + "': " + e);
-                isAnimateAtlas = false;
-            }
-        }
-        #end
-
-
-        // ------------------------------
-        //   FALLBACK: NORMAL PNG MULTI-ATLAS
-        // ------------------------------
-        if (!isAnimateAtlas)
-        {
-            frames = Paths.getMultiAtlas(json.image.split(","));
-        }
-
-        // ------------------------------
-        //  BASIC JSON PARAMETERS
-        // ------------------------------
-        imageFile = json.image;
-        jsonScale = json.scale;
-
-        if (json.scale != 1)
-        {
-            scale.set(json.scale, json.scale);
-            updateHitbox();
-        }
-
-        positionArray = json.position;
-        cameraPosition = json.camera_position;
-        healthIcon = json.healthicon;
-        singDuration = json.sing_duration;
-
-        flipX = (json.flip_x != isPlayer); // Psych logic
-
-
-        // health bar colors
-        if (json.healthbar_colors != null && json.healthbar_colors.length >= 3)
-            healthColorArray = json.healthbar_colors;
-        else
-            healthColorArray = [161, 161, 161];
-
-
-        // vocals
-        vocalsFile = (json.vocals_file != null) ? json.vocals_file : "";
-
-        originalFlipX = (json.flip_x == true);
-        editorIsPlayer = json._editor_isPlayer;
-
-
-        // antialiasing
-        noAntialiasing = (json.no_antialiasing == true);
-        antialiasing = ClientPrefs.data.antialiasing ? !noAntialiasing : false;
-
-
-        // ------------------------------
-        //  LOAD ANIMATIONS LIST
-        // ------------------------------
-        animationsArray = json.animations;
-
-        if (animationsArray != null)
-        {
-            for (anim in animationsArray)
-            {
-                var id = anim.anim;
-                var name = anim.name;
-                var fps = anim.fps;
-                var loop = anim.loop;
-                var inds = anim.indices;
-
-                // PNG/MultiAtlas mode
-                if (!isAnimateAtlas)
-                {
-                    if (inds != null && inds.length > 0)
-                        animation.addByIndices(id, name, inds, "", fps, loop);
-                    else
-                        animation.addByPrefix(id, name, fps, loop);
-                }
-
-                // Animate Atlas mode
-                #if flxanimate
-                if (isAnimateAtlas && atlas != null)
-                {
-                    if (inds != null && inds.length > 0)
-                        atlas.anim.addBySymbolIndices(id, name, inds, fps, loop);
-                    else
-                        atlas.anim.addBySymbol(id, name, fps, loop);
-                }
-                #end
-
-                // offset
-                if (anim.offsets != null && anim.offsets.length >= 2)
-                    addOffset(id, anim.offsets[0], anim.offsets[1]);
-                else
-                    addOffset(id, 0, 0);
-            }
-        }
-    }
     // =============================================================
     //  ANIMATE FOLDER LOADING (AnimateFolderReader)
     // =============================================================
@@ -600,16 +450,6 @@ class Character extends FlxSprite
             if (Reflect.hasField(animateLibrary, "symbolDictionary"))
             {
                 var dict:Dynamic = Reflect.field(animateLibrary, "symbolDictionary");
-
-                if (dict != null && Reflect.hasField(dict, "keys"))
-                {
-                    var keys = dict.keys();
-                    for (name in keys)
-                    {
-                        if (name != null)
-                            collected.push(name);
-                    }
-                }
             }
         }
 
@@ -633,38 +473,6 @@ class Character extends FlxSprite
             }
         }
     }
-
-
-    // =============================================================
-    //  DANCE + IDLE LOGIC
-    // =============================================================
-    public function recalculateDanceIdle():Void
-    {
-        var leftExists  = hasAnimation("danceLeft"  + idleSuffix);
-        var rightExists = hasAnimation("danceRight" + idleSuffix);
-
-        danceIdle = (leftExists && rightExists);
-
-        // Default for characters with no dance anims = slow idle
-        danceEveryNumBeats = danceIdle ? 1 : 2;
-    }
-
-    public function dance():Void
-    {
-        if (debugMode || skipDance || specialAnim)
-            return;
-
-        if (danceIdle)
-        {
-            danced = !danced;
-            playAnim(danced ? "danceRight" + idleSuffix : "danceLeft" + idleSuffix);
-        }
-        else if (hasAnimation("idle" + idleSuffix))
-        {
-            playAnim("idle" + idleSuffix);
-        }
-    }
-
 
     // =============================================================
     //   HELPER FUNCTIONS USED BY PlayState + Editor
@@ -696,11 +504,6 @@ class Character extends FlxSprite
     inline public function isAnimationNull():Bool
     {
         return animation.curAnim == null;
-    }
-
-    inline public function isAnimationFinished():Bool
-    {
-        return animation.curAnim != null && animation.curAnim.finished;
     }
 
     public function finishAnimation():Void
@@ -844,13 +647,6 @@ class Character extends FlxSprite
         return animation.curAnim.finished;
     }
 
-    public inline function getAnimationName():String
-    {
-        return (animation != null && animation.curAnim != null)
-            ? animation.curAnim.name
-            : "";
-    }
-
     // =============================================================
     // RE-CENTER & MIDPOINT HELPERS (Psych-Compatible)
     // =============================================================
@@ -864,33 +660,6 @@ class Character extends FlxSprite
     {
         return y + (height * 0.5);
     }
-
-    public inline function getScreenPosition(?pt:FlxPoint):FlxPoint
-    {
-        pt = (pt == null ? FlxPoint.get() : pt);
-        pt.set(getMidpointX(), getMidpointY());
-        return pt;
-    }
-
-    // =============================================================
-    // FINAL DANCE LOGIC
-    // =============================================================
-    
-    public function recalculateDanceIdle():Void
-    {
-        // If character has BOTH danceLeft/danceRight → use danceIdle mode.
-        if (hasAnimation("danceLeft") || hasAnimation("danceRight"))
-        {
-            danceIdle = true;
-        }
-        else
-        {
-            danceIdle = false;
-        }
-
-        danced = false;
-    }
-
 
     // Compatibility helper used by PlayState and editor
     public inline function resetDance():Void
@@ -908,12 +677,6 @@ class Character extends FlxSprite
     // =============================================================
     // EDITOR-SAFE ANIMATION ACCESSORS
     // =============================================================
-
-    public inline function isAnimationNull():Bool
-    {
-        return (animation == null || animation.curAnim == null);
-    }
-
     public var animPaused(get, set):Bool;
 
     private function get_animPaused():Bool
