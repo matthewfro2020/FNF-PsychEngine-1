@@ -27,7 +27,8 @@ class PhillyBlazin extends BaseStage
 
 	override function create()
 	{
-		FlxTransitionableState.skipNextTransOut = true; //skip the original transition fade
+		FlxTransitionableState.skipNextTransOut = true;
+
 		function setupScale(spr:BGSprite)
 		{
 			spr.scale.set(1.75, 1.75);
@@ -37,36 +38,40 @@ class PhillyBlazin extends BaseStage
 		if(!ClientPrefs.data.lowQuality)
 		{
 			var skyImage = Paths.image('phillyBlazin/skyBlur');
-			scrollingSky = new FlxTiledSprite(skyImage, Std.int(skyImage.width * 1.1) + 475, Std.int(skyImage.height / 1.1), true, false);
+			scrollingSky = new FlxTiledSprite(skyImage,
+				Std.int(skyImage.width * 1.1) + 475,
+				Std.int(skyImage.height / 1.1),
+				true, false);
+
 			scrollingSky.antialiasing = ClientPrefs.data.antialiasing;
 			scrollingSky.setPosition(-500, -120);
 			scrollingSky.scrollFactor.set();
 			add(scrollingSky);
 
-			skyAdditive = new BGSprite('phillyBlazin/skyBlur', -600, -175, 0.0, 0.0);
+			skyAdditive = new BGSprite('phillyBlazin/skyBlur', -600, -175, 0, 0);
 			setupScale(skyAdditive);
 			skyAdditive.visible = false;
 			add(skyAdditive);
 			
-			lightning = new BGSprite('phillyBlazin/lightning', -50, -300, 0.0, 0.0, ['lightning0'], false);
+			lightning = new BGSprite('phillyBlazin/lightning', -50, -300, 0, 0, ['lightning0'], false);
 			setupScale(lightning);
 			lightning.visible = false;
 			add(lightning);
 		}
 		
-		var phillyForegroundCity:BGSprite = new BGSprite('phillyBlazin/streetBlur', -600, -175, 0.0, 0.0);
+		var phillyForegroundCity = new BGSprite('phillyBlazin/streetBlur', -600, -175, 0, 0);
 		setupScale(phillyForegroundCity);
 		add(phillyForegroundCity);
 		
 		if(!ClientPrefs.data.lowQuality)
 		{
-			foregroundMultiply = new BGSprite('phillyBlazin/streetBlur', -600, -175, 0.0, 0.0);
+			foregroundMultiply = new BGSprite('phillyBlazin/streetBlur', -600, -175, 0, 0);
 			setupScale(foregroundMultiply);
 			foregroundMultiply.blend = MULTIPLY;
 			foregroundMultiply.visible = false;
 			add(foregroundMultiply);
 			
-			additionalLighten = new FlxSprite(-600, -175).makeGraphic(1, 1, FlxColor.WHITE);
+			additionalLighten = new FlxSprite(-600, -175).makeGraphic(1,1,FlxColor.WHITE);
 			additionalLighten.scrollFactor.set();
 			additionalLighten.scale.set(2500, 2500);
 			additionalLighten.updateHitbox();
@@ -75,6 +80,9 @@ class PhillyBlazin extends BaseStage
 			add(additionalLighten);
 		}
 
+		// ========================================================
+		// ABot Speaker Visualizer (volume-based)
+		// ========================================================
 		abot = new ABotSpeaker(gfGroup.x, gfGroup.y + 550);
 		add(abot);
 		
@@ -93,19 +101,18 @@ class PhillyBlazin extends BaseStage
 		
 		if (isStoryMode)
 		{
-			switch (songName)
+			if (songName == 'blazin')
 			{
-				case 'blazin':
-					setEndCallback(function()
-					{
-						game.endingSong = true;
-						inCutscene = true;
-						canPause = false;
-						FlxTransitionableState.skipNextTransIn = true;
-						FlxG.camera.visible = false;
-						camHUD.visible = false;
-						game.startVideo('blazinCutscene');
-					});
+				setEndCallback(function()
+				{
+					game.endingSong = true;
+					inCutscene = true;
+					canPause = false;
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxG.camera.visible = false;
+					camHUD.visible = false;
+					game.startVideo('blazinCutscene');
+				});
 			}
 		}
 	}
@@ -116,40 +123,31 @@ class PhillyBlazin extends BaseStage
 		FlxG.camera.fade(FlxColor.BLACK, 1.5, true, null, true);
 
 		for (character in boyfriendGroup.members)
-		{
-			if(character == null) continue;
-			character.color = 0xFFDEDEDE;
-		}
+			if(character != null) character.color = 0xFFDEDEDE;
+
 		for (character in dadGroup.members)
-		{
-			if(character == null) continue;
-			character.color = 0xFFDEDEDE;
-		}
+			if(character != null) character.color = 0xFFDEDEDE;
+
 		for (character in gfGroup.members)
-		{
-			if(character == null) continue;
-			character.color = 0xFF888888;
-		}
+			if(character != null) character.color = 0xFF888888;
+
 		abot.color = 0xFF888888;
 
 		var unspawnNotes:Array<Note> = cast game.unspawnNotes;
+		
 		for (note in unspawnNotes)
 		{
 			if(note == null) continue;
-
-			//override animations for note types
 			note.noAnimation = true;
 			note.noMissAnimation = true;
 		}
+
 		remove(dadGroup, true);
 		addBehindBF(dadGroup);
 	}
 
-	override function beatHit()
-	{
-		//if(curBeat % 2 == 0) abot.beatHit();
-	}
-	
+	override function beatHit() {}
+
 	override function startSong()
 	{
 		abot.snd = FlxG.sound.music;
@@ -166,14 +164,29 @@ class PhillyBlazin extends BaseStage
 	function precache()
 	{
 		for (i in 1...4)
-		{
 			Paths.sound('lightning/Lightning$i');
-		}
 	}
 
 	override function update(elapsed:Float)
 	{
-		if(scrollingSky != null) scrollingSky.scrollX -= elapsed * 35;
+		if(scrollingSky != null)
+			scrollingSky.scrollX -= elapsed * 35;
+
+		// ========================================================
+		// OPTIONAL: EXTRA FX BASED ON ABot VOLUME
+		// ========================================================
+		if (abot != null && abot.snd != null)
+		{
+			var vol = abot.smoothAmp;
+
+			// sky pulse
+			if (skyAdditive != null)
+				skyAdditive.alpha = 0.4 * vol;
+
+			// rain intensity reacts to volume
+			if (rainShader != null)
+				rainShader.intensity = 0.4 + (vol * 0.3);
+		}
 
 		if(rainShader != null)
 		{
@@ -189,17 +202,17 @@ class PhillyBlazin extends BaseStage
 			lightningTimer = FlxG.random.float(7, 15);
 		}
 	}
-	
+
 	function applyLightning():Void
 	{
 		if(ClientPrefs.data.lowQuality || game.endingSong) return;
 
-		final LIGHTNING_FULL_DURATION = 1.5;
-		final LIGHTNING_FADE_DURATION = 0.3;
+		final FULL = 1.5;
+		final SHORT = 0.3;
 
 		skyAdditive.visible = true;
 		skyAdditive.alpha = 0.7;
-		FlxTween.tween(skyAdditive, {alpha: 0.0}, LIGHTNING_FULL_DURATION, {onComplete: function(_)
+		FlxTween.tween(skyAdditive, {alpha: 0}, FULL, {onComplete: (_) ->
 		{
 			skyAdditive.visible = false;
 			lightning.visible = false;
@@ -209,11 +222,11 @@ class PhillyBlazin extends BaseStage
 
 		foregroundMultiply.visible = true;
 		foregroundMultiply.alpha = 0.64;
-		FlxTween.tween(foregroundMultiply, {alpha: 0.0}, LIGHTNING_FULL_DURATION);
+		FlxTween.tween(foregroundMultiply, {alpha: 0}, FULL);
 
 		additionalLighten.visible = true;
 		additionalLighten.alpha = 0.3;
-		FlxTween.tween(additionalLighten, {alpha: 0.0}, LIGHTNING_FADE_DURATION);
+		FlxTween.tween(additionalLighten, {alpha: 0}, SHORT);
 
 		lightning.visible = true;
 		lightning.animation.play('lightning0', true);
@@ -223,44 +236,39 @@ class PhillyBlazin extends BaseStage
 		else
 			lightning.x = FlxG.random.int(780, 900);
 
-		// Darken characters
-		FlxTween.color(boyfriend, LIGHTNING_FADE_DURATION, 0xFF606060, 0xFFDEDEDE);
-		FlxTween.color(dad, LIGHTNING_FADE_DURATION, 0xFF606060, 0xFFDEDEDE);
-		FlxTween.color(gf, LIGHTNING_FADE_DURATION, 0xFF606060, 0xFF888888);
-		FlxTween.color(abot, LIGHTNING_FADE_DURATION, 0xFF606060, 0xFF888888);
+		FlxTween.color(boyfriend, SHORT, 0xFF606060, 0xFFDEDEDE);
+		FlxTween.color(dad, SHORT, 0xFF606060, 0xFFDEDEDE);
+		FlxTween.color(gf, SHORT, 0xFF606060, 0xFF888888);
+		FlxTween.color(abot, SHORT, 0xFF606060, 0xFF888888);
 
-		// Sound
 		FlxG.sound.play(Paths.soundRandom('lightning/Lightning', 1, 3));
 	}
 
-	// Note functions
+	// FIGHTERS (unchanged handling)
 	var picoFight:PicoBlazinHandler = new PicoBlazinHandler();
 	var darnellFight:DarnellBlazinHandler = new DarnellBlazinHandler();
+
 	override function goodNoteHit(note:Note)
 	{
-		//trace('hit note! ${note.noteType}');
 		rainTimeScale += 0.7;
 		picoFight.noteHit(note);
 		darnellFight.noteHit(note);
 	}
+
 	override function noteMiss(note:Note)
 	{
-		//trace('missed note!');
 		picoFight.noteMiss(note);
 		darnellFight.noteMiss(note);
 	}
 
 	override function noteMissPress(direction:Int)
 	{
-		//trace('misinput!');
 		picoFight.noteMissPress(direction);
 		darnellFight.noteMissPress(direction);
 	}
 
-	// Darnell Note functions
 	override function opponentNoteHit(note:Note)
 	{
-		//trace('opponent hit!');
 		picoFight.noteMiss(note);
 		darnellFight.noteMiss(note);
 	}
