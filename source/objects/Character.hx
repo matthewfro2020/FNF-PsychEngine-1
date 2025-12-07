@@ -234,23 +234,105 @@ class Character extends FlxSprite {
 				}
 				#end
 
-				if (anim.offsets != null && anim.offsets.length > 1)
-					addOffset(anim.anim, anim.offsets[0], anim.offsets[1]);
-				else
-					addOffset(anim.anim, 0, 0);
-			}
+			if (anim.offsets != null && anim.offsets.length > 1)
+				addOffset(anim.anim, anim.offsets[0], anim.offsets[1]);
+			else
+				addOffset(anim.anim, 0, 0);
 		}
-		#if flxanimate
-		if (isAnimateAtlas) {
-			copyAtlasValues();
-		}
-		#end
-		// trace('Loaded file to character ' + curCharacter);
-	}
 	}
 
-	override function update(elapsed:Float) {
-    if (isAnimateAtlas) atlas.update(elapsed);
+	// ----------------------------------------------------
+	// ANIMATE FOLDER LOADING
+	// ----------------------------------------------------
+	public function tryLoadAnimateFolder(character:String):Bool {
+		var base = Paths.modFolders("characters") + "animate/" + character;
+		var data = base + "/data.json";
+		var lib = base + "/library.json";
+		var sym = base + "/symbols";
+
+		if (!FileSystem.exists(data) || !FileSystem.exists(lib) || !FileSystem.exists(sym))
+			return false;
+
+		var reader = new AnimateFolderReader(base);
+		if (!reader.valid)
+			return false;
+
+		isAnimateFolder = true;
+		isAnimate = true; // Your requested fix
+
+		animateData = reader.dataJson;
+		animateLibrary = reader.libJson;
+		animateAtlas = reader.toAtlas();
+
+		if (animateAtlas != null)
+			frames = animateAtlas;
+
+		return true;
+	}
+
+	// ============================================================
+	// AUTO-REGISTER ANIMATE SYMBOLS AS CHARACTER ANIMATIONS
+	// ============================================================
+	public function registerAnimateAnimations():Void {
+		if (!isAnimateFolder && !isAnimateAtlas)
+			return;
+
+		#if flxanimate
+		// Animate Atlas case (Animation.json)
+		if (atlas != null && atlas.anim != null) {
+			var keys = atlas.anim.symbolMap.keys();
+			for (name in keys) {
+				var animName:String = Std.string(name);
+				animationsArray.push({
+					anim: animName,
+					name: animName,
+					fps: 24,
+					loop: false,
+					indices: [],
+					offsets: [0, 0]
+				});
+
+				// Create offset map placeholder
+				animOffsets.set(animName, [0.0, 0.0]);
+			}
+		}
+		#end
+
+		// Animate Folder (AnimateFolderReader)
+		if (isAnimateFolder && animateLibrary != null) {
+			var symbols = animateLibrary.symbolDictionary;
+
+			for (key in symbols.keys()) {
+				var symbol = symbols[key];
+				if (symbol.className != null && symbol.className != "") {
+					var animName = symbol.className;
+
+					animationsArray.push({
+						anim: animName,
+						name: animName,
+						fps: 24,
+						loop: false,
+						indices: [],
+						offsets: [0, 0]
+					});
+
+					animOffsets[animName] = [0, 0];
+				}
+			}
+		}
+	}
+
+	// ----------------------------------------------------
+	// UPDATE LOOP
+	// ----------------------------------------------------
+	override function update(elapsed:Float):Void {
+		#if flxanimate
+		if (isAnimateAtlas && atlas != null)
+			atlas.update(elapsed);
+		#end
+
+		if (isAnimateZIP && animateZIPChar != null)
+			animateZIPChar.update(elapsed);
 
     if (debugMode
         || (!isAnimateAtlas && animation.curAnim == null)
