@@ -313,55 +313,93 @@ class Character extends FlxSprite {
 		return true;
 	}
 
+// ============================================================
+// AUTO-REGISTER ANIMATE SYMBOLS AS CHARACTER ANIMATIONS
+// ============================================================
+
 	// ============================================================
 	// AUTO-REGISTER ANIMATE SYMBOLS AS CHARACTER ANIMATIONS
 	// ============================================================
 	public function registerAnimateAnimations():Void {
+		// No animate → nothing to register
 		if (!isAnimateFolder && !isAnimateAtlas)
 			return;
 
 		#if flxanimate
-		// Animate Atlas case (Animation.json)
+		// ------------------------------------------------------------
+		// 1. ANIMATE ATLAS (Animation.json)
+		// ------------------------------------------------------------
 		if (atlas != null && atlas.anim != null) {
-			var keys = atlas.anim.symbolMap.keys();
+			var keys:Array<String> = atlas.anim.getAnimationList();
 			for (name in keys) {
-				var animName:String = Std.string(name);
+				var animName:String = name;
+
 				animationsArray.push({
 					anim: animName,
 					name: animName,
 					fps: 24,
 					loop: false,
 					indices: [],
-					offsets: [0, 0]
+					offsets: [0.0, 0.0]
 				});
 
-				// Create offset map placeholder
 				animOffsets.set(animName, [0.0, 0.0]);
 			}
 		}
 		#end
 
-		// Animate Folder (AnimateFolderReader)
+		// ------------------------------------------------------------
+		// 2. ANIMATE FOLDER (AnimateFolderReader)
+		// ------------------------------------------------------------
 		if (isAnimateFolder && animateLibrary != null) {
-			var symbols = animateLibrary.symbolDictionary;
+			var symbols:Map<String, Dynamic> = cast animateLibrary.symbols;
 
 			for (key in symbols.keys()) {
-				var symbol = symbols[key];
-				if (symbol.className != null && symbol.className != "") {
-					var animName = symbol.className;
+				var symbol:Dynamic = symbols.get(key);
+				if (symbol == null) continue;
 
-					animationsArray.push({
-						anim: animName,
-						name: animName,
-						fps: 24,
-						loop: false,
-						indices: [],
-						offsets: [0, 0]
-					});
+				var animName:String = symbol.className;
+				if (animName == null || animName == "") continue;
 
-					animOffsets[animName] = [0, 0];
-				}
+				animationsArray.push({
+					anim: animName,
+					name: animName,
+					fps: 24,
+					loop: false,
+					indices: [],
+					offsets: [0.0, 0.0]
+				});
+
+				animOffsets.set(animName, [0.0, 0.0]);
 			}
+		}
+	}
+	#end
+
+	// ------------------------------------------------------------
+	// 2. ANIMATE FOLDER (AnimateFolderReader)
+	// ------------------------------------------------------------
+	if (isAnimateFolder && animateLibrary != null) {
+		var symbols:Map<String, Dynamic> = cast animateLibrary.symbols;
+
+		for (key in symbols.keys()) {
+			var symbol:Dynamic = symbols.get(key);
+			if (symbol == null) continue;
+
+			// Use className as animation name
+			var animName:String = symbol.className;
+			if (animName == null || animName == "") continue;
+
+			animationsArray.push({
+				anim: animName,
+				name: animName,
+				fps: 24,
+				loop: false,
+				indices: [],
+				offsets: [0.0, 0.0]
+			});
+
+			animOffsets.set(animName, [0.0, 0.0]);
 		}
 	}
 
