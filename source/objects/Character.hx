@@ -3,8 +3,11 @@ package objects;
 import backend.animation.PsychAnimationController;
 import backend.animate.AnimateCharacter;
 import backend.animate.AnimateZipReader;
+import backend.animate.AnimateFolderReader;
 import flixel.util.FlxSort;
 import flixel.util.FlxDestroyUtil;
+import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.graphics.FlxGraphic; // safe to include
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
 import haxe.Json;
@@ -78,6 +81,16 @@ class Character extends FlxSprite {
 	public var originalFlipX:Bool = false;
 	public var editorIsPlayer:Null<Bool> = null;
 
+// ------------------------------------------------------------
+// ANIMATE FOLDER SUPPORT (AnimateFolderReader format)
+// ------------------------------------------------------------
+public var isAnimateFolder:Bool = false;
+public var isAnimate:Bool = false;
+
+public var animateData:Dynamic = null;
+public var animateLibrary:Dynamic = null;
+public var animateAtlas:FlxAtlasFrames = null;
+
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false) {
 		super(x, y);
 
@@ -133,113 +146,124 @@ class Character extends FlxSprite {
 		dance();
 	}
 
-	public function loadCharacterFile(json:Dynamic) {
-		isAnimateAtlas = false;
-		// -----------------------------------------------------
-		// ZIP-based Animate support
-		// -----------------------------------------------------
-		if (json.animateZip != null) {
-			var zipPath = Paths.modFolders("animate/" + json.animateZip);
+public function loadCharacterFile(json:Dynamic) {
+	isAnimateAtlas = false;
 
-			if (FileSystem.exists(zipPath)) {
-				trace("Loading Animate ZIP character: " + zipPath);
+	// -----------------------------------------------------
+	// ZIP-based Animate support
+	// -----------------------------------------------------
+	if (json.animateZip != null) {
+		var zipPath = Paths.modFolders("animate/" + json.animateZip);
 
-				isAnimateZIP = true;
-				animateZIPChar = new AnimateCharacter(zipPath);
+		if (FileSystem.exists(zipPath)) {
+			trace("Loading Animate ZIP character: " + zipPath);
 
-				// apply Psych JSON settings
-				animateZIPChar.x = this.x;
-				animateZIPChar.y = this.y;
+			isAnimateZIP = true;
+			animateZIPChar = new AnimateCharacter(zipPath);
 
-				if (json.scale != null)
-					animateZIPChar.scale.set(json.scale, json.scale);
+			// apply Psych JSON settings
+			animateZIPChar.x = this.x;
+			animateZIPChar.y = this.y;
 
-				// STOP NORMAL LOADING
-				return;
-			} else {
-				trace("Animate ZIP not found at: " + zipPath);
+			if (json.scale != null)
+				animateZIPChar.scale.set(json.scale, json.scale);
+
+			// STOP NORMAL LOADING
+			return;
+		} else {
+			trace("Animate ZIP not found at: " + zipPath);
 		}
+	}
 
-		#if flxanimate
-		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT);
-		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
-			isAnimateAtlas = true;
-		#end
+	#if flxanimate
+	var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT);
+	if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
+		isAnimateAtlas = true;
+	#end
 
-		scale.set(1, 1);
+	scale.set(1, 1);
+	updateHitbox();
+
+	if (!isAnimateAtlas) {
+		frames = Paths.getMultiAtlas(json.image.split(','));
+	}
+	#if flxanimate
+	else {
+		atlas = new FlxAnimate();
+		atlas.showPivot = false;
+
+		try {
+			Paths.loadAnimateAtlas(atlas, json.image);
+		} catch (e:haxe.Exception) {
+			FlxG.log.warn('Could not load atlas ${json.image}: $e');
+			trace(e.stack);
+		}
+	}
+	#end
+
+	imageFile = json.image;
+	jsonScale = json.scale;
+
+	if (json.scale != 1) {
+		scale.set(jsonScale, jsonScale);
 		updateHitbox();
+	}
 
-		if (!isAnimateAtlas) {
-			frames = Paths.getMultiAtlas(json.image.split(','));
-		}
-		#if flxanimate
-		else {
-			atlas = new FlxAnimate();
-			atlas.showPivot = false;
-			try {
-				Paths.loadAnimateAtlas(atlas, json.image);
-			} catch (e:haxe.Exception) {
-				FlxG.log.warn('Could not load atlas ${json.image}: $e');
-				trace(e.stack);
+	// positioning
+	positionArray = json.position;
+	cameraPosition = json.camera_position;
+
+	// data
+	healthIcon = json.healthicon;
+	singDuration = json.sing_duration;
+	flipX = (json.flip_x != isPlayer);
+
+	healthColorArray = 
+		(json.healthbar_colors != null && json.healthbar_colors.length > 2)
+		? json.healthbar_colors
+		: [161, 161, 161];
+
+	vocalsFile = (json.vocals_file != null) ? json.vocals_file : '';
+	originalFlipX = (json.flip_x == true);
+	editorIsPlayer = json._editor_isPlayer;
+
+	// antialiasing
+	noAntialiasing = (json.no_antialiasing == true);
+	antialiasing = ClientPrefs.data.antialiasing ? !noAntialiasing : false;
+
+	// animations
+	animationsArray = json.animations;
+
+	if (animationsArray != null && animationsArray.length > 0) {
+		for (anim in animationsArray) {
+			var animAnim:String = '' + anim.anim;
+			var animName:String = '' + anim.name;
+			var animFps:Int = anim.fps;
+			var animLoop:Bool = !!anim.loop;
+			var animIndices:Array<Int> = anim.indices;
+
+			if (!isAnimateAtlas) {
+				if (animIndices != null && animIndices.length > 0)
+					animation.addByIndices(animAnim, animName, animIndices, "", animFps, animLoop);
+				else
+					animation.addByPrefix(animAnim, animName, animFps, animLoop);
 			}
-		}
-		#end
-
-		imageFile = json.image;
-		jsonScale = json.scale;
-		if (json.scale != 1) {
-			scale.set(jsonScale, jsonScale);
-			updateHitbox();
-		}
-
-		// positioning
-		positionArray = json.position;
-		cameraPosition = json.camera_position;
-
-		// data
-		healthIcon = json.healthicon;
-		singDuration = json.sing_duration;
-		flipX = (json.flip_x != isPlayer);
-		healthColorArray = (json.healthbar_colors != null && json.healthbar_colors.length > 2) ? json.healthbar_colors : [161, 161, 161];
-		vocalsFile = json.vocals_file != null ? json.vocals_file : '';
-		originalFlipX = (json.flip_x == true);
-		editorIsPlayer = json._editor_isPlayer;
-
-		// antialiasing
-		noAntialiasing = (json.no_antialiasing == true);
-		antialiasing = ClientPrefs.data.antialiasing ? !noAntialiasing : false;
-
-		// animations
-		animationsArray = json.animations;
-		if (animationsArray != null && animationsArray.length > 0) {
-			for (anim in animationsArray) {
-				var animAnim:String = '' + anim.anim;
-				var animName:String = '' + anim.name;
-				var animFps:Int = anim.fps;
-				var animLoop:Bool = !!anim.loop; // Bruh
-				var animIndices:Array<Int> = anim.indices;
-
-				if (!isAnimateAtlas) {
-					if (animIndices != null && animIndices.length > 0)
-						animation.addByIndices(animAnim, animName, animIndices, "", animFps, animLoop);
-					else
-						animation.addByPrefix(animAnim, animName, animFps, animLoop);
-				}
-				#if flxanimate
-				else {
-					if (animIndices != null && animIndices.length > 0)
-						atlas.anim.addBySymbolIndices(animAnim, animName, animIndices, animFps, animLoop);
-					else
-						atlas.anim.addBySymbol(animAnim, animName, animFps, animLoop);
-				}
-				#end
+			#if flxanimate
+			else {
+				if (animIndices != null && animIndices.length > 0)
+					atlas.anim.addBySymbolIndices(animAnim, animName, animIndices, animFps, animLoop);
+				else
+					atlas.anim.addBySymbol(animAnim, animName, animFps, animLoop);
+			}
+			#end
 
 			if (anim.offsets != null && anim.offsets.length > 1)
 				addOffset(anim.anim, anim.offsets[0], anim.offsets[1]);
 			else
 				addOffset(anim.anim, 0, 0);
 		}
-	}
+	} // <-- THIS BRACE WAS MISSING IN YOUR FILE
+}
 
 	// ----------------------------------------------------
 	// ANIMATE FOLDER LOADING
@@ -280,8 +304,8 @@ class Character extends FlxSprite {
 		#if flxanimate
 		// Animate Atlas case (Animation.json)
 		if (atlas != null && atlas.anim != null) {
-			var keys = atlas.anim.symbolMap.keys();
-			for (name in keys) {
+			var symbols = atlas.library.symbolDictionary; // Map<String, AnimateSymbol>
+			for (name in symbols.keys()) {
 				var animName:String = Std.string(name);
 				animationsArray.push({
 					anim: animName,
@@ -300,13 +324,11 @@ class Character extends FlxSprite {
 
 		// Animate Folder (AnimateFolderReader)
 		if (isAnimateFolder && animateLibrary != null) {
-			var symbols = animateLibrary.symbolDictionary;
-
-			for (key in symbols.keys()) {
-				var symbol = symbols[key];
+			var symbols:Map<String, Dynamic> = cast atlas.library.symbolDictionary;
+			for (name in symbols.keys()) {
+				var symbol = symbols.get(key);
 				if (symbol.className != null && symbol.className != "") {
-					var animName = symbol.className;
-
+					var animName:String = symbol.className;
 					animationsArray.push({
 						anim: animName,
 						name: animName,
@@ -653,5 +675,4 @@ function loadMappedAnims():Void {
 		super.destroy();
 	}
 	#end
-}
 }
