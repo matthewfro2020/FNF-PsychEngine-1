@@ -129,6 +129,29 @@ public function registerAnimateAnimations():Void {
     #end
 
     if (isAnimateFolder && animateLibrary != null) {
+        
+}
+
+
+
+// ============================================================
+// CLEAN ANIMATE AUTO-REGISTRATION BLOCK (Psych 1.0.4 safe)
+// ============================================================
+public function registerAnimateAnimations():Void {
+    if (!isAnimateFolder && !isAnimateAtlas) return;
+
+    var collected:Array<String> = [];
+
+    #if flxanimate
+    if (isAnimateAtlas && atlas != null && atlas.anim != null) {
+        var inst = atlas.anim;
+        for (name in Reflect.fields(inst)) {
+            if (name != null) collected.push(name);
+        }
+    }
+    #end
+
+    if (isAnimateFolder && animateLibrary != null) {
         if (Reflect.hasField(animateLibrary, "symbolDictionary")) {
             var dict:Dynamic = Reflect.field(animateLibrary, "symbolDictionary");
             if (dict != null && Reflect.hasField(dict, "keys")) {
@@ -139,7 +162,6 @@ public function registerAnimateAnimations():Void {
         }
     }
 
-    // Add to animationsArray
     for (name in collected) {
         if (!Lambda.exists(animationsArray, a -> a.anim == name)) {
             var newAnim:AnimArray = {
@@ -367,7 +389,6 @@ public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool =
                  
             else if (false /*removed_a*/)
             {
-                var nm:Dynamic = Reflect.field(a, "/*nameMap_removed*/");
                  
         }
         #end
@@ -568,3 +589,4 @@ public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool =
 }
 
 }}}
+}
