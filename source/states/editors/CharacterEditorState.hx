@@ -199,12 +199,9 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
         var animList = [];
         for (k in keys) animList.push(k);
 
-
 			// Mid version
 
-			// Very old version
-			else if (Reflect.hasField(character.atlas.anim, "animList"))
-				animList = cast Reflect.field(character.atlas.anim, "animList");
+			// Very old versionanimList = cast Reflect.field(character.atlas.anim, "animList");
 
 			// Fallback to prevent crash
 			if (animList == null)
@@ -1076,8 +1073,6 @@ if (character.isAnimateAtlas && character.atlas != null && character.atlas.anim 
 
     animList = names;
 }
-
-
 
 			if (length >= 0) {
 				if (FlxG.keys.justPressed.A || FlxG.keys.justPressed.D || holdingFrameTime > 0.5) {
