@@ -388,15 +388,24 @@ class PhillyStreets extends BaseStage
 		FlxG.camera.fade(FlxColor.BLACK, 2, true, null, true);
 	}
 
-	function updateABotEye(finishInstantly:Bool = false)
-	{
-		if(PlayState.SONG.notes[Std.int(FlxMath.bound(curSection, 0, PlayState.SONG.notes.length - 1))].mustHitSection == true)
-			abot.lookRight();
-		else
-			abot.lookLeft();
+function updateABotEye(finishInstantly:Bool = false)
+{
+    var goingRight = PlayState.SONG.notes[Std.int(
+        FlxMath.bound(curSection, 0, PlayState.SONG.notes.length - 1)
+    )].mustHitSection;
 
-		if(finishInstantly) abot.eyes.anim.curFrame = abot.eyes.anim.length - 1;
-	}
+    if (goingRight)
+        abot.lookRight();
+    else
+        abot.lookLeft();
+
+    if (finishInstantly)
+    {
+        var animName = goingRight ? "lookright" : "lookleft";
+        var frames = abot.eyes.anim.controller.getFrameCount(animName);
+        abot.eyes.anim.controller.setFrame(frames - 1);
+    }
+}
 
 	override function startSong()
 	{
