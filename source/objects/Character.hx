@@ -312,13 +312,13 @@ class Character extends FlxSprite
 
 			if (Reflect.hasField(a, "animsMap"))
 			{
-				for (name in a.animsMap.keys())
+				for (name in Reflect.fields(a))
 					if (name != null) collected.push(name);
 			}
 			else if (Reflect.hasField(a, "nameMap"))
 			{
 				var nm:Dynamic = Reflect.field(a, "nameMap");
-				for (name in nm.keys())
+				for (name in Reflect.fields(a))
 					if (name != null) collected.push(name);
 			}
 		}
@@ -333,7 +333,7 @@ class Character extends FlxSprite
 
 				if (dict != null && Reflect.hasField(dict, "keys"))
 				{
-					for (name in dict.keys())
+					for (name in Reflect.fields(a))
 						if (name != null) collected.push(name);
 				}
 			}
@@ -425,7 +425,15 @@ class Character extends FlxSprite
 	}
 
 	// ------------------------------------------------------------
-	inline public function getAnimationName():String
+	inline 
+
+inline public function isAnimationNull():Bool {
+    return !isAnimateAtlas 
+        ? (animation.curAnim == null) 
+        : (atlas.anim.curInstance == null || atlas.anim.curSymbol == null);
+}
+
+public function getAnimationName():String
 	{
 		return animation.curAnim != null ? animation.curAnim.name : "";
 	}
@@ -437,7 +445,27 @@ class Character extends FlxSprite
 		return animation.curAnim.finished;
 	}
 
-	public function finishAnimation():Void
+	
+
+public var animPaused(get, set):Bool;
+
+private function get_animPaused():Bool {
+    if (isAnimationNull()) return false;
+    return !isAnimateAtlas ? animation.curAnim.paused : atlas.anim.isPlaying;
+}
+
+private function set_animPaused(v:Bool):Bool {
+    if (isAnimationNull()) return v;
+
+    if (!isAnimateAtlas) animation.curAnim.paused = v;
+    else {
+        if (v) atlas.pauseAnimation();
+        else atlas.resumeAnimation();
+    }
+    return v;
+}
+
+public function finishAnimation():Void
 	{
 		if (animation.curAnim != null)
 			animation.curAnim.finish();

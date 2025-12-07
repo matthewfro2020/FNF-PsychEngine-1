@@ -184,6 +184,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
         var animObj:Dynamic = character.atlas.anim;
         var keys:Iterable<String> = null;
 
+        var animObj = character.atlas.anim;
         if (animObj != null)
         {
             if (Reflect.hasField(animObj, "animsMap"))
