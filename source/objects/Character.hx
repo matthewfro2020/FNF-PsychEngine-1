@@ -8,7 +8,6 @@ import flixel.text.FlxText;
 import backend.animation.PsychAnimationController;
 
 import flxanimate.FlxAnimate;
-import animate.AnimateLoader;
 import sys.FileSystem;
 import sys.io.File;
 
