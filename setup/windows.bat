@@ -20,7 +20,7 @@ haxelib set openfl 9.3.3
 REM === FIX: Install correct flxanimate version ===
 haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 7b7395cfe88bb0f5e0a57cddc9abdb3bb4d5ddee
 
-haxelib git linc_luajit https://github.com/superpowers04/linc_luajit 1906c4a96f6bb6df66562f3f24c62f4c5bba14a7
+haxelib git linc_luajit https://github.com/superpowers04/linc_luajit
 haxelib git funkin.vis https://github.com/FunkinCrew/funkVis 22b1ce089dd924f15cdc4632397ef3504d464e90
 haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666
 
