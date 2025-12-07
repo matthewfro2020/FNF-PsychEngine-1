@@ -42,7 +42,7 @@ class Character extends FlxSprite {
 	**/
 	public static final DEFAULT_CHARACTER:String = 'bf';
 
-	public var animOffsets:Map<String, Array<Dynamic>>;
+	public var animOffsets:Map<String, Array<Dynamic>> = new Map<String, Array<Dynamic>>();
 	public var debugMode:Bool = false;
 	public var extraData:Map<String, Dynamic> = new Map<String, Dynamic>();
 
@@ -99,15 +99,15 @@ class Character extends FlxSprite {
 
 	public function changeCharacter(character:String) {
 		animationsArray = [];
-		animOffsets = [];
+		animOffsets = new Map<String, Array<Dynamic>>();
 		curCharacter = character;
 		var characterPath:String = 'characters/$character.json';
 
 		var path:String = Paths.getPath(characterPath, TEXT);
 		#if MODS_ALLOWED
-		if (!FileSystem.exists(path))
+		if (!FileSystem.exists(path)
 		#else
-		if (!Assets.exists(path))
+		if (!Assets.exists(path)
 		#end
 		{
 			path = Paths.getSharedPath('characters/' + DEFAULT_CHARACTER +
@@ -119,9 +119,9 @@ class Character extends FlxSprite {
 
 		try {
 			#if MODS_ALLOWED
-			loadCharacterFile(Json.parse(File.getContent(path)));
+			loadCharacterFile(Json.parse(File.getContent(path));
 			#else
-			loadCharacterFile(Json.parse(Assets.getText(path)));
+			loadCharacterFile(Json.parse(Assets.getText(path));
 			#end
 		} catch (e:Dynamic) {
 			trace('Error loading character file of "$character": $e');
@@ -141,7 +141,7 @@ class Character extends FlxSprite {
 		if (json.animateZip != null) {
 			var zipPath = Paths.modFolders("animate/" + json.animateZip);
 
-			if (FileSystem.exists(zipPath)) {
+			if (FileSystem.exists(zipPath) {
 				trace("Loading Animate ZIP character: " + zipPath);
 
 				isAnimateZIP = true;
@@ -162,7 +162,7 @@ class Character extends FlxSprite {
 
 		#if flxanimate
 		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT);
-		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
+		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind)
 			isAnimateAtlas = true;
 		#end
 
@@ -170,7 +170,7 @@ class Character extends FlxSprite {
 		updateHitbox();
 
 		if (!isAnimateAtlas) {
-			frames = Paths.getMultiAtlas(json.image.split(','));
+			frames = Paths.getMultiAtlas(json.image.split(',');
 		}
 		#if flxanimate
 		else {
@@ -253,7 +253,7 @@ class Character extends FlxSprite {
 
 		if (debugMode
 			|| (!isAnimateAtlas && animation.curAnim == null)
-			|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null))) {
+			|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null)) {
 			super.update(elapsed);
 			return;
 		}
@@ -263,16 +263,16 @@ class Character extends FlxSprite {
 			heyTimer -= elapsed * rate;
 			if (heyTimer <= 0) {
 				var anim:String = getAnimationName();
-				if (specialAnim && (anim == 'hey' || anim == 'cheer')) {
+				if (specialAnim && (anim == 'hey' || anim == 'cheer') {
 					specialAnim = false;
 					dance();
 				}
 				heyTimer = 0;
 			}
-		} else if (specialAnim && isAnimationFinished()) {
+		} else if (specialAnim && isAnimationFinished() {
 			specialAnim = false;
 			dance();
-		} else if (getAnimationName().endsWith('miss') && isAnimationFinished()) {
+		} else if (getAnimationName().endsWith('miss') && isAnimationFinished() {
 			dance();
 			finishAnimation();
 		}
@@ -288,11 +288,11 @@ class Character extends FlxSprite {
 					playAnim('shoot' + noteData, true);
 					animationNotes.shift();
 				}
-				if (isAnimationFinished())
+				if (isAnimationFinished()
 					playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
 		}
 
-		if (getAnimationName().startsWith('sing'))
+		if (getAnimationName().startsWith('sing')
 			holdTimer += elapsed;
 		else if (isPlayer)
 			holdTimer = 0;
@@ -304,7 +304,7 @@ class Character extends FlxSprite {
 		}
 
 		var name:String = getAnimationName();
-		if (isAnimationFinished() && hasAnimation('$name-loop'))
+		if (isAnimationFinished() && hasAnimation('$name-loop')
 			playAnim('$name-loop');
 
 		super.update(elapsed);
@@ -321,13 +321,13 @@ class Character extends FlxSprite {
 	}
 
 	public function isAnimationFinished():Bool {
-		if (isAnimationNull())
+		if (isAnimationNull()
 			return false;
 		return !isAnimateAtlas ? animation.curAnim.finished : atlas.anim.finished;
 	}
 
 	public function finishAnimation():Void {
-		if (isAnimationNull())
+		if (isAnimationNull()
 			return;
 
 		if (!isAnimateAtlas)
@@ -343,13 +343,13 @@ class Character extends FlxSprite {
 	public var animPaused(get, set):Bool;
 
 	private function get_animPaused():Bool {
-		if (isAnimationNull())
+		if (isAnimationNull()
 			return false;
 		return !isAnimateAtlas ? animation.curAnim.paused : atlas.anim.isPlaying;
 	}
 
 	private function set_animPaused(value:Bool):Bool {
-		if (isAnimationNull())
+		if (isAnimationNull()
 			return value;
 		if (!isAnimateAtlas)
 			animation.curAnim.paused = value;
@@ -377,7 +377,7 @@ class Character extends FlxSprite {
 					playAnim('danceRight' + idleSuffix);
 				else
 					playAnim('danceLeft' + idleSuffix);
-			} else if (hasAnimation('idle' + idleSuffix))
+			} else if (hasAnimation('idle' + idleSuffix)
 				playAnim('idle' + idleSuffix);
 		}
 	}
@@ -395,37 +395,54 @@ class Character extends FlxSprite {
 		if (animation != null)
 			animation.play(name, forced, reversed, frame);
 
-		if (animOffsets.exists(name))
+		if (animOffsets.exists(name)
 			offset.set(animOffsets[name][0], animOffsets[name][1]);
 	}
+	
+    
+    
 
-	override public function getMidpoint(?point:FlxPoint = null)?point:FlxPoint = null)?point:FlxPoint):FlxPoint {
-		if (point == null)
-			point = new FlxPoint();
-		point.set(x + width * 0.5, y + height * 0.5);
-		return point;
-	}
+    
+    override public function getMidpoint(?point:FlxPoint = null):FlxPoint
+    {
+        if (point == null)
+            point = new FlxPoint();
+        point.set(x + width * 0.5, y + height * 0.5);
+        return point;
+    }
+    
 
-	override public function getGraphicMidpoint(?point:FlxPoint = null)?point:FlxPoint = null)?point:FlxPoint):FlxPoint {
-		if (point == null)
-			point = new FlxPoint();
-		point.set(x + frameWidth * 0.5, y + frameHeight * 0.5);
-		return point;
-	}
+    
+    
+    override public function getGraphicMidpoint(?point:FlxPoint = null):FlxPoint
+    {
+        if (point == null)
+            point = new FlxPoint();
+        point.set(x + frameWidth * 0.5, y + frameHeight * 0.5);
+        return point;
+    }
+    
 
-	override public function setPosition(x:Float = 0, y:Float = 0):Void {
-		this.x = x;
-		this.y = y;
-	}
 
-	override public function updateHitbox() {
-		this.frameWidth = Std.int(width);
-		this.frameHeight = Std.int(height);
-	}
+	
+    override public function setPosition(x:Float = 0, y:Float = 0):Void
+    {
+        this.x = x;
+        this.y = y;
+    }
+    
 
-	function loadMappedAnims():Void {
+
+	
+    override public function updateHitbox():Void
+    {
+        this.frameWidth = Std.int(width);
+        this.frameHeight = Std.int(height);
+    }
+    
+function loadMappedAnims():Void {
 		try {
-			var songData:SwagSong = Song.getChart('picospeaker', Paths.formatToSongPath(Song.loadedSongName));
+			var songData:SwagSong = Song.getChart('picospeaker', Paths.formatToSongPath(Song.loadedSongName);
 			if (songData != null)
 				for (section in songData.notes)
 					for (songNotes in section.sectionNotes)
@@ -446,7 +463,7 @@ class Character extends FlxSprite {
 
 	public function recalculateDanceIdle() {
 		var lastDanceIdle:Bool = danceIdle;
-		danceIdle = (hasAnimation('danceLeft' + idleSuffix) && hasAnimation('danceRight' + idleSuffix));
+		danceIdle = (hasAnimation('danceLeft' + idleSuffix) && hasAnimation('danceRight' + idleSuffix);
 
 		if (settingCharacterUp) {
 			danceEveryNumBeats = (danceIdle ? 1 : 2);
@@ -457,7 +474,7 @@ class Character extends FlxSprite {
 			else
 				calc *= 2;
 
-			danceEveryNumBeats = Math.round(Math.max(calc, 1));
+			danceEveryNumBeats = Math.round(Math.max(calc, 1);
 		}
 		settingCharacterUp = false;
 	}
