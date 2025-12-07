@@ -382,58 +382,46 @@ class Character extends FlxSprite {
 		}
 	}
 
+	public function playAnim(name:String, forced:Bool = false, reversed:Bool = false, frame:Int = 0) {
+		if (animateZIPChar != null) {
+			animateZIPChar.play(name, forced);
+			return;
+		}
+		if (atlas != null) {
+			atlas.anim.play(name, forced);
+			return;
+		}
 
-    public function playAnim(name:String, forced:Bool = false, reversed:Bool = false, frame:Int = 0)
-    {
-        if (animateZIPChar != null)
-        {
-            animateZIPChar.play(name, forced);
-            return;
-        }
-        if (atlas != null)
-        {
-            atlas.anim.play(name, forced);
-            return;
-        }
+		if (animation != null)
+			animation.play(name, forced, reversed, frame);
 
-        if (animation != null)
-            animation.play(name, forced, reversed, frame);
+		if (animOffsets.exists(name))
+			offset.set(animOffsets[name][0], animOffsets[name][1]);
+	}
 
-        if (animOffsets.exists(name))
-            offset.set(animOffsets[name][0], animOffsets[name][1]);
-    }
+	override public function getMidpoint(?point:FlxPoint):FlxPoint {
+		if (point == null)
+			point = new FlxPoint();
+		point.set(x + width * 0.5, y + height * 0.5);
+		return point;
+	}
 
+	override public function getGraphicMidpoint(?point:FlxPoint):FlxPoint {
+		if (point == null)
+			point = new FlxPoint();
+		point.set(x + frameWidth * 0.5, y + frameHeight * 0.5);
+		return point;
+	}
 
+	override public function setPosition(x:Float = 0, y:Float = 0):Void {
+		this.x = x;
+		this.y = y;
+	}
 
-    override public function getMidpoint(?point:FlxPoint):FlxPoint {
-    if (point == null) point = new FlxPoint();
-    point.set(x + width * 0.5, y + height * 0.5);
-    return point;
-}
-
-
-
-    override public function getGraphicMidpoint(?point:FlxPoint):FlxPoint {
-    if (point == null) point = new FlxPoint();
-    point.set(x + frameWidth * 0.5, y + frameHeight * 0.5);
-    return point;
-}
-
-
-
-    override public function setPosition(x:Float = 0, y:Float = 0):Void {
-    this.x = x;
-    this.y = y;
-}
-
-
-
-    override override public function updateHitbox()
-    {
-        this.frameWidth = Std.int(width);
-        this.frameHeight = Std.int(height);
-    }
-
+	override public function updateHitbox() {
+		this.frameWidth = Std.int(width);
+		this.frameHeight = Std.int(height);
+	}
 
 	function loadMappedAnims():Void {
 		try {
