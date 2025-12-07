@@ -252,14 +252,6 @@ class AnimateCharacter extends FlxSprite {
 		play(name);
 	}
 
-	// Psych Engine expects this to check if animation is finished
-	public inline function isFinished():Bool {
-		var group = animations.get(curAnim);
-		if (group == null)
-			return true;
-		return curFrame >= group.length - 1;
-	}
-
 	// Psych Engine sometimes fetches current animation name
 	public inline function getCurrentAnimation():String {
 		return curAnim;
