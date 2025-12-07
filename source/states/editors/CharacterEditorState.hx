@@ -18,6 +18,7 @@ import states.editors.content.Prompt;
 import states.editors.content.PsychJsonPrinter;
 
 import backend.animation.PsychAnimationController;
+import flixel.animation.FlxAnimationController;
 
 class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent
 {
@@ -1460,36 +1461,34 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 
     public function dance():Void {
-    var char:Character;
-        if (specialAnim) return;
-        if (danceIdle) {
-    var char:Character;
-            char.danced = !danced;
-            char.playAnim(char.danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
-        } else {
-    var char:Character;
-            char.playAnim("idle" + idleSuffix);
-        }
+    if (specialAnim) return;
+    var c = character;
+    if (danceIdle) {
+        c.danced = !c.danced;
+        c.char.playAnim(c.danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix), true);
+    } else {
+        c.char.playAnim("idle" + idleSuffix, true);
     }
+}
 
 
     public function recalculateDanceIdle():Void {
-    var char:Character;
-        danceIdle = char.hasAnimation("danceLeft" + idleSuffix) && char.hasAnimation("danceRight" + idleSuffix);
-    }
+    danceIdle = character.hasAnimation("danceLeft" + idleSuffix)
+        && character.hasAnimation("danceRight" + idleSuffix);
+}
 
 
     public function isAnimationNull():Bool {
-    var char:Character;
-        animation = char.animation;
-        return animation == null || animation.curAnim == null == null || (animation.curAnim == null);
-    }
+    animation = character.animation;
+    return (animation == null || animation.curAnim == null);
+}
 
 
     public function isAnimationFinished():Bool {
-    var char:Character;
-        return animation != null && animation.curAnim != null ? animation.curAnim.finished : true;
-    }
+    animation = character.animation;
+    return (animation != null && animation.curAnim != null)
+        ? animation.curAnim.finished : true;
+}
 
 
     public function finishAnimation():Void {

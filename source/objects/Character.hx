@@ -428,7 +428,7 @@ class Character extends FlxSprite {
 
 
 
-    override public function updateHitbox()
+    override override public function updateHitbox()
     {
         this.frameWidth = Std.int(width);
         this.frameHeight = Std.int(height);
