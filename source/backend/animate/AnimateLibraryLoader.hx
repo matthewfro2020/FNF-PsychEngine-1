@@ -4,27 +4,26 @@ import flxanimate.FlxAnimate;
 import haxe.Json;
 import sys.FileSystem;
 import sys.io.File;
-import flixel.FlxG;
 
 /**
- * UNIVERSAL ANIMATE LOADER
- * Supports:
- *  - data.json
- *  - library.json
- *  - symbols/*.json
- *  - Animation.json + spritemap
- * 
- * Output:
- *  - Fully initialized FlxAnimate object
- *  - Auto-remapped animation names (idle, singLEFT, etc.)
+ * FULL FOLDER-ANIMATE LOADER
+ * Loads:
+ *  • data.json
+ *  • library.json
+ *  • symbols/*.json
+ *  • spriteMap (if present)
+ *
+ * Produces:
+ *  • Fully-initialized FlxAnimate
+ *  • Auto-generated Psych animation list (idle, singLEFT, etc)
  */
 class AnimateLibraryLoader
 {
     public var valid:Bool = false;
+
     public var atlas:FlxAnimate;
     public var symbols:Map<String, Dynamic> = [];
-
-    public var animList:Array<String> = [];
+    public var animNames:Array<String> = [];
 
     public function new(base:String)
     {
@@ -32,7 +31,7 @@ class AnimateLibraryLoader
 
         if (!FileSystem.exists(base))
         {
-            trace("[AnimateLibraryLoader] Missing folder: " + base);
+            trace("[AnimateLibraryLoader] Missing " + base);
             return;
         }
 
@@ -42,7 +41,7 @@ class AnimateLibraryLoader
 
         if (!FileSystem.exists(dataPath) || !FileSystem.exists(libPath))
         {
-            trace("[AnimateLibraryLoader] Missing data.json or library.json");
+            trace("[AnimateLibraryLoader] Missing required JSON files");
             return;
         }
 
@@ -52,54 +51,52 @@ class AnimateLibraryLoader
         atlas = new FlxAnimate();
         atlas.showPivot = false;
 
-        // =============================
-        // LOAD SYMBOL FILES (public API)
-        // =============================
+        // -------------------------------------------------
+        // Load symbol JSONs from /symbols folder
+        // -------------------------------------------------
         if (FileSystem.exists(symPath))
         {
             for (file in FileSystem.readDirectory(symPath))
             {
                 if (file.endsWith(".json"))
                 {
-                    var name = file.substr(0, file.length - 5);
-                    var js = Json.parse(File.getContent(symPath + "/" + file));
-                    symbols[name] = js;
+                    var symName = file.substr(0, file.length - 5);
+                    var content = Json.parse(File.getContent(symPath + "/" + file));
+                    symbols[symName] = content;
                 }
             }
         }
 
-        // =============================
-        // FLXANIMATE PUBLIC LOADING
-        // =============================
+        // -------------------------------------------------
+        // Attach symbols to flxanimate (public API)
+        // -------------------------------------------------
+        @:privateAccess
         if (Reflect.hasField(lib, "symbols"))
-        {
-            // PUBLIC field in FlxAnimate
-            @:privateAccess atlas.library.symbols = lib.symbols;
-        }
+            atlas.library.symbols = lib.symbols;
+        else
+            atlas.library.symbols = symbols;
 
-        // Build animation list automatically
-        __buildAnimations();
+        // -------------------------------------------------
+        // BUILD ANIMATION MAP
+        // -------------------------------------------------
+        __buildAnimationList();
 
         valid = true;
     }
 
-    /**
-     * Build animation list for FlxAnimate
-     * Supports automatically mapping symbols → animations
-     */
-    private function __buildAnimations():Void
+    // ==========================================================
+    // Build Psych-compatible animation list automatically
+    // ==========================================================
+    private function __buildAnimationList():Void
     {
         if (atlas == null) return;
 
-        animList = [];
+        animNames = [];
 
-        // Use public API: atlas.anim.addBySymbol()
-        @:privateAccess
-        var amap = atlas.library.symbols;
-
+        @:privateAccess var amap = atlas.library.symbols;
         if (amap == null)
         {
-            trace("[AnimateLibraryLoader] WARN: No symbols found.");
+            trace("[AnimateLibraryLoader] No symbols found in atlas");
             return;
         }
 
@@ -108,9 +105,7 @@ class AnimateLibraryLoader
             var lower = symbol.toLowerCase();
             var remap = symbol;
 
-            // ===========================
-            //  PSYCH ENGINE AUTO-MAPPING
-            // ===========================
+            // Psych-style auto-detection
             if (lower.contains("idle")) remap = "idle";
 
             else if (lower.contains("leftmiss")) remap = "singLEFTmiss";
@@ -123,15 +118,15 @@ class AnimateLibraryLoader
             else if (lower.contains("up")) remap = "singUP";
             else if (lower.contains("right")) remap = "singRIGHT";
 
-            // Add animation
             atlas.anim.addBySymbol(remap, symbol, 24, false);
 
-            animList.push(remap);
+            animNames.push(remap);
 
-            trace("[AnimateLibraryLoader] " + symbol + " → " + remap);
+            trace("[AnimateLibrary] " + symbol + " → " + remap);
         }
     }
 
+    // Utility
     public function play(name:String):Void
     {
         if (atlas != null && atlas.anim != null)
