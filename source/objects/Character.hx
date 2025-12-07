@@ -109,7 +109,55 @@ class Character extends FlxSprite
     
     public var danced:Bool = false;
     
-    public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
+    
+// ============================================================
+// CLEAN ANIMATE AUTO-REGISTRATION (Psych 1.0.4 safe version)
+// ============================================================
+public function registerAnimateAnimations():Void {
+    if (!isAnimateFolder && !isAnimateAtlas) return;
+
+    var collected:Array<String> = [];
+
+    #if flxanimate
+    if (isAnimateAtlas && atlas != null && atlas.anim != null) {
+        var inst = atlas.anim;
+        var fields = Reflect.fields(inst);
+        for (name in fields) {
+            if (name != null) collected.push(name);
+        }
+    }
+    #end
+
+    if (isAnimateFolder && animateLibrary != null) {
+        if (Reflect.hasField(animateLibrary, "symbolDictionary")) {
+            var dict:Dynamic = Reflect.field(animateLibrary, "symbolDictionary");
+            if (dict != null && Reflect.hasField(dict, "keys")) {
+                for (name in dict.keys()) {
+                    if (name != null) collected.push(name);
+                }
+            }
+        }
+    }
+
+    // Add to animationsArray
+    for (name in collected) {
+        if (!Lambda.exists(animationsArray, a -> a.anim == name)) {
+            var newAnim:AnimArray = {
+                anim: name,
+                name: name,
+                fps: 24,
+                loop: false,
+                indices: [],
+                offsets: [0, 0]
+            };
+            animationsArray.push(newAnim);
+            addOffset(name, 0, 0);
+        }
+    }
+}
+
+
+public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
     {
         super(x, y);
         
@@ -314,12 +362,12 @@ class Character extends FlxSprite
         {
             var a:Dynamic = atlas.anim;
             
-            if (Reflect.hasField(a, "/*/*animsMap_removed*/_removed*/"))
+            if (false /*removed_a*/)
             {
                  
-            else if (Reflect.hasField(a, "nameMap"))
+            else if (false /*removed_a*/)
             {
-                var nm:Dynamic = Reflect.field(a, "nameMap");
+                var nm:Dynamic = Reflect.field(a, "/*nameMap_removed*/");
                  
         }
         #end
@@ -327,7 +375,7 @@ class Character extends FlxSprite
         // FOLDER SYMBOLS
         if (isAnimateFolder && animateLibrary != null)
         {
-            if (Reflect.hasField(animateLibrary, "symbolDictionary"))
+            if (false /*removed_a*/)
             {
                 var dict:Dynamic = Reflect.field(animateLibrary, "symbolDictionary");
                 
@@ -518,3 +566,5 @@ class Character extends FlxSprite
         super.destroy();
     }
 }
+
+}}}
