@@ -61,50 +61,7 @@ typedef AnimArray = {
 //   CHARACTER CLASS — CLEAN VERSION v11
 // =============================================================
 class Character extends FlxSprite
-
-    // ============================================================
-    // AUTO-REMAP SYMBOLS → Psych Anim Names
-    // Fixes: iteration crash, .contains() crash, missing offsets
-    // ============================================================
-    function __autoRemapAnimateSymbols():Void
-    {
-        if (!isAnimateAtlas) return;
-        if (atlas == null) return;
-
-        @:privateAccess var amap = atlas.animations.animations;
-        if (amap == null)
-        {
-            trace("[Animate-Remap] No animation list found.");
-            return;
-        }
-
-        for (sym in amap.keys())
-        {
-            var low = sym.toLowerCase();
-            var remap = null;
-
-            if (low.indexOf("idle") != -1) remap = "idle";
-            else if (low.indexOf("left") != -1) remap = "singLEFT";
-            else if (low.indexOf("down") != -1) remap = "singDOWN";
-            else if (low.indexOf("up") != -1) remap = "singUP";
-            else if (low.indexOf("right") != -1) remap = "singRIGHT";
-            else if (low.indexOf("miss") != -1)
-            {
-                if (low.indexOf("left") != -1) remap = "singLEFTmiss";
-                else if (low.indexOf("down") != -1) remap = "singDOWNmiss";
-                else if (low.indexOf("up") != -1) remap = "singUPmiss";
-                else if (low.indexOf("right") != -1) remap = "singRIGHTmiss";
-            }
-
-            if (remap == null)
-                remap = sym; // fallback
-
-            animOffsets.set(remap, [0, 0]);
-            trace("[Animate-Remap] " + sym + " → " + remap);
-        }
-    }
-
- {
+{
 	public static final DEFAULT_CHARACTER:String = "bf";
 
 	public var animOffsets:Map<String, Array<Dynamic>> = new Map();
@@ -542,36 +499,45 @@ class Character extends FlxSprite
 		return animation != null && animation.curAnim != null;
 	}
 
-    #if flxanimate
-    /**
-     * Automatically remaps Animate atlas symbols
-     * into Psych-compatible animation names.
-     */
-    function __autoRemapAnimateSymbols():Void {
-        if (!isAnimateAtlas || atlas == null || atlas.anim == null)
+    // ============================================================
+    // AUTO-REMAP SYMBOLS → Psych Anim Names
+    // Fixes: iteration crash, .contains() crash, missing offsets
+    // ============================================================
+    function __autoRemapAnimateSymbols():Void
+    {
+        if (!isAnimateAtlas) return;
+        if (atlas == null) return;
+
+        @:privateAccess var amap = atlas.animations.animations;
+        if (amap == null)
+        {
+            trace("[Animate-Remap] No animation list found.");
             return;
+        }
 
-        var fields = Reflect.fields(atlas.anim.symbolMap);
-        for (symbol in fields) {
-            var inst = Reflect.field(atlas.anim.symbolMap, symbol);
-            var lower = symbol.toLowerCase();
-            var remap = symbol;
+        for (sym in amap.keys())
+        {
+            var low = sym.toLowerCase();
+            var remap = null;
 
-            if (lower.indexOf("idle") != -1) remap = "idle";
-            else if (lower.indexOf("leftmiss") != -1) remap = "singLEFTmiss";
-            else if (lower.indexOf("downmiss") != -1) remap = "singDOWNmiss";
-            else if (lower.indexOf("upmiss") != -1) remap = "singUPmiss";
-            else if (lower.indexOf("rightmiss") != -1) remap = "singRIGHTmiss";
-            else if (lower.indexOf("left") != -1) remap = "singLEFT";
-            else if (lower.indexOf("down") != -1) remap = "singDOWN";
-            else if (lower.indexOf("up") != -1) remap = "singUP";
-            else if (lower.indexOf("right") != -1) remap = "singRIGHT";
+            if (low.indexOf("idle") != -1) remap = "idle";
+            else if (low.indexOf("left") != -1) remap = "singLEFT";
+            else if (low.indexOf("down") != -1) remap = "singDOWN";
+            else if (low.indexOf("up") != -1) remap = "singUP";
+            else if (low.indexOf("right") != -1) remap = "singRIGHT";
+            else if (low.indexOf("miss") != -1)
+            {
+                if (low.indexOf("left") != -1) remap = "singLEFTmiss";
+                else if (low.indexOf("down") != -1) remap = "singDOWNmiss";
+                else if (low.indexOf("up") != -1) remap = "singUPmiss";
+                else if (low.indexOf("right") != -1) remap = "singRIGHTmiss";
+            }
 
-            atlas.anim.addBySymbol(remap, symbol, 24, false);
+            if (remap == null)
+                remap = sym; // fallback
+
             animOffsets.set(remap, [0, 0]);
-
-            trace("[Animate-Remap] " + symbol + " -> " + remap);
+            trace("[Animate-Remap] " + sym + " → " + remap);
         }
     }
-    #end	
 }
