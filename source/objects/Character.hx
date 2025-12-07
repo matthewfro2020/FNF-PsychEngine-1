@@ -6,13 +6,28 @@ import flixel.math.FlxPoint;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.text.FlxText;
 import backend.animation.PsychAnimationController;
+
+import flxanimate.FlxAnimate;
+import animate.AnimateLoader;
+import sys.FileSystem;
+import sys.io.File;
+
+
 import backend.animate.AnimateCharacter;
 import backend.animate.AnimateZipReader;
 import backend.animate.AnimateFolderReader;
 import haxe.Json;
+import StringTools;
 import sys.FileSystem;
 import sys.io.File;
 import openfl.utils.Assets;
+// [AUTOPATCH_ANIMATE]
+#if flxanimate
+/**
+ * Auto-import AnimateFolderReader
+ */
+import states.stages.objects.AnimateFolderReader;
+#end
 
 // ==========================
 // JSON typedefs
@@ -45,7 +60,51 @@ typedef AnimArray = {
 // =============================================================
 //   CHARACTER CLASS — CLEAN VERSION v11
 // =============================================================
-class Character extends FlxSprite {
+class Character extends FlxSprite
+
+    // ============================================================
+    // AUTO-REMAP SYMBOLS → Psych Anim Names
+    // Fixes: iteration crash, .contains() crash, missing offsets
+    // ============================================================
+    function __autoRemapAnimateSymbols():Void
+    {
+        if (!isAnimateAtlas) return;
+        if (atlas == null) return;
+
+        @:privateAccess var amap = atlas.animations.animations;
+        if (amap == null)
+        {
+            trace("[Animate-Remap] No animation list found.");
+            return;
+        }
+
+        for (sym in amap.keys())
+        {
+            var low = sym.toLowerCase();
+            var remap = null;
+
+            if (low.indexOf("idle") != -1) remap = "idle";
+            else if (low.indexOf("left") != -1) remap = "singLEFT";
+            else if (low.indexOf("down") != -1) remap = "singDOWN";
+            else if (low.indexOf("up") != -1) remap = "singUP";
+            else if (low.indexOf("right") != -1) remap = "singRIGHT";
+            else if (low.indexOf("miss") != -1)
+            {
+                if (low.indexOf("left") != -1) remap = "singLEFTmiss";
+                else if (low.indexOf("down") != -1) remap = "singDOWNmiss";
+                else if (low.indexOf("up") != -1) remap = "singUPmiss";
+                else if (low.indexOf("right") != -1) remap = "singRIGHTmiss";
+            }
+
+            if (remap == null)
+                remap = sym; // fallback
+
+            animOffsets.set(remap, [0, 0]);
+            trace("[Animate-Remap] " + sym + " → " + remap);
+        }
+    }
+
+ {
 	public static final DEFAULT_CHARACTER:String = "bf";
 
 	public var animOffsets:Map<String, Array<Dynamic>> = new Map();
@@ -149,30 +208,28 @@ class Character extends FlxSprite {
 		animOffsets.set(name, [x, y]);
 	}
 
-public inline function hasAnimation(name:String):Bool
-{
-    // ZIP animate takes priority — NEVER crashes
-    if (isAnimateZIP && animateZIPChar != null)
-        return animateZIPChar.hasAnimation(name);
+	public inline function hasAnimation(name:String):Bool {
+		// ZIP animate takes priority — NEVER crashes
+		if (isAnimateZIP && animateZIPChar != null)
+			return animateZIPChar.hasAnimation(name);
 
-    // ATLAS animate
-    #if flxanimate
-    if (isAnimateAtlas && atlas != null && atlas.anim != null)
-        return atlas.anim.exists(name);
-    #end
+		// ATLAS animate
+		#if flxanimate
+		if (isAnimateAtlas && atlas != null && atlas.anim != null)
+			return atlas.anim.exists(name);
+		#end
 
-    // PNG animations — safest possible version
-    if (animation == null || animation.curAnim == null)
-    {
-        // curAnim is used ONLY to check if PNG animation system initialized
-        // If null, no PNG animations exist at all
-        return false;
-    }
+		// PNG animations — safest possible version
+		if (animation == null || animation.curAnim == null) {
+			// curAnim is used ONLY to check if PNG animation system initialized
+			// If null, no PNG animations exist at all
+			return false;
+		}
 
-    // Try to play the animation by name to check if it exists
-    // PsychAnimationController.play() returns false if missing
-    return animation.exists(name);
-}
+		// Try to play the animation by name to check if it exists
+		// PsychAnimationController.play() returns false if missing
+		return animation.exists(name);
+	}
 
 	public var animPaused(get, set):Bool;
 
@@ -301,92 +358,79 @@ public inline function hasAnimation(name:String):Bool
 	// =====================================================
 	// RECALCULATE DANCE IDLE
 	// =====================================================
-public function recalculateDanceIdle():Void
-{
-    // ZIP characters do NOT use danceLeft/danceRight
-    if (isAnimateZIP)
-    {
-        danceIdle = false;
-        return;
-    }
+	public function recalculateDanceIdle():Void {
+		// ZIP characters do NOT use danceLeft/danceRight
+		if (isAnimateZIP) {
+			danceIdle = false;
+			return;
+		}
 
-    var last = danceIdle;
+		var last = danceIdle;
 
-    danceIdle =
-        hasAnimation("danceLeft" + idleSuffix) &&
-        hasAnimation("danceRight" + idleSuffix);
+		danceIdle = hasAnimation("danceLeft" + idleSuffix) && hasAnimation("danceRight" + idleSuffix);
 
-    if (last != danceIdle)
-        danceEveryNumBeats = danceIdle ? 1 : 2;
-}
+		if (last != danceIdle)
+			danceEveryNumBeats = danceIdle ? 1 : 2;
+	}
 
 	// =====================================================
 	// DANCE
 	// =====================================================
-public function dance():Void
-{
-    if (skipDance || specialAnim)
-        return;
+	public function dance():Void {
+		if (skipDance || specialAnim)
+			return;
 
-    //
-    // ================
-    // ZIP MODE (SAFE)
-    // ================
-    //
-    if (isAnimateZIP)
-    {
-        // ZIP not fully initialized → DON'T DANCE
-        if (animateZIPChar == null)
-            return;
+		//
+		// ================
+		// ZIP MODE (SAFE)
+		// ================
+		//
+		if (isAnimateZIP) {
+			// ZIP not fully initialized → DON'T DANCE
+			if (animateZIPChar == null)
+				return;
 
-        var anim = animateZIPChar.getCurrentAnimation();
-        if (anim == null)
-            return;
+			var anim = animateZIPChar.getCurrentAnimation();
+			if (anim == null)
+				return;
 
-        // Only play idle in ZIP mode for now
-        if (animateZIPChar.hasAnimation("idle"))
-            animateZIPChar.play("idle");
+			// Only play idle in ZIP mode for now
+			if (animateZIPChar.hasAnimation("idle"))
+				animateZIPChar.play("idle");
 
-        return; // CRITICAL — block PNG/ATLAS code!
-    }
+			return; // CRITICAL — block PNG/ATLAS code!
+		}
 
-    //
-    // =======================
-    // ATLAS MODE (SAFE)
-    // =======================
-    //
-    #if flxanimate
-    if (isAnimateAtlas && atlas != null && atlas.anim != null)
-    {
-        if (danceIdle)
-        {
-            danced = !danced;
-            atlas.anim.play(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
-        }
-        else if (atlas.anim.exists("idle" + idleSuffix))
-        {
-            atlas.anim.play("idle" + idleSuffix);
-        }
+		//
+		// =======================
+		// ATLAS MODE (SAFE)
+		// =======================
+		//
+		#if flxanimate
+		if (isAnimateAtlas && atlas != null && atlas.anim != null) {
+			if (danceIdle) {
+				danced = !danced;
+				atlas.anim.play(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
+			} else if (atlas.anim.exists("idle" + idleSuffix)) {
+				atlas.anim.play("idle" + idleSuffix);
+			}
 
-        return; // prevent PNG fallback
-    }
-    #end
+			return; // prevent PNG fallback
+		}
+		#end
 
-    //
-    // =======================
-    // PNG MODE (NORMAL)
-    // =======================
-    //
-    if (danceIdle)
-    {
-        danced = !danced;
-        playAnim(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
-    }
-    else if (hasAnimation("idle" + idleSuffix))
-    {
-        playAnim("idle" + idleSuffix);
-    }
-}
+		//
+		// =======================
+		// PNG MODE (NORMAL)
+		// =======================
+		//
+		if (danceIdle) {
+			danced = !danced;
+			playAnim(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
+		} else if (hasAnimation("idle" + idleSuffix)) {
+			playAnim("idle" + idleSuffix);
+		}
+	}
 
 	// =====================================================
 	// LOAD CHARACTER FILE (JSON)
@@ -497,4 +541,37 @@ public function dance():Void
 	inline function hasCurAnim():Bool {
 		return animation != null && animation.curAnim != null;
 	}
+
+    #if flxanimate
+    /**
+     * Automatically remaps Animate atlas symbols
+     * into Psych-compatible animation names.
+     */
+    function __autoRemapAnimateSymbols():Void {
+        if (!isAnimateAtlas || atlas == null || atlas.anim == null)
+            return;
+
+        var fields = Reflect.fields(atlas.anim.symbolMap);
+        for (symbol in fields) {
+            var inst = Reflect.field(atlas.anim.symbolMap, symbol);
+            var lower = symbol.toLowerCase();
+            var remap = symbol;
+
+            if (lower.indexOf("idle") != -1) remap = "idle";
+            else if (lower.indexOf("leftmiss") != -1) remap = "singLEFTmiss";
+            else if (lower.indexOf("downmiss") != -1) remap = "singDOWNmiss";
+            else if (lower.indexOf("upmiss") != -1) remap = "singUPmiss";
+            else if (lower.indexOf("rightmiss") != -1) remap = "singRIGHTmiss";
+            else if (lower.indexOf("left") != -1) remap = "singLEFT";
+            else if (lower.indexOf("down") != -1) remap = "singDOWN";
+            else if (lower.indexOf("up") != -1) remap = "singUP";
+            else if (lower.indexOf("right") != -1) remap = "singRIGHT";
+
+            atlas.anim.addBySymbol(remap, symbol, 24, false);
+            animOffsets.set(remap, [0, 0]);
+
+            trace("[Animate-Remap] " + symbol + " -> " + remap);
+        }
+    }
+    #end	
 }
