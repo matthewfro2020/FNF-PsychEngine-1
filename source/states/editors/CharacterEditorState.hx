@@ -1054,10 +1054,32 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			if (!character.isAnimateAtlas && character.animation.curAnim != null) {
 				frames = character.animation.curAnim.curFrame;
 				length = character.animation.curAnim.numFrames;
-			} else if (character.isAnimateAtlas && character.atlas.anim != null) {
-				frames = character.atlas.anim.curFrame;
-				length = character.atlas.anim.length;
-			}
+			} else 
+// ------------------------------------------------------------
+// ANIMATE ATLAS → Collect animation names for editor dropdown
+// ------------------------------------------------------------
+if (character.isAnimateAtlas && character.atlas != null && character.atlas.anim != null)
+{
+    var animObj:Dynamic = character.atlas.anim;
+    var names:Array<String> = [];
+
+    // Psych Animate system uses animsMap or nameMap
+    if (Reflect.hasField(animObj, "animsMap"))
+    {
+        for (key in animObj.animsMap.keys())
+            names.push(key);
+    }
+    else if (Reflect.hasField(animObj, "nameMap"))
+    {
+        var nm:Dynamic = Reflect.field(animObj, "nameMap");
+        for (key in nm.keys())
+            names.push(key);
+    }
+
+    animList = names;
+}
+
+
 
 			if (length >= 0) {
 				if (FlxG.keys.justPressed.A || FlxG.keys.justPressed.D || holdingFrameTime > 0.5) {
