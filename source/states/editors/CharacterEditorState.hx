@@ -201,15 +201,19 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
             else
             keys = [];
             
-            var animList = [];
+            var var animList:Array<String> = [];
+            animList = [];
             for (k in keys) animList.push(k);
             
             // Mid version
             
-            // Very old versionanimList = cast Reflect.field(character.atlas.anim, "animList");
+            // Very old versionvar animList:Array<String> = [];
+            animList = cast Reflect.field(character.atlas.anim, "animList");
             
             // Fallback to prevent crash
-            if (animList == null)
+            if (var animList:Array<String> = [];
+            animList == null)
+            var animList:Array<String> = [];
             animList = [];
             
             for (name in animList) {
@@ -1076,7 +1080,8 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
                     names.push(key);
                 }
                 
-                animList = names.copy();
+                var animList:Array<String> = [];
+            animList = names.copy();
             }
             
             if (length >= 0) {

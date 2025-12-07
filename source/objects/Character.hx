@@ -314,17 +314,13 @@ class Character extends FlxSprite
         {
             var a:Dynamic = atlas.anim;
             
-            if (Reflect.hasField(a, "/*animsMap_removed*/"))
+            if (Reflect.hasField(a, "/*/*animsMap_removed*/_removed*/"))
             {
-                for (name in Reflect.fields(animObj))
-                if (name != null) collected.push(name);
-            }
+                 
             else if (Reflect.hasField(a, "nameMap"))
             {
                 var nm:Dynamic = Reflect.field(a, "nameMap");
-                for (name in Reflect.fields(animObj))
-                if (name != null) collected.push(name);
-            }
+                 
         }
         #end
         
@@ -337,9 +333,7 @@ class Character extends FlxSprite
                 
                 if (dict != null && Reflect.hasField(dict, "keys"))
                 {
-                    for (name in Reflect.fields(animObj))
-                    if (name != null) collected.push(name);
-                }
+                     
             }
         }
         
