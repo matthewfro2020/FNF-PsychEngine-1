@@ -5,8 +5,6 @@ import openfl.display.BitmapData;
 import openfl.utils.Assets;
 import sys.FileSystem;
 import sys.io.File;
-import openfl.geom.Rectangle;
-import openfl.geom.Point;
 
 class AnimateFolderReader
 {
@@ -31,11 +29,12 @@ class AnimateFolderReader
 
         if (!FileSystem.exists(dataPath) || !FileSystem.exists(libPath) || !FileSystem.exists(symPath))
         {
-            trace("[AnimateFolderReader] Missing required files.");
+            trace("[AnimateFolderReader] Missing required files: " + path);
             return;
         }
 
-        try {
+        try 
+        {
             dataJson = Json.parse(File.getContent(dataPath));
             libJson  = Json.parse(File.getContent(libPath));
         }
@@ -45,18 +44,24 @@ class AnimateFolderReader
             return;
         }
 
-        // Load all PNG symbols
+        // Load all PNG symbol images
         for (file in FileSystem.readDirectory(symPath))
         {
-            if (!file.endsWith(".png")) continue;
+            if (file.toLowerCase().endsWith(".png"))
+            {
+                var full = symPath + "/" + file;
 
-            var full = symPath + "/" + file;
-            try {
-                var bmp = BitmapData.fromFile(full);
-                symbols.set("symbols/" + file, bmp);
-            }
-            catch (e) {
-                trace("[AnimateFolderReader] Failed loading symbol " + full);
+                try 
+                {
+                    var bmp = BitmapData.fromFile(full);
+                    // Normalize symbol name so AnimateAtlas can read it
+                    var key = "symbols/" + file;
+                    symbols.set(key, bmp);
+                }
+                catch (e)
+                {
+                    trace("[AnimateFolderReader] Failed loading symbol: " + full);
+                }
             }
         }
 
@@ -65,16 +70,16 @@ class AnimateFolderReader
     }
 
     /**
-     * Converts folder contents into AnimateAtlas-compatible structure
-     * so the engine can treat it *exactly like a spritemap1 atlas*
+     * Converts folder contents into AnimateAtlas-compatible JSON structure.
+     * Psych Engine treats this the same as a TexturePacker spritemap1 atlas.
      */
     public function toAtlas():Dynamic
     {
-        if (!valid) return null;
+        if (!valid)
+            return null;
 
-        var frames:Array<Dynamic> = [];
+        var frames = [];
 
-        var idx = 0;
         for (name => bmp in symbols)
         {
             frames.push({
@@ -88,24 +93,27 @@ class AnimateFolderReader
                 rotated: false,
                 trimmed: false,
                 spriteSourceSize: {
-                    x: 0, y: 0, w: bmp.width, h: bmp.height
+                    x: 0,
+                    y: 0,
+                    w: bmp.width,
+                    h: bmp.height
                 },
                 sourceSize: {
-                    w: bmp.width, h: bmp.height
+                    w: bmp.width,
+                    h: bmp.height
                 }
             });
-            idx++;
         }
 
         return {
             frames: frames,
             meta: {
-                app: "AnimateFolder",
-                image: "folder", // placeholder
+                app: "AnimateFolderReader",
+                image: "folder",
                 format: "RGBA8888",
                 size: { w: 0, h: 0 },
                 scale: "1"
             }
-        }
+        };
     }
 }
