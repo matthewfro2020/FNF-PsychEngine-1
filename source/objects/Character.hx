@@ -301,14 +301,24 @@ public inline function hasAnimation(name:String):Bool
 	// =====================================================
 	// RECALCULATE DANCE IDLE
 	// =====================================================
-	public function recalculateDanceIdle():Void {
-		var last = danceIdle;
+public function recalculateDanceIdle():Void
+{
+    // ZIP characters do NOT use danceLeft/danceRight
+    if (isAnimateZIP)
+    {
+        danceIdle = false;
+        return;
+    }
 
-		danceIdle = hasAnimation("danceLeft" + idleSuffix) && hasAnimation("danceRight" + idleSuffix);
+    var last = danceIdle;
 
-		if (last != danceIdle)
-			danceEveryNumBeats = danceIdle ? 1 : 2;
-	}
+    danceIdle =
+        hasAnimation("danceLeft" + idleSuffix) &&
+        hasAnimation("danceRight" + idleSuffix);
+
+    if (last != danceIdle)
+        danceEveryNumBeats = danceIdle ? 1 : 2;
+}
 
 	// =====================================================
 	// DANCE
@@ -318,22 +328,59 @@ public function dance():Void
     if (skipDance || specialAnim)
         return;
 
-    // ZIP MODE — if ZIP doesn't have danceLeft/danceRight, NEVER call them
+    //
+    // ================
+    // ZIP MODE (SAFE)
+    // ================
+    //
     if (isAnimateZIP)
     {
-        var hasIdle = animateZIPChar.hasAnimation("idle");
-        if (hasIdle)
-        {
-            playAnim("idle");
+        // ZIP not fully initialized → DON'T DANCE
+        if (animateZIPChar == null)
             return;
-        }
+
+        var anim = animateZIPChar.getCurrentAnimation();
+        if (anim == null)
+            return;
+
+        // Only play idle in ZIP mode for now
+        if (animateZIPChar.hasAnimation("idle"))
+            animateZIPChar.play("idle");
+
+        return; // CRITICAL — block PNG/ATLAS code!
     }
 
-    // Normal behaviour for PNG/ATLAS
+    //
+    // =======================
+    // ATLAS MODE (SAFE)
+    // =======================
+    //
+    #if flxanimate
+    if (isAnimateAtlas && atlas != null && atlas.anim != null)
+    {
+        if (danceIdle)
+        {
+            danced = !danced;
+            atlas.anim.play(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
+        }
+        else if (atlas.anim.exists("idle" + idleSuffix))
+        {
+            atlas.anim.play("idle" + idleSuffix);
+        }
+
+        return; // prevent PNG fallback
+    }
+    #end
+
+    //
+    // =======================
+    // PNG MODE (NORMAL)
+    // =======================
+    //
     if (danceIdle)
     {
         danced = !danced;
-        playAnim(danced ? "danceRight" + idleSuffix : "danceLeft" + idleSuffix);
+        playAnim(danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix));
     }
     else if (hasAnimation("idle" + idleSuffix))
     {
