@@ -46,7 +46,7 @@ import states.LoadingState;
 import flxanimate.*;
 import flxanimate.PsychFlxAnimate as FlxAnimate;
 #end
-  
+
 //Flixel
 import flixel.sound.FlxSound;
 import flixel.FlxG;

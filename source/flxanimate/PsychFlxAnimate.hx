@@ -1,36 +1,108 @@
 package flxanimate;
 
-import flxanimate.FlxAnimate;
+import flixel.util.FlxDestroyUtil;
+import flixel.system.FlxAssets.FlxGraphicAsset;
+import flxanimate.frames.FlxAnimateFrames;
+import flxanimate.data.AnimationData;
+import flxanimate.FlxAnimate as OriginalFlxAnimate;
 
-class PsychFlxAnimate extends FlxAnimate {
-    public function new() {
-        super();
-        showPivot = false;
-    }
+class PsychFlxAnimate extends OriginalFlxAnimate
+{
+	public function loadAtlasEx(img:FlxGraphicAsset, pathOrStr:String = null, myJson:Dynamic = null)
+	{
+		var animJson:AnimAtlas = null;
+		if(Std.isOfType(myJson, String))
+		{
+			var trimmed:String = pathOrStr.trim();
+			trimmed = trimmed.substr(trimmed.length - 5).toLowerCase();
 
-    /**
-     * Safely plays an animation.
-     * If it doesn't exist, it falls back to idle or first symbol.
-     */
-    public function safePlay(name:String):Void {
-        try {
-            anim.play(name);
-        } catch (e:Dynamic) {
-            trace("[PsychFlxAnimate] Missing animation: " + name);
+			if(trimmed == '.json') myJson = File.getContent(myJson); //is a path
+			animJson = cast haxe.Json.parse(_removeBOM(myJson));
+		}
+		else animJson = cast myJson;
 
-            // Fallback 1 — idle
-            if (anim.exists("idle")) {
-                anim.play("idle");
-                return;
-            }
+		var isXml:Null<Bool> = null;
+		var myData:Dynamic = pathOrStr;
 
-            // Fallback 2 — first available symbol
-            var keys = anim.animations.animations.keys();
-            if (keys.hasNext()) {
-                var first = keys.next();
-                trace("[PsychFlxAnimate] Fallback to: " + first);
-                anim.play(first);
-            }
-        }
-    }
+		var trimmed:String = pathOrStr.trim();
+		trimmed = trimmed.substr(trimmed.length - 5).toLowerCase();
+
+		if(trimmed == '.json') //Path is json
+		{
+			myData = File.getContent(pathOrStr);
+			isXml = false;
+		}
+		else if (trimmed == '.xml') //Path is xml
+		{
+			myData = File.getContent(pathOrStr);
+			isXml = true;
+		}
+		myData = _removeBOM(myData);
+
+		// Automatic if everything else fails
+		switch(isXml)
+		{
+			case true:
+				myData = Xml.parse(myData);
+			case false:
+				myData = haxe.Json.parse(myData);
+			case null:
+				try
+				{
+					myData = haxe.Json.parse(myData);
+					isXml = false;
+					//trace('JSON parsed successfully!');
+				}
+				catch(e)
+				{
+					myData = Xml.parse(myData);
+					isXml = true;
+					//trace('XML parsed successfully!');
+				}
+		}
+
+		anim._loadAtlas(animJson);
+		if(!isXml) frames = FlxAnimateFrames.fromSpriteMap(cast myData, img);
+		else frames = FlxAnimateFrames.fromSparrow(cast myData, img);
+		origin = anim.curInstance.symbol.transformationPoint;
+	}
+
+	override function draw()
+	{
+		if(anim.curInstance == null || anim.curSymbol == null) return;
+		super.draw();
+	}
+
+	override function destroy()
+	{
+		try
+		{
+			super.destroy();
+		}
+		catch(e:haxe.Exception)
+		{
+			anim.curInstance = FlxDestroyUtil.destroy(anim.curInstance);
+			anim.stageInstance = FlxDestroyUtil.destroy(anim.stageInstance);
+			//anim.metadata = FlxDestroyUtil.destroy(anim.metadata);
+			anim.metadata.destroy();
+			anim.symbolDictionary = null;
+		}
+	}
+
+	function _removeBOM(str:String) //Removes BOM byte order indicator
+	{
+		if (str != null && str.length > 0 && str.charCodeAt(0) == 0xFEFF) str = str.substr(1); //myData = myData.substr(2);
+		return str;
+	}
+
+	public function pauseAnimation()
+	{
+		if(anim.curInstance == null || anim.curSymbol == null) return;
+		anim.pause();
+	}
+	public function resumeAnimation()
+	{
+		if(anim.curInstance == null || anim.curSymbol == null) return;
+		anim.play();
+	}
 }
