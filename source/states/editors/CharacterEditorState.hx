@@ -201,7 +201,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
             else
             keys = [];
             
-            var var animList:Array<String> = [];
+            var animList:Array<String> = [];
             animList = [];
             for (k in keys) animList.push(k);
             
