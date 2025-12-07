@@ -105,9 +105,9 @@ class Character extends FlxSprite {
 
 		var path:String = Paths.getPath(characterPath, TEXT);
 		#if MODS_ALLOWED
-		if (!FileSystem.exists(path)
+		if (!FileSystem.exists(path))
 		#else
-		if (!Assets.exists(path)
+		if (!Assets.exists(path))
 		#end
 		{
 			path = Paths.getSharedPath('characters/' + DEFAULT_CHARACTER +
@@ -119,9 +119,9 @@ class Character extends FlxSprite {
 
 		try {
 			#if MODS_ALLOWED
-			loadCharacterFile(Json.parse(File.getContent(path));
+			loadCharacterFile(Json.parse(File.getContent(path)));
 			#else
-			loadCharacterFile(Json.parse(Assets.getText(path));
+			loadCharacterFile(Json.parse(Assets.getText(path)));
 			#end
 		} catch (e:Dynamic) {
 			trace('Error loading character file of "$character": $e');
@@ -141,7 +141,7 @@ class Character extends FlxSprite {
 		if (json.animateZip != null) {
 			var zipPath = Paths.modFolders("animate/" + json.animateZip);
 
-			if (FileSystem.exists(zipPath) {
+			if (FileSystem.exists(zipPath)) {
 				trace("Loading Animate ZIP character: " + zipPath);
 
 				isAnimateZIP = true;
@@ -156,13 +156,13 @@ class Character extends FlxSprite {
 
 				// STOP NORMAL LOADING
 				return;
-			} else
+			} else {
 				trace("Animate ZIP not found at: " + zipPath);
 		}
 
 		#if flxanimate
 		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT);
-		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind)
+		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
 			isAnimateAtlas = true;
 		#end
 
@@ -170,7 +170,7 @@ class Character extends FlxSprite {
 		updateHitbox();
 
 		if (!isAnimateAtlas) {
-			frames = Paths.getMultiAtlas(json.image.split(',');
+			frames = Paths.getMultiAtlas(json.image.split(','));
 		}
 		#if flxanimate
 		else {
@@ -241,8 +241,9 @@ class Character extends FlxSprite {
 			}
 		}
 		#if flxanimate
-		if (isAnimateAtlas)
+		if (isAnimateAtlas) {
 			copyAtlasValues();
+		}
 		#end
 		// trace('Loaded file to character ' + curCharacter);
 	}
@@ -254,7 +255,7 @@ class Character extends FlxSprite {
 		if (debugMode
 			|| (!isAnimateAtlas && animation.curAnim == null)
 			|| (isAnimateAtlas && (atlas.anim.curInstance == null || atlas.anim.curSymbol == null)) {
-			super.update(elapsed);
+			super.update(elapsed));
 			return;
 		}
 
@@ -265,14 +266,14 @@ class Character extends FlxSprite {
 				var anim:String = getAnimationName();
 				if (specialAnim && (anim == 'hey' || anim == 'cheer') {
 					specialAnim = false;
-					dance();
+					dance());
 				}
 				heyTimer = 0;
 			}
-		} else if (specialAnim && isAnimationFinished() {
+		} else if (specialAnim && isAnimationFinished()) {
 			specialAnim = false;
 			dance();
-		} else if (getAnimationName().endsWith('miss') && isAnimationFinished() {
+		} else if (getAnimationName().endsWith('miss') && isAnimationFinished()) {
 			dance();
 			finishAnimation();
 		}
@@ -288,11 +289,11 @@ class Character extends FlxSprite {
 					playAnim('shoot' + noteData, true);
 					animationNotes.shift();
 				}
-				if (isAnimationFinished()
+				if (isAnimationFinished())
 					playAnim(getAnimationName(), false, false, animation.curAnim.frames.length - 3);
 		}
 
-		if (getAnimationName().startsWith('sing')
+		if (getAnimationName().startsWith('sing'))
 			holdTimer += elapsed;
 		else if (isPlayer)
 			holdTimer = 0;
@@ -304,7 +305,7 @@ class Character extends FlxSprite {
 		}
 
 		var name:String = getAnimationName();
-		if (isAnimationFinished() && hasAnimation('$name-loop')
+		if (isAnimationFinished() && hasAnimation('$name-loop')) {
 			playAnim('$name-loop');
 
 		super.update(elapsed);
@@ -321,13 +322,13 @@ class Character extends FlxSprite {
 	}
 
 	public function isAnimationFinished():Bool {
-		if (isAnimationNull()
+		if (isAnimationNull())
 			return false;
 		return !isAnimateAtlas ? animation.curAnim.finished : atlas.anim.finished;
 	}
 
 	public function finishAnimation():Void {
-		if (isAnimationNull()
+		if (isAnimationNull())
 			return;
 
 		if (!isAnimateAtlas)
@@ -343,13 +344,13 @@ class Character extends FlxSprite {
 	public var animPaused(get, set):Bool;
 
 	private function get_animPaused():Bool {
-		if (isAnimationNull()
+		if (isAnimationNull())
 			return false;
 		return !isAnimateAtlas ? animation.curAnim.paused : atlas.anim.isPlaying;
 	}
 
 	private function set_animPaused(value:Bool):Bool {
-		if (isAnimationNull()
+		if (isAnimationNull())
 			return value;
 		if (!isAnimateAtlas)
 			animation.curAnim.paused = value;
@@ -377,7 +378,7 @@ class Character extends FlxSprite {
 					playAnim('danceRight' + idleSuffix);
 				else
 					playAnim('danceLeft' + idleSuffix);
-			} else if (hasAnimation('idle' + idleSuffix)
+			} else if (hasAnimation('idle' + idleSuffix))
 				playAnim('idle' + idleSuffix);
 		}
 	}
@@ -395,14 +396,10 @@ class Character extends FlxSprite {
 		if (animation != null)
 			animation.play(name, forced, reversed, frame);
 
-		if (animOffsets.exists(name)
+		if (animOffsets.exists(name))
 			offset.set(animOffsets[name][0], animOffsets[name][1]);
 	}
-	
-    
-    
 
-    
     override public function getMidpoint(?point:FlxPoint = null):FlxPoint
     {
         if (point == null)
@@ -442,7 +439,7 @@ class Character extends FlxSprite {
     
 function loadMappedAnims():Void {
 		try {
-			var songData:SwagSong = Song.getChart('picospeaker', Paths.formatToSongPath(Song.loadedSongName);
+			var songData:SwagSong = Song.getChart('picospeaker', Paths.formatToSongPath(Song.loadedSongName));
 			if (songData != null)
 				for (section in songData.notes)
 					for (songNotes in section.sectionNotes)
@@ -463,7 +460,7 @@ function loadMappedAnims():Void {
 
 	public function recalculateDanceIdle() {
 		var lastDanceIdle:Bool = danceIdle;
-		danceIdle = (hasAnimation('danceLeft' + idleSuffix) && hasAnimation('danceRight' + idleSuffix);
+		danceIdle = (hasAnimation('danceLeft' + idleSuffix) && hasAnimation('danceRight' + idleSuffix));
 
 		if (settingCharacterUp) {
 			danceEveryNumBeats = (danceIdle ? 1 : 2);
@@ -474,7 +471,7 @@ function loadMappedAnims():Void {
 			else
 				calc *= 2;
 
-			danceEveryNumBeats = Math.round(Math.max(calc, 1);
+			danceEveryNumBeats = Math.round(Math.max(calc, 1));
 		}
 		settingCharacterUp = false;
 	}

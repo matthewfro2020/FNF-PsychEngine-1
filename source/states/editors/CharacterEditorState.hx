@@ -334,7 +334,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 					hideGhostButton.alpha = 1; */
 				trace('created ghost image');
 			}
-		});
+		}
 
 		/*hideGhostButton = new PsychUIButton(20 + makeGhostButton.width, makeGhostButton.y, "Hide Ghost", function() {
 			ghost.visible = false;
@@ -355,7 +355,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 				animateGhost.colorTransform.greenOffset = value;
 				animateGhost.colorTransform.blueOffset = value;
 			}
-		};
+		}
 
 		var ghostAlphaSlider:PsychUISlider = new PsychUISlider(15, makeGhostButton.y + 25, function(v:Float) {
 			ghostAlpha = v;
@@ -452,7 +452,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			reloadCharacterDropDown();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
-		});
+
 		reloadCharacterDropDown();
 		charDropDown.selectedLabel = _char;
 
