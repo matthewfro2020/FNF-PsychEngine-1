@@ -11,7 +11,7 @@ class PsychFlxAnimate extends OriginalFlxAnimate
 	public function loadAtlasEx(img:FlxGraphicAsset, pathOrStr:String = null, myJson:Dynamic = null)
 	{
 		var animJson:AnimAtlas = null;
-		if(myJson is String)
+		if(Std.isOfType(myJson, String))
 		{
 			var trimmed:String = pathOrStr.trim();
 			trimmed = trimmed.substr(trimmed.length - 5).toLowerCase();
@@ -32,7 +32,7 @@ class PsychFlxAnimate extends OriginalFlxAnimate
 			myData = File.getContent(pathOrStr);
 			isXml = false;
 		}
-		else if (trimmed.substr(1) == '.xml') //Path is xml
+		else if (trimmed == '.xml') //Path is xml
 		{
 			myData = File.getContent(pathOrStr);
 			isXml = true;
@@ -91,7 +91,7 @@ class PsychFlxAnimate extends OriginalFlxAnimate
 
 	function _removeBOM(str:String) //Removes BOM byte order indicator
 	{
-		if (str.charCodeAt(0) == 0xFEFF) str = str.substr(1); //myData = myData.substr(2);
+		if (str != null && str.length > 0 && str.charCodeAt(0) == 0xFEFF) str = str.substr(1); //myData = myData.substr(2);
 		return str;
 	}
 

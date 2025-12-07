@@ -48,7 +48,7 @@ class AnimateFolderReader
         // Load all PNG symbols
         for (file in FileSystem.readDirectory(symPath))
         {
-            if (!file.endsWith(".png")) continue;
+            if (!file.toLowerCase().endsWith(".png")) continue;
 
             var full = symPath + "/" + file;
             try {
@@ -108,4 +108,4 @@ class AnimateFolderReader
             }
         }
     }
-}
+};
