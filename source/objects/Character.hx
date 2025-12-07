@@ -331,13 +331,52 @@ public function dance():Void
     if (skipDance || specialAnim)
         return;
 
-    // Block early dance calls for ZIP or atlas until fully initialized
+    // ZIP: NEVER evaluate PNG/Atlas animation logic here
     if (isAnimateZIP)
     {
-        if (animateZIPChar == null || animateZIPChar.getCurrentAnimation() == null)
-            return; // do NOT play PNG animations
+        if (animateZIPChar == null)
+            return;
+
+        var cur = animateZIPChar.getCurrentAnimation();
+        if (cur == null)
+            return;
+
+        // Force play idle or dance animations for ZIP safely
+        if (animateZIPChar.hasAnimation("danceLeft"))
+        {
+            danced = !danced;
+            animateZIPChar.play(danced ? "danceRight" : "danceLeft");
+        }
+        else if (animateZIPChar.hasAnimation("idle"))
+        {
+            animateZIPChar.play("idle");
+        }
+
+        return;
     }
 
+    // ATLAS: same logic — avoid PNG animation controller
+    #if flxanimate
+    if (isAnimateAtlas)
+    {
+        if (atlas == null || atlas.anim == null)
+            return;
+
+        if (atlas.anim.exists("danceLeft"))
+        {
+            danced = !danced;
+            atlas.anim.play(danced ? "danceRight" : "danceLeft");
+        }
+        else if (atlas.anim.exists("idle"))
+        {
+            atlas.anim.play("idle");
+        }
+
+        return;
+    }
+    #end
+
+    // PNG ANIMATIONS (default)
     if (danceIdle)
     {
         danced = !danced;
@@ -348,6 +387,7 @@ public function dance():Void
         playAnim("idle" + idleSuffix);
     }
 }
+
 
     // =====================================================
     // LOAD CHARACTER FILE (JSON)
