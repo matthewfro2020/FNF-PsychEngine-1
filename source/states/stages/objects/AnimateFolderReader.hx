@@ -44,11 +44,21 @@ class AnimateFolderReader
         try {
             dataJson = Json.parse(File.getContent(dataPath));
             libJson  = Json.parse(File.getContent(libPath));
-        }
+        
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
         catch (e) {
             trace("[AnimateFolderReader] JSON parse error: " + e);
             return;
-        }
+        
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
 
         // ----------------------------
         // Load symbol JSON files
@@ -62,16 +72,41 @@ class AnimateFolderReader
                     var content = File.getContent(symPath + "/" + file);
                     var parsed  = Json.parse(content);
                     symbols[name] = parsed;
-                }
+                
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
                 catch (e) {
                     trace("[AnimateFolderReader] Error loading symbol " + file + ": " + e);
-                }
-            }
-        }
+                
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
+            
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
+        
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
 
         valid = true;
         trace("[AnimateFolderReader] Loaded Animate folder OK: " + base);
-    }
+    
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
 
     /**
      * Character.hx will call this:
@@ -88,9 +123,29 @@ class AnimateFolderReader
         // NOT "library", NOT "symbols"
         try {
             atlas.loadAtlasWithAnimation(libJson, dataJson);
-        }
+        
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
         catch (e) {
             trace("[AnimateFolderReader] Error applying data to atlas: " + e);
-        }
-    }
+        
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
+    
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
+}
+
+// Autopatcher v3: Fix AnimateFolderReader → Provide symbol map
+@:publicFields
+public var symbols:Map<String,Dynamic> = new Map();
+
 }
