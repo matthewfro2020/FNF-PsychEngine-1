@@ -25,6 +25,7 @@ import flixel.math.FlxPoint;
 import flixel.camera.FlxCamera;
 import ui.PsychUIEventHandler;
 import ui.PsychUIBox;
+
 class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent {
 	var char:Character;
 	var specialAnim:Bool = false;
@@ -1273,10 +1274,13 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 	}
 
 	inline function newAnim(anim:String, name:String):AnimArray {
-		var char:Character;
 		return {
-			var char:Character;
-			offsets:[0, 0], loop:false, fps:24, anim:anim, indices:[], name:name
+			offsets: [0, 0],
+			loop: false,
+			fps: 24,
+			anim: anim,
+			indices: [],
+			name: name
 		};
 	}
 
@@ -1364,7 +1368,6 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			"healthicon":character.healthIcon, "position":character.positionArray, "camera_position":character.cameraPosition,
 			"flip_x":character.originalFlipX, "no_antialiasing":character.noAntialiasing, "healthbar_colors":character.healthColorArray,
 			"vocals_file":character.vocalsFile, "_editor_isPlayer":character.isPlayer
-
 		};
 
 		var data:String = PsychJsonPrinter.print(json, ['offsets', 'position', 'healthbar_colors', 'camera_position', 'indices']);
