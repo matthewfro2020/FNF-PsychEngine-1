@@ -447,7 +447,8 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 				reloadCharacterDropDown();
 				updatePointerPos();
 			}
-		else {
+	}
+	else {
 			reloadCharacterDropDown();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
@@ -522,7 +523,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			for (anim in character.animationsArray)
 				if (animationInputText.text == anim.anim) {
 					lastOffsets = anim.offsets;
-					if (character.char.hasAnimation(animationInputText.text)) {
+					if (character.hasAnimation(animationInputText.text)) {
 						if (!character.isAnimateAtlas)
 							character.animation.remove(animationInputText.text);
 						else @:privateAccess
@@ -541,7 +542,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 			reloadAnimList();
 			@:arrayAccess curAnim = Std.int(Math.max(0, character.animationsArray.indexOf(addedAnim)));
-			character.char.playAnim(addedAnim.anim, true);
+			character.playAnim(addedAnim.anim, true);
 			trace('Added/Updated animation: ' + animationInputText.text);
 		});
 
@@ -551,7 +552,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 					var resetAnim:Bool = false;
 					if (anim.anim == character.getAnimationName())
 						resetAnim = true;
-					if (character.char.hasAnimation(anim.anim)) {
+					if (character.hasAnimation(anim.anim)) {
 						if (!character.isAnimateAtlas)
 							character.animation.remove(anim.anim);
 						else @:privateAccess
@@ -562,7 +563,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 					if (resetAnim && character.animationsArray.length > 0) {
 						curAnim = FlxMath.wrap(curAnim, 0, anims.length - 1);
-						character.char.playAnim(anims[curAnim].anim, true);
+						character.playAnim(anims[curAnim].anim, true);
 					}
 					reloadAnimList();
 					trace('Removed animation: ' + animationInputText.text);
@@ -615,7 +616,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			character.imageFile = imageInputText.text;
 			reloadCharacterImage();
 			if (!character.isAnimationNull()) {
-				character.char.playAnim(lastAnim, true);
+				character.playAnim(lastAnim, true);
 			}
 		});
 
@@ -791,7 +792,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 		if (anims.length > 0) {
 			if (lastAnim != '')
-				character.char.playAnim(lastAnim, true);
+				character.playAnim(lastAnim, true);
 			else
 				character.dance();
 		}
@@ -879,7 +880,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			if (changedAnim) {
 				undoOffsets = null;
 				curAnim = FlxMath.wrap(curAnim, 0, anims.length - 1);
-				character.char.playAnim(anims[curAnim].anim, true);
+				character.playAnim(anims[curAnim].anim, true);
 				updateText();
 			}
 		}
@@ -964,7 +965,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 				holdingFrameTime = 0;
 
 			if (FlxG.keys.justPressed.SPACE)
-				character.char.playAnim(character.getAnimationName(), true);
+				character.playAnim(character.getAnimationName(), true);
 
 			var frames:Int = -1;
 			var length:Int = -1;
@@ -1093,7 +1094,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 	inline function reloadAnimList() {
 		anims = character.animationsArray;
 		if (anims.length > 0)
-			character.char.playAnim(anims[0].anim, true);
+			character.playAnim(anims[0].anim, true);
 		curAnim = 0;
 
 		updateText();
@@ -1151,7 +1152,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 				character.atlas.anim.addBySymbol(anim, name, fps, loop);
 		}
 
-		if (!character.char.hasAnimation(anim))
+		if (!character.hasAnimation(anim))
 			character.addOffset(anim, 0, 0);
 	}
 
@@ -1274,22 +1275,29 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 	}
 
 
-    public function recalculateDanceIdle():Void {
-		danceIdle = character.hasAnimation("danceLeft" + idleSuffix) && character.hasAnimation("danceRight" + idleSuffix);
+    	public function recalculateDanceIdle():Void {
+		danceIdle = character.hasAnimation('danceLeft' + idleSuffix)
+			&& character.hasAnimation('danceRight' + idleSuffix);
 	}
 
-	public function isAnimationNull():Bool {
+
+		public function isAnimationNull():Bool {
 		animation = character.animation;
 		return (animation == null || animation.curAnim == null);
 	}
 
-	public function isAnimationFinished():Bool {
+
+		public function isAnimationFinished():Bool {
 		animation = character.animation;
-		return (animation != null && animation.curAnim != null) ? animation.curAnim.finished : true;
+		return (animation != null && animation.curAnim != null)
+			? animation.curAnim.finished : true;
 	}
 
-	public function finishAnimation():Void {
+
+		public function finishAnimation():Void {
+		animation = character.animation;
 		if (animation != null && animation.curAnim != null)
 			animation.curAnim.finish();
 	}
+
 }
