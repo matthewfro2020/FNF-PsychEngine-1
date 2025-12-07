@@ -1165,132 +1165,133 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			name: name
 		};
 	}
-}
 
-var characterList:Array<String> = [];
-
-function reloadCharacterDropDown() {
-	characterList = Mods.mergeAllTextsNamed('data/characterList.txt');
-	var foldersToCheck:Array<String> = Mods.directoriesWithFile(Paths.getSharedPath(), 'characters/');
-	for (folder in foldersToCheck)
-		for (file in FileSystem.readDirectory(folder))
-			if (file.toLowerCase().endsWith('.json')) {
-				var charToCheck:String = file.substr(0, file.length - 5);
-				if (!characterList.contains(charToCheck))
-					characterList.push(charToCheck);
-			}
-
-	if (characterList.length < 1)
-		characterList.push('');
-	charDropDown.list = characterList;
-	charDropDown.selectedLabel = _char;
-}
-
-function reloadAnimationDropDown() {
-	var animList:Array<String> = [];
-	for (anim in anims)
-		animList.push(anim.anim);
-	if (animList.length < 1)
-		animList.push('NO ANIMATIONS'); // Prevents crash
-
-	animationDropDown.list = animList;
-}
-
-// save
-var _file:FileReference;
-
-function onSaveComplete(_):Void {
-	if (_file == null)
-		return;
-	_file.removeEventListener(Event.COMPLETE, onSaveComplete);
-	_file.removeEventListener(Event.CANCEL, onSaveCancel);
-	_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
-	_file = null;
-	FlxG.log.notice("Successfully saved file.");
-}
-
-/**
- * Called when the save file dialog is cancelled.
- */
-function onSaveCancel(_):Void {
-	if (_file == null)
-		return;
-	_file.removeEventListener(Event.COMPLETE, onSaveComplete);
-	_file.removeEventListener(Event.CANCEL, onSaveCancel);
-	_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
-	_file = null;
-}
-
-/**
- * Called if there is an error while saving the gameplay recording.
- */
-function onSaveError(_):Void {
-	if (_file == null)
-		return;
-	_file.removeEventListener(Event.COMPLETE, onSaveComplete);
-	_file.removeEventListener(Event.CANCEL, onSaveCancel);
-	_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
-	_file = null;
-	FlxG.log.error("Problem saving file");
-}
-
-function saveCharacter() {
-	if (_file != null)
-		return;
-
-	var json:Dynamic = {
-		"animations": character.animationsArray,
-		"image": character.imageFile,
-		"scale": character.jsonScale,
-		"sing_duration": character.singDuration,
-		"healthicon": character.healthIcon,
-		"position": character.positionArray,
-		"camera_position": character.cameraPosition,
-		"flip_x": character.originalFlipX,
-		"no_antialiasing": character.noAntialiasing,
-		"healthbar_colors": character.healthColorArray,
-		"vocals_file": character.vocalsFile,
-		"_editor_isPlayer": character.isPlayer
-	};
-
-	var data:String = PsychJsonPrinter.print(json, ['offsets', 'position', 'healthbar_colors', 'camera_position', 'indices']);
-
-	if (data.length > 0) {
-		_file = new FileReference();
-		_file.addEventListener(#if desktop Event.SELECT #else Event.COMPLETE #end, onSaveComplete);
-		_file.addEventListener(Event.CANCEL, onSaveCancel);
-		_file.addEventListener(IOErrorEvent.IO_ERROR, onSaveError);
-		_file.save(data, '$_char.json');
+	public function dance():Void {
+		if (specialAnim)
+			return;
+		var c = character;
+		if (danceIdle) {
+			c.danced = !c.danced;
+			c.char.playAnim(c.danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix), true);
+		}
 	}
-}
 
-public function dance():Void {
-	if (specialAnim)
-		return;
-	var c = character;
-	if (danceIdle) {
-		c.danced = !c.danced;
-		c.char.playAnim(c.danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix), true);
-	} else {
-		c.char.playAnim("idle" + idleSuffix, true);
+	var characterList:Array<String> = [];
+
+	function reloadCharacterDropDown() {
+		characterList = Mods.mergeAllTextsNamed('data/characterList.txt');
+		var foldersToCheck:Array<String> = Mods.directoriesWithFile(Paths.getSharedPath(), 'characters/');
+		for (folder in foldersToCheck)
+			for (file in FileSystem.readDirectory(folder))
+				if (file.toLowerCase().endsWith('.json')) {
+					var charToCheck:String = file.substr(0, file.length - 5);
+					if (!characterList.contains(charToCheck))
+						characterList.push(charToCheck);
+				}
+
+		if (characterList.length < 1)
+			characterList.push('');
+		charDropDown.list = characterList;
+		charDropDown.selectedLabel = _char;
 	}
-}
 
-public function recalculateDanceIdle():Void {
-	danceIdle = character.hasAnimation("danceLeft" + idleSuffix) && character.hasAnimation("danceRight" + idleSuffix);
-}
+	function reloadAnimationDropDown() {
+		var animList:Array<String> = [];
+		for (anim in anims)
+			animList.push(anim.anim);
+		if (animList.length < 1)
+			animList.push('NO ANIMATIONS'); // Prevents crash
 
-public function isAnimationNull():Bool {
-	animation = character.animation;
-	return (animation == null || animation.curAnim == null);
-}
+		animationDropDown.list = animList;
+	}
 
-public function isAnimationFinished():Bool {
-	animation = character.animation;
-	return (animation != null && animation.curAnim != null) ? animation.curAnim.finished : true;
-}
+	// save
+	var _file:FileReference;
 
-public function finishAnimation():Void {
-	if (animation != null && animation.curAnim != null)
-		animation.curAnim.finish();
+	function onSaveComplete(_):Void {
+		if (_file == null)
+			return;
+		_file.removeEventListener(Event.COMPLETE, onSaveComplete);
+		_file.removeEventListener(Event.CANCEL, onSaveCancel);
+		_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+		_file = null;
+		FlxG.log.notice("Successfully saved file.");
+	}
+
+	/**
+	 * Called when the save file dialog is cancelled.
+	 */
+	function onSaveCancel(_):Void {
+		if (_file == null)
+			return;
+		_file.removeEventListener(Event.COMPLETE, onSaveComplete);
+		_file.removeEventListener(Event.CANCEL, onSaveCancel);
+		_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+		_file = null;
+	}
+
+	/**
+	 * Called if there is an error while saving the gameplay recording.
+	 */
+	function onSaveError(_):Void {
+		if (_file == null)
+			return;
+		_file.removeEventListener(Event.COMPLETE, onSaveComplete);
+		_file.removeEventListener(Event.CANCEL, onSaveCancel);
+		_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+		_file = null;
+		FlxG.log.error("Problem saving file");
+	}
+
+	function saveCharacter() {
+		if (_file != null)
+			return;
+
+		var json:Dynamic = {
+			"animations": character.animationsArray,
+			"image": character.imageFile,
+			"scale": character.jsonScale,
+			"sing_duration": character.singDuration,
+			"healthicon": character.healthIcon,
+			"position": character.positionArray,
+			"camera_position": character.cameraPosition,
+			"flip_x": character.originalFlipX,
+			"no_antialiasing": character.noAntialiasing,
+			"healthbar_colors": character.healthColorArray,
+			"vocals_file": character.vocalsFile,
+			"_editor_isPlayer": character.isPlayer
+		};
+
+		var data:String = PsychJsonPrinter.print(json, ['offsets', 'position', 'healthbar_colors', 'camera_position', 'indices']);
+
+		if (data.length > 0) {
+			_file = new FileReference();
+			_file.addEventListener(#if desktop Event.SELECT #else Event.COMPLETE #end, onSaveComplete);
+			_file.addEventListener(Event.CANCEL, onSaveCancel);
+			_file.addEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+			_file.save(data, '$_char.json');
+		}
+	}
+
+else {
+	c.char.playAnim("idle" + idleSuffix, true);
+}
+	public function recalculateDanceIdle():Void {
+		danceIdle = character.hasAnimation("danceLeft" + idleSuffix) && character.hasAnimation("danceRight" + idleSuffix);
+	}
+
+	public function isAnimationNull():Bool {
+		animation = character.animation;
+		return (animation == null || animation.curAnim == null);
+	}
+
+	public function isAnimationFinished():Bool {
+		animation = character.animation;
+		return (animation != null && animation.curAnim != null) ? animation.curAnim.finished : true;
+	}
+
+	public function finishAnimation():Void {
+		if (animation != null && animation.curAnim != null)
+			animation.curAnim.finish();
+	}
 }
