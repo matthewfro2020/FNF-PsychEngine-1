@@ -810,7 +810,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			character.atlas = new FlxAnimate();
 			character.atlas.showPivot = false;
 			try {
-				Paths.loadAnimateAtlas(character.atlas, character.imageFile);
+				Paths.loadAnimateAtlas(character.atlas, character.imageFile, true);
 			} catch (e:Dynamic) {
 				FlxG.log.warn('Could not load atlas ${character.imageFile}: $e');
 			}
