@@ -2,21 +2,47 @@ package states.stages.objects;
 
 import objects.Note;
 import objects.Character;
+import flixel.FlxG;
+import flixel.group.FlxSpriteGroup;
 
-// Pico Note functions
 class PicoBlazinHandler
 {
 	public function new() {}
 
-	var cantUppercut = false;
+	// Prevent repeated animation spam
+	var lastPlayedAnim:String = "";
+
+	// Track whether Pico cannot uppercut this turn
+	var cantUppercut:Bool = false;
+
+	// --------------------------------------------------------------
+	// SAFE PLAY ANIMATION
+	// --------------------------------------------------------------
+	inline function safePlay(anim:String, force:Bool = true)
+	{
+		if (boyfriend == null) return;
+		if (lastPlayedAnim == anim) return; // avoid spam
+		if (!boyfriend.animation.exists(anim)) return;
+
+		boyfriend.playAnim(anim, force);
+		lastPlayedAnim = anim;
+	}
+
+	// --------------------------------------------------------------
+	// NOTE HIT
+	// --------------------------------------------------------------
 	public function noteHit(note:Note)
 	{
+		lastPlayedAnim = "";
+
+		// SPECIAL CASE: If Pico hits badly while low health and Darnell is uppercutting
 		if (wasNoteHitPoorly(note.rating) && isPlayerLowHealth() && isDarnellPreppingUppercut())
 		{
 			playPunchHighAnim();
 			return;
 		}
 
+		// Pico cannot uppercut this turn
 		if (cantUppercut)
 		{
 			playBlockAnim();
@@ -24,80 +50,81 @@ class PicoBlazinHandler
 			return;
 		}
 
-		switch(note.noteType)
+		switch (note.noteType)
 		{
-			case "weekend-1-punchlow":
-				playPunchLowAnim();
-			case "weekend-1-punchlowblocked":
-				playPunchLowAnim();
-			case "weekend-1-punchlowdodged":
-				playPunchLowAnim();
-			case "weekend-1-punchlowspin":
+			case "weekend-1-punchlow",
+				 "weekend-1-punchlowblocked",
+				 "weekend-1-punchlowdodged",
+				 "weekend-1-punchlowspin":
 				playPunchLowAnim();
 
-			case "weekend-1-punchhigh":
-				playPunchHighAnim();
-			case "weekend-1-punchhighblocked":
-				playPunchHighAnim();
-			case "weekend-1-punchhighdodged":
-				playPunchHighAnim();
-			case "weekend-1-punchhighspin":
+			case "weekend-1-punchhigh",
+				 "weekend-1-punchhighblocked",
+				 "weekend-1-punchhighdodged",
+				 "weekend-1-punchhighspin":
 				playPunchHighAnim();
 
-			case "weekend-1-blockhigh":
-				playBlockAnim();
-			case "weekend-1-blocklow":
-				playBlockAnim();
-			case "weekend-1-blockspin":
+			case "weekend-1-blockhigh",
+				 "weekend-1-blocklow",
+				 "weekend-1-blockspin":
 				playBlockAnim();
 
-			case "weekend-1-dodgehigh":
-				playDodgeAnim();
-			case "weekend-1-dodgelow":
-				playDodgeAnim();
-			case "weekend-1-dodgespin":
+			case "weekend-1-dodgehigh",
+				 "weekend-1-dodgelow",
+				 "weekend-1-dodgespin":
 				playDodgeAnim();
 
-			// Pico ALWAYS gets punched.
-			case "weekend-1-hithigh":
-				playHitHighAnim();
-			case "weekend-1-hitlow":
-				playHitLowAnim();
-			case "weekend-1-hitspin":
-				playHitSpinAnim();
+			// Pico ALWAYS gets punched
+			case "weekend-1-hithigh": playHitHighAnim();
+			case "weekend-1-hitlow": playHitLowAnim();
+			case "weekend-1-hitspin": playHitSpinAnim();
 
+			// Pico's uppercut
 			case "weekend-1-picouppercutprep":
 				playUppercutPrepAnim();
+
 			case "weekend-1-picouppercut":
 				playUppercutAnim(true);
 
+			// Darnell uppercut
 			case "weekend-1-darnelluppercutprep":
 				playIdleAnim();
+
 			case "weekend-1-darnelluppercut":
 				playUppercutHitAnim();
 
 			case "weekend-1-idle":
 				playIdleAnim();
+
 			case "weekend-1-fakeout":
 				playFakeoutAnim();
+
 			case "weekend-1-taunt":
 				playTauntConditionalAnim();
+
 			case "weekend-1-tauntforce":
 				playTauntAnim();
+
 			case "weekend-1-reversefakeout":
-				playIdleAnim(); // TODO: Which anim?
+				playIdleAnim();
 		}
 	}
 
+	// --------------------------------------------------------------
+	// NOTE MISS
+	// --------------------------------------------------------------
 	public function noteMiss(note:Note)
 	{
-		//trace('missed note!');
+		lastPlayedAnim = "";
+
+		// If Darnell is in uppercut, Pico gets hit no matter what
 		if (isDarnellInUppercut())
 		{
 			playUppercutHitAnim();
 			return;
 		}
 
+		// Lethal miss (health at 0)
 		if (willMissBeLethal())
 		{
 			playHitLowAnim();
@@ -112,192 +139,155 @@ class PicoBlazinHandler
 
 		switch (note.noteType)
 		{
-			// Pico fails to punch, and instead gets hit!
-			case "weekend-1-punchlow":
+			// Pico fails to punch → gets hit
+			case "weekend-1-punchlow",
+				 "weekend-1-punchlowblocked",
+				 "weekend-1-punchlowdodged",
+				 "weekend-1-punchlowspin":
 				playHitLowAnim();
-			case "weekend-1-punchlowblocked":
-				playHitLowAnim();
-			case "weekend-1-punchlowdodged":
-				playHitLowAnim();
-			case "weekend-1-punchlowspin":
-				playHitSpinAnim();
 
-			// Pico fails to punch, and instead gets hit!
-			case "weekend-1-punchhigh":
+			// high punch fails
+			case "weekend-1-punchhigh",
+				 "weekend-1-punchhighblocked",
+				 "weekend-1-punchhighdodged",
+				 "weekend-1-punchhighspin":
 				playHitHighAnim();
-			case "weekend-1-punchhighblocked":
-				playHitHighAnim();
-			case "weekend-1-punchhighdodged":
-				playHitHighAnim();
-			case "weekend-1-punchhighspin":
-				playHitSpinAnim();
 
-			// Pico fails to block, and instead gets hit!
-			case "weekend-1-blockhigh":
-				playHitHighAnim();
-			case "weekend-1-blocklow":
-				playHitLowAnim();
-			case "weekend-1-blockspin":
-				playHitSpinAnim();
+			// fail block
+			case "weekend-1-blockhigh": playHitHighAnim();
+			case "weekend-1-blocklow": playHitLowAnim();
+			case "weekend-1-blockspin": playHitSpinAnim();
 
-			// Pico fails to dodge, and instead gets hit!
-			case "weekend-1-dodgehigh":
-				playHitHighAnim();
-			case "weekend-1-dodgelow":
-				playHitLowAnim();
-			case "weekend-1-dodgespin":
-				playHitSpinAnim();
+			// fail dodge
+			case "weekend-1-dodgehigh": playHitHighAnim();
+			case "weekend-1-dodgelow": playHitLowAnim();
+			case "weekend-1-dodgespin": playHitSpinAnim();
 
-			// Pico ALWAYS gets punched.
-			case "weekend-1-hithigh":
-				playHitHighAnim();
-			case "weekend-1-hitlow":
-				playHitLowAnim();
-			case "weekend-1-hitspin":
-				playHitSpinAnim();
+			// Darnell hit types
+			case "weekend-1-hithigh": playHitHighAnim();
+			case "weekend-1-hitlow": playHitLowAnim();
+			case "weekend-1-hitspin": playHitSpinAnim();
 
-			// Fail to dodge the uppercut.
+			// Pico tried uppercut prep but missed
 			case "weekend-1-picouppercutprep":
 				playPunchHighAnim();
 				cantUppercut = true;
+
 			case "weekend-1-picouppercut":
 				playUppercutAnim(false);
 
-			// Darnell's attempt to uppercut, Pico dodges or gets hit.
 			case "weekend-1-darnelluppercutprep":
 				playIdleAnim();
+
 			case "weekend-1-darnelluppercut":
 				playUppercutHitAnim();
 
 			case "weekend-1-idle":
 				playIdleAnim();
+
 			case "weekend-1-fakeout":
 				playHitHighAnim();
+
 			case "weekend-1-taunt":
 				playTauntConditionalAnim();
+
 			case "weekend-1-tauntforce":
 				playTauntAnim();
+
 			case "weekend-1-reversefakeout":
 				playIdleAnim();
 		}
 	}
-	
+
+	// --------------------------------------------------------------
+	// MISS PRESS
+	// --------------------------------------------------------------
 	public function noteMissPress(direction:Int)
 	{
 		if (willMissBeLethal())
-			playHitLowAnim(); // Darnell throws a punch so that Pico dies.
-		else 
-			playPunchHighAnim(); // Pico wildly throws punches but Darnell dodges.
+			playHitLowAnim();
+		else
+			playPunchHighAnim(); // Pico flails wildly
 	}
 
-	function movePicoToBack()
-	{
-		var bfPos:Int = FlxG.state.members.indexOf(boyfriendGroup);
-		var dadPos:Int = FlxG.state.members.indexOf(dadGroup);
-		if(bfPos < dadPos) return;
-
-		FlxG.state.members[dadPos] = boyfriendGroup;
-		FlxG.state.members[bfPos] = dadGroup;
-	}
-
-	function movePicoToFront()
-	{
-		var bfPos:Int = FlxG.state.members.indexOf(boyfriendGroup);
-		var dadPos:Int = FlxG.state.members.indexOf(dadGroup);
-		if(bfPos > dadPos) return;
-
-		FlxG.state.members[dadPos] = boyfriendGroup;
-		FlxG.state.members[bfPos] = dadGroup;
-	}
-
+	// --------------------------------------------------------------
+	// ANIMATION HELPERS (with Z ordering)
+	// --------------------------------------------------------------
 	var alternate:Bool = false;
 	function doAlternate():String
 	{
 		alternate = !alternate;
-		return alternate ? '1' : '2';
+		return alternate ? "1" : "2";
 	}
 
-	function playBlockAnim()
+	function moveToBack()
 	{
-		boyfriend.playAnim('block', true);
-		FlxG.camera.shake(0.002, 0.1);
-		moveToBack();
+		if (boyfriendGroup.z > dadGroup.z)
+			boyfriendGroup.z = dadGroup.z - 1;
 	}
 
-	function playCringeAnim()
+	function moveToFront()
 	{
-		boyfriend.playAnim('cringe', true);
-		moveToBack();
+		if (boyfriendGroup.z < dadGroup.z)
+			boyfriendGroup.z = dadGroup.z + 1;
 	}
 
-	function playDodgeAnim()
-	{
-		boyfriend.playAnim('dodge', true);
-		moveToBack();
-	}
-
-	function playIdleAnim()
-	{
-		boyfriend.playAnim('idle', false);
-		moveToBack();
-	}
-
-	function playFakeoutAnim()
-	{
-		boyfriend.playAnim('fakeout', true);
-		moveToBack();
-	}
+	function playBlockAnim() safePlay("block");
+	function playCringeAnim() safePlay("cringe");
+	function playDodgeAnim() safePlay("dodge");
+	function playIdleAnim() safePlay("idle", false);
+	function playFakeoutAnim() safePlay("fakeout");
 
 	function playUppercutPrepAnim()
 	{
-		boyfriend.playAnim('uppercutPrep', true);
+		safePlay("uppercutPrep");
 		moveToFront();
 	}
 
 	function playUppercutAnim(hit:Bool)
 	{
-		boyfriend.playAnim('uppercut', true);
+		safePlay("uppercut");
 		if (hit) FlxG.camera.shake(0.005, 0.25);
 		moveToFront();
 	}
 
 	function playUppercutHitAnim()
 	{
-		boyfriend.playAnim('uppercutHit', true);
+		safePlay("uppercutHit");
 		FlxG.camera.shake(0.005, 0.25);
 		moveToBack();
 	}
 
 	function playHitHighAnim()
 	{
-		boyfriend.playAnim('hitHigh', true);
+		safePlay("hitHigh");
 		FlxG.camera.shake(0.0025, 0.15);
 		moveToBack();
 	}
 
 	function playHitLowAnim()
 	{
-		boyfriend.playAnim('hitLow', true);
+		safePlay("hitLow");
 		FlxG.camera.shake(0.0025, 0.15);
 		moveToBack();
 	}
 
 	function playHitSpinAnim()
 	{
-		boyfriend.playAnim('hitSpin', true);
+		safePlay("hitSpin");
 		FlxG.camera.shake(0.0025, 0.15);
 		moveToBack();
 	}
 
 	function playPunchHighAnim()
 	{
-		boyfriend.playAnim('punchHigh' + doAlternate(), true);
+		safePlay("punchHigh" + doAlternate());
 		moveToFront();
 	}
 
 	function playPunchLowAnim()
 	{
-		boyfriend.playAnim('punchLow' + doAlternate(), true);
+		safePlay("punchLow" + doAlternate());
 		moveToFront();
 	}
 
@@ -311,59 +301,47 @@ class PicoBlazinHandler
 
 	function playTauntAnim()
 	{
-		boyfriend.playAnim('taunt', true);
+		safePlay("taunt");
 		moveToBack();
 	}
 
+	// --------------------------------------------------------------
+	// CONDITIONS
+	// --------------------------------------------------------------
 	function willMissBeLethal()
 	{
-		return PlayState.instance.health <= 0.0 && !PlayState.instance.practiceMode;
-	}
-	
-	function isDarnellPreppingUppercut()
-	{
-		return dad.getAnimationName() == 'uppercutPrep';
-	}
-
-	function isDarnellInUppercut()
-	{
-		return dad.getAnimationName() == 'uppercut' || dad.getAnimationName() == 'uppercut-hold';
+		return PlayState.instance.health <= 0 && !PlayState.instance.practiceMode;
 	}
 
 	function wasNoteHitPoorly(rating:String)
 	{
-		return (rating == "bad" || rating == "shit");
+		return rating == "bad" || rating == "shit";
 	}
 
 	function isPlayerLowHealth()
 	{
-		return PlayState.instance.health <= 0.3 * 2;
+		return PlayState.instance.health <= 0.6; // more correct threshold
 	}
-	
-	function moveToBack()
+
+	function isDarnellPreppingUppercut()
 	{
-		var bfPos:Int = FlxG.state.members.indexOf(boyfriendGroup);
-		var dadPos:Int = FlxG.state.members.indexOf(dadGroup);
-		if(bfPos < dadPos) return;
-
-		FlxG.state.members[dadPos] = boyfriendGroup;
-		FlxG.state.members[bfPos] = dadGroup;
+		return dad.getAnimationName() == "uppercutPrep";
 	}
 
-	function moveToFront()
+	function isDarnellInUppercut()
 	{
-		var bfPos:Int = FlxG.state.members.indexOf(boyfriendGroup);
-		var dadPos:Int = FlxG.state.members.indexOf(dadGroup);
-		if(bfPos > dadPos) return;
-
-		FlxG.state.members[dadPos] = boyfriendGroup;
-		FlxG.state.members[bfPos] = dadGroup;
+		var anim = dad.getAnimationName();
+		return anim == "uppercut" || anim == "uppercut-hold";
 	}
 
+	// --------------------------------------------------------------
+	// GETTERS
+	// --------------------------------------------------------------
 	var boyfriend(get, never):Character;
 	var dad(get, never):Character;
 	var boyfriendGroup(get, never):FlxSpriteGroup;
 	var dadGroup(get, never):FlxSpriteGroup;
+
 	function get_boyfriend() return PlayState.instance.boyfriend;
 	function get_dad() return PlayState.instance.dad;
 	function get_boyfriendGroup() return PlayState.instance.boyfriendGroup;
