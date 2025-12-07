@@ -1363,11 +1363,18 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			return;
 
 		var json:Dynamic = {
-			var char:Character;
-			"animations":character.animationsArray, "image":character.imageFile, "scale":character.jsonScale, "sing_duration":character.singDuration,
-			"healthicon":character.healthIcon, "position":character.positionArray, "camera_position":character.cameraPosition,
-			"flip_x":character.originalFlipX, "no_antialiasing":character.noAntialiasing, "healthbar_colors":character.healthColorArray,
-			"vocals_file":character.vocalsFile, "_editor_isPlayer":character.isPlayer
+			"animations": character.animationsArray,
+			"image": character.imageFile,
+			"scale": character.jsonScale,
+			"sing_duration": character.singDuration,
+			"healthicon": character.healthIcon,
+			"position": character.positionArray,
+			"camera_position": character.cameraPosition,
+			"flip_x": character.originalFlipX,
+			"no_antialiasing": character.noAntialiasing,
+			"healthbar_colors": character.healthColorArray,
+			"vocals_file": character.vocalsFile,
+			"_editor_isPlayer": character.isPlayer
 		};
 
 		var data:String = PsychJsonPrinter.print(json, ['offsets', 'position', 'healthbar_colors', 'camera_position', 'indices']);
