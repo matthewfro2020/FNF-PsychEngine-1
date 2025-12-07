@@ -609,9 +609,6 @@ class Character extends FlxSprite {
 	}
 
 	public function copyAtlasValues() {
-		// ========================================
-		// Prevent ALL crashes — required for Psych
-		// ========================================
 		if (atlas == null)
 			return;
 		if (atlas.anim == null)
@@ -621,26 +618,33 @@ class Character extends FlxSprite {
 
 		@:privateAccess
 		{
-			atlas.cameras = cameras;
-			atlas.scrollFactor = scrollFactor;
-			atlas.scale = scale;
-			atlas.offset = offset;
-			atlas.origin = origin;
-			atlas.x = x;
-			atlas.y = y;
-			atlas.angle = angle;
-			atlas.alpha = alpha;
-			atlas.visible = visible;
-			atlas.flipX = flipX;
-			atlas.flipY = flipY;
-			atlas.shader = shader;
-			atlas.antialiasing = antialiasing;
+			// position + orientation
+			atlas.x = this.x;
+			atlas.y = this.y;
+			atlas.angle = this.angle;
 
-			// Fix for NULL colorTransform (rare but crashes)
-			if (colorTransform != null)
-				atlas.colorTransform = colorTransform;
+			// scale
+			atlas.scale.set(scale.x, scale.y);
 
-			atlas.color = color;
+			// flip
+			atlas.flipX = this.flipX;
+			atlas.flipY = this.flipY;
+
+			// alpha + visibility
+			atlas.alpha = this.alpha;
+			atlas.visible = this.visible;
+
+			// shader (only if supported)
+			#if (flixel >= "5.0.0")
+			atlas.shader = this.shader;
+			#end
+
+			// antialiasing
+			atlas.antialiasing = this.antialiasing;
+
+			// origin / offset
+			atlas.offset.set(this.offset.x, this.offset.y);
+			atlas.origin.set(this.origin.x, this.origin.y);
 		}
 	}
 
