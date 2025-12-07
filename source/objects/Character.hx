@@ -127,14 +127,14 @@ class Character extends FlxSprite
 // ======================================================
 public function playAnim(name:String, forced:Bool = false, reversed:Bool = false, frame:Int = 0):Void
 {
-    // ZIP AnimateCharacter
+    // ZIP
     if (isAnimateZIP && animateZIPChar != null)
     {
         animateZIPChar.play(name);
         return;
     }
 
-    // PsychFlxAnimate / flxanimate
+    // ATLAS
     #if flxanimate
     if (isAnimateAtlas && atlas != null && atlas.anim != null)
     {
@@ -143,7 +143,7 @@ public function playAnim(name:String, forced:Bool = false, reversed:Bool = false
     }
     #end
 
-    // Default PNG animations
+    // PNG
     if (animation != null)
         animation.play(name, forced, reversed, frame);
 
@@ -172,25 +172,42 @@ public inline function hasAnimation(name:String):Bool
     // PNG animations
     return animation != null && animation.exists(name);
 }
+public var animPaused(get, set):Bool;
+private function get_animPaused():Bool
+{
+    if (isAnimateZIP && animateZIPChar != null)
+        return animateZIPChar.animPaused;
 
-	public var animPaused(get, set):Bool;
-	private function get_animPaused():Bool
-	{
-		if(isAnimationNull()) return false;
-		return !isAnimateAtlas ? animation.curAnim.paused : atlas.anim.isPlaying;
-	}
-	private function set_animPaused(value:Bool):Bool
-	{
-		if(isAnimationNull()) return value;
-		if(!isAnimateAtlas) animation.curAnim.paused = value;
-		else
-		{
-			if(value) atlas.pauseAnimation();
-			else atlas.resumeAnimation();
-		}
+    #if flxanimate
+    if (isAnimateAtlas && atlas != null && atlas.anim != null)
+        return atlas.anim.paused;
+    #end
 
-		return value;
-	}
+    return hasCurAnim() ? animation.curAnim.paused : false;
+}
+
+private function set_animPaused(value:Bool):Bool
+{
+    if (isAnimateZIP && animateZIPChar != null)
+    {
+        animateZIPChar.animPaused = value;
+        return value;
+    }
+
+    #if flxanimate
+    if (isAnimateAtlas && atlas != null && atlas.anim != null)
+    {
+        if (value) atlas.pauseAnimation();
+        else atlas.resumeAnimation();
+        return value;
+    }
+    #end
+
+    if (hasCurAnim())
+        animation.curAnim.paused = value;
+
+    return value;
+}
 
 public inline function isAnimationNull():Bool
 {
@@ -205,7 +222,6 @@ public inline function isAnimationNull():Bool
     return (animation == null || animation.curAnim == null);
 }
 
-
 public inline function getAnimationName():String
 {
     if (isAnimateZIP && animateZIPChar != null)
@@ -216,9 +232,7 @@ public inline function getAnimationName():String
         return atlas.anim.curSymbol;
     #end
 
-    return (animation != null && animation.curAnim != null)
-        ? animation.curAnim.name
-        : "";
+    return hasCurAnim() ? animation.curAnim.name : "";
 }
 
 public inline function isAnimationFinished():Bool
@@ -231,17 +245,29 @@ public inline function isAnimationFinished():Bool
         return atlas.anim.finished;
     #end
 
-    return (animation != null && animation.curAnim != null)
-        ? animation.curAnim.finished
-        : true;
+    return hasCurAnim() ? animation.curAnim.finished : true;
 }
 
 
-    public function finishAnimation():Void
+public function finishAnimation():Void
+{
+    if (isAnimateZIP && animateZIPChar != null)
     {
-        if (animation.curAnim != null)
-            animation.curAnim.finish();
+        animateZIPChar.finishAnimation();
+        return;
     }
+
+    #if flxanimate
+    if (isAnimateAtlas && atlas != null && atlas.anim != null)
+    {
+        atlas.anim.finish();
+        return;
+    }
+    #end
+
+    if (animation != null && animation.curAnim != null)
+        animation.curAnim.finish();
+}
 
     // =====================================================
     // CHANGE CHARACTER
@@ -300,21 +326,28 @@ public inline function isAnimationFinished():Bool
     // =====================================================
     // DANCE
     // =====================================================
-    public function dance():Void
-    {
-        if (skipDance || specialAnim)
-            return;
+public function dance():Void
+{
+    if (skipDance || specialAnim)
+        return;
 
-        if (danceIdle)
-        {
-            danced = !danced;
-            playAnim(danced ? "danceRight" + idleSuffix : "danceLeft" + idleSuffix);
-        }
-        else if (hasAnimation("idle" + idleSuffix))
-        {
-            playAnim("idle" + idleSuffix);
-        }
+    // Block early dance calls for ZIP or atlas until fully initialized
+    if (isAnimateZIP)
+    {
+        if (animateZIPChar == null || animateZIPChar.getCurrentAnimation() == null)
+            return; // do NOT play PNG animations
     }
+
+    if (danceIdle)
+    {
+        danced = !danced;
+        playAnim(danced ? "danceRight" + idleSuffix : "danceLeft" + idleSuffix);
+    }
+    else if (hasAnimation("idle" + idleSuffix))
+    {
+        playAnim("idle" + idleSuffix);
+    }
+}
 
     // =====================================================
     // LOAD CHARACTER FILE (JSON)
@@ -430,4 +463,10 @@ public inline function isAnimationFinished():Bool
                 addOffset(id, 0, 0);
         }
     }
+
+inline function hasCurAnim():Bool
+{
+    return animation != null && animation.curAnim != null;
+}
+
 }
