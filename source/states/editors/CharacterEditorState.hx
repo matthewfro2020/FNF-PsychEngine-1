@@ -55,6 +55,8 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
     
     public var danced:Bool = false;
     
+    var animList:Array<String> = [];
+    
     public function new(char:String = null, goToPlayState:Bool = true) {
         this._char = char;
         this._goToPlayState = goToPlayState;
@@ -179,7 +181,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
         // ------------------------------------------------------------
         #if flxanimate
         if (character.isAnimateAtlas && character.atlas != null && character.atlas.anim != null) {
-            var animList:Iterable<String> = null;
+            animList:Iterable<String> = null;
             
             // Newer flxanimate API
             if (Reflect.hasField(character.atlas.anim, "getAnimationList"))
@@ -201,19 +203,19 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
             else
             keys = [];
             
-            var animList:Array<String> = [];
+            animList:Array<String> = [];
             animList = [];
             for (k in keys) animList.push(k);
             
             // Mid version
             
-            // Very old versionvar animList:Array<String> = [];
+            // Very old version animList:Array<String> = [];
             animList = cast Reflect.field(character.atlas.anim, "animList");
             
             // Fallback to prevent crash
-            if (var animList:Array<String> = [];
+            if (animList:Array<String> = []);
             animList == null)
-            var animList:Array<String> = [];
+            animList:Array<String> = [];
             animList = [];
             
             for (name in animList) {
@@ -1080,7 +1082,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
                     names.push(key);
                 }
                 
-                var animList:Array<String> = [];
+                animList:Array<String> = [];
             animList = names.copy();
             }
             
@@ -1294,7 +1296,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
     }
     
     function reloadAnimationDropDown() {
-        var animList:Array<String> = [];
+        animList:Array<String> = [];
         for (anim in anims)
         animList.push(anim.anim);
         if (animList.length < 1)
