@@ -2,6 +2,7 @@ package objects;
 
 import backend.animation.PsychAnimationController;
 import backend.animate.AnimateCharacter;
+import backend.animate.AnimateFolderReader;
 import flixel.util.FlxSort;
 import flixel.util.FlxDestroyUtil;
 import openfl.utils.AssetType;
@@ -9,7 +10,7 @@ import openfl.utils.Assets;
 import haxe.Json;
 import backend.Song;
 import states.stages.objects.TankmenBG;
-import backend.animate.AnimateFolderReader;
+import sys.FileSystem;
 
 typedef CharacterFile = {
 	var animations:Array<AnimArray>;
