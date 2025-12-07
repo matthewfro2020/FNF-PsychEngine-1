@@ -1272,10 +1272,8 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			_file.save(data, '$_char.json');
 		}
 	}
-    else {
-    	c.char.playAnim("idle" + idleSuffix, true);
-    }
-	public function recalculateDanceIdle():Void {
+
+    public function recalculateDanceIdle():Void {
 		danceIdle = character.hasAnimation("danceLeft" + idleSuffix) && character.hasAnimation("danceRight" + idleSuffix);
 	}
 
