@@ -14,15 +14,16 @@ import backend.animate.AnimateFolderReader;
 import backend.Song;
 import backend.Conductor;
 import states.stages.objects.TankmenBG;
-import play.PlayState;
+import states.PlayState;
 import sys.io.File;
 import sys.FileSystem;
 import haxe.Json;
+import haxe.ds.Lambda;
 #if flxanimate
-import flxanimate.FlxAnimate;
+import flxanimate._PsychFlxAnimate.FlxAnimate;
 #end
 // Needed for Paths.getPath, Paths.getMultiAtlas, etc.
-import Paths;
+import backend.Paths;
 
 typedef CharacterFile = {
 	var animations:Array<AnimArray>;
@@ -181,7 +182,7 @@ class Character extends FlxSprite {
 		skipDance = false;
 
 		// Auto-detect msing variants
-		hasMissAnimations = animationsArray.exists(a -> a.anim.startsWith("msing"));
+		hasMissAnimations = Lambda.exists(animationsArray, a -> a.anim.startsWith("msing"));
 
 		recalculateDanceIdle();
 		dance();
@@ -287,7 +288,7 @@ class Character extends FlxSprite {
 	// ANIMATE FOLDER LOADING
 	// ----------------------------------------------------
 	public function tryLoadAnimateFolder(character:String):Bool {
-		var base = Paths.modFolders() + "animate/" + character;
+		var base = Paths.modFolders("characters") + "animate/" + character;
 		var data = base + "/data.json";
 		var lib = base + "/library.json";
 		var sym = base + "/symbols";
@@ -322,7 +323,8 @@ class Character extends FlxSprite {
 		#if flxanimate
 		// Animate Atlas case (Animation.json)
 		if (atlas != null && atlas.anim != null) {
-			for (name in atlas.anim.animations.keys()) {
+			var keys = atlas.anim.symbolMap.keys();
+			for (name in keys) {
 				var animName:String = Std.string(name);
 				animationsArray.push({
 					anim: animName,
@@ -334,7 +336,7 @@ class Character extends FlxSprite {
 				});
 
 				// Create offset map placeholder
-				animOffsets[animName] = [0, 0];
+				animOffsets.set(animName, [0.0, 0.0]);
 			}
 		}
 		#end
@@ -497,9 +499,9 @@ class Character extends FlxSprite {
 			animation.curAnim.paused = v;
 		#if flxanimate
 		else if (v)
-			atlas.pauseAnimation();
+			atlas.anim.isPlaying = !value;
 		else
-			atlas.resumeAnimation();
+			atlas.anim.isPlaying = !value;
 		#end
 
 		return v;
@@ -530,7 +532,7 @@ class Character extends FlxSprite {
 		} else if (last != danceIdle) {
 			var calc = danceEveryNumBeats;
 			if (danceIdle)
-				calc /= 2;
+				calc = Std.int(calc / 2);
 			else
 				calc *= 2;
 			danceEveryNumBeats = Math.round(Math.max(calc, 1));
