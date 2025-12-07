@@ -169,11 +169,13 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 		// Animate Atlas: Animation.json
 		#if flxanimate
 		if (character.isAnimateAtlas && character.atlas != null && character.atlas.anim != null) {
-			for (key in character.atlas.anim.animations.keys()) {
+			var animList = character.atlas.anim.getAnimationList();
+            for (key in animList) {
 				var symName = Std.string(key);
 
 				// Avoid duplicates
-				if (!character.animationsArray.exists(a -> a.anim == symName)) {
+				if (!Lambda.exists(character.animationsArray, a -> a.anim == symName)
+) {
 					var newAnim:AnimArray = {
 						anim: symName,
 						name: symName,
@@ -192,14 +194,15 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 		// Animate Folder: data.json + library.json
 		if (character.isAnimateFolder && character.animateLibrary != null) {
-			var dict = character.animateLibrary.symbolDictionary;
+			var dict:Map<String, Dynamic> = cast character.animateLibrary.symbols;
 
 			for (key in dict.keys()) {
-				var symbol = dict[key];
+                var symbol:Dynamic = dict.get(key);
 				if (symbol.className != null && symbol.className != "") {
 					var symName = symbol.className;
 
-					if (!character.animationsArray.exists(a -> a.anim == symName)) {
+					if (!Lambda.exists(character.animationsArray, a -> a.anim == symName)
+) {
 						var newAnim:AnimArray = {
 							anim: symName,
 							name: symName,
