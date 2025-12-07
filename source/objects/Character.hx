@@ -247,6 +247,7 @@ class Character extends FlxSprite {
 		#end
 		// trace('Loaded file to character ' + curCharacter);
 	}
+	}
 
 	override function update(elapsed:Float) {
     if (isAnimateAtlas) atlas.update(elapsed);
@@ -299,16 +300,15 @@ class Character extends FlxSprite {
     if (!isPlayer && holdTimer >= Conductor.stepCrochet * 0.0011 * singDuration) {
         dance();
         holdTimer = 0;
-    }
-
+ 
     var name:String = getAnimationName();
     if (isAnimationFinished() && hasAnimation(name + '-loop'))
         playAnim(name + '-loop');
 
     super.update(elapsed);
-}
-
-
+	
+    }
+    }
 	inline public function isAnimationNull():Bool {
 		return !isAnimateAtlas ? (animation.curAnim == null) : (atlas.anim.curInstance == null || atlas.anim.curSymbol == null);
 	}
@@ -383,7 +383,7 @@ class Character extends FlxSprite {
 
 	public function playAnim(name:String, forced:Bool = false, reversed:Bool = false, frame:Int = 0) {
 		if (animateZIPChar != null) {
-			animateZIPChar.play(name, forced);
+			animateZIPChar.play(name);
 			return;
 		}
 		if (atlas != null) {
@@ -571,6 +571,4 @@ function loadMappedAnims():Void {
 		super.destroy();
 	}
 	#end
-}
-
 }
