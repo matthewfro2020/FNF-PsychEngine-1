@@ -13,39 +13,7 @@ import objects.Bar;
 import states.editors.content.Prompt;
 import states.editors.content.PsychJsonPrinter;
 
-class CharacterEditorState
-
-    // =============================================================
-    // Build ANIMATION LIST for Animate rigs
-    // =============================================================
-    function buildAnimationList_Animate(anim:FlxAnimate)
-    {
-        animationsArray = [];
-
-        @:privateAccess var dict = anim.animations.animations;
-
-        if (dict == null)
-        {
-            trace("[Editor] Animate: No animations found.");
-            return;
-        }
-
-        for (name in dict.keys())
-        {
-            animationsArray.push({
-                name: name,
-                indices: [],
-                loop: true,
-                offsetX: 0,
-                offsetY: 0,
-                fps: 24
-            });
-        }
-
-        refreshAnimationUI();
-    }
-
- extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent {
+class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent {
 	var character:Character;
 	var ghost:FlxSprite;
 	var animateGhost:FlxAnimate;
@@ -82,6 +50,36 @@ class CharacterEditorState
 	var unsavedProgress:Bool = false;
 
 	var selectedFormat:FlxTextFormat = new FlxTextFormat(FlxColor.LIME);
+
+    // =============================================================
+    // Build ANIMATION LIST for Animate rigs
+    // =============================================================
+    function buildAnimationList_Animate(anim:FlxAnimate)
+    {
+        animationsArray = [];
+
+        @:privateAccess var dict = anim.animations.animations;
+
+        if (dict == null)
+        {
+            trace("[Editor] Animate: No animations found.");
+            return;
+        }
+
+        for (name in dict.keys())
+        {
+            animationsArray.push({
+                name: name,
+                indices: [],
+                loop: true,
+                offsetX: 0,
+                offsetY: 0,
+                fps: 24
+            });
+        }
+
+        refreshAnimationUI();
+    }
 
 	public function new(char:String = null, goToPlayState:Bool = true) {
 		this._char = char;
