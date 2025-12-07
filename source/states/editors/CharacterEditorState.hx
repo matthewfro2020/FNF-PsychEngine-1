@@ -1344,7 +1344,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 
     public function isAnimationNull():Bool {
-        return (animation = char.animation, animation == null || animation.curAnim == null);
+        return (animation = char.animation) == null || (animation.curAnim == null);
     }
 
 
