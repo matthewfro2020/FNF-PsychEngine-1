@@ -304,7 +304,45 @@ public function loadCharacterFile(json:Dynamic) {
 		#if flxanimate
 		// Animate Atlas case (Animation.json)
 		if (atlas != null && atlas.anim != null) {
-			var symbols = atlas.library.symbolDictionary; // Map<String, AnimateSymbol>
+			
+        // === UNIVERSAL FLXANIMATE SYMBOL COLLECTOR (patched) ===
+        var animObj:Dynamic = atlas.anim;
+        if (animObj != null)
+        {
+            var keys:Iterable<String> = null;
+
+            if (Reflect.hasField(animObj, "animsMap"))
+                keys = cast animObj.animsMap.keys();
+            else if (Reflect.hasField(animObj, "nameMap"))
+                keys = cast Reflect.field(animObj, "nameMap").keys();
+            else
+                keys = [];
+
+            for (name in keys)
+            {
+                if (name == null) continue;
+                if (!Lambda.exists(animationsArray, a -> a.anim == name))
+                {
+                    var newAnim:AnimArray = {
+                        anim: name,
+                        name: name,
+                        fps: 24,
+                        loop: false,
+                        indices: [],
+                        offsets: [0, 0]
+                    };
+                    animationsArray.push(newAnim);
+                    addOffset(name, 0, 0);
+                }
+            }
+        }
+;
+                    animationsArray.push(newAnim);
+                    addOffset(name, 0, 0);
+                }
+            }
+        }
+ // Map<String, AnimateSymbol>
 			for (name in symbols.keys()) {
 				var animName:String = Std.string(name);
 				animationsArray.push({
@@ -324,7 +362,45 @@ public function loadCharacterFile(json:Dynamic) {
 
 		// Animate Folder (AnimateFolderReader)
 		if (isAnimateFolder && animateLibrary != null) {
-			var symbols:Map<String, Dynamic> = cast atlas.library.symbolDictionary;
+			
+        // === UNIVERSAL FLXANIMATE SYMBOL COLLECTOR (patched) ===
+        var animObj:Dynamic = atlas.anim;
+        if (animObj != null)
+        {
+            var keys:Iterable<String> = null;
+
+            if (Reflect.hasField(animObj, "animsMap"))
+                keys = cast animObj.animsMap.keys();
+            else if (Reflect.hasField(animObj, "nameMap"))
+                keys = cast Reflect.field(animObj, "nameMap").keys();
+            else
+                keys = [];
+
+            for (name in keys)
+            {
+                if (name == null) continue;
+                if (!Lambda.exists(animationsArray, a -> a.anim == name))
+                {
+                    var newAnim:AnimArray = {
+                        anim: name,
+                        name: name,
+                        fps: 24,
+                        loop: false,
+                        indices: [],
+                        offsets: [0, 0]
+                    };
+                    animationsArray.push(newAnim);
+                    addOffset(name, 0, 0);
+                }
+            }
+        }
+;
+                    animationsArray.push(newAnim);
+                    addOffset(name, 0, 0);
+                }
+            }
+        }
+
 			for (name in symbols.keys()) {
 				var symbol = symbols.get(key);
 				if (symbol.className != null && symbol.className != "") {

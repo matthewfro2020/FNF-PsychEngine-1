@@ -179,7 +179,26 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 
 			// Newer flxanimate API
 			if (Reflect.hasField(character.atlas.anim, "getAnimationList"))
-				animList = cast character.atlas.anim.getAnimationList();
+				
+        // === UNIVERSAL FLXANIMATE ANIMATION LIST API (patched) ===
+        var animObj:Dynamic = character.atlas.anim;
+        var keys:Iterable<String> = null;
+
+        if (animObj != null)
+        {
+            if (Reflect.hasField(animObj, "animsMap"))
+                keys = cast animObj.animsMap.keys();
+            else if (Reflect.hasField(animObj, "nameMap"))
+                keys = cast Reflect.field(animObj, "nameMap").keys();
+            else
+                keys = [];
+        }
+        else
+            keys = [];
+
+        var animList = [];
+        for (k in keys) animList.push(k);
+
 
 			// Mid version
 			else if (Reflect.hasField(character.atlas, "animationList"))
