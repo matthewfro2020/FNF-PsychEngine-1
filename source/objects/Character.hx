@@ -608,16 +608,50 @@ class Character extends FlxSprite {
 		return v;
 	}
 
+	public function copyAtlasValues() {
+		// ========================================
+		// Prevent ALL crashes — required for Psych
+		// ========================================
+		if (atlas == null)
+			return;
+		if (atlas.anim == null)
+			return;
+		if (atlas.anim.curInstance == null)
+			return;
+
+		@:privateAccess
+		{
+			atlas.cameras = cameras;
+			atlas.scrollFactor = scrollFactor;
+			atlas.scale = scale;
+			atlas.offset = offset;
+			atlas.origin = origin;
+			atlas.x = x;
+			atlas.y = y;
+			atlas.angle = angle;
+			atlas.alpha = alpha;
+			atlas.visible = visible;
+			atlas.flipX = flipX;
+			atlas.flipY = flipY;
+			atlas.shader = shader;
+			atlas.antialiasing = antialiasing;
+
+			// Fix for NULL colorTransform (rare but crashes)
+			if (colorTransform != null)
+				atlas.colorTransform = colorTransform;
+
+			atlas.color = color;
+		}
+	}
+
 	override public function draw():Void {
-		// ============================
-		// SAFETY WRAPPER (NO CRASHES)
-		// ============================
+		// --- Missing character fallback ---
 		if (missingCharacter) {
 			super.draw();
 			return;
 		}
 
-		// ZIP Animate
+		// --- ZIP Animate draw ---
 		if (isAnimateZIP && animateZIPChar != null) {
 			animateZIPChar.x = x;
 			animateZIPChar.y = y;
@@ -632,11 +666,11 @@ class Character extends FlxSprite {
 			return;
 		}
 
-		// Folder/JSON Animate
+		// --- FlxAnimate Atlas draw ---
 		#if flxanimate
 		if (isAnimateAtlas) {
 			if (atlas == null || atlas.anim == null || atlas.anim.curInstance == null) {
-				// DO NOT DRAW — nothing is ready yet
+				// Prevents FATAL crash in Character Editor
 				return;
 			}
 
@@ -646,10 +680,9 @@ class Character extends FlxSprite {
 		}
 		#end
 
-		// PNG MultiAtlas safety
+		// --- PNG fallback draw ---
 		if (frames == null || graphic == null) {
-			// Nothing to draw
-			return;
+			return; // Prevent the fatal FlxDrawQuadsItem crash
 		}
 
 		super.draw();
