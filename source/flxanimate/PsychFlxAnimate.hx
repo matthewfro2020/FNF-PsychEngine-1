@@ -1,4 +1,4 @@
-package backend.animate;
+package flxanimate;
 
 import flxanimate.FlxAnimate;
 
