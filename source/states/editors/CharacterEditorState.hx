@@ -1271,7 +1271,7 @@ public function dance():Void {
 	if (danceIdle) {
 		c.danced = !c.danced;
 		c.char.playAnim(c.danced ? ("danceRight" + idleSuffix) : ("danceLeft" + idleSuffix), true);
-	} else {
+    } else {
 		c.char.playAnim("idle" + idleSuffix, true);
 	}
 }
@@ -1293,5 +1293,4 @@ public function isAnimationFinished():Bool {
 public function finishAnimation():Void {
 	if (animation != null && animation.curAnim != null)
 		animation.curAnim.finish();
-}
 }
