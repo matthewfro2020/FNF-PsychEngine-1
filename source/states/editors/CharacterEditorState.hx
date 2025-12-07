@@ -1273,6 +1273,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 		}
 	}
 
+
     public function recalculateDanceIdle():Void {
 		danceIdle = character.hasAnimation("danceLeft" + idleSuffix) && character.hasAnimation("danceRight" + idleSuffix);
 	}
