@@ -313,10 +313,6 @@ class Character extends FlxSprite {
 		return true;
 	}
 
-// ============================================================
-// AUTO-REGISTER ANIMATE SYMBOLS AS CHARACTER ANIMATIONS
-// ============================================================
-
 	// ============================================================
 	// AUTO-REGISTER ANIMATE SYMBOLS AS CHARACTER ANIMATIONS
 	// ============================================================
@@ -327,7 +323,7 @@ class Character extends FlxSprite {
 
 		#if flxanimate
 		// ------------------------------------------------------------
-		// 1. ANIMATE ATLAS (Animation.json)
+		// 1. ANIMATE ATLAS SUPPORT
 		// ------------------------------------------------------------
 		if (atlas != null && atlas.anim != null) {
 			var keys:Array<String> = atlas.anim.getAnimationList();
@@ -356,10 +352,13 @@ class Character extends FlxSprite {
 
 			for (key in symbols.keys()) {
 				var symbol:Dynamic = symbols.get(key);
-				if (symbol == null) continue;
+				if (symbol == null)
+					continue;
 
+				// Use className as animation name
 				var animName:String = symbol.className;
-				if (animName == null || animName == "") continue;
+				if (animName == null || animName == "")
+					continue;
 
 				animationsArray.push({
 					anim: animName,
@@ -374,7 +373,6 @@ class Character extends FlxSprite {
 			}
 		}
 	}
-	#end
 
 	// ------------------------------------------------------------
 	// 2. ANIMATE FOLDER (AnimateFolderReader)
@@ -384,12 +382,14 @@ class Character extends FlxSprite {
 
 		for (key in symbols.keys()) {
 			var symbol:Dynamic = symbols.get(key);
-			if (symbol == null) continue;
 
+			if (symbol == null)
+				continue;
 			// Use className as animation name
 			var animName:String = symbol.className;
-			if (animName == null || animName == "") continue;
 
+			if (animName == null || animName == "")
+				continue;
 			animationsArray.push({
 				anim: animName,
 				name: animName,
@@ -398,11 +398,9 @@ class Character extends FlxSprite {
 				indices: [],
 				offsets: [0.0, 0.0]
 			});
-
 			animOffsets.set(animName, [0.0, 0.0]);
 		}
 	}
-
 	// ----------------------------------------------------
 	// UPDATE LOOP
 	// ----------------------------------------------------
