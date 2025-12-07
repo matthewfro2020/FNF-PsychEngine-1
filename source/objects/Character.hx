@@ -654,3 +654,4 @@ function loadMappedAnims():Void {
 	}
 	#end
 }
+}
