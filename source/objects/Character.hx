@@ -387,7 +387,7 @@ class Character extends FlxSprite {
     {
         if (animateZIPChar != null)
         {
-            animateZIPChar.anim.play(name, forced);
+            animateZIPChar.play(name, forced);
             return;
         }
         if (atlas != null)
@@ -405,29 +405,30 @@ class Character extends FlxSprite {
 
 
 
-    public function getMidpoint():FlxPoint
-    {
-        return new FlxPoint(x + width * 0.5, y + height * 0.5);
-    }
+    override public function getMidpoint(?point:FlxPoint):FlxPoint {
+    if (point == null) point = new FlxPoint();
+    point.set(x + width * 0.5, y + height * 0.5);
+    return point;
+}
 
 
 
-    public function getGraphicMidpoint():FlxPoint
-    {
-        return new FlxPoint(x + frameWidth * 0.5, y + frameHeight * 0.5);
-    }
+    override public function getGraphicMidpoint(?point:FlxPoint):FlxPoint {
+    if (point == null) point = new FlxPoint();
+    point.set(x + frameWidth * 0.5, y + frameHeight * 0.5);
+    return point;
+}
 
 
 
-    public function setPosition(nx:Float, ny:Float)
-    {
-        this.x = nx;
-        this.y = ny;
-    }
+    override public function setPosition(x:Float = 0, y:Float = 0):Void {
+    this.x = x;
+    this.y = y;
+}
 
 
 
-    public function updateHitbox()
+    override public function updateHitbox()
     {
         this.frameWidth = Std.int(width);
         this.frameHeight = Std.int(height);
