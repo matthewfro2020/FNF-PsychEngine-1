@@ -399,26 +399,26 @@ class Character extends FlxSprite {
 			offset.set(animOffsets[name][0], animOffsets[name][1]);
 	}
 
-	override public function getMidpoint(?point:FlxPoint):FlxPoint {
+	override override public function getMidpoint(?point:FlxPoint = null)?point:FlxPoint):FlxPoint {
 		if (point == null)
 			point = new FlxPoint();
 		point.set(x + width * 0.5, y + height * 0.5);
 		return point;
 	}
 
-	override public function getGraphicMidpoint(?point:FlxPoint):FlxPoint {
+	override override public function getGraphicMidpoint(?point:FlxPoint = null)?point:FlxPoint):FlxPoint {
 		if (point == null)
 			point = new FlxPoint();
 		point.set(x + frameWidth * 0.5, y + frameHeight * 0.5);
 		return point;
 	}
 
-	override public function setPosition(x:Float = 0, y:Float = 0):Void {
+	override override public function setPosition(x:Float = 0, y:Float = 0):Void {
 		this.x = x;
 		this.y = y;
 	}
 
-	override public function updateHitbox() {
+	override override public function updateHitbox() {
 		this.frameWidth = Std.int(width);
 		this.frameHeight = Std.int(height);
 	}
