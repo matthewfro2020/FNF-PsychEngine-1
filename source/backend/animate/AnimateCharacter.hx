@@ -26,6 +26,30 @@ class AnimateCharacter extends FlxSprite {
 	var canvasWidth:Int = 2000;
 	var canvasHeight:Int = 2000;
 
+	// ------------------------------------------------------------
+	// Psych Engine Compatibility Layer
+	// ------------------------------------------------------------
+	// Whether animation is paused (Psych expects this field)
+	public var animPaused:Bool = false;
+
+	// Returns TRUE if current animation is finished
+	public inline function isFinished():Bool {
+		var group = animations.get(curAnim);
+		if (group == null || group.length == 0)
+			return true;
+		return curFrame >= group.length - 1;
+	}
+
+	// Stop animation immediately
+	public function finishAnimation():Void {
+		var group = animations.get(curAnim);
+		if (group == null || group.length == 0)
+			return;
+
+		curFrame = group.length - 1;
+		updateBitmap();
+	}
+
 	public function new(zipPath:String) {
 		super();
 
@@ -161,6 +185,11 @@ class AnimateCharacter extends FlxSprite {
 	// Update animation
 	// -------------------------------------------------------------
 	override function update(elapsed:Float) {
+		if (animPaused) {
+			super.update(elapsed);
+			return;
+		}
+
 		var fps = animFPS.exists(curAnim) ? animFPS[curAnim] : 24;
 		if (fps <= 0)
 			fps = 24;
