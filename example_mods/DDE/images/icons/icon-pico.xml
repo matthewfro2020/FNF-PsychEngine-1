@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="picoicon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="picoicons0000" x="5" y="5" width="175" height="163" frameX="0" frameY="-1" frameWidth="175" frameHeight="164"/>
+	<SubTexture name="picoicons0001" x="185" y="5" width="162" height="164" frameX="-7" frameY="0" frameWidth="175" frameHeight="164"/>
+</TextureAtlas>

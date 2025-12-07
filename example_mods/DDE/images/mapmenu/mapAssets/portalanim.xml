@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="overworld.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="portal instance 10000" x="0" y="0" width="507" height="74"/>
+	<SubTexture name="portal instance 10001" x="0" y="0" width="507" height="74"/>
+	<SubTexture name="portal instance 10002" x="0" y="0" width="507" height="74"/>
+	<SubTexture name="portal instance 10003" x="0" y="0" width="507" height="74"/>
+	<SubTexture name="portal instance 10004" x="0" y="0" width="507" height="74"/>
+	<SubTexture name="portal instance 10005" x="0" y="0" width="507" height="74"/>
+	<SubTexture name="portal instance 10006" x="0" y="83" width="502" height="72" frameX="-3" frameY="-1" frameWidth="507" frameHeight="74"/>
+	<SubTexture name="portal instance 10007" x="0" y="83" width="502" height="72" frameX="-3" frameY="-1" frameWidth="507" frameHeight="74"/>
+	<SubTexture name="portal instance 10008" x="0" y="83" width="502" height="72" frameX="-3" frameY="-1" frameWidth="507" frameHeight="74"/>
+	<SubTexture name="portal instance 10009" x="0" y="83" width="502" height="72" frameX="-3" frameY="-1" frameWidth="507" frameHeight="74"/>
+	<SubTexture name="portal instance 10010" x="0" y="83" width="502" height="72" frameX="-3" frameY="-1" frameWidth="507" frameHeight="74"/>
+	<SubTexture name="portal instance 10011" x="0" y="83" width="502" height="72" frameX="-3" frameY="-1" frameWidth="507" frameHeight="74"/>
+</TextureAtlas>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="magicmarvin.png"><SubTexture name="up0000" x="248" y="0" width="219" height="461" frameX="-113" frameY="-31" frameWidth="405" frameHeight="589" />
+<SubTexture name="left0000" x="0" y="489" width="288" height="426" frameX="-117" frameY="-66" frameWidth="405" frameHeight="589" />
+<SubTexture name="left0001" x="288" y="489" width="324" height="426" frameX="-81" frameY="-66" frameWidth="405" frameHeight="589" />
+<SubTexture name="up0001" x="0" y="0" width="248" height="489" frameX="-84" frameY="-3" frameWidth="405" frameHeight="589" />
+<SubTexture name="idle0000" x="612" y="489" width="242" height="426" frameX="-90" frameY="-66" frameWidth="405" frameHeight="589" />
+<SubTexture name="right0000" x="1184" y="0" width="338" height="419" frameX="-60" frameY="-60" frameWidth="405" frameHeight="589" />
+<SubTexture name="down0000" x="1184" y="419" width="249" height="404" frameX="-83" frameY="-88" frameWidth="405" frameHeight="589" />
+<SubTexture name="down0001" x="0" y="915" width="249" height="404" frameX="-83" frameY="-88" frameWidth="405" frameHeight="589" />
+<SubTexture name="down0002" x="249" y="915" width="249" height="404" frameX="-83" frameY="-88" frameWidth="405" frameHeight="589" />
+<SubTexture name="down0003" x="498" y="915" width="249" height="376" frameX="-83" frameY="-115" frameWidth="405" frameHeight="589" />
+<SubTexture name="idle0001" x="467" y="0" width="242" height="437" frameX="-90" frameY="-66" frameWidth="405" frameHeight="589" />
+<SubTexture name="idle0002" x="709" y="0" width="242" height="433" frameX="-90" frameY="-66" frameWidth="405" frameHeight="589" />
+<SubTexture name="up0002" x="951" y="0" width="233" height="426" frameX="-99" frameY="-66" frameWidth="405" frameHeight="589" />
+</TextureAtlas>

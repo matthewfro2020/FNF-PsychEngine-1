@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "expression": "laughing",
+            "text": "You couldn't have known, but a little birdie told me theres a new cool guy in town!"
+        },
+        {
+            "expression": "talking0",
+            "text": "Whirring in a skate park with that wheeled chair of his!"
+        },
+        {
+            "expression": "talking2",
+            "text": "Naaah I'm just kidding, birds dont exist haha..."
+        },
+        {
+            "expression": "cold",
+            "text": "Or at least I don't think so."
+        },
+        {
+            "expression": "breakdown",
+            "text": "I'm not sure anymore..."
+        }
+    ]
+}

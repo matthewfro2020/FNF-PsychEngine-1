@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="falling.png">
+<!-- Created with Adobe Animate version 19.0.0.326 -->
+<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gary and bf fallying (2)_0" x="5" y="5" width="600" height="300"/>
+	<SubTexture name="gary and bf fallying (2)_1" x="610" y="5" width="600" height="300"/>
+</TextureAtlas>

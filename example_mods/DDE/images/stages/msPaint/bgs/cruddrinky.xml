@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cruddrinky.png">
+<!-- Created with Adobe Animate version 19.0.0.326 -->
+<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ezgif-6-28b0e65bc9_0" x="5" y="5" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_1" x="610" y="5" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_10" x="1215" y="5" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_11" x="5" y="310" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_12" x="610" y="310" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_13" x="1215" y="310" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_14" x="5" y="615" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_15" x="610" y="615" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_2" x="1215" y="615" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_3" x="5" y="920" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_4" x="610" y="920" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_5" x="1215" y="920" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_6" x="5" y="1225" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_7" x="610" y="1225" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_8" x="1215" y="1225" width="600" height="300"/>
+	<SubTexture name="ezgif-6-28b0e65bc9_9" x="5" y="1530" width="600" height="300"/>
+</TextureAtlas>

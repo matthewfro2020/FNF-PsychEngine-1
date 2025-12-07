@@ -1,0 +1,9 @@
+{
+	"minFps": 22,
+	"maxFps": 24,
+	"scale": 0.75,
+	"offsets": [[-65, -80]],
+	"randomFlip": true,
+	"randomAngle": true,
+	"antialiasing": true
+}

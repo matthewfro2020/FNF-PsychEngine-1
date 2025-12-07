@@ -1,0 +1,68 @@
+{
+    "dialogue": [
+        {
+            "expression": "laughing",
+            "text": "..."
+        },
+        {
+            "expression": "talking2",
+            "text": "Oh? Ohohoho? What's that?"
+        },
+        {
+            "expression": "laughing",
+            "text": "I hear with my little ear..."
+        },
+        {
+            "expression": "laughing",
+            "text": "... A sound of a customer!"
+        },
+        {
+            "expression": "talking2",
+            "text": "My instincts! Sharp as ever! I welcome thee!"
+        },
+        {
+            "expression": "talking0",
+            "text": "It's been long. Long? Long! Far too long for the presence of another human!"
+        },
+        {
+            "expression": "laughing",
+            "text": "Hee hee! Tell me! Tell me everything of you, I beg!"
+        },
+        {
+            "expression": "cold",
+            "text": "Oh... Excuse my manners..."
+        },
+        {
+            "expression": "talking0",
+            "text": "I'm Hanbaisha! But for simplicity sake and for your lovely invitation to build a friendship, call me T!"
+        },
+        {
+            "expression": "nervous",
+            "text": "\"I never said anything about friendship?\" Nonsense! Any bleeding spectacle who enters my rich(?) shop is a companion in my rules!"
+        },
+        {
+            "expression": "nervous",
+            "text": "Ah! A shop! You can't leave just yet! I have dingsdabums you can buy!"
+        },
+        {
+            "expression": "talking2",
+            "text": "\"I don't have any money\"? Pshhhhh, I never said anything about money..."
+        },
+        {
+            "expression": "serious",
+            "text": "I mean uh... You can pay with your attention span! Yes! That's a currency in my humble abode! Yep! Since forever! Hah!"
+        },
+        {
+            "expression": "talking1",
+            "text": "Turn your head to the right! See those minigames on my shelf? They're yours to be played with! Exciting I knoooow!"
+        },
+        {
+            "expression": "talking3",
+            "text": "Just click, press, hold, touch, whatever! Just don't leave! Why would you? It's so interesting in here!"
+        },
+        {
+            "expression": "crying",
+            "text": "Haha..."
+        }
+    ]
+}

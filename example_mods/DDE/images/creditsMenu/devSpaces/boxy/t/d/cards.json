@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Ah! My priority customer! What brings you here on this fine... day? Night? Err."
+        },
+        {
+            "expression": "talking2",
+            "text": "Whatever the time, Schatz, you have me!"
+        },
+        {
+            "expression": "talking3",
+            "text": "Baby I love it! A deck with many unique cards, I share my joy with you!"
+        },
+        {
+            "expression": "talking0",
+            "text": "And in return, you stay. Capicho?"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Me? Myself? I? What's my deal?"
+        },
+        {
+            "expression": "talking2",
+            "text": "I'm a seller of course!"
+        },
+        {
+            "expression": "talking1",
+            "text": "Aligned like a loop, I exchange my valuable assets and you gift me luxury."
+        },
+        {
+            "expression": "talking0",
+            "text": "And do we got ourselves a deal? Hehe..."
+        }
+    ]
+}

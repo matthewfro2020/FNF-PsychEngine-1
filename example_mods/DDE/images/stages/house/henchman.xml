@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="henchman.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="henchman0000" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0001" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0002" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0003" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0004" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0005" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0006" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0007" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0008" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0009" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0010" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0011" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0012" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0013" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0014" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0015" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0016" x="3" y="1169" width="344" height="581" frameX="-200" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0017" x="3" y="587" width="352" height="579" frameX="-196" frameY="-2" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0018" x="3" y="587" width="352" height="579" frameX="-196" frameY="-2" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0019" x="3" y="3" width="368" height="581" frameX="-194" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0020" x="374" y="3" width="281" height="576" frameX="-207" frameY="-3" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0021" x="374" y="3" width="281" height="576" frameX="-207" frameY="-3" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0022" x="350" y="1169" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0023" x="350" y="1169" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0024" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0025" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0026" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0027" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0028" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0029" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0030" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0031" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0032" x="358" y="587" width="281" height="579" frameX="-203" frameY="-1" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0033" x="634" y="1169" width="279" height="541" frameX="-179" frameY="-39" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0034" x="634" y="1169" width="279" height="541" frameX="-179" frameY="-39" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0035" x="634" y="1169" width="279" height="541" frameX="-179" frameY="-39" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0036" x="658" y="3" width="238" height="554" frameX="-213" frameY="-20" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0037" x="658" y="3" width="238" height="554" frameX="-213" frameY="-20" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0038" x="658" y="3" width="238" height="554" frameX="-213" frameY="-20" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0039" x="899" y="3" width="236" height="530" frameX="-191" frameY="-36" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0040" x="899" y="3" width="236" height="530" frameX="-191" frameY="-36" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0041" x="899" y="3" width="236" height="530" frameX="-191" frameY="-36" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0042" x="916" y="1089" width="230" height="522" frameX="-173" frameY="-38" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0043" x="916" y="1089" width="230" height="522" frameX="-173" frameY="-38" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0044" x="916" y="1089" width="230" height="522" frameX="-173" frameY="-38" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0045" x="927" y="536" width="206" height="523" frameX="-159" frameY="-35" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0046" x="927" y="536" width="206" height="523" frameX="-159" frameY="-35" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0047" x="642" y="582" width="282" height="504" frameX="-76" frameY="-21" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0048" x="642" y="582" width="282" height="504" frameX="-76" frameY="-21" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0049" x="3" y="1753" width="452" height="278" frameX="0" frameY="-142" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0050" x="3" y="1753" width="452" height="278" frameX="0" frameY="-142" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0051" x="916" y="1614" width="153" height="349" frameX="-126" frameY="-111" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0052" x="916" y="1614" width="153" height="349" frameX="-126" frameY="-111" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0053" x="3" y="3" width="0" height="0" frameX="0" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0054" x="3" y="3" width="0" height="0" frameX="0" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0055" x="3" y="3" width="0" height="0" frameX="0" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0056" x="3" y="3" width="0" height="0" frameX="0" frameY="0" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0057" x="927" y="1062" width="295" height="20" frameX="-32" frameY="-254" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0058" x="927" y="1062" width="295" height="20" frameX="-32" frameY="-254" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0059" x="458" y="1966" width="317" height="28" frameX="-41" frameY="-244" frameWidth="562" frameHeight="581"/>
+	<SubTexture name="henchman0060" x="458" y="1966" width="317" height="28" frameX="-41" frameY="-244" frameWidth="562" frameHeight="581"/>
+</TextureAtlas>

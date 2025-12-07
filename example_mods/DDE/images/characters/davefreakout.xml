@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="davefreakout.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cutscene2000" x="5" y="5" width="411" height="635" frameX="-125" frameY="0" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2001" x="5" y="5" width="411" height="635" frameX="-125" frameY="0" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2002" x="421" y="5" width="366" height="633" frameX="-147" frameY="-5" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2003" x="792" y="5" width="460" height="577" frameX="-26" frameY="-72" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2004" x="792" y="5" width="460" height="577" frameX="-26" frameY="-72" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2005" x="1257" y="5" width="503" height="602" frameX="0" frameY="-52" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2006" x="5" y="645" width="409" height="601" frameX="-76" frameY="-53" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2007" x="419" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2008" x="818" y="645" width="395" height="603" frameX="-98" frameY="-51" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2009" x="818" y="645" width="395" height="603" frameX="-98" frameY="-51" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2010" x="1218" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2011" x="419" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2012" x="419" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2013" x="1617" y="645" width="385" height="616" frameX="-101" frameY="-38" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2014" x="1617" y="645" width="385" height="616" frameX="-101" frameY="-38" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2015" x="5" y="1266" width="376" height="618" frameX="-109" frameY="-36" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2016" x="5" y="1266" width="376" height="618" frameX="-109" frameY="-36" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2017" x="386" y="1266" width="460" height="577" frameX="-26" frameY="-72" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2018" x="386" y="1266" width="460" height="577" frameX="-26" frameY="-72" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2019" x="1257" y="5" width="503" height="602" frameX="0" frameY="-52" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2020" x="851" y="1266" width="392" height="601" frameX="-93" frameY="-53" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2021" x="419" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2022" x="1248" y="1266" width="388" height="603" frameX="-98" frameY="-51" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2023" x="1248" y="1266" width="388" height="603" frameX="-98" frameY="-51" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2024" x="1218" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2025" x="419" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2026" x="419" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2027" x="1218" y="645" width="394" height="604" frameX="-91" frameY="-50" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2028" x="1617" y="645" width="385" height="616" frameX="-101" frameY="-38" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2029" x="1617" y="645" width="385" height="616" frameX="-101" frameY="-38" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2030" x="5" y="1266" width="376" height="618" frameX="-109" frameY="-36" frameWidth="536" frameHeight="654"/>
+	<SubTexture name="cutscene2031" x="5" y="1266" width="376" height="618" frameX="-109" frameY="-36" frameWidth="536" frameHeight="654"/>
+</TextureAtlas>

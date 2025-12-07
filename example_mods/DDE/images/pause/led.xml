@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="led.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="LEDoff copy instance 10000" x="142" y="4" width="56" height="95"/>
+	<SubTexture name="LEDon copy instance 10000" x="4" y="4" width="75" height="111"/>
+	<SubTexture name="LEDon copy instance 10001" x="4" y="118" width="67" height="103" frameX="-4" frameY="-4" frameWidth="75" frameHeight="111"/>
+	<SubTexture name="LEDon copy instance 10002" x="82" y="4" width="57" height="95" frameX="-7" frameY="-8" frameWidth="75" frameHeight="111"/>
+	<SubTexture name="LEDon copy instance 10003" x="74" y="118" width="67" height="103" frameX="-4" frameY="-4" frameWidth="75" frameHeight="111"/>
+</TextureAtlas>

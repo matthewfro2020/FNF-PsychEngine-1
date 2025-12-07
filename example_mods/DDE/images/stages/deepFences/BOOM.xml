@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="DIE_stupidFuckingCube.png" width="1388" height="1306">
+	<SubTexture name="BigBoomies0000" x="759" y="609" width="86" height="17" frameX="-115" frameY="-179" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0004" x="1" y="1" width="262" height="204" frameX="-24" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0006" x="1" y="206" width="260" height="200" frameX="-37" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0005" x="264" y="1" width="259" height="202" frameX="-36" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0007" x="262" y="206" width="256" height="200" frameX="-43" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0021" x="1" y="407" width="254" height="223" frameX="-7" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0008" x="256" y="407" width="252" height="223" frameX="-47" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0009" x="509" y="407" width="249" height="223" frameX="-49" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0010" x="524" y="1" width="246" height="224" frameX="-51" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0011" x="1" y="631" width="243" height="224" frameX="-54" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0012" x="245" y="631" width="240" height="224" frameX="-57" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0013" x="486" y="631" width="234" height="224" frameX="-62" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0014" x="721" y="631" width="220" height="224" frameX="-72" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0015" x="771" y="1" width="210" height="224" frameX="-82" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0016" x="759" y="226" width="203" height="224" frameX="-89" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0017" x="1" y="856" width="181" height="224" frameX="-89" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0018" x="183" y="856" width="175" height="224" frameX="-89" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0024" x="359" y="856" width="210" height="224" frameX="-61" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0025" x="570" y="856" width="215" height="224" frameX="-62" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0026" x="786" y="856" width="203" height="224" frameX="-63" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0027" x="990" y="1" width="198" height="224" frameX="-63" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0028" x="990" y="226" width="179" height="224" frameX="-63" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0029" x="990" y="451" width="189" height="224" frameX="-63" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0030" x="990" y="676" width="183" height="224" frameX="-63" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0031" x="1" y="1081" width="185" height="224" frameX="-59" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0032" x="187" y="1081" width="181" height="224" frameX="-63" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0033" x="369" y="1081" width="179" height="224" frameX="-65" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0034" x="549" y="1081" width="186" height="224" frameX="-65" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0019" x="736" y="1081" width="188" height="223" frameX="-75" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0020" x="925" y="1081" width="195" height="223" frameX="-68" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0022" x="1170" y="226" width="200" height="223" frameX="-64" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0023" x="1180" y="450" width="207" height="223" frameX="-61" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0003" x="1180" y="674" width="207" height="198" frameX="-48" frameY="-0" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0002" x="519" y="226" width="172" height="180" frameX="-60" frameY="-16" frameWidth="320" frameHeight="240"/>
+	<SubTexture name="BigBoomies0001" x="759" y="451" width="163" height="157" frameX="-68" frameY="-40" frameWidth="320" frameHeight="240"/>
+</TextureAtlas>

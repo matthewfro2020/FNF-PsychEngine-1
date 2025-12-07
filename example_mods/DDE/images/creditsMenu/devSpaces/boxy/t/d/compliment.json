@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Truth be said, I'm not like the other..."
+        },
+        {
+            "expression": "talking2",
+            "text": "I'm sure you could tell with your detective eyes.. Hmm, maybe not..."
+        },
+        {
+            "expression": "laughing",
+            "text": "But next time you show up, I'm sure I won't look the same..."
+        },
+        {
+            "expression": "talking2",
+            "text": "I'll be so glamorous, darling! Compliment me later!"
+        }
+    ]
+}

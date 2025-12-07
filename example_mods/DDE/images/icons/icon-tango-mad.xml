@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tangoicon.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="10" y="10" width="161" height="169"/>
+	<SubTexture name="idle0000" x="181" y="10" width="145" height="176"/>
+	<SubTexture name="lose0000" x="181" y="10" width="145" height="176"/>
+	<SubTexture name="left0000" x="336" y="10" width="145" height="172"/>
+	<SubTexture name="right0000" x="10" y="196" width="150" height="185"/>
+	<SubTexture name="up0000" x="170" y="196" width="145" height="161"/>
+</TextureAtlas>

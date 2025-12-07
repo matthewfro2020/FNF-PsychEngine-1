@@ -1,0 +1,25 @@
+{
+	"offsets": {
+		"upscroll": {
+			"loop": [
+				-3,
+				-4
+			]
+		},
+		"downscroll": {
+			"loop": [
+				-3,
+				-4
+			]
+		}
+	},
+	"FPS": 24,
+	"doBump": false,
+	"Scale": 0.85,
+	"flipX": true,
+	"isDuel": true,
+	"globalOffset": [
+		-22,
+		-7
+	]
+}

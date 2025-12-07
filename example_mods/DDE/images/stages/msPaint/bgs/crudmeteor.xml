@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="meteor.png">
+<!-- Created with Adobe Animate version 19.0.0.326 -->
+<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ezgif-3-5936cf33c7_0" x="5" y="5" width="1200" height="600"/>
+	<SubTexture name="ezgif-3-5936cf33c7_1" x="5" y="610" width="1200" height="600"/>
+</TextureAtlas>

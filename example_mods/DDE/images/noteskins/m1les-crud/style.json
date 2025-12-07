@@ -1,0 +1,8 @@
+{
+	"antialiasing": false,
+	"strumBlurScale": 0.25,
+	"strumOutlineScale": 0.25,
+	"noteSplash": "noteSplashCrud",
+	"mathSuffix": "-crud",
+	"scale": 0.9
+}

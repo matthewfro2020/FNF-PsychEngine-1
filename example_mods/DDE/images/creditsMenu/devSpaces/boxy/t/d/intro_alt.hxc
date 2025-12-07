@@ -1,0 +1,84 @@
+var curLineAh:Int = -1;
+var blackScreen:FlxSprite;
+
+function onCreate() {
+    blackScreen = new FlxSprite().makeGraphic(1, 1, 0xFF000000);
+    blackScreen.scale.set(FlxG.width * 2, FlxG.height * 2);
+    blackScreen.updateHitbox();
+    blackScreen.camera = FlxG.cameras.list[FlxG.cameras.list.length - 1];
+    blackScreen.alpha = 0.98;
+    game.add(blackScreen);
+}
+
+function dialogueCallback(curLine:Int) { 
+    curLineAh = curLine; 
+
+    switch (curLineAh) {
+        case 3:
+            game?.subState.canContinue = false;
+
+            for (obj in [game?.subState.dialogueBlock, game?.subState.dialogueText]) {
+                obj.visible = false;
+                obj.alpha = 0.00001;
+            }
+
+            game?.subState.dialogueText.resetText('');
+			game?.subState.dialogueAudio.volume = 0;
+
+            FlxG.sound.play(Paths.sound('credits/devSpaces/boxy/clap'));
+
+            new FlxTimer().start(0.65, (_)->{
+                FlxG.sound.play(Paths.sound('credits/devSpaces/boxy/switch'));
+
+                new FlxTimer().start(1, (_)->{ game?.baisha.playAnim('laughing'); });
+                
+                FlxTween.tween(blackScreen, {alpha: 0.0001}, 2, {ease: FlxEase.backIn, onComplete: (_)->{
+                    FlxG.sound.playMusic(Paths.sound('credits/devSpaces/boxy/hub'));
+                    FlxG.sound.music.time = 0;
+                    FlxG.sound.music.fadeIn(3);
+
+                    for (i in [game?.subState.dialogueBlock, game?.subState.dialogueText]) {
+                        i.visible = true;
+                        FlxTween.cancelTweensOf(i);
+                    }
+
+                    FlxTween.tween(game?.subState.dialogueBlock, {alpha: 0.65}, 0.25, {ease: FlxEase.quadInOut});
+                    FlxTween.tween(game?.subState.dialogueText, {alpha: 1}, 0.25, {ease: FlxEase.quadInOut});
+
+                    new FlxTimer().start(0.26, function(tmr:FlxTimer) { 
+                        game?.subState.canContinue = true;
+
+                        var curDialogue = game?.subState.dialogueFile.dialogue[curLine];
+
+						game?.subState.dialogueAudio.loadEmbedded(Paths.sound('credits/devSpaces/boxy/d/intro_alt/3'));
+        			    game?.subState.dialogueAudio.volume = 1;
+            			game?.subState.dialogueAudio.play();
+
+                        game.baisha.playAnim('talking2');
+
+                        game?.subState.dialogueText?.resetText(curDialogue?.text);
+                        game?.subState.dialogueText.start(0.075);
+                    });
+                }});
+            });
+        case 14:
+            FlxG.save.data.baishaIntro = true;
+            FlxG.save.flush();
+    }
+}
+
+function curDialogueChar(curChar:Int)
+{
+    if (curLineAh == 6 && (curChar == 10 || curChar == 51))
+        game?.baisha.playAnim('talking2');
+
+    if (curLineAh == 12) {
+        switch (curChar)
+        {
+            case 14:
+                game?.baisha.playAnim('talking1');
+            case 57 | 118:
+                game?.baisha.playAnim('nervous');
+        }
+    }
+}

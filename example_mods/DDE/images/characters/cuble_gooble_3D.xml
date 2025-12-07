@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="cuble_gooble_3D.png" width="2056" height="1920">
+	<SubTexture name="cuble down instance 10000" x="1560" y="684" width="178" height="312" frameX="-128" frameY="-147" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10001" x="1561" y="162" width="177" height="312" frameX="-121" frameY="-178" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10002" x="1561" y="162" width="177" height="312" frameX="-121" frameY="-178" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10003" x="340" y="1455" width="315" height="177" rotated="true" frameX="-121" frameY="-182" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10004" x="340" y="1455" width="315" height="177" rotated="true" frameX="-121" frameY="-182" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10005" x="1020" y="1619" width="317" height="165" rotated="true" frameX="-128" frameY="-173" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10006" x="1020" y="1619" width="317" height="165" rotated="true" frameX="-128" frameY="-173" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10007" x="1561" y="477" width="320" height="159" rotated="true" frameX="-132" frameY="-164" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10008" x="1561" y="477" width="320" height="159" rotated="true" frameX="-132" frameY="-164" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10009" x="1741" y="639" width="158" height="320" frameX="-132" frameY="-161" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble down instance 10010" x="1741" y="639" width="158" height="320" frameX="-132" frameY="-161" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10000" x="731" y="1075" width="350" height="197" rotated="true" frameX="-171" frameY="-76" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10001" x="731" y="1075" width="350" height="197" rotated="true" frameX="-171" frameY="-76" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10002" x="1084" y="1257" width="330" height="200" rotated="true" frameX="-165" frameY="-89" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10003" x="1084" y="1257" width="330" height="200" rotated="true" frameX="-165" frameY="-89" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10004" x="357" y="1271" width="337" height="181" rotated="true" frameX="-169" frameY="-92" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10005" x="357" y="1271" width="337" height="181" rotated="true" frameX="-169" frameY="-92" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10006" x="179" y="1087" width="175" height="355" frameX="-173" frameY="-85" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10007" x="179" y="1087" width="175" height="355" frameX="-173" frameY="-85" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10008" x="1221" y="549" width="177" height="374" frameX="-176" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10009" x="1221" y="549" width="177" height="374" frameX="-176" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10010" x="1084" y="1075" width="375" height="179" rotated="true" frameX="-177" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble idle instance 10011" x="1084" y="1075" width="375" height="179" rotated="true" frameX="-177" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10000" x="697" y="1442" width="370" height="153" rotated="true" frameX="-114" frameY="-80" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10001" x="1070" y="1460" width="358" height="156" rotated="true" frameX="-107" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10002" x="1070" y="1460" width="358" height="156" rotated="true" frameX="-107" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10003" x="1431" y="1598" width="347" height="155" rotated="true" frameX="-110" frameY="-85" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10004" x="1431" y="1598" width="347" height="155" rotated="true" frameX="-110" frameY="-85" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10005" x="1624" y="999" width="161" height="344" frameX="-112" frameY="-82" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10006" x="1624" y="999" width="161" height="344" frameX="-112" frameY="-82" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10007" x="697" y="1275" width="369" height="164" rotated="true" frameX="-119" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10008" x="697" y="1275" width="369" height="164" rotated="true" frameX="-119" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10009" x="1401" y="302" width="157" height="379" frameX="-132" frameY="-70" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10010" x="1401" y="302" width="157" height="379" frameX="-132" frameY="-70" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10011" x="1401" y="684" width="156" height="379" frameX="-134" frameY="-70" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble left instance 10012" x="1401" y="684" width="156" height="379" frameX="-134" frameY="-70" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10000" x="341" y="366" width="337" height="247" rotated="true" frameX="-225" frameY="-112" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10001" x="1" y="366" width="337" height="249" rotated="true" frameX="-237" frameY="-124" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10002" x="1" y="366" width="337" height="249" rotated="true" frameX="-237" frameY="-124" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10003" x="667" y="616" width="325" height="249" rotated="true" frameX="-235" frameY="-128" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10004" x="667" y="616" width="325" height="249" rotated="true" frameX="-235" frameY="-128" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10005" x="341" y="616" width="323" height="257" rotated="true" frameX="-217" frameY="-123" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10006" x="341" y="616" width="323" height="257" rotated="true" frameX="-217" frameY="-123" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10007" x="1" y="618" width="334" height="246" rotated="true" frameX="-207" frameY="-108" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10008" x="1" y="618" width="334" height="246" rotated="true" frameX="-207" frameY="-108" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10009" x="506" y="1" width="236" height="337" frameX="-210" frameY="-105" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble right instance 10010" x="506" y="1" width="236" height="337" frameX="-210" frameY="-105" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10000" x="745" y="1" width="229" height="331" frameX="-160" frameY="-49" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10001" x="995" y="569" width="223" height="315" frameX="-143" frameY="-33" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10002" x="995" y="569" width="223" height="315" frameX="-143" frameY="-33" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10003" x="1206" y="1" width="227" height="298" frameX="-134" frameY="-39" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10004" x="1206" y="1" width="227" height="298" frameX="-134" frameY="-39" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10005" x="1002" y="319" width="303" height="227" rotated="true" frameX="-132" frameY="-41" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10006" x="1002" y="319" width="303" height="227" rotated="true" frameX="-132" frameY="-41" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10007" x="977" y="1" width="226" height="315" frameX="-132" frameY="-40" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10008" x="977" y="1" width="226" height="315" frameX="-132" frameY="-40" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10009" x="681" y="341" width="318" height="225" rotated="true" frameX="-132" frameY="-40" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="cuble up instance 10010" x="681" y="341" width="318" height="225" rotated="true" frameX="-132" frameY="-40" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10000" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10001" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10002" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10003" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10004" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10005" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10006" x="1" y="1" width="263" height="362" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10007" x="1" y="1" width="263" height="362" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10008" x="267" y="1" width="236" height="362" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10009" x="267" y="1" width="236" height="362" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10010" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10011" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10012" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10013" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10014" x="1" y="876" width="362" height="208" rotated="true" frameX="-174" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10015" x="366" y="876" width="362" height="201" rotated="true" frameX="-180" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10016" x="366" y="876" width="362" height="201" rotated="true" frameX="-180" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10017" x="1" y="1087" width="175" height="362" frameX="-193" frameY="-77" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10018" x="1" y="1087" width="175" height="362" frameX="-193" frameY="-77" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10019" x="1462" y="1066" width="159" height="365" frameX="-199" frameY="-73" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10020" x="1462" y="1066" width="159" height="365" frameX="-199" frameY="-73" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10021" x="1930" y="724" width="125" height="365" frameX="-193" frameY="-69" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10022" x="1930" y="724" width="125" height="365" frameX="-193" frameY="-69" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10023" x="1695" y="1756" width="360" height="127" rotated="true" frameX="-189" frameY="-69" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10024" x="1695" y="1756" width="360" height="127" rotated="true" frameX="-189" frameY="-69" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10025" x="1789" y="1" width="129" height="363" frameX="-189" frameY="-70" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10026" x="1789" y="1" width="129" height="363" frameX="-189" frameY="-70" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10027" x="658" y="1598" width="359" height="148" rotated="true" frameX="-191" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10028" x="658" y="1598" width="359" height="148" rotated="true" frameX="-191" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10029" x="1431" y="1434" width="345" height="161" rotated="true" frameX="-180" frameY="-82" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10030" x="1431" y="1434" width="345" height="161" rotated="true" frameX="-180" frameY="-82" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10031" x="1921" y="1" width="117" height="339" frameX="-186" frameY="-89" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10032" x="1921" y="1" width="117" height="339" frameX="-186" frameY="-89" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10033" x="1" y="1452" width="336" height="167" rotated="true" frameX="-151" frameY="-85" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10034" x="1" y="1452" width="336" height="167" rotated="true" frameX="-151" frameY="-85" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10035" x="1" y="1622" width="336" height="164" rotated="true" frameX="-157" frameY="-80" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10036" x="1" y="1622" width="336" height="164" rotated="true" frameX="-157" frameY="-80" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10037" x="1788" y="962" width="139" height="338" frameX="-173" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10038" x="1788" y="962" width="139" height="338" frameX="-173" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10039" x="696" y="1787" width="347" height="132" rotated="true" frameX="-184" frameY="-86" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10040" x="696" y="1787" width="347" height="132" rotated="true" frameX="-184" frameY="-86" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10041" x="340" y="1749" width="353" height="130" rotated="true" frameX="-188" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10042" x="340" y="1749" width="353" height="130" rotated="true" frameX="-188" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10043" x="1902" y="367" width="129" height="354" frameX="-189" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10044" x="1902" y="367" width="129" height="354" frameX="-189" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10045" x="1340" y="1756" width="352" height="132" rotated="true" frameX="-186" frameY="-86" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10046" x="1340" y="1756" width="352" height="132" rotated="true" frameX="-186" frameY="-86" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10047" x="1781" y="1346" width="147" height="351" frameX="-172" frameY="-87" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10048" x="1781" y="1346" width="147" height="351" frameX="-172" frameY="-87" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10049" x="1436" y="1" width="350" height="158" rotated="true" frameX="-153" frameY="-88" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10050" x="1436" y="1" width="350" height="158" rotated="true" frameX="-153" frameY="-88" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10051" x="366" y="1080" width="357" height="188" rotated="true" frameX="-158" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10052" x="366" y="1080" width="357" height="188" rotated="true" frameX="-158" frameY="-84" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10053" x="731" y="887" width="373" height="185" rotated="true" frameX="-171" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10054" x="731" y="887" width="373" height="185" rotated="true" frameX="-171" frameY="-75" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10055" x="1084" y="1075" width="375" height="179" rotated="true" frameX="-177" frameY="-74" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="fullmicgrab instance 10056" x="1084" y="1075" width="375" height="179" rotated="true" frameX="-177" frameY="-74" frameWidth="539" frameHeight="538"/>
+</TextureAtlas>

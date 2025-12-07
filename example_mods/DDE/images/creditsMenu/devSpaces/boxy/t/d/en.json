@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking2",
+            "text": "Oh yes yes YES! That costs 五百円！"
+        },
+        {
+            "expression": "talking1",
+            "text": "How much does that translate into dollars? Hehe..."
+        },
+        {
+            "expression": "nervous",
+            "text": "About 15 hihi.."
+        }
+    ]
+}

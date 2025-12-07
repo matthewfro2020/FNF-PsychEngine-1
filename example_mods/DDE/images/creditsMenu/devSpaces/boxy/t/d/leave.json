@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "expression": "confused",
+            "text": "Schätzli? Leaving so soon?"
+        },
+        {
+            "expression": "confused",
+            "text": "No exits are in clear vision, where is your destination?"
+        },
+        {
+            "expression": "breakdown",
+            "text": "Did I do something wrong? I'll shut my plapper mouth! Just for you!"
+        },
+        {
+            "expression": "crying",
+            "text": "Why... Why must you go..."
+        },
+        {
+            "expression": "crying",
+            "text": "Promise... Promise you'll come back..."
+        }
+    ]
+}

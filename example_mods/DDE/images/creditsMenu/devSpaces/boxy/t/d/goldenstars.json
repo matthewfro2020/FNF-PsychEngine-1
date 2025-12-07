@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking2",
+            "text": "Golden stars for a golden game I've entwickelt!"
+        },
+        {
+            "expression": "spiteful",
+            "text": "A little slow for your taste? Whatever, it gets faster."
+        },
+        {
+            "expression": "laughing",
+            "text": "Ohhh the smell of gold, just so appetising."
+        },
+        {
+            "expression": "talking2",
+            "text": "Taste it, darling! It's on the menu."
+        }
+    ]
+}

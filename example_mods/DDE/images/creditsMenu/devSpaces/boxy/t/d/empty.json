@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Ahhh no worries dear customer!"
+        },
+        {
+            "expression": "talking1",
+            "text": "The shelf is pretty empty during this period but..."
+        },
+        {
+            "expression": "talking3",
+            "text": "I'll redecorate it with new fun games once in awhile hehe..."
+        },
+        {
+            "expression": "talking0",
+            "text": "What about a game of..."
+        },
+        {
+            "expression": "talking1",
+            "text": "Cops and robbers, eh?"
+        }
+    ]
+}

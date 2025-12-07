@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TJE CRUDDY the one where he does a thinking.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="The Cruds0000" x="0" y="0" width="300" height="150"/>
+	<SubTexture name="The Cruds0001" x="300" y="0" width="300" height="150"/>
+	<SubTexture name="The Cruds0002" x="600" y="0" width="300" height="150"/>
+	<SubTexture name="The Cruds0003" x="900" y="0" width="300" height="150"/>
+	<SubTexture name="The Cruds0004" x="1200" y="0" width="300" height="150"/>
+	<SubTexture name="The Cruds0005" x="1500" y="0" width="300" height="150"/>
+	<SubTexture name="The Cruds0006" x="0" y="150" width="300" height="150"/>
+	<SubTexture name="The Cruds0007" x="300" y="150" width="300" height="150"/>
+	<SubTexture name="The Cruds0008" x="600" y="150" width="300" height="150"/>
+	<SubTexture name="The Cruds0009" x="900" y="150" width="300" height="150"/>
+	<SubTexture name="The Cruds0010" x="1200" y="150" width="300" height="150"/>
+	<SubTexture name="The Cruds0011" x="1500" y="150" width="300" height="150"/>
+	<SubTexture name="The Cruds0012" x="0" y="300" width="300" height="150"/>
+	<SubTexture name="The Cruds0013" x="300" y="300" width="300" height="150"/>
+	<SubTexture name="The Cruds0014" x="600" y="300" width="300" height="150"/>
+	<SubTexture name="The Cruds0015" x="900" y="300" width="300" height="150"/>
+	<SubTexture name="The Cruds0016" x="1200" y="300" width="300" height="150"/>
+	<SubTexture name="The Cruds0017" x="1500" y="300" width="300" height="150"/>
+	<SubTexture name="The Cruds0018" x="0" y="450" width="300" height="150"/>
+	<SubTexture name="The Cruds0019" x="300" y="450" width="300" height="150"/>
+	<SubTexture name="The Cruds0020" x="600" y="450" width="300" height="150"/>
+	<SubTexture name="The Cruds0021" x="900" y="450" width="300" height="150"/>
+	<SubTexture name="The Cruds0022" x="1200" y="450" width="300" height="150"/>
+	<SubTexture name="The Cruds0023" x="1500" y="450" width="300" height="150"/>
+</TextureAtlas>

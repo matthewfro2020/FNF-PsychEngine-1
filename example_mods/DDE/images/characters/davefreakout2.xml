@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="davefreakout.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cutscene0000" x="0" y="0" width="393" height="651" frameX="-143" frameY="0" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0001" x="0" y="0" width="393" height="651" frameX="-143" frameY="0" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0002" x="393" y="0" width="366" height="633" frameX="-147" frameY="-21" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0003" x="759" y="0" width="460" height="577" frameX="-26" frameY="-88" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0004" x="759" y="0" width="460" height="577" frameX="-26" frameY="-88" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0005" x="1219" y="0" width="503" height="602" frameX="0" frameY="-68" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0006" x="0" y="651" width="409" height="601" frameX="-76" frameY="-69" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0007" x="409" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0008" x="803" y="651" width="395" height="603" frameX="-98" frameY="-67" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0009" x="803" y="651" width="395" height="603" frameX="-98" frameY="-67" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0010" x="1198" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0011" x="409" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0012" x="409" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0013" x="1198" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0014" x="1198" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0015" x="409" y="651" width="394" height="604" frameX="-91" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0016" x="1592" y="651" width="396" height="604" frameX="-89" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0017" x="0" y="1255" width="396" height="604" frameX="-89" frameY="-66" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0018" x="396" y="1255" width="396" height="614" frameX="-89" frameY="-56" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0019" x="396" y="1255" width="396" height="614" frameX="-89" frameY="-56" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0020" x="792" y="1255" width="361" height="648" frameX="-126" frameY="-22" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0021" x="792" y="1255" width="361" height="648" frameX="-126" frameY="-22" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0022" x="1153" y="1255" width="347" height="658" frameX="-141" frameY="-10" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0023" x="1153" y="1255" width="347" height="658" frameX="-141" frameY="-10" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0024" x="1500" y="1255" width="349" height="657" frameX="-140" frameY="-11" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0025" x="1500" y="1255" width="349" height="657" frameX="-140" frameY="-11" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0026" x="0" y="1913" width="354" height="646" frameX="-135" frameY="-22" frameWidth="536" frameHeight="670"/>
+	<SubTexture name="cutscene0027" x="0" y="1913" width="354" height="646" frameX="-135" frameY="-22" frameWidth="536" frameHeight="670"/>
+</TextureAtlas>

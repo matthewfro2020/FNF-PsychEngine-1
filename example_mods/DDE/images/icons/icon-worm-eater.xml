@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="weatericons.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="blink0000" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="blink0001" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="blink0002" x="498" y="221" width="124" height="97"/>
+	<SubTexture name="blink0003" x="498" y="221" width="124" height="97"/>
+	<SubTexture name="blink0004" x="772" y="223" width="124" height="97"/>
+	<SubTexture name="blink0005" x="0" y="258" width="124" height="97"/>
+	<SubTexture name="blink0006" x="0" y="258" width="124" height="97"/>
+	<SubTexture name="blink0007" x="0" y="258" width="124" height="97"/>
+	<SubTexture name="blink0008" x="772" y="223" width="124" height="97"/>
+	<SubTexture name="blink0009" x="291" y="270" width="124" height="97"/>
+	<SubTexture name="blink0010" x="291" y="270" width="124" height="97"/>
+	<SubTexture name="blink0011" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="blink0012" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="blink0013" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="blink0014" x="364" y="163" width="124" height="97"/>
+	<SubTexture name="losetransition0000" x="632" y="285" width="124" height="96" frameX="-41" frameY="-23" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0001" x="632" y="285" width="124" height="96" frameX="-41" frameY="-23" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0002" x="155" y="165" width="126" height="96" frameX="-40" frameY="-24" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0003" x="134" y="271" width="126" height="95" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0004" x="134" y="271" width="126" height="95" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0005" x="155" y="165" width="126" height="96" frameX="-40" frameY="-24" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0006" x="134" y="271" width="126" height="95" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0007" x="425" y="328" width="125" height="94" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0008" x="425" y="328" width="125" height="94" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0009" x="134" y="271" width="126" height="95" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0010" x="425" y="328" width="125" height="94" frameX="-40" frameY="-25" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0011" x="652" y="157" width="110" height="118" frameX="-50" frameY="-12" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0012" x="652" y="157" width="110" height="118" frameX="-50" frameY="-12" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0013" x="0" y="0" width="191" height="139" frameX="0" frameY="-1" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0014" x="0" y="0" width="191" height="139" frameX="0" frameY="-1" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="losetransition0015" x="201" y="0" width="153" height="155" frameX="-26" frameY="0" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="lose0000" x="0" y="149" width="145" height="99" frameX="-1" frameY="-4" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0001" x="0" y="149" width="145" height="99" frameX="-1" frameY="-4" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0002" x="0" y="149" width="145" height="99" frameX="-1" frameY="-4" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0003" x="820" y="114" width="146" height="99" frameX="0" frameY="-1" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0004" x="820" y="114" width="146" height="99" frameX="0" frameY="-1" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0005" x="820" y="114" width="146" height="99" frameX="0" frameY="-1" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0006" x="499" y="105" width="143" height="106" frameX="-2" frameY="0" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0007" x="499" y="105" width="143" height="106" frameX="-2" frameY="0" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="lose0008" x="499" y="105" width="143" height="106" frameX="-2" frameY="0" frameWidth="146" frameHeight="106"/>
+	<SubTexture name="reversetransition0000" x="820" y="0" width="148" height="104" frameX="-26" frameY="-28" frameWidth="191" frameHeight="153"/>
+	<SubTexture name="reversetransition0001" x="499" y="0" width="191" height="95" frameX="0" frameY="-27" frameWidth="191" frameHeight="153"/>
+	<SubTexture name="reversetransition0002" x="499" y="0" width="191" height="95" frameX="0" frameY="-27" frameWidth="191" frameHeight="153"/>
+	<SubTexture name="reversetransition0003" x="700" y="0" width="110" height="147" frameX="-50" frameY="-4" frameWidth="191" frameHeight="153"/>
+	<SubTexture name="reversetransition0004" x="700" y="0" width="110" height="147" frameX="-50" frameY="-4" frameWidth="191" frameHeight="153"/>
+	<SubTexture name="reversetransition0005" x="364" y="0" width="125" height="153" frameX="-40" frameY="0" frameWidth="191" frameHeight="153"/>
+	<SubTexture name="reversetransition0006" x="134" y="271" width="126" height="95" frameX="-40" frameY="-29" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="reversetransition0007" x="155" y="165" width="126" height="96" frameX="-40" frameY="-28" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="reversetransition0008" x="155" y="165" width="126" height="96" frameX="-40" frameY="-28" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="reversetransition0009" x="632" y="285" width="124" height="96" frameX="-41" frameY="-27" frameWidth="191" frameHeight="155"/>
+	<SubTexture name="reversetransition0010" x="632" y="285" width="124" height="96" frameX="-41" frameY="-27" frameWidth="191" frameHeight="155"/>
+</TextureAtlas>

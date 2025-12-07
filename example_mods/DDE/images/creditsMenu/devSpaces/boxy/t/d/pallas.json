@@ -1,0 +1,28 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking3",
+            "text": "You know... Items arent the only thing that I sell... Hehe..."
+        },
+        {
+            "expression": "talking0",
+            "text": "Memories are beloved, right?"
+        },
+        {
+            "expression": "talking2",
+            "text": "I possess time capsules of cats on pieces of paper!"
+        },
+        {
+            "expression": "talking0",
+            "text": "Most of them are a species of cats of MY palace!"
+        },
+        {
+            "expression": "talking1",
+            "text": "... Hehe I discovered these finely printed slabs of trees in a... Dusty secretive box of mine.... Hihihi..."
+        },
+        {
+            "expression": "talking0",
+            "text": "Oh! Not your type of thing? Eh... Oh well..."
+        }
+    ]
+}

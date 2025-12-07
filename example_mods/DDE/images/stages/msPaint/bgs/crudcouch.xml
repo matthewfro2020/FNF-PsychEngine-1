@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="crudcouch.png">
+<!-- Created with Adobe Animate version 19.0.0.326 -->
+<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="couchsmaller0000" x="5" y="5" width="679" height="510"/>
+	<SubTexture name="couchsmaller0001" x="5" y="5" width="679" height="510"/>
+	<SubTexture name="couchsmaller0002" x="689" y="5" width="679" height="510"/>
+	<SubTexture name="couchsmaller0003" x="689" y="5" width="679" height="510"/>
+	<SubTexture name="couchsmaller0004" x="5" y="520" width="679" height="510"/>
+	<SubTexture name="couchsmaller0005" x="5" y="520" width="679" height="510"/>
+</TextureAtlas>

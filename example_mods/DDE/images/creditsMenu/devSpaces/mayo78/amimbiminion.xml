@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="amimbiminion.png"><SubTexture name="swing0000" x="0" y="0" width="240" height="1042" frameX="-465" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0001" x="1634" y="0" width="527" height="990" frameX="-332" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0002" x="0" y="1042" width="674" height="924" frameX="-268" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0003" x="680" y="0" width="332" height="1034" frameX="-346" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0004" x="240" y="0" width="440" height="1038" frameX="-256" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0005" x="1012" y="0" width="622" height="991" frameX="-156" frameY="-56" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0006" x="0" y="0" width="240" height="1042" frameX="-465" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0007" x="0" y="0" width="240" height="1042" frameX="-465" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0008" x="0" y="0" width="240" height="1042" frameX="-465" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0009" x="1634" y="0" width="527" height="990" frameX="-332" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="idle0000" x="1634" y="0" width="527" height="990" frameX="-332" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0010" x="1634" y="0" width="527" height="990" frameX="-332" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0011" x="0" y="1042" width="674" height="924" frameX="-268" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0012" x="0" y="1042" width="674" height="924" frameX="-268" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0013" x="0" y="1042" width="674" height="924" frameX="-268" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0014" x="0" y="1042" width="674" height="924" frameX="-268" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0015" x="680" y="0" width="332" height="1034" frameX="-346" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0016" x="680" y="0" width="332" height="1034" frameX="-346" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0017" x="680" y="0" width="332" height="1034" frameX="-346" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0018" x="240" y="0" width="440" height="1038" frameX="-256" frameY="0" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0019" x="1012" y="0" width="622" height="991" frameX="-156" frameY="-56" frameWidth="947" frameHeight="1133" />
+<SubTexture name="swing0020" x="1012" y="0" width="622" height="991" frameX="-156" frameY="-56" frameWidth="947" frameHeight="1133" />
+</TextureAtlas>

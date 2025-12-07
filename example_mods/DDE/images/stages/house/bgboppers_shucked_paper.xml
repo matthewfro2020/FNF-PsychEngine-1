@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bgboppers_shucked_paper.png">
+	<!-- Created with Adobe Animate version 24.0.9.74 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boppers_normal0000" x="1391" y="921" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0001" x="1391" y="921" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0002" x="1391" y="921" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0003" x="1391" y="921" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0004" x="1391" y="921" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0005" x="1391" y="921" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0006" x="1391" y="1836" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0007" x="1391" y="1836" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0008" x="1391" y="1836" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0009" x="1391" y="1836" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0010" x="1391" y="1836" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0011" x="1391" y="1836" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0012" x="1" y="1841" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0013" x="1" y="1841" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0014" x="1" y="1841" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0015" x="1" y="1841" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0016" x="1" y="1841" width="1372" height="911"/>
+	<SubTexture name="boppers_normal0017" x="1" y="1841" width="1372" height="911"/>
+	<SubTexture name="boppers_scared0000" x="1" y="1" width="1386" height="916"/>
+	<SubTexture name="boppers_scared0001" x="1" y="1" width="1386" height="916"/>
+	<SubTexture name="boppers_scared0002" x="1391" y="1" width="1386" height="916"/>
+	<SubTexture name="boppers_scared0003" x="1" y="921" width="1386" height="916"/>
+	<SubTexture name="boppers_scared0004" x="1" y="921" width="1386" height="916"/>
+	<SubTexture name="boppers_scared0005" x="1" y="921" width="1386" height="916"/>
+</TextureAtlas>

@@ -1,0 +1,40 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Oh! Manners, manners..."
+        },
+        {
+            "expression": "talking0",
+            "text": "I still need to properly introduce myself!"
+        },
+        {
+            "expression": "talking3",
+            "text": "T-Hanbaisha, I am your dearest \"friend\"!"
+        },
+        {
+            "expression": "nervous",
+            "text": "My age is... I'm from.. Ha... Oh dear..."
+        },
+        {
+            "expression": "talking3",
+            "text": "Well... I can speak.. polyglots!"
+        },
+        {
+            "expression": "breakdown",
+            "text": "GAAHHH. Whatever! I'll think about it later..."
+        },
+        {
+            "expression": "laughing",
+            "text": "But... Hey, my interest is big, big just for you."
+        },
+        {
+            "expression": "talking1",
+            "text": "I'd be lying to not say I want all of your information..."
+        },
+        {
+            "expression": "talking0",
+            "text": "If you're so kind, dump it on me! I'm the best listener you know. Hihi."
+        }
+    ]
+}

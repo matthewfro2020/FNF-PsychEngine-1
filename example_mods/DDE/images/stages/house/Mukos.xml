@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Mukos.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="walk instance 10000" x="0" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10001" x="543" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10002" x="1086" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10003" x="1629" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10004" x="1086" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10005" x="2172" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10006" x="2715" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10007" x="2172" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10008" x="3258" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10009" x="0" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10010" x="3258" y="0" width="543" height="609"/>
+	<SubTexture name="walk instance 10011" x="543" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10012" x="1086" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10013" x="543" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10014" x="1629" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10015" x="2172" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10016" x="1629" y="609" width="543" height="609"/>
+	<SubTexture name="walk instance 10017" x="2172" y="609" width="543" height="609"/>
+</TextureAtlas>

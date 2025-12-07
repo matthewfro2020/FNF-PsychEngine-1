@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="DIE_stupidFuckingCube.png" width="1168" height="1555">
+	<SubTexture name="erm0000" x="1" y="780" width="388" height="774" frameX="-214" frameY="-58" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0002" x="1" y="1" width="404" height="778" frameX="-215" frameY="-66" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0004" x="406" y="1" width="406" height="776" frameX="-216" frameY="-71" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0006" x="390" y="780" width="396" height="770" frameX="-217" frameY="-75" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0008" x="813" y="1" width="354" height="752" frameX="-218" frameY="-72" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0010" x="813" y="754" width="348" height="750" frameX="-217" frameY="-72" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0001" x="1" y="780" width="388" height="774" frameX="-214" frameY="-58" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0003" x="1" y="1" width="404" height="778" frameX="-215" frameY="-66" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0005" x="406" y="1" width="406" height="776" frameX="-216" frameY="-71" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0007" x="390" y="780" width="396" height="770" frameX="-217" frameY="-75" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0009" x="813" y="1" width="354" height="752" frameX="-218" frameY="-72" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0011" x="813" y="754" width="348" height="750" frameX="-217" frameY="-72" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0012" x="813" y="754" width="348" height="750" frameX="-217" frameY="-72" frameWidth="727" frameHeight="869"/>
+	<SubTexture name="erm0013" x="813" y="754" width="348" height="750" frameX="-217" frameY="-72" frameWidth="727" frameHeight="869"/>
+</TextureAtlas>

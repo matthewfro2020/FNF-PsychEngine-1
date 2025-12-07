@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ddelogo.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DDE_LogoBumper instance 10000" x="5" y="5" width="1384" height="1019" frameX="0" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10001" x="1400" y="5" width="1378" height="1019" frameX="0" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10002" x="2789" y="5" width="1302" height="1019" frameX="-69" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10003" x="5" y="1035" width="1292" height="1019" frameX="-69" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10004" x="1308" y="1035" width="1230" height="1019" frameX="-130" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10005" x="2549" y="1035" width="1262" height="1019" frameX="-130" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10006" x="5" y="2065" width="1229" height="1019" frameX="-152" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10007" x="1245" y="2065" width="1214" height="1019" frameX="-152" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10008" x="2470" y="2065" width="1203" height="1019" frameX="-161" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10009" x="5" y="3095" width="1225" height="1019" frameX="-161" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10010" x="1241" y="3095" width="1201" height="1019" frameX="-164" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10011" x="2453" y="3095" width="1217" height="1019" frameX="-164" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10012" x="5" y="4125" width="1190" height="1019" frameX="-164" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10013" x="1206" y="4125" width="1168" height="1019" frameX="-159" frameY="0" frameWidth="1392" frameHeight="1019"/>
+	<SubTexture name="DDE_LogoBumper instance 10014" x="2385" y="4125" width="1191" height="1019" frameX="-164" frameY="0" frameWidth="1392" frameHeight="1019"/>
+</TextureAtlas>

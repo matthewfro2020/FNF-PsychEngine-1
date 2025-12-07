@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="default.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="intense_box0000" x="5" y="5" width="1280" height="347" frameX="0" frameY="-4" frameWidth="1280" frameHeight="352"/>
+	<SubTexture name="intense_box0001" x="5" y="5" width="1280" height="347" frameX="0" frameY="-4" frameWidth="1280" frameHeight="352"/>
+	<SubTexture name="intense_box0002" x="1290" y="5" width="1279" height="349" frameX="-1" frameY="-3" frameWidth="1280" frameHeight="352"/>
+	<SubTexture name="intense_box0003" x="1290" y="5" width="1279" height="349" frameX="-1" frameY="-3" frameWidth="1280" frameHeight="352"/>
+	<SubTexture name="intense_box0004" x="2574" y="5" width="1279" height="352" frameX="-1" frameY="0" frameWidth="1280" frameHeight="352"/>
+	<SubTexture name="intense_box0005" x="2574" y="5" width="1279" height="352" frameX="-1" frameY="0" frameWidth="1280" frameHeight="352"/>
+	<SubTexture name="regular_box0000" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0001" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0002" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0003" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0004" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0005" x="1290" y="362" width="1280" height="351"/>
+	<SubTexture name="regular_box0006" x="1290" y="362" width="1280" height="351"/>
+	<SubTexture name="regular_box0007" x="1290" y="362" width="1280" height="351"/>
+	<SubTexture name="regular_box0008" x="1290" y="362" width="1280" height="351"/>
+	<SubTexture name="regular_box0009" x="1290" y="362" width="1280" height="351"/>
+	<SubTexture name="regular_box0010" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0011" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0012" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0013" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0014" x="5" y="362" width="1280" height="350" frameX="0" frameY="-1" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0015" x="2575" y="362" width="1280" height="349" frameX="0" frameY="-2" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0016" x="2575" y="362" width="1280" height="349" frameX="0" frameY="-2" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0017" x="2575" y="362" width="1280" height="349" frameX="0" frameY="-2" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0018" x="2575" y="362" width="1280" height="349" frameX="0" frameY="-2" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="regular_box0019" x="2575" y="362" width="1280" height="349" frameX="0" frameY="-2" frameWidth="1280" frameHeight="351"/>
+	<SubTexture name="think_box0000" x="5" y="718" width="1295" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0001" x="5" y="718" width="1295" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0002" x="5" y="718" width="1295" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0003" x="5" y="718" width="1295" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0004" x="5" y="718" width="1295" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0005" x="1305" y="718" width="1294" height="365" frameX="-1" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0006" x="1305" y="718" width="1294" height="365" frameX="-1" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0007" x="1305" y="718" width="1294" height="365" frameX="-1" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0008" x="1305" y="718" width="1294" height="365" frameX="-1" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0009" x="1305" y="718" width="1294" height="365" frameX="-1" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0010" x="2604" y="718" width="1295" height="364" frameX="0" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0011" x="2604" y="718" width="1295" height="364" frameX="0" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0012" x="2604" y="718" width="1295" height="364" frameX="0" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0013" x="2604" y="718" width="1295" height="364" frameX="0" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0014" x="2604" y="718" width="1295" height="364" frameX="0" frameY="0" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0015" x="5" y="1088" width="1296" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0016" x="5" y="1088" width="1296" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0017" x="5" y="1088" width="1296" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0018" x="5" y="1088" width="1296" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+	<SubTexture name="think_box0019" x="5" y="1088" width="1296" height="363" frameX="0" frameY="-1" frameWidth="1296" frameHeight="365"/>
+</TextureAtlas>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BOYFRIEND_math.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="answermeh0000" x="1495" y="428" width="372" height="426" frameX="0" frameY="-10" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0001" x="1495" y="428" width="372" height="426" frameX="0" frameY="-10" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0002" x="382" y="450" width="371" height="435" frameX="-4" frameY="-1" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0003" x="382" y="450" width="371" height="435" frameX="-4" frameY="-1" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0004" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0005" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0006" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0007" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0008" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0009" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0010" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0011" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0012" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0013" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="answermeh0014" x="384" y="4" width="370" height="436" frameX="-5" frameY="0" frameWidth="375" frameHeight="436"/>
+	<SubTexture name="cublefasttransitiontothinking0000" x="1493" y="880" width="365" height="436" frameX="-19" frameY="-1" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0001" x="1493" y="880" width="365" height="436" frameX="-19" frameY="-1" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0002" x="1129" y="4" width="379" height="421" frameX="0" frameY="-15" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0003" x="1129" y="4" width="379" height="421" frameX="0" frameY="-15" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0004" x="757" y="4" width="369" height="434" frameX="-11" frameY="-3" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0005" x="1123" y="1328" width="367" height="436" frameX="-9" frameY="-1" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0006" x="1123" y="1328" width="367" height="436" frameX="-9" frameY="-1" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0007" x="754" y="888" width="367" height="437" frameX="-8" frameY="0" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0008" x="754" y="888" width="367" height="437" frameX="-8" frameY="0" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0009" x="756" y="443" width="367" height="437" frameX="-8" frameY="0" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublefasttransitiontothinking0010" x="756" y="443" width="367" height="437" frameX="-8" frameY="0" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cublethinking0000" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0001" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0002" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0003" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0004" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0005" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0006" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0007" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0008" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0009" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0010" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0011" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0012" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0013" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0014" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0015" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0016" x="753" y="1329" width="367" height="437" frameX="0" frameY="0" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0017" x="1124" y="883" width="366" height="436" frameX="0" frameY="-1" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0018" x="1124" y="883" width="366" height="436" frameX="0" frameY="-1" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0019" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0020" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0021" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0022" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0023" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0024" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0025" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0026" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0027" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0028" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0029" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0030" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0031" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0032" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0033" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0034" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0035" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0036" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0037" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0038" x="381" y="1329" width="369" height="437"/>
+	<SubTexture name="cublethinking0039" x="1126" y="441" width="366" height="436" frameX="0" frameY="-1" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cublethinking0040" x="1126" y="441" width="366" height="436" frameX="0" frameY="-1" frameWidth="369" frameHeight="437"/>
+	<SubTexture name="cubletransitiontothinking0000" x="1493" y="880" width="365" height="436" frameX="-19" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0001" x="1493" y="880" width="365" height="436" frameX="-19" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0002" x="1129" y="4" width="379" height="421" frameX="0" frameY="-21" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0003" x="1129" y="4" width="379" height="421" frameX="0" frameY="-21" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0004" x="4" y="4" width="377" height="443" frameX="-10" frameY="0" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0005" x="4" y="4" width="377" height="443" frameX="-10" frameY="0" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0006" x="4" y="890" width="373" height="437" frameX="-13" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0007" x="4" y="890" width="373" height="437" frameX="-13" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0008" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0009" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0010" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0011" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0012" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0013" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0014" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0015" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0016" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0017" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0018" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0019" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0020" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0021" x="380" y="890" width="371" height="436" frameX="-13" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0022" x="4" y="450" width="375" height="437" frameX="-11" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0023" x="4" y="450" width="375" height="437" frameX="-11" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0024" x="4" y="450" width="375" height="437" frameX="-11" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0025" x="4" y="1330" width="374" height="435" frameX="-8" frameY="-8" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0026" x="4" y="1330" width="374" height="435" frameX="-8" frameY="-8" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0027" x="4" y="1330" width="374" height="435" frameX="-8" frameY="-8" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0028" x="757" y="4" width="369" height="434" frameX="-11" frameY="-9" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0029" x="757" y="4" width="369" height="434" frameX="-11" frameY="-9" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0030" x="757" y="4" width="369" height="434" frameX="-11" frameY="-9" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0031" x="1123" y="1328" width="367" height="436" frameX="-9" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0032" x="1123" y="1328" width="367" height="436" frameX="-9" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0033" x="1123" y="1328" width="367" height="436" frameX="-9" frameY="-7" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0034" x="754" y="888" width="367" height="437" frameX="-8" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0035" x="754" y="888" width="367" height="437" frameX="-8" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0036" x="754" y="888" width="367" height="437" frameX="-8" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0037" x="756" y="443" width="367" height="437" frameX="-8" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0038" x="756" y="443" width="367" height="437" frameX="-8" frameY="-6" frameWidth="387" frameHeight="443"/>
+	<SubTexture name="cubletransitiontothinking0039" x="756" y="443" width="367" height="437" frameX="-8" frameY="-6" frameWidth="387" frameHeight="443"/>
+</TextureAtlas>

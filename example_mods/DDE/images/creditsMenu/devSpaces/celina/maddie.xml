@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="maddie.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="m instance 10000" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10001" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10002" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10003" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10004" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10005" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10006" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10007" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10008" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10009" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10010" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10011" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10012" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10013" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10014" x="4" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10015" x="752" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10016" x="1500" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10017" x="2248" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10018" x="2996" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10019" x="3744" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10020" x="4492" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10021" x="5240" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10022" x="5988" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10023" x="6736" y="4" width="745" height="801"/>
+	<SubTexture name="m instance 10024" x="4" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10025" x="752" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10026" x="1500" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10027" x="2248" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10028" x="2996" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10029" x="3744" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10030" x="4492" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10031" x="5240" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10032" x="5988" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10033" x="6736" y="808" width="745" height="801"/>
+	<SubTexture name="m instance 10034" x="4" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10035" x="752" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10036" x="1500" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10037" x="2248" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10038" x="2996" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10039" x="3744" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10040" x="4492" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10041" x="5240" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10042" x="5240" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10043" x="5240" y="1612" width="745" height="801"/>
+	<SubTexture name="m instance 10044" x="5240" y="1612" width="745" height="801"/>
+</TextureAtlas>

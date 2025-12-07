@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="impact.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="blam0000" x="269" y="3" width="85" height="84" frameX="-24" frameY="-24" frameWidth="134" frameHeight="133"/>
+	<SubTexture name="blam0001" x="140" y="3" width="126" height="125" frameX="-4" frameY="-4" frameWidth="134" frameHeight="133"/>
+	<SubTexture name="blam0002" x="3" y="3" width="134" height="133"/>
+</TextureAtlas>

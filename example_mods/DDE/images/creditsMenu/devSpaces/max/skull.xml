@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="skull.png">
+<SubTexture name="skull spin0000" x="296" y="365" width="222" height="355" frameX="-148" frameY="-81" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0001" x="518" y="365" width="222" height="355" frameX="-148" frameY="-81" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0002" x="606" y="722" width="289" height="324" frameX="-159" frameY="-81" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0003" x="0" y="365" width="296" height="357" frameX="-159" frameY="-81" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0004" x="581" y="0" width="296" height="358" frameX="-159" frameY="-80" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0005" x="0" y="1048" width="341" height="307" frameX="-154" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0006" x="1147" y="313" width="267" height="309" frameX="-159" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0007" x="1147" y="622" width="268" height="308" frameX="-159" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0008" x="868" y="1048" width="222" height="289" frameX="-159" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0009" x="646" y="1048" width="222" height="290" frameX="-159" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0010" x="895" y="722" width="221" height="306" frameX="-147" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0011" x="341" y="1048" width="305" height="293" frameX="-57" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0012" x="0" y="722" width="303" height="326" frameX="-65" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0013" x="303" y="722" width="303" height="325" frameX="-65" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0014" x="1147" y="0" width="345" height="313" frameX="-19" frameY="-85" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0015" x="0" y="0" width="290" height="365" frameX="-71" frameY="-81" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0016" x="290" y="0" width="291" height="364" frameX="-71" frameY="-81" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0017" x="877" y="0" width="270" height="329" frameX="-98" frameY="-82" frameWidth="498" frameHeight="498" />
+<SubTexture name="skull spin0018" x="877" y="329" width="269" height="327" frameX="-99" frameY="-82" frameWidth="498" frameHeight="498" />
+</TextureAtlas>

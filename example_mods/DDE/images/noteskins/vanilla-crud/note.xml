@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="note.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="note instance 10000" x="45" y="4" width="36" height="38" frameX="-1" frameY="0" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10001" x="45" y="45" width="36" height="38" frameX="-1" frameY="0" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10002" x="4" y="4" width="38" height="36" frameX="0" frameY="-1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10003" x="4" y="43" width="38" height="36" frameX="0" frameY="-1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10004" x="4" y="82" width="38" height="36" frameX="0" frameY="-1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10005" x="4" y="121" width="38" height="36" frameX="0" frameY="-1" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10006" x="45" y="86" width="36" height="38" frameX="-1" frameY="0" frameWidth="38" frameHeight="38"/>
+	<SubTexture name="note instance 10007" x="45" y="127" width="36" height="38" frameX="-1" frameY="0" frameWidth="38" frameHeight="38"/>
+</TextureAtlas>

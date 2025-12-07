@@ -1,0 +1,100 @@
+{
+    "dialogue": [
+        {
+            "expression": "serious",
+            "text": "..."
+        },
+        {
+            "expression": "serious",
+            "text": "H-Huh?"
+        },
+        {
+            "expression": "serious",
+            "text": "Desperation calls, a faint creak from the dark...?"
+        },
+        {
+            "expression": "serious",
+            "text": "Can't mope around, I have a customer... I think..."
+        },
+        {
+            "expression": "serious",
+            "text": "Grüezi! Bienvenu! Ciao! Welcome to my store!"
+        },
+        {
+            "expression": "talking2",
+            "text": "Happy days are calling! You ARE real! Ha!"
+        },
+        {
+            "expression": "talking0",
+            "text": "How was your trip?"
+        },
+        {
+            "expression": "talking0",
+            "text": "Did you see something that caught your eye?"
+        },
+        {
+            "expression": "talking1",
+            "text": "Something like... A path.. A road... A broken door..."
+        },
+        {
+            "expression": "talking1",
+            "text": "... An unremaining stone... An impatient heaven... A lingering overabundance of lies... a hint of sweet clematis..."
+        },
+        {
+            "expression": "confused",
+            "text": "...Anything?"
+        },
+        {
+            "expression": "shocked",
+            "text": "えっ？！"
+        },
+        {
+            "expression": "shocked",
+            "text": "Nothing..."
+        },
+        {
+            "expression": "shocked",
+            "text": "NOTHING AT ALL?!??!"
+        },
+        {
+            "expression": "serious",
+            "text": "..."
+        },
+        {
+            "expression": "talking1",
+            "text": "It's fine... As long as those pockets are impregnated with cash-"
+        },
+        {
+            "expression": "mad",
+            "text": "NO MONEY TOO?!?!"
+        },
+        {
+            "expression": "spiteful",
+            "text": "What a starved wallet! I- I mean, you did find your way here, one way or a wronger. But I can't simply turn down a valuable (albeit, poor...) customer. I'm nice, I'm nice after all, nice enough to let you uhh..."
+        },
+        {
+            "expression": "talking2",
+            "text": "Play my games!"
+        },
+        {
+            "expression": "talking3",
+            "text": "Anything worth your dazzling eyes is a prize to be won! My shelves have interactable trinkets that you can access and play at any moment! Pretty catching! ...right?"
+        },
+        {
+            "expression": "serious",
+            "text": "Huh? The prize..."
+        },
+        {
+            "expression": "serious",
+            "text": "..."
+        },
+        {
+            "expression": "cold",
+            "text": "I have a small ask for you..."
+        },
+        {
+            "expression": "talking0",
+            "text": "Do me a favour and visit me and my rotten orange palette, for as much as you can, if you can, ねぇ～？"
+        }
+    ]
+}

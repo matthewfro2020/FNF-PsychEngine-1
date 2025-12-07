@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="story.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="0" y="0" width="300" height="208"/>
+	<SubTexture name="idle0001" x="310" y="0" width="300" height="208"/>
+	<SubTexture name="idle0002" x="0" y="218" width="300" height="208"/>
+	<SubTexture name="idle0003" x="310" y="218" width="300" height="208"/>
+	<SubTexture name="selected0000" x="0" y="436" width="300" height="208"/>
+	<SubTexture name="selected0001" x="310" y="436" width="300" height="208"/>
+	<SubTexture name="selected0002" x="0" y="654" width="300" height="208"/>
+	<SubTexture name="selected0003" x="310" y="654" width="300" height="208"/>
+	<SubTexture name="press10000" x="0" y="872" width="300" height="208"/>
+	<SubTexture name="press10001" x="310" y="872" width="300" height="208"/>
+	<SubTexture name="press10002" x="0" y="436" width="300" height="208"/>
+	<SubTexture name="press20000" x="0" y="1090" width="300" height="208"/>
+	<SubTexture name="press20001" x="310" y="1090" width="300" height="208"/>
+	<SubTexture name="press20002" x="310" y="436" width="300" height="208"/>
+	<SubTexture name="press30000" x="0" y="1308" width="300" height="208"/>
+	<SubTexture name="press30001" x="0" y="1526" width="300" height="208"/>
+	<SubTexture name="press30002" x="310" y="654" width="300" height="208"/>
+	<SubTexture name="press40000" x="310" y="1308" width="300" height="208"/>
+	<SubTexture name="press40001" x="310" y="1526" width="300" height="208"/>
+	<SubTexture name="press40002" x="0" y="654" width="300" height="208"/>
+</TextureAtlas>

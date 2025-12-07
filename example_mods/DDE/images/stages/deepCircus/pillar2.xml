@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rotate2.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rotate20000" x="0" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20001" x="0" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20002" x="643" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20003" x="643" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20004" x="1286" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20005" x="1286" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20006" x="1929" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20007" x="1929" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20008" x="2572" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20009" x="2572" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20010" x="3215" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20011" x="3215" y="0" width="643" height="859"/>
+	<SubTexture name="rotate20012" x="0" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20013" x="0" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20014" x="643" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20015" x="643" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20016" x="1286" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20017" x="1286" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20018" x="1929" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20019" x="1929" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20020" x="2572" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20021" x="2572" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20022" x="3215" y="859" width="643" height="859"/>
+	<SubTexture name="rotate20023" x="3215" y="859" width="643" height="859"/>
+</TextureAtlas>

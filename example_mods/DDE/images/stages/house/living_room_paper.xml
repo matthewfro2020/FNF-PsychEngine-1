@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="living_room_paper.png">
+	<!-- Created with Adobe Animate version 24.0.9.74 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bg0000" x="1" y="1" width="3500" height="2348"/>
+	<SubTexture name="bg0001" x="1" y="1" width="3500" height="2348"/>
+	<SubTexture name="bg0002" x="1" y="1" width="3500" height="2348"/>
+	<SubTexture name="bg0003" x="1" y="1" width="3500" height="2348"/>
+	<SubTexture name="bg0004" x="1" y="1" width="3500" height="2348"/>
+	<SubTexture name="bg0005" x="1" y="1" width="3500" height="2348"/>
+	<SubTexture name="bg0006" x="1" y="2353" width="3500" height="2348"/>
+	<SubTexture name="bg0007" x="1" y="2353" width="3500" height="2348"/>
+	<SubTexture name="bg0008" x="1" y="2353" width="3500" height="2348"/>
+	<SubTexture name="bg0009" x="1" y="2353" width="3500" height="2348"/>
+	<SubTexture name="bg0010" x="1" y="2353" width="3500" height="2348"/>
+	<SubTexture name="bg0011" x="1" y="2353" width="3500" height="2348"/>
+	<SubTexture name="bg0012" x="1" y="4705" width="3500" height="2348"/>
+	<SubTexture name="bg0013" x="1" y="4705" width="3500" height="2348"/>
+	<SubTexture name="bg0014" x="1" y="4705" width="3500" height="2348"/>
+	<SubTexture name="bg0015" x="1" y="4705" width="3500" height="2348"/>
+	<SubTexture name="bg0016" x="1" y="4705" width="3500" height="2348"/>
+	<SubTexture name="bg0017" x="1" y="4705" width="3500" height="2348"/>
+</TextureAtlas>

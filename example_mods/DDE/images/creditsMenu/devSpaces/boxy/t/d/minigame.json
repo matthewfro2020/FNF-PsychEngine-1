@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "How did you like the first minigame? Joyful, isn't it?"
+        },
+        {
+            "expression": "talking3",
+            "text": "Ha! Took me some time to figure how to configure, but it's alrighty! "
+        },
+        {
+            "expression": "talking1",
+            "text": "Do spend as much time as you can, if not, more!"
+        },
+        {
+            "expression": "laughing",
+            "text": "I'll make additionals, just for you! Hihi!"
+        }
+    ]
+}

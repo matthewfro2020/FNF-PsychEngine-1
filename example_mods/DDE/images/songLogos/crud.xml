@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Crud_Freeplay_Asset.png">
+<SubTexture name="Crud_Freeplay_Asset Idle0000" x="460" y="0" width="444" height="288" frameX="-47" frameY="-7" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0001" x="0" y="0" width="460" height="290" frameX="-29" frameY="-8" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0002" x="0" y="290" width="468" height="287" frameX="-26" frameY="-13" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0003" x="0" y="577" width="464" height="264" frameX="-27" frameY="-19" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0004" x="904" y="0" width="471" height="262" frameX="-22" frameY="-20" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0005" x="0" y="577" width="464" height="264" frameX="-27" frameY="-19" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0006" x="0" y="290" width="468" height="287" frameX="-26" frameY="-13" frameWidth="600" frameHeight="300" />
+<SubTexture name="Crud_Freeplay_Asset Idle0007" x="0" y="0" width="460" height="290" frameX="-29" frameY="-8" frameWidth="600" frameHeight="300" />
+</TextureAtlas>

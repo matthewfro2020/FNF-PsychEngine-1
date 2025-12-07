@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Do the decorations catch your eye?"
+        },
+        {
+            "expression": "talking3",
+            "text": "Thank you my dearest chum! During my isolation I've spent too much time on the knick knacks and thingamabobs to keep myself entertained!"
+        },
+        {
+            "expression": "talking1",
+            "text": "I can sell them to you! (For a higher price of course)"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "dialogue": [
+        {
+            "expression": "laughing",
+            "text": "Heeeeey, lets play a game..."
+        },
+        {
+            "expression": "talking2",
+            "text": "Shotgun! I call first!"
+        },
+        {
+            "expression": "talking3",
+            "text": "Ha! I dare youuu... To stay here forever!"
+        },
+        {
+            "expression": "laughing",
+            "text": "Not so slick are you now? Hihi..."
+        },
+        {
+            "expression": "talking3",
+            "text": "An eternity with me! How dastardly, dastardly!"
+        },
+        {
+            "expression": "talking2",
+            "text": "Ookaaay okay, you can dare me, but only once!"
+        }
+    ]
+}

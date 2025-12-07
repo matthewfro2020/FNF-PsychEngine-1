@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="spikeicon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="spikeicons0000" x="5" y="5" width="187" height="162" frameX="0" frameY="-3" frameWidth="188" frameHeight="169"/>
+	<SubTexture name="spikeicons0001" x="197" y="5" width="179" height="169" frameX="-9" frameY="0" frameWidth="188" frameHeight="169"/>
+</TextureAtlas>

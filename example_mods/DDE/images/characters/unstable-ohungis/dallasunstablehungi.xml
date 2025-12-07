@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="dallasunstablehungi.png" width="3470" height="3660">
+	<SubTexture name="dalunstable down0000" x="936" y="3560" width="883" height="93" frameX="-32" frameY="-74" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0001" x="936" y="3560" width="883" height="93" frameX="-32" frameY="-74" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0002" x="1830" y="3456" width="939" height="133" frameX="-3" frameY="-34" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0003" x="1830" y="3456" width="939" height="133" frameX="-3" frameY="-34" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0004" x="1929" y="5" width="946" height="163" frameX="-0" frameY="-6" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0005" x="1929" y="5" width="946" height="163" frameX="-0" frameY="-6" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0006" x="1929" y="173" width="507" height="172" frameX="-220" frameY="-0" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0007" x="1929" y="173" width="507" height="172" frameX="-220" frameY="-0" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0008" x="1830" y="3282" width="523" height="163" frameX="-211" frameY="-8" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0009" x="1830" y="3282" width="523" height="163" frameX="-211" frameY="-8" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0010" x="1830" y="3282" width="523" height="163" frameX="-211" frameY="-8" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0011" x="1830" y="3118" width="543" height="159" frameX="-202" frameY="-15" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0012" x="1830" y="3118" width="543" height="159" frameX="-202" frameY="-15" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0013" x="1830" y="3118" width="543" height="159" frameX="-202" frameY="-15" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0014" x="1830" y="3118" width="543" height="159" frameX="-202" frameY="-15" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable down0015" x="1830" y="3118" width="543" height="159" frameX="-202" frameY="-15" frameWidth="946" frameHeight="174"/>
+	<SubTexture name="dalunstable left0000" x="568" y="1069" width="646" height="448" frameX="-32" frameY="-78" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0001" x="568" y="1069" width="646" height="448" frameX="-32" frameY="-78" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0002" x="1193" y="537" width="668" height="411" frameX="-8" frameY="-118" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0003" x="1193" y="537" width="668" height="411" frameX="-8" frameY="-118" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0004" x="5" y="5" width="672" height="483" frameX="-0" frameY="-44" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0005" x="5" y="5" width="672" height="483" frameX="-0" frameY="-44" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0006" x="5" y="493" width="600" height="525" frameX="-114" frameY="-4" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0007" x="5" y="493" width="600" height="525" frameX="-114" frameY="-4" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0008" x="5" y="1023" width="558" height="525" frameX="-293" frameY="-3" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0009" x="5" y="1023" width="558" height="525" frameX="-293" frameY="-3" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0010" x="610" y="537" width="578" height="527" frameX="-285" frameY="-0" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0011" x="610" y="537" width="578" height="527" frameX="-285" frameY="-0" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0012" x="682" y="5" width="582" height="527" frameX="-284" frameY="-0" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0013" x="682" y="5" width="582" height="527" frameX="-284" frameY="-0" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0014" x="682" y="5" width="582" height="527" frameX="-284" frameY="-0" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable left0015" x="682" y="5" width="582" height="527" frameX="-284" frameY="-0" frameWidth="866" frameHeight="530"/>
+	<SubTexture name="dalunstable right0000" x="5" y="1553" width="676" height="374" frameX="-52" frameY="-0" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0001" x="1219" y="953" width="691" height="374" frameX="-53" frameY="-0" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0002" x="1269" y="5" width="655" height="369" frameX="-57" frameY="-4" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0003" x="1219" y="1332" width="691" height="374" frameX="-53" frameY="-0" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0004" x="1219" y="1332" width="691" height="374" frameX="-53" frameY="-0" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0005" x="5" y="1553" width="676" height="374" frameX="-52" frameY="-0" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0006" x="1563" y="1711" width="589" height="356" frameX="-0" frameY="-13" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0007" x="1866" y="379" width="589" height="356" frameX="-0" frameY="-13" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0008" x="278" y="2411" width="607" height="357" frameX="-12" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0009" x="278" y="2411" width="607" height="357" frameX="-12" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0010" x="890" y="2411" width="603" height="357" frameX="-16" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0011" x="890" y="2411" width="603" height="357" frameX="-16" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0012" x="890" y="2411" width="603" height="357" frameX="-16" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0013" x="890" y="2411" width="603" height="357" frameX="-16" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0014" x="955" y="1711" width="603" height="357" frameX="-16" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstable right0015" x="955" y="1711" width="603" height="357" frameX="-16" frameY="-12" frameWidth="744" frameHeight="374"/>
+	<SubTexture name="dalunstableidle0000" x="3049" y="3126" width="306" height="437" frameX="-1" frameY="-5" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0001" x="5" y="3216" width="306" height="437" frameX="-1" frameY="-5" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0002" x="1792" y="2675" width="306" height="438" frameX="-1" frameY="-5" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0003" x="2103" y="2675" width="306" height="438" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0004" x="278" y="2773" width="306" height="438" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0005" x="900" y="2773" width="305" height="439" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0006" x="2739" y="2409" width="306" height="439" frameX="-1" frameY="-3" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0007" x="2428" y="2568" width="306" height="439" frameX="-1" frameY="-3" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0008" x="3050" y="1790" width="305" height="441" frameX="-1" frameY="-2" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0009" x="3050" y="2236" width="305" height="441" frameX="-1" frameY="-2" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0010" x="2739" y="1964" width="306" height="440" frameX="-0" frameY="-2" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0011" x="2428" y="1676" width="306" height="441" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0012" x="1915" y="1229" width="306" height="443" frameX="-0" frameY="-0" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0013" x="2226" y="1229" width="306" height="442" frameX="-0" frameY="-0" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0014" x="2501" y="625" width="306" height="442" frameX="-0" frameY="-0" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0015" x="2793" y="173" width="306" height="442" frameX="-0" frameY="-0" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0016" x="2537" y="1072" width="306" height="441" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0017" x="3104" y="5" width="306" height="442" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0018" x="2428" y="2122" width="306" height="441" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0019" x="2739" y="1518" width="306" height="441" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0020" x="2848" y="899" width="306" height="441" frameX="-0" frameY="-0" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0021" x="3104" y="452" width="306" height="442" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0022" x="3159" y="899" width="306" height="441" frameX="-0" frameY="-1" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0023" x="3050" y="1345" width="306" height="440" frameX="-0" frameY="-2" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0024" x="1210" y="2817" width="305" height="439" frameX="-1" frameY="-3" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0025" x="1520" y="3118" width="305" height="437" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0026" x="3050" y="2682" width="306" height="439" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0027" x="2739" y="2853" width="305" height="439" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0028" x="2414" y="3012" width="305" height="439" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0029" x="316" y="3216" width="305" height="438" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0030" x="626" y="3217" width="305" height="438" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableidle0031" x="589" y="2773" width="306" height="438" frameX="-1" frameY="-4" frameWidth="307" frameHeight="443"/>
+	<SubTexture name="dalunstableup0000" x="686" y="1522" width="264" height="884" frameX="-42" frameY="-0" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0001" x="5" y="1932" width="268" height="861" frameX="-32" frameY="-19" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0002" x="1498" y="2073" width="289" height="739" frameX="-41" frameY="-144" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0003" x="5" y="1932" width="268" height="861" frameX="-32" frameY="-19" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0004" x="686" y="1522" width="264" height="884" frameX="-42" frameY="-0" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0005" x="5" y="1932" width="268" height="861" frameX="-32" frameY="-19" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0006" x="1498" y="2073" width="289" height="739" frameX="-41" frameY="-144" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0007" x="1792" y="2072" width="313" height="598" frameX="-6" frameY="-290" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0008" x="2110" y="2072" width="313" height="598" frameX="-6" frameY="-290" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0009" x="278" y="1932" width="328" height="447" frameX="-2" frameY="-441" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0010" x="2460" y="173" width="328" height="447" frameX="-2" frameY="-441" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0011" x="2157" y="740" width="339" height="484" frameX="-0" frameY="-402" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0012" x="2157" y="740" width="339" height="484" frameX="-0" frameY="-402" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0013" x="2157" y="740" width="339" height="484" frameX="-0" frameY="-402" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0014" x="2157" y="740" width="339" height="484" frameX="-0" frameY="-402" frameWidth="339" frameHeight="888"/>
+	<SubTexture name="dalunstableup0015" x="2157" y="740" width="339" height="484" frameX="-0" frameY="-402" frameWidth="339" frameHeight="888"/>
+</TextureAtlas>

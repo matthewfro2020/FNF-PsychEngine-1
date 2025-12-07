@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tristanicon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="tristanicons0000" x="5" y="5" width="156" height="163"/>
+	<SubTexture name="tristanicons0001" x="166" y="5" width="150" height="154" frameX="-5" frameY="-8" frameWidth="156" frameHeight="163"/>
+</TextureAtlas>

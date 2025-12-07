@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="crudbox.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boxxer_0" x="5" y="5" width="600" height="300"/>
+	<SubTexture name="boxxer_1" x="610" y="5" width="600" height="300"/>
+	<SubTexture name="boxxer_2" x="1215" y="5" width="600" height="300"/>
+	<SubTexture name="boxxer_3" x="5" y="310" width="600" height="300"/>
+	<SubTexture name="boxxer_4" x="610" y="310" width="600" height="300"/>
+	<SubTexture name="boxxer_5" x="1215" y="310" width="600" height="300"/>
+	<SubTexture name="boxxer_6" x="5" y="615" width="600" height="300"/>
+	<SubTexture name="boxxer_7" x="610" y="615" width="600" height="300"/>
+</TextureAtlas>

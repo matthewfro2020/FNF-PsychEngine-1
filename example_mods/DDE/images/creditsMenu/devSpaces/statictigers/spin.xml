@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="spin.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="3d spin0000" x="0" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0001" x="243" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0002" x="486" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0003" x="729" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0004" x="972" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0005" x="1215" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0006" x="1458" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0007" x="1701" y="0" width="238" height="238"/>
+	<SubTexture name="3d spin0008" x="0" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0009" x="243" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0010" x="486" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0011" x="729" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0012" x="972" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0013" x="1215" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0014" x="1458" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0015" x="1701" y="243" width="238" height="238"/>
+	<SubTexture name="3d spin0016" x="0" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0017" x="243" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0018" x="486" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0019" x="729" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0020" x="972" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0021" x="1215" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0022" x="1458" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0023" x="1701" y="486" width="238" height="238"/>
+	<SubTexture name="3d spin0024" x="0" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0025" x="243" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0026" x="486" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0027" x="729" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0028" x="972" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0029" x="1215" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0030" x="1458" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0031" x="1701" y="729" width="238" height="238"/>
+	<SubTexture name="3d spin0032" x="0" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0033" x="243" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0034" x="486" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0035" x="729" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0036" x="972" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0037" x="1215" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0038" x="1458" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0039" x="1701" y="972" width="238" height="238"/>
+	<SubTexture name="3d spin0040" x="0" y="1215" width="238" height="238"/>
+	<SubTexture name="3d spin0041" x="243" y="1215" width="238" height="238"/>
+	<SubTexture name="3d spin0042" x="486" y="1215" width="238" height="238"/>
+	<SubTexture name="3d spin0043" x="729" y="1215" width="238" height="238"/>
+</TextureAtlas>

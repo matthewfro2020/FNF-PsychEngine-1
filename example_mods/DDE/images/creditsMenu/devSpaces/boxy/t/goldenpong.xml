@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="goldenpong.png">
+<SubTexture name="normal0000" x="147" y="131" width="140" height="125" frameX="0" frameY="0" frameWidth="140" frameHeight="125" />
+<SubTexture name="selected0000" x="0" y="131" width="147" height="130" frameX="0" frameY="0" frameWidth="147" frameHeight="130" />
+<SubTexture name="selected0001" x="0" y="0" width="146" height="131" frameX="0" frameY="0" frameWidth="146" frameHeight="131" />
+<SubTexture name="selected0002" x="146" y="0" width="145" height="131" frameX="0" frameY="0" frameWidth="145" frameHeight="131" />
+</TextureAtlas>

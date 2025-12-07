@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "laughing",
+            "text": "Hey... Pssst... Hey!"
+        },
+        {
+            "expression": "laughing",
+            "text": "A mysteriösen 3rd gender wants you to know..."
+        },
+        {
+            "expression": "laughing",
+            "text": "Ich han dich mega gern... hihi!"
+        },
+        {
+            "expression": "talking2",
+            "text": "What does that mean? Shhh, its a secret after all..."
+        }
+    ]
+}

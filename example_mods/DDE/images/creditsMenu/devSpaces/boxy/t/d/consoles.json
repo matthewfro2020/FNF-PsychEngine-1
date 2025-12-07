@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Do I sell any gaming consoles?"
+        },
+        {
+            "expression": "spiteful",
+            "text": "Pahhh... Why spend so much money on some junk that only repays you in small return cash???"
+        },
+        {
+            "expression": "cold",
+            "text": "..."
+        },
+        {
+            "expression": "nervous",
+            "text": "I'll... be sure to invest that into my list..."
+        }
+    ]
+}

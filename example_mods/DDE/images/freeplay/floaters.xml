@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="floaters.png" width="233" height="243">
+	<SubTexture name="bl1" x="1" y="1" width="88" height="82" frameX="-6" frameY="-3" frameWidth="97" frameHeight="88"/>
+	<SubTexture name="bl2" x="1" y="84" width="88" height="79" frameX="-6" frameY="-4" frameWidth="97" frameHeight="88"/>
+	<SubTexture name="bl3" x="90" y="1" width="88" height="78" frameX="-6" frameY="-4" frameWidth="97" frameHeight="88"/>
+	<SubTexture name="br1" x="90" y="80" width="72" height="77" frameX="-4" frameY="-5" frameWidth="83" frameHeight="88"/>
+	<SubTexture name="br3" x="90" y="158" width="71" height="78" frameX="-5" frameY="-6" frameWidth="83" frameHeight="88"/>
+	<SubTexture name="br2" x="1" y="164" width="70" height="78" frameX="-8" frameY="-6" frameWidth="83" frameHeight="88"/>
+	<SubTexture name="tl1" x="162" y="158" width="54" height="48" frameX="-4" frameY="-1" frameWidth="64" frameHeight="52"/>
+	<SubTexture name="tl3" x="163" y="80" width="52" height="49" frameX="-5" frameY="-1" frameWidth="64" frameHeight="52"/>
+	<SubTexture name="tl2" x="179" y="1" width="53" height="47" frameX="-7" frameY="-3" frameWidth="64" frameHeight="52"/>
+	<SubTexture name="tr1" x="179" y="49" width="35" height="28" frameX="-7" frameY="-5" frameWidth="48" frameHeight="39"/>
+	<SubTexture name="tr3" x="162" y="207" width="35" height="28" frameX="-5" frameY="-4" frameWidth="48" frameHeight="39"/>
+	<SubTexture name="tr2" x="198" y="207" width="33" height="28" frameX="-6" frameY="-7" frameWidth="48" frameHeight="39"/>
+</TextureAtlas>

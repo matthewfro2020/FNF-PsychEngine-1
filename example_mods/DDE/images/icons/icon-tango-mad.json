@@ -1,0 +1,38 @@
+{
+  "offsets": {
+    "upscroll": {
+      "right": [1, -1],
+      "blink": ["0", "0"],
+      "down": [3, -18],
+      "losetransition": [68, 49],
+      "left": [0, -4],
+      "up": [0, -14],
+      "reversetransition": [68, 54],
+      "idle": [0, 0],
+      "lose": [0, 0]
+    },
+    "downscroll": {
+      "right": [0, 11],
+      "blink": [0, 0],
+      "down": [3, 12],
+      "losetransition": [68, 62],
+      "left": [0, 1],
+      "up": ["0", "0"],
+      "reversetransition": [68, 56],
+      "idle": [0, 0],
+      "lose": [0, 0]
+    }
+  },
+  "FPS": 1,
+  "doBump": true,
+  "Scale": 0.81,
+  "globalOffset": [10, 13],
+  "resize": false,
+  "animations": [
+    { "name": "left" },
+    { "name": "down" },
+    { "name": "up" },
+    { "name": "right" }
+  ],
+  "canSing": true
+}

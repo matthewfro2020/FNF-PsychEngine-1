@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="garyJeffBuddies.png" width="7932" height="458">
+	<SubTexture name="Combo Lose0000" x="1" y="1" width="488" height="414" frameX="-8" frameY="-68" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0001" x="1" y="1" width="488" height="414" frameX="-8" frameY="-68" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0002" x="5593" y="1" width="481" height="446" frameX="-14" frameY="-36" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0003" x="5593" y="1" width="481" height="446" frameX="-14" frameY="-36" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0004" x="6077" y="1" width="475" height="446" frameX="-20" frameY="-36" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0005" x="6077" y="1" width="475" height="446" frameX="-20" frameY="-36" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0006" x="4655" y="1" width="470" height="444" frameX="-24" frameY="-38" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0007" x="4655" y="1" width="470" height="444" frameX="-24" frameY="-38" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0008" x="4184" y="1" width="468" height="440" frameX="-26" frameY="-42" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Combo Lose0009" x="4184" y="1" width="468" height="440" frameX="-26" frameY="-42" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0000" x="492" y="1" width="480" height="421" rotated="true" frameX="-74" frameY="-2" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0001" x="492" y="1" width="480" height="421" rotated="true" frameX="-74" frameY="-2" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0002" x="3260" y="1" width="474" height="434" rotated="true" frameX="-64" frameY="-8" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0003" x="3260" y="1" width="474" height="434" rotated="true" frameX="-64" frameY="-8" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0004" x="5128" y="1" width="462" height="445" rotated="true" frameX="-48" frameY="-20" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0005" x="5128" y="1" width="462" height="445" rotated="true" frameX="-48" frameY="-20" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0006" x="6555" y="1" width="458" height="452" rotated="true" frameX="-38" frameY="-24" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0007" x="6555" y="1" width="458" height="452" rotated="true" frameX="-38" frameY="-24" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0008" x="7475" y="1" width="456" height="456" frameX="-34" frameY="-26" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0009" x="7475" y="1" width="456" height="456" frameX="-34" frameY="-26" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0010" x="7016" y="1" width="456" height="454" frameX="-34" frameY="-28" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Hey0011" x="7016" y="1" width="456" height="454" frameX="-34" frameY="-28" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0000" x="975" y="1" width="457" height="426" frameX="-12" frameY="-56" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0001" x="975" y="1" width="457" height="426" frameX="-12" frameY="-56" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0002" x="1435" y="1" width="453" height="430" frameX="-16" frameY="-52" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0003" x="1435" y="1" width="453" height="430" frameX="-16" frameY="-52" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0004" x="3737" y="1" width="444" height="439" rotated="true" frameX="-28" frameY="-38" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0005" x="3737" y="1" width="444" height="439" rotated="true" frameX="-28" frameY="-38" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0006" x="1891" y="1" width="452" height="430" rotated="true" frameX="-36" frameY="-30" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0007" x="1891" y="1" width="452" height="430" rotated="true" frameX="-36" frameY="-30" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0008" x="2346" y="1" width="454" height="431" rotated="true" frameX="-36" frameY="-28" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0009" x="2346" y="1" width="454" height="431" rotated="true" frameX="-36" frameY="-28" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0010" x="2803" y="1" width="454" height="431" rotated="true" frameX="-36" frameY="-28" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="Idle0011" x="2803" y="1" width="454" height="431" rotated="true" frameX="-36" frameY="-28" frameWidth="500" frameHeight="500"/>
+</TextureAtlas>

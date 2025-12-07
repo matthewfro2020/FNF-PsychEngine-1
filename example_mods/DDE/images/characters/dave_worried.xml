@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="worried_dave.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="msingDOWN copy0000" x="5" y="5" width="409" height="600" frameX="0" frameY="-41" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0001" x="419" y="5" width="384" height="620" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0002" x="419" y="5" width="384" height="620" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0003" x="808" y="5" width="382" height="621" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0004" x="808" y="5" width="382" height="621" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0005" x="1195" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0006" x="1195" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0007" x="1582" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0008" x="1582" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0009" x="1195" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0010" x="1195" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0011" x="1582" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0012" x="1582" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0013" x="1195" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingDOWN copy0014" x="1195" y="5" width="382" height="622" frameX="-36" frameY="0" frameWidth="420" frameHeight="641"/>
+	<SubTexture name="msingLEFT copy0000" x="1969" y="5" width="422" height="592" frameX="0" frameY="-54" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0001" x="2396" y="5" width="379" height="653" frameX="-51" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0002" x="2780" y="5" width="374" height="650" frameX="-57" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0003" x="3159" y="5" width="374" height="650" frameX="-57" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0004" x="3538" y="5" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0005" x="5" y="663" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0006" x="5" y="663" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0007" x="3538" y="5" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0008" x="3538" y="5" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0009" x="5" y="663" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0010" x="5" y="663" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0011" x="3538" y="5" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0012" x="3538" y="5" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0013" x="5" y="663" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingLEFT copy0014" x="5" y="663" width="373" height="650" frameX="-58" frameY="0" frameWidth="431" frameHeight="653"/>
+	<SubTexture name="msingRIGHT copy0000" x="383" y="663" width="508" height="659" frameX="0" frameY="-2" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0001" x="896" y="663" width="511" height="661" frameX="-13" frameY="0" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0002" x="1412" y="663" width="497" height="630" frameX="-71" frameY="-30" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0003" x="1412" y="663" width="497" height="630" frameX="-71" frameY="-30" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0004" x="1914" y="663" width="497" height="630" frameX="-71" frameY="-30" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0005" x="2416" y="663" width="458" height="630" frameX="-110" frameY="-30" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0006" x="2879" y="663" width="458" height="630" frameX="-110" frameY="-30" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0007" x="3342" y="663" width="370" height="634" frameX="-104" frameY="-31" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0008" x="3717" y="663" width="370" height="634" frameX="-104" frameY="-31" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0009" x="5" y="1329" width="332" height="636" frameX="-73" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0010" x="342" y="1329" width="332" height="636" frameX="-73" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0011" x="679" y="1329" width="328" height="640" frameX="-76" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0012" x="1012" y="1329" width="328" height="640" frameX="-76" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0013" x="1345" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0014" x="1678" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0015" x="1678" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0016" x="1345" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0017" x="1345" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0018" x="1678" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingRIGHT copy0019" x="1678" y="1329" width="328" height="640" frameX="-77" frameY="-43" frameWidth="568" frameHeight="683"/>
+	<SubTexture name="msingUP copy0000" x="2011" y="1329" width="332" height="683" frameX="-32" frameY="0" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0001" x="2348" y="1329" width="341" height="676" frameX="-29" frameY="-12" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0002" x="2694" y="1329" width="391" height="660" frameX="0" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0003" x="2694" y="1329" width="391" height="660" frameX="0" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0004" x="3090" y="1329" width="331" height="657" frameX="-51" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0005" x="3090" y="1329" width="331" height="657" frameX="-51" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0006" x="3426" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0007" x="3426" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0008" x="3759" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0009" x="3759" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0010" x="3426" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0011" x="3426" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0012" x="3759" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0013" x="3759" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="msingUP copy0014" x="3426" y="1329" width="328" height="657" frameX="-52" frameY="-25" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="worrieddown0000" x="1084" y="3323" width="409" height="600" frameX="-10" frameY="-32" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0001" x="1498" y="3323" width="411" height="600" frameX="-8" frameY="-32" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0002" x="1914" y="3323" width="415" height="593" frameX="0" frameY="-36" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0003" x="2334" y="3323" width="415" height="593" frameX="0" frameY="-36" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0004" x="2754" y="3323" width="392" height="610" frameX="-25" frameY="-8" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0005" x="2754" y="3323" width="392" height="610" frameX="-25" frameY="-8" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0006" x="3151" y="3323" width="388" height="616" frameX="-30" frameY="-2" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0007" x="3151" y="3323" width="388" height="616" frameX="-30" frameY="-2" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0008" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0009" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0010" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0011" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0012" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0013" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worrieddown0014" x="3544" y="3323" width="386" height="618" frameX="-33" frameY="0" frameWidth="419" frameHeight="632"/>
+	<SubTexture name="worriedidle0000" x="5" y="2017" width="359" height="634" frameX="-21" frameY="0" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0001" x="5" y="2017" width="359" height="634" frameX="-21" frameY="0" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0002" x="369" y="2017" width="363" height="633" frameX="-17" frameY="-1" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0003" x="369" y="2017" width="363" height="633" frameX="-17" frameY="-1" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0004" x="737" y="2017" width="376" height="628" frameX="-1" frameY="-7" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0005" x="737" y="2017" width="376" height="628" frameX="-1" frameY="-7" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0006" x="1118" y="2017" width="381" height="620" frameX="0" frameY="-18" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0007" x="1118" y="2017" width="381" height="620" frameX="0" frameY="-18" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0008" x="1504" y="2017" width="380" height="617" frameX="-3" frameY="-21" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0009" x="1504" y="2017" width="380" height="617" frameX="-3" frameY="-21" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0010" x="1889" y="2017" width="372" height="622" frameX="-13" frameY="-16" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0011" x="1889" y="2017" width="372" height="622" frameX="-13" frameY="-16" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0012" x="2266" y="2017" width="364" height="627" frameX="-19" frameY="-9" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedidle0013" x="2266" y="2017" width="364" height="627" frameX="-19" frameY="-9" frameWidth="385" frameHeight="638"/>
+	<SubTexture name="worriedleft0000" x="2635" y="2017" width="422" height="591" frameX="0" frameY="-36" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0001" x="2635" y="2017" width="422" height="591" frameX="0" frameY="-36" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0002" x="3062" y="2017" width="416" height="606" frameX="-8" frameY="-27" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0003" x="3062" y="2017" width="416" height="606" frameX="-8" frameY="-27" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0004" x="3483" y="2017" width="387" height="628" frameX="-43" frameY="-4" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0005" x="3483" y="2017" width="387" height="628" frameX="-43" frameY="-4" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0006" x="5" y="2656" width="384" height="634" frameX="-45" frameY="0" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0007" x="5" y="2656" width="384" height="634" frameX="-45" frameY="0" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0008" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0009" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0010" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0011" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0012" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0013" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedleft0014" x="394" y="2656" width="385" height="631" frameX="-44" frameY="-2" frameWidth="430" frameHeight="634"/>
+	<SubTexture name="worriedright0000" x="784" y="2656" width="509" height="659" frameX="-59" frameY="-2" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0001" x="1298" y="2656" width="509" height="662" frameX="-60" frameY="0" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0002" x="1812" y="2656" width="488" height="653" frameX="-40" frameY="-13" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0003" x="1812" y="2656" width="488" height="653" frameX="-40" frameY="-13" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0004" x="2305" y="2656" width="470" height="650" frameX="0" frameY="-33" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0005" x="2305" y="2656" width="470" height="650" frameX="0" frameY="-33" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0006" x="2780" y="2656" width="464" height="651" frameX="-3" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0007" x="2780" y="2656" width="464" height="651" frameX="-3" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0008" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0009" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0010" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0011" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0012" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0013" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedright0014" x="3249" y="2656" width="461" height="650" frameX="-7" frameY="-35" frameWidth="569" frameHeight="686"/>
+	<SubTexture name="worriedup0000" x="2011" y="1329" width="332" height="683" frameX="-15" frameY="0" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="worriedup0001" x="2011" y="1329" width="332" height="683" frameX="-15" frameY="0" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="worriedup0002" x="2348" y="1329" width="341" height="676" frameX="-12" frameY="-12" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="worriedup0003" x="2348" y="1329" width="341" height="676" frameX="-12" frameY="-12" frameWidth="391" frameHeight="688"/>
+	<SubTexture name="worriedup0004" x="3715" y="2656" width="359" height="632" frameX="-6" frameY="-36" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0005" x="3715" y="2656" width="359" height="632" frameX="-6" frameY="-36" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0006" x="5" y="3323" width="360" height="642" frameX="0" frameY="-34" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0007" x="5" y="3323" width="360" height="642" frameX="0" frameY="-34" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0008" x="370" y="3323" width="353" height="658" frameX="-3" frameY="-30" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0009" x="370" y="3323" width="353" height="658" frameX="-3" frameY="-30" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0010" x="728" y="3323" width="351" height="660" frameX="-5" frameY="-29" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0011" x="728" y="3323" width="351" height="660" frameX="-5" frameY="-29" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0012" x="728" y="3323" width="351" height="660" frameX="-5" frameY="-29" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0013" x="728" y="3323" width="351" height="660" frameX="-5" frameY="-29" frameWidth="365" frameHeight="689"/>
+	<SubTexture name="worriedup0014" x="728" y="3323" width="351" height="660" frameX="-5" frameY="-29" frameWidth="365" frameHeight="689"/>
+</TextureAtlas>

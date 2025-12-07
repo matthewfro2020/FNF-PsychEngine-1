@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="line.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="line0000" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0001" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0002" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0003" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0004" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0005" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0006" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0007" x="0" y="0" width="52" height="1000"/>
+	<SubTexture name="line0008" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0009" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0010" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0011" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0012" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0013" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0014" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0015" x="52" y="0" width="52" height="1000"/>
+	<SubTexture name="line0016" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0017" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0018" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0019" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0020" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0021" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0022" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0023" x="104" y="0" width="52" height="1000"/>
+	<SubTexture name="line0024" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0025" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0026" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0027" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0028" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0029" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0030" x="156" y="0" width="52" height="1000"/>
+	<SubTexture name="line0031" x="156" y="0" width="52" height="1000"/>
+</TextureAtlas>

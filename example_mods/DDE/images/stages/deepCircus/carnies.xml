@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="carnies.png">
+<SubTexture name="idle0000" x="1969" y="0" width="1971" height="809" frameX="-300" frameY="-443" frameWidth="2480" frameHeight="1494" />
+<SubTexture name="idle0001" x="0" y="0" width="1969" height="810" frameX="-298" frameY="-442" frameWidth="2480" frameHeight="1494" />
+</TextureAtlas>

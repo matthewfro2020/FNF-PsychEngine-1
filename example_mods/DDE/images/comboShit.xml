@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.0.4 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="comboShit.png" width="545" height="647">
+	<SubTexture name="sick" x="3" y="3" width="346" height="139" frameX="-11" frameY="-7" frameWidth="403" frameHeight="152"/>
+	<SubTexture name="combo" x="3" y="148" width="316" height="117" frameX="-12" frameY="-16" frameWidth="343" frameHeight="138"/>
+	<SubTexture name="shit" x="3" y="271" width="240" height="142" frameX="-13" frameY="-10" frameWidth="285" frameHeight="163"/>
+	<SubTexture name="good" x="3" y="419" width="260" height="108" frameX="-25" frameY="-8" frameWidth="317" frameHeight="126"/>
+	<SubTexture name="bad" x="249" y="271" width="187" height="123" frameX="-24" frameY="-5" frameWidth="261" frameHeight="131"/>
+	<SubTexture name="0" x="325" y="148" width="91" height="111" frameX="-1" frameY="-2" frameWidth="94" frameHeight="119"/>
+	<SubTexture name="1" x="355" y="3" width="91" height="111" frameX="-3" frameY="-1" frameWidth="98" frameHeight="120"/>
+	<SubTexture name="2" x="422" y="120" width="91" height="111" frameX="-7" frameY="-8" frameWidth="105" frameHeight="129"/>
+	<SubTexture name="3" x="442" y="237" width="91" height="111" frameX="-5" frameY="-8" frameWidth="102" frameHeight="134"/>
+	<SubTexture name="4" x="442" y="354" width="91" height="111" frameX="-3" frameY="-11" frameWidth="98" frameHeight="130"/>
+	<SubTexture name="5" x="269" y="400" width="91" height="111" frameX="-13" frameY="-14" frameWidth="111" frameHeight="135"/>
+	<SubTexture name="6" x="366" y="471" width="91" height="111" frameX="-12" frameY="-10" frameWidth="108" frameHeight="134"/>
+	<SubTexture name="7" x="269" y="517" width="91" height="111" frameX="-0" frameY="-0" frameWidth="91" frameHeight="111"/>
+	<SubTexture name="9" x="3" y="533" width="91" height="111" frameX="-0" frameY="-1" frameWidth="91" frameHeight="124"/>
+	<SubTexture name="8" x="452" y="3" width="90" height="111" frameX="-0" frameY="-0" frameWidth="90" frameHeight="115"/>
+</TextureAtlas>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="portalloading.png" width="1472" height="1346">
+	<SubTexture name="portalskew0000" x="956" y="804" width="243" height="259" frameX="-2" frameY="-8" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0001" x="239" y="1080" width="240" height="255" frameX="-4" frameY="-10" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0002" x="245" y="812" width="238" height="265" frameX="-5" frameY="-5" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0003" x="1" y="268" width="236" height="275" frameX="-6" frameY="-0" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0004" x="720" y="265" width="234" height="271" frameX="-7" frameY="-2" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0005" x="1203" y="519" width="228" height="263" frameX="-10" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0006" x="1" y="546" width="242" height="263" frameX="-3" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0007" x="1" y="1" width="248" height="264" frameX="-0" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0008" x="719" y="540" width="243" height="261" frameX="-2" frameY="-7" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0009" x="1197" y="261" width="237" height="255" frameX="-5" frameY="-10" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0010" x="1202" y="801" width="238" height="257" frameX="-5" frameY="-9" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0011" x="479" y="268" width="238" height="269" frameX="-5" frameY="-3" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0012" x="965" y="531" width="235" height="267" frameX="-6" frameY="-4" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0013" x="246" y="546" width="229" height="263" frameX="-9" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0014" x="956" y="1066" width="235" height="262" frameX="-6" frameY="-7" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0015" x="749" y="1" width="243" height="259" frameX="-2" frameY="-8" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0016" x="1194" y="1066" width="240" height="255" frameX="-4" frameY="-10" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0017" x="957" y="263" width="237" height="265" frameX="-5" frameY="-5" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0018" x="240" y="268" width="236" height="275" frameX="-6" frameY="-0" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0019" x="719" y="804" width="234" height="271" frameX="-7" frameY="-2" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0020" x="486" y="812" width="229" height="263" frameX="-9" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0021" x="1" y="812" width="241" height="263" frameX="-3" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0022" x="252" y="1" width="248" height="264" frameX="-0" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0023" x="503" y="1" width="243" height="261" frameX="-2" frameY="-7" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0024" x="1235" y="1" width="236" height="255" frameX="-6" frameY="-10" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0025" x="995" y="1" width="237" height="257" frameX="-5" frameY="-9" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0026" x="479" y="540" width="237" height="269" frameX="-5" frameY="-3" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0027" x="1" y="1078" width="235" height="267" frameX="-6" frameY="-4" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0028" x="723" y="1078" width="229" height="263" frameX="-9" frameY="-6" frameWidth="248" frameHeight="275"/>
+	<SubTexture name="portalskew0029" x="486" y="1078" width="234" height="262" frameX="-7" frameY="-6" frameWidth="248" frameHeight="275"/>
+</TextureAtlas>

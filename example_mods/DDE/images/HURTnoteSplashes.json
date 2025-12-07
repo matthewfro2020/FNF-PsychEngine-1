@@ -1,0 +1,10 @@
+{
+	"offsets": [
+		[15, 7],
+		[15, 7]
+	],
+	"minFps": 24,
+	"maxFps": 24,
+	"randomFlip": false,
+	"randomAngle": false
+}

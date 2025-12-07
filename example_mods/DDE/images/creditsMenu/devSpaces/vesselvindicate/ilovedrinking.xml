@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ilovedrinking.png">
+<SubTexture name="ilovedrinking oil0000" x="0" y="0" width="150" height="20" frameX="0" frameY="0" frameWidth="150" frameHeight="20" />
+<SubTexture name="ilovedrinking oil0001" x="0" y="20" width="150" height="20" frameX="0" frameY="0" frameWidth="150" frameHeight="20" />
+<SubTexture name="ilovedrinking oil0002" x="0" y="40" width="150" height="20" frameX="0" frameY="0" frameWidth="150" frameHeight="20" />
+<SubTexture name="ilovedrinking oil0003" x="0" y="60" width="150" height="20" frameX="0" frameY="0" frameWidth="150" frameHeight="20" />
+<SubTexture name="ilovedrinking oil0004" x="0" y="80" width="150" height="20" frameX="0" frameY="0" frameWidth="150" frameHeight="20" />
+<SubTexture name="ilovedrinking oil0005" x="0" y="100" width="150" height="20" frameX="0" frameY="0" frameWidth="150" frameHeight="20" />
+</TextureAtlas>

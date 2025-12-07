@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bambiicon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bambi icons0000" x="5" y="5" width="168" height="151" frameX="0" frameY="0" frameWidth="170" frameHeight="185"/>
+	<SubTexture name="bambi icons0001" x="183" y="5" width="167" height="185" frameX="-3" frameY="0" frameWidth="170" frameHeight="185"/>
+</TextureAtlas>

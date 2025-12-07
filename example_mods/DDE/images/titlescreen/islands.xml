@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.0.4 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="islands.png" width="1715" height="125">
+	<SubTexture name="3" x="2" y="2" width="37" height="33" frameX="-144" frameY="-482" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="6" x="43" y="2" width="37" height="40" frameX="-1176" frameY="-513" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="5" x="84" y="2" width="77" height="43" frameX="-1044" frameY="-450" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="1" x="165" y="2" width="81" height="62" frameX="-114" frameY="-275" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="4" x="250" y="2" width="77" height="77" frameX="-43" frameY="-548" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="longpart" x="331" y="2" width="1280" height="111" frameX="-0" frameY="-345" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="2" x="1615" y="2" width="98" height="121" frameX="-1100" frameY="-99" frameWidth="1280" frameHeight="720"/>
+</TextureAtlas>

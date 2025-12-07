@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="disk.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="unidampdisk copy instance 10000" x="4" y="4" width="150" height="150"/>
+	<SubTexture name="unidampdisk copy instance 10001" x="4" y="157" width="150" height="150"/>
+</TextureAtlas>

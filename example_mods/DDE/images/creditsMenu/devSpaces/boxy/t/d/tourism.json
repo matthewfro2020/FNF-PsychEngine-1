@@ -1,0 +1,28 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking2",
+            "text": "You're lucky! Ya know!"
+        },
+        {
+            "expression": "talking3",
+            "text": "I fantasize travelling out of my living quarters, if only I had an opening..."
+        },
+        {
+            "expression": "talking1",
+            "text": "Ohhh to sightsee Ahmerischa! To go see Francoise! To sell in Swisteria!"
+        },
+        {
+            "expression": "spiteful",
+            "text": "Ah, digging in my nogging won't help, seems I cant remember those darn countries."
+        },
+        {
+            "expression": "breakdown",
+            "text": "What... H-HOW?? Didn't I obsess over them? Graaaaaah!!"
+        },        
+        {
+            "expression": "crying",
+            "text": "Whatever... It's unhoping..."
+        }
+    ]
+}

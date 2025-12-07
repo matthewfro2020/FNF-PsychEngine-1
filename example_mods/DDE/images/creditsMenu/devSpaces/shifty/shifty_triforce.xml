@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="shifty_triforce.png">
+<SubTexture name="shifty_triforce0000" x="0" y="0" width="170" height="222" frameX="-58" frameY="-13" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0001" x="178" y="222" width="178" height="220" frameX="-50" frameY="-9" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0002" x="0" y="443" width="182" height="216" frameX="-43" frameY="-6" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0003" x="698" y="212" width="185" height="209" frameX="-36" frameY="-4" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0004" x="365" y="443" width="185" height="213" frameX="-31" frameY="-5" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0005" x="517" y="0" width="181" height="219" frameX="-28" frameY="-7" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0006" x="343" y="0" width="174" height="221" frameX="-26" frameY="-11" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0007" x="170" y="0" width="173" height="222" frameX="-27" frameY="-16" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0008" x="517" y="219" width="181" height="218" frameX="-28" frameY="-23" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0009" x="698" y="0" width="185" height="212" frameX="-31" frameY="-31" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0010" x="698" y="421" width="185" height="209" frameX="-36" frameY="-35" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0011" x="182" y="443" width="183" height="215" frameX="-42" frameY="-27" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0012" x="0" y="222" width="178" height="221" frameX="-50" frameY="-19" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0013" x="0" y="0" width="170" height="222" frameX="-58" frameY="-13" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0014" x="178" y="222" width="178" height="220" frameX="-50" frameY="-9" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0015" x="0" y="443" width="182" height="216" frameX="-43" frameY="-6" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0016" x="698" y="212" width="185" height="209" frameX="-36" frameY="-4" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0017" x="365" y="443" width="185" height="213" frameX="-31" frameY="-5" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0018" x="517" y="0" width="181" height="219" frameX="-28" frameY="-7" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0019" x="343" y="0" width="174" height="221" frameX="-26" frameY="-11" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0020" x="170" y="0" width="173" height="222" frameX="-27" frameY="-16" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0021" x="517" y="219" width="181" height="218" frameX="-28" frameY="-23" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0022" x="698" y="0" width="185" height="212" frameX="-31" frameY="-31" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0023" x="698" y="421" width="185" height="209" frameX="-36" frameY="-35" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0024" x="182" y="443" width="183" height="215" frameX="-42" frameY="-27" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0025" x="0" y="222" width="178" height="221" frameX="-50" frameY="-19" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0026" x="0" y="0" width="170" height="222" frameX="-58" frameY="-13" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0027" x="178" y="222" width="178" height="220" frameX="-50" frameY="-9" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0028" x="0" y="443" width="182" height="216" frameX="-43" frameY="-6" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0029" x="698" y="212" width="185" height="209" frameX="-36" frameY="-4" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0030" x="365" y="443" width="185" height="213" frameX="-31" frameY="-5" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0031" x="517" y="0" width="181" height="219" frameX="-28" frameY="-7" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0032" x="343" y="0" width="174" height="221" frameX="-26" frameY="-11" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0033" x="170" y="0" width="173" height="222" frameX="-27" frameY="-16" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0034" x="517" y="219" width="181" height="218" frameX="-28" frameY="-23" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0035" x="698" y="0" width="185" height="212" frameX="-31" frameY="-31" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0036" x="698" y="421" width="185" height="209" frameX="-36" frameY="-35" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0037" x="182" y="443" width="183" height="215" frameX="-42" frameY="-27" frameWidth="250" frameHeight="250" />
+<SubTexture name="shifty_triforce0038" x="0" y="222" width="178" height="221" frameX="-50" frameY="-19" frameWidth="250" frameHeight="250" />
+</TextureAtlas>

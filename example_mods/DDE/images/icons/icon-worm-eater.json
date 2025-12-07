@@ -1,0 +1,32 @@
+{
+  "FPS": 24,
+  "Scale": 1,
+  "multScale": 1,
+  "doBump": false,
+  "offsets": {
+    "upscroll": {
+      "tolose": [40, 23],
+      "blink": [0, 0],
+      "idle": [0, 0],
+      "lose": [11, 0],
+      "fromlose": [40, 27]
+    },
+    "downscroll": {
+      "tolose": [46, 25],
+      "blink": [0, 0],
+      "idle": [0, 0],
+      "lose": [23, 4],
+      "fromlose": [42, 25]
+    }
+  },
+  "globalOffset": [1, -30],
+  "flipX": false,
+  "resize": true,
+  "isDuel": false,
+  "frames": 2,
+  "animations": [
+    { "name": "blink", "preventAnim": "idle", "loop": false },
+    { "name": "tolose", "prefix": "losetransition", "loop": false },
+    { "name": "fromlose", "prefix": "reversetransition", "loop": false }
+  ]
+}

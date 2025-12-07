@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="restart.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="restartframes0000" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0001" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0002" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0003" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0004" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0005" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0006" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0007" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0008" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0009" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0010" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0011" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0012" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0013" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0014" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0015" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0016" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0017" x="184" y="4" width="80" height="105" frameX="-7" frameY="0" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0018" x="4" y="4" width="86" height="100" frameX="-4" frameY="-3" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0019" x="93" y="4" width="88" height="96" frameX="-3" frameY="-5" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0020" x="362" y="4" width="91" height="92" frameX="-1" frameY="-7" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0021" x="267" y="4" width="92" height="91" frameX="-1" frameY="-7" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0022" x="363" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0023" x="4" y="107" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0024" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0025" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0026" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0027" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0028" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0029" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0030" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0031" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0032" x="100" y="112" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0033" x="196" y="192" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0034" x="292" y="192" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0035" x="388" y="192" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0036" x="4" y="200" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0037" x="100" y="205" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0038" x="196" y="285" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0039" x="292" y="285" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0040" x="388" y="285" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0041" x="4" y="293" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0042" x="100" y="298" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0043" x="196" y="378" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0044" x="292" y="378" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0045" x="100" y="112" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0046" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0047" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+	<SubTexture name="restartframes0048" x="267" y="99" width="93" height="90" frameX="0" frameY="-8" frameWidth="93" frameHeight="105"/>
+</TextureAtlas>

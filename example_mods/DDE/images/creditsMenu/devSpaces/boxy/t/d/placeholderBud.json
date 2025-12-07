@@ -1,0 +1,12 @@
+{
+    "dialogue": [
+        {
+            "expression": "mad",
+            "text": "this dialogue is broken"
+        },
+        {
+            "expression": "laughing",
+            "text": "braaaaaaaaah"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scary.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="jo instance 10000" x="4" y="4" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10001" x="1547" y="4" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10002" x="3090" y="4" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10003" x="4633" y="4" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10004" x="6176" y="4" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10005" x="4" y="1351" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10006" x="1547" y="1351" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10007" x="3090" y="1351" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10008" x="4633" y="1351" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10009" x="6176" y="1351" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10010" x="4" y="2698" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10011" x="1547" y="2698" width="1540" height="1344"/>
+	<SubTexture name="jo instance 10012" x="3090" y="2698" width="1540" height="1344"/>
+</TextureAtlas>

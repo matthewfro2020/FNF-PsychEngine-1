@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="curtains_right.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="show right0000" x="0" y="0" width="255" height="219"/>
+	<SubTexture name="show right0001" x="0" y="0" width="255" height="219"/>
+	<SubTexture name="show right0002" x="0" y="0" width="255" height="219"/>
+	<SubTexture name="show right0003" x="260" y="0" width="254" height="218" frameX="0" frameY="0" frameWidth="255" frameHeight="219"/>
+	<SubTexture name="show right0004" x="260" y="0" width="254" height="218" frameX="0" frameY="0" frameWidth="255" frameHeight="219"/>
+	<SubTexture name="show right0005" x="260" y="0" width="254" height="218" frameX="0" frameY="0" frameWidth="255" frameHeight="219"/>
+	<SubTexture name="show right0006" x="519" y="0" width="255" height="218" frameX="0" frameY="0" frameWidth="255" frameHeight="219"/>
+	<SubTexture name="show right0007" x="519" y="0" width="255" height="218" frameX="0" frameY="0" frameWidth="255" frameHeight="219"/>
+	<SubTexture name="show right0008" x="519" y="0" width="255" height="218" frameX="0" frameY="0" frameWidth="255" frameHeight="219"/>
+</TextureAtlas>

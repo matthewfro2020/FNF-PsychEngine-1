@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mukoicon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mukoicons0000" x="5" y="5" width="161" height="143" frameX="-8" frameY="-12" frameWidth="177" frameHeight="156"/>
+	<SubTexture name="mukoicons0001" x="171" y="5" width="177" height="156"/>
+</TextureAtlas>

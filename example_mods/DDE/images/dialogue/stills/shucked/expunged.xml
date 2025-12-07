@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="expunged.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="expunged0000" x="4" y="4" width="1280" height="720"/>
+	<SubTexture name="expunged0001" x="1287" y="4" width="1280" height="720"/>
+	<SubTexture name="expunged0002" x="2570" y="4" width="1280" height="720"/>
+	<SubTexture name="scare0000" x="4" y="727" width="1280" height="720"/>
+	<SubTexture name="scare0001" x="1287" y="727" width="1280" height="720"/>
+	<SubTexture name="scare0002" x="2570" y="727" width="1280" height="720"/>
+</TextureAtlas>

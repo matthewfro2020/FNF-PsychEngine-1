@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Say... You've seen a beach before, right?"
+        },
+        {
+            "expression": "talking1",
+            "text": "Do you think the remains of the ocean hold any kind of value to them?"
+        },
+        {
+            "expression": "talking2",
+            "text": "I've been dreaming to sell the rock hard sand for 一円！"
+        },
+        {
+            "expression": "talking1",
+            "text": "For each grain of sand hehe..."
+        }
+    ]
+}

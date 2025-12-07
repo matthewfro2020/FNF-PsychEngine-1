@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="note.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 3 instance 10000" x="4" y="4" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10001" x="171" y="4" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10002" x="338" y="4" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10003" x="4" y="167" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10004" x="4" y="330" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10005" x="171" y="167" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10006" x="338" y="167" width="164" height="160"/>
+	<SubTexture name="Symbol 3 instance 10007" x="171" y="330" width="164" height="160"/>
+</TextureAtlas>

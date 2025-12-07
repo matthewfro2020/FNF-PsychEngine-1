@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Seems like my miserable mood may have left some spots empty for the time being."
+        },
+        {
+            "expression": "talking1",
+            "text": "I'm sure in your next visit everything will have bloomed into the perfect condition!"
+        },
+        {
+            "expression": "crying",
+            "text": "In other words, I'm lazy (NOT TRUE!!)"
+        }
+    ]
+}

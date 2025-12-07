@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="baldi.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="unconcious0000" x="5" y="5" width="490" height="252"/>
+	<SubTexture name="unconcious0001" x="5" y="5" width="490" height="252"/>
+	<SubTexture name="unconcious0002" x="5" y="5" width="490" height="252"/>
+	<SubTexture name="unconcious0003" x="5" y="262" width="488" height="251" frameX="-1" frameY="0" frameWidth="490" frameHeight="252"/>
+	<SubTexture name="unconcious0004" x="5" y="262" width="488" height="251" frameX="-1" frameY="0" frameWidth="490" frameHeight="252"/>
+	<SubTexture name="unconcious0005" x="5" y="262" width="488" height="251" frameX="-1" frameY="0" frameWidth="490" frameHeight="252"/>
+</TextureAtlas>

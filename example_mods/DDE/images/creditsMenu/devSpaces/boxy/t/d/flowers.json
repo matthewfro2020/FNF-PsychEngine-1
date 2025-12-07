@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking3",
+            "text": "Come! Spend your life savings on my assets! I have many things at an affordable price!"
+        },
+        {
+            "expression": "talking1",
+            "text": "I recommend purchasing the plushies, candies, posters and calendars, the nuclear warhead behind my desk, some hats, drawing supplies, flowers..."
+        },
+        {
+            "expression": "nervous",
+            "text": "..."
+        },
+        {
+            "expression": "nervous",
+            "text": "Though the flowers have already withered, the sun doesn't like paying visits to little o'l me..."
+        },
+        {
+            "expression": "talking1",
+            "text": "OH! Forgive me! You don't even hold coins!"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="noteSplashCrud.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="splash10000" x="4" y="4" width="48" height="48"/>
+	<SubTexture name="splash10001" x="4" y="55" width="48" height="48"/>
+	<SubTexture name="splash10002" x="55" y="4" width="48" height="48"/>
+	<SubTexture name="splash10003" x="4" y="106" width="48" height="48"/>
+	<SubTexture name="splash10004" x="55" y="55" width="48" height="48"/>
+</TextureAtlas>

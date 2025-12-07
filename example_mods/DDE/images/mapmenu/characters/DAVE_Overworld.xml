@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DAVE_Overworld.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DAVE_Fall0000" x="5" y="5" width="214" height="178" frameX="0" frameY="0" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0001" x="5" y="5" width="214" height="178" frameX="0" frameY="0" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0002" x="5" y="5" width="214" height="178" frameX="0" frameY="0" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0003" x="5" y="5" width="214" height="178" frameX="0" frameY="0" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0004" x="5" y="5" width="214" height="178" frameX="0" frameY="0" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0005" x="5" y="5" width="214" height="178" frameX="0" frameY="0" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0006" x="5" y="184" width="202" height="173" frameX="-14" frameY="-6" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0007" x="5" y="184" width="202" height="173" frameX="-14" frameY="-6" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0008" x="5" y="184" width="202" height="173" frameX="-14" frameY="-6" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0009" x="5" y="184" width="202" height="173" frameX="-14" frameY="-6" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0010" x="5" y="184" width="202" height="173" frameX="-14" frameY="-6" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fall0011" x="5" y="184" width="202" height="173" frameX="-14" frameY="-6" frameWidth="216" frameHeight="179"/>
+	<SubTexture name="DAVE_Fallen0000" x="5" y="358" width="156" height="111"/>
+	<SubTexture name="DAVE_Idle0000" x="319" y="5" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0001" x="319" y="5" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0002" x="319" y="5" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0003" x="319" y="5" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0004" x="319" y="5" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0005" x="319" y="5" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0006" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0007" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0008" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0009" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0010" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0011" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0012" x="319" y="209" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0013" x="319" y="209" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0014" x="319" y="209" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0015" x="319" y="209" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0016" x="319" y="209" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0017" x="319" y="209" width="110" height="203" frameX="0" frameY="0" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0018" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0019" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0020" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0021" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0022" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+	<SubTexture name="DAVE_Idle0023" x="208" y="184" width="110" height="204" frameX="0" frameY="-2" frameWidth="110" frameHeight="206"/>
+</TextureAtlas>

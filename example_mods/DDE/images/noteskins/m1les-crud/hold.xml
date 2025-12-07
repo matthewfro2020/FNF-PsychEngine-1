@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hold.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 20000" x="4" y="4" width="18" height="17"/>
+	<SubTexture name="Symbol 20001" x="4" y="24" width="18" height="6" frameX="0" frameY="0" frameWidth="18" frameHeight="17"/>
+</TextureAtlas>

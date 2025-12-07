@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="stop_that.png">
+<SubTexture name="tweak0000" x="0" y="0" width="281" height="355" frameX="-66" frameY="0" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0001" x="281" y="0" width="262" height="341" frameX="-58" frameY="-17" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0002" x="0" y="0" width="281" height="355" frameX="-66" frameY="0" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0003" x="281" y="0" width="262" height="341" frameX="-58" frameY="-17" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0004" x="0" y="0" width="281" height="355" frameX="-66" frameY="0" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0005" x="281" y="0" width="262" height="341" frameX="-58" frameY="-17" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0006" x="0" y="0" width="281" height="355" frameX="-66" frameY="0" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0007" x="281" y="0" width="262" height="341" frameX="-58" frameY="-17" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0008" x="0" y="355" width="413" height="302" frameX="-49" frameY="-54" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0009" x="543" y="0" width="405" height="327" frameX="-58" frameY="-29" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0010" x="0" y="355" width="413" height="302" frameX="-49" frameY="-54" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0011" x="543" y="0" width="405" height="327" frameX="-58" frameY="-29" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0012" x="0" y="355" width="413" height="302" frameX="-49" frameY="-54" frameWidth="495" frameHeight="401" />
+<SubTexture name="tweak0013" x="543" y="0" width="405" height="327" frameX="-58" frameY="-29" frameWidth="495" frameHeight="401" />
+</TextureAtlas>

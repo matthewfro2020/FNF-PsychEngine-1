@@ -1,0 +1,32 @@
+{
+    "dialogue": [
+        {
+            "expression": "serious",
+            "text": "..."
+        },
+        {
+            "expression": "serious",
+            "text": "..."
+        },
+        {
+            "expression": "cold",
+            "text": "Uh..."
+        },
+        {
+            "expression": "talking0",
+            "text": "In your next field trip, gift me some gold yeah?"
+        },
+        {
+            "expression": "talking1",
+            "text": "I'm in need for some wealth."
+        },
+        {
+            "expression": "talking2",
+            "text": "It's funny because I don't even need gold."
+        },
+        {
+            "expression": "laughing",
+            "text": "I just like the color heheh..."
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "laughing",
+            "text": "Oooh! Do you have any nicknames I can call you?"
+        },
+        {
+            "expression": "talking3",
+            "text": "Personality is a sweet dessert that I crave, what do you taste like?"
+        },
+        {
+            "expression": "laughing",
+            "text": "Hmm, must be very complex, but ohh so sweet and sugary."
+        },
+        {
+            "expression": "talking1",
+            "text": "Hehe, maybe I can bake and sell my homemade treats sometime..."
+        }
+    ]
+}

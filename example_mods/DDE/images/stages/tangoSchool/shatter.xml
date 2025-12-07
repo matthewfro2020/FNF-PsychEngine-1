@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="shatter.png">
+<SubTexture name="shatter normal0000" x="0" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0000" x="0" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0001" x="1920" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0002" x="0" y="1080" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0003" x="1920" y="1080" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0004" x="0" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0005" x="1920" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0006" x="3840" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0007" x="3840" y="1080" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0008" x="0" y="3240" width="1920" height="1065" frameX="0" frameY="-15" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0009" x="1920" y="3240" width="1920" height="1038" frameX="0" frameY="-42" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0010" x="3840" y="3240" width="1920" height="996" frameX="0" frameY="-84" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0011" x="0" y="4305" width="1920" height="954" frameX="0" frameY="-126" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0012" x="1920" y="4305" width="1920" height="850" frameX="0" frameY="-230" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0013" x="3840" y="4305" width="1920" height="790" frameX="0" frameY="-290" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0014" x="5760" y="0" width="1920" height="740" frameX="0" frameY="-340" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0015" x="5760" y="740" width="1920" height="658" frameX="0" frameY="-422" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0016" x="5760" y="1398" width="1812" height="571" frameX="0" frameY="-509" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0017" x="5760" y="1969" width="1774" height="519" frameX="-33" frameY="-561" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0018" x="5760" y="2488" width="1734" height="460" frameX="-67" frameY="-620" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0019" x="5760" y="2948" width="1676" height="369" frameX="-152" frameY="-711" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0020" x="5760" y="3317" width="1622" height="304" frameX="-223" frameY="-776" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0021" x="5760" y="3621" width="1515" height="231" frameX="-388" frameY="-836" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0022" x="5760" y="3852" width="1526" height="144" frameX="-394" frameY="-936" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0023" x="7572" y="1398" width="48" height="60" frameX="-399" frameY="-1020" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0024" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0025" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0026" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0027" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0028" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0029" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="shatter shatter0030" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

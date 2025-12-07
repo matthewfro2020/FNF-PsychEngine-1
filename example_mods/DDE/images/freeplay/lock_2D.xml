@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lock_2D.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lock0000" x="2" y="2" width="320" height="389"/>
+	<SubTexture name="lock_opened0000" x="324" y="2" width="347" height="344" frameX="0" frameY="-91" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0001" x="324" y="2" width="347" height="344" frameX="0" frameY="-91" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0002" x="673" y="2" width="329" height="435" frameX="-15" frameY="0" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0003" x="673" y="2" width="329" height="435" frameX="-15" frameY="0" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0004" x="1004" y="2" width="336" height="438" frameX="-11" frameY="-14" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0005" x="1004" y="2" width="336" height="438" frameX="-11" frameY="-14" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0006" x="2" y="442" width="339" height="439" frameX="-10" frameY="-15" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_opened0007" x="2" y="442" width="339" height="439" frameX="-10" frameY="-15" frameWidth="349" frameHeight="454"/>
+	<SubTexture name="lock_preopen0000" x="343" y="442" width="320" height="389" frameX="-21" frameY="0" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0001" x="343" y="442" width="320" height="389" frameX="-21" frameY="0" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0002" x="665" y="442" width="319" height="384" frameX="0" frameY="-5" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0003" x="665" y="442" width="319" height="384" frameX="0" frameY="-5" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0004" x="986" y="442" width="323" height="371" frameX="-12" frameY="-16" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0005" x="986" y="442" width="323" height="371" frameX="-12" frameY="-16" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0006" x="2" y="883" width="323" height="369" frameX="-7" frameY="-18" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_preopen0007" x="327" y="883" width="322" height="369" frameX="-10" frameY="-18" frameWidth="341" frameHeight="389"/>
+	<SubTexture name="lock_pressed0000" x="651" y="883" width="352" height="400" frameX="0" frameY="-10" frameWidth="352" frameHeight="410"/>
+	<SubTexture name="lock_pressed0001" x="651" y="883" width="352" height="400" frameX="0" frameY="-10" frameWidth="352" frameHeight="410"/>
+	<SubTexture name="lock_pressed0002" x="1005" y="883" width="302" height="389" frameX="-10" frameY="0" frameWidth="352" frameHeight="410"/>
+	<SubTexture name="lock_pressed0003" x="1005" y="883" width="302" height="389" frameX="-10" frameY="0" frameWidth="352" frameHeight="410"/>
+	<SubTexture name="lock_pressed0004" x="2" y="1285" width="316" height="388" frameX="-7" frameY="-2" frameWidth="352" frameHeight="410"/>
+	<SubTexture name="lock_pressed0005" x="2" y="1285" width="316" height="388" frameX="-7" frameY="-2" frameWidth="352" frameHeight="410"/>
+	<SubTexture name="lock_pressed0006" x="2" y="2" width="320" height="389" frameX="-6" frameY="-3" frameWidth="320" frameHeight="389"/>
+	<SubTexture name="lock_pressed0007" x="2" y="2" width="320" height="389" frameX="-6" frameY="-3" frameWidth="320" frameHeight="389"/>
+	<SubTexture name="lock_shaking0000" x="320" y="1285" width="319" height="367" frameX="0" frameY="0" frameWidth="321" frameHeight="367"/>
+	<SubTexture name="lock_shaking0001" x="641" y="1285" width="318" height="367" frameX="-3" frameY="0" frameWidth="321" frameHeight="367"/>
+</TextureAtlas>

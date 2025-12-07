@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "Darling, may I rudely ask again and again, how did you end up here?"
+        },
+        {
+            "expression": "confused",
+            "text": "There are no cracks big enough for you and no doors to be opened..."
+        },
+        {
+            "expression": "laughing",
+            "text": "...not even a tunnel to walk through..."
+        },
+        {
+            "expression": "talking3",
+            "text": "Oh well, if you're just as stuck as me, you can't leave!"
+        },
+        {
+            "expression": "laughing",
+            "text": "That's not necessarily a bad thing, vero?"
+        }
+    ]
+}

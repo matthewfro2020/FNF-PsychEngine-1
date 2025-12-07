@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking0",
+            "text": "I'll tell you one thing, I ain't exactly a one faced Tee Verkäufer."
+        },
+        {
+            "expression": "talking3",
+            "text": "Telling you the truthful thoughts, I don't feel like myself in your vicinity"
+        },
+        {
+            "expression": "laughing",
+            "text": "Which is best! Thinking and being happy is just what i need!"
+        },
+        {
+            "expression": "spiteful",
+            "text": "But ohhh it can be so unbearable a few times."
+        }
+    ]
+}

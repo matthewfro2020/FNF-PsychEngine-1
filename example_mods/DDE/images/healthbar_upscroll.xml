@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="healthbar_upscroll.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Upscroll0000" x="758" y="101" width="629" height="64" frameX="-59" frameY="-47" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0001" x="5" y="551" width="654" height="78" frameX="-49" frameY="-41" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0002" x="5" y="551" width="654" height="78" frameX="-49" frameY="-41" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0003" x="5" y="5" width="748" height="166"/>
+	<SubTexture name="Upscroll0004" x="5" y="5" width="748" height="166"/>
+	<SubTexture name="Upscroll0005" x="737" y="176" width="708" height="132" frameX="-20" frameY="-14" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0006" x="737" y="176" width="708" height="132" frameX="-20" frameY="-14" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0007" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0008" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0009" x="5" y="5" width="748" height="166"/>
+	<SubTexture name="Upscroll0010" x="5" y="5" width="748" height="166"/>
+	<SubTexture name="Upscroll0011" x="737" y="176" width="708" height="132" frameX="-20" frameY="-14" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0012" x="737" y="176" width="708" height="132" frameX="-20" frameY="-14" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0013" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0014" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0015" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0016" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0017" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0018" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0019" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0020" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0021" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0022" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0023" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0024" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0025" x="727" y="448" width="705" height="128" frameX="-21" frameY="-16" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0026" x="5" y="5" width="748" height="166"/>
+	<SubTexture name="Upscroll0027" x="5" y="5" width="748" height="166"/>
+	<SubTexture name="Upscroll0028" x="664" y="581" width="642" height="72" frameX="-54" frameY="-44" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0029" x="664" y="581" width="642" height="72" frameX="-54" frameY="-44" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0030" x="5" y="456" width="675" height="90" frameX="-36" frameY="-35" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0031" x="5" y="456" width="675" height="90" frameX="-36" frameY="-35" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0032" x="5" y="176" width="727" height="142" frameX="-10" frameY="0" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0033" x="5" y="176" width="727" height="142" frameX="-10" frameY="0" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0034" x="737" y="313" width="717" height="130" frameX="-15" frameY="-11" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0035" x="737" y="313" width="717" height="130" frameX="-15" frameY="-11" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0036" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0037" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0038" x="5" y="176" width="727" height="142" frameX="-10" frameY="0" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0039" x="5" y="176" width="727" height="142" frameX="-10" frameY="0" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0040" x="737" y="313" width="717" height="130" frameX="-15" frameY="-11" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0041" x="737" y="313" width="717" height="130" frameX="-15" frameY="-11" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0042" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0043" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0044" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0045" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0046" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0047" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0048" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0049" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0050" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0051" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0052" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0053" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0054" x="5" y="323" width="717" height="128" frameX="-15" frameY="-12" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0055" x="5" y="176" width="727" height="142" frameX="-10" frameY="0" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0056" x="5" y="176" width="727" height="142" frameX="-10" frameY="0" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0057" x="758" y="5" width="675" height="91" frameX="-36" frameY="-35" frameWidth="748" frameHeight="166"/>
+	<SubTexture name="Upscroll0058" x="758" y="5" width="675" height="91" frameX="-36" frameY="-35" frameWidth="748" frameHeight="166"/>
+</TextureAtlas>

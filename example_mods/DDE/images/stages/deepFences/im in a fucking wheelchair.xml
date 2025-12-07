@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="DIE_stupidFuckingCube.png" width="1563" height="1655">
+	<SubTexture name="crippleFlong10000" x="919" y="786" width="326" height="768" frameX="-282" frameY="-156" frameWidth="921" frameHeight="1063"/>
+	<SubTexture name="crippleFlong40000" x="1" y="1" width="598" height="824" frameX="-179" frameY="-96" frameWidth="921" frameHeight="1063"/>
+	<SubTexture name="crippleFlong30000" x="600" y="1" width="358" height="784" frameX="-282" frameY="-138" frameWidth="921" frameHeight="1063"/>
+	<SubTexture name="crippleFlong50000" x="600" y="786" width="318" height="868" frameX="-278" frameY="-51" frameWidth="921" frameHeight="1063"/>
+	<SubTexture name="crippleFlong20000" x="1" y="826" width="352" height="770" frameX="-283" frameY="-152" frameWidth="921" frameHeight="1063"/>
+	<SubTexture name="crippleFlong70000" x="959" y="1" width="324" height="724" frameX="-282" frameY="-203" frameWidth="921" frameHeight="1063"/>
+	<SubTexture name="crippleFlong60000" x="1246" y="726" width="316" height="732" frameX="-283" frameY="-193" frameWidth="921" frameHeight="1063"/>
+</TextureAtlas>

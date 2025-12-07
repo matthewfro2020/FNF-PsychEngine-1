@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="scaredy-cat.png" width="1285" height="1320">
+	<SubTexture name="down0000" x="1004" y="5" width="276" height="160" frameX="-56" frameY="-187" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="down0001" x="669" y="227" width="312" height="137" frameX="-46" frameY="-180" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="down0002" x="5" y="351" width="331" height="135" frameX="-36" frameY="-183" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="down0003" x="5" y="5" width="342" height="128" frameX="-30" frameY="-187" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0000" x="5" y="1068" width="262" height="247" frameX="-74" frameY="-70" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0001" x="5" y="491" width="315" height="268" frameX="-40" frameY="-51" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0002" x="660" y="483" width="311" height="265" frameX="-52" frameY="-59" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0003" x="341" y="483" width="314" height="220" frameX="-56" frameY="-86" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0004" x="343" y="220" width="321" height="258" frameX="-54" frameY="-81" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0005" x="1000" y="646" width="252" height="266" frameX="-43" frameY="-80" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="idle0006" x="742" y="753" width="253" height="278" frameX="-39" frameY="-77" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="left0000" x="272" y="1065" width="209" height="243" frameX="-19" frameY="-60" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="left0001" x="486" y="1047" width="194" height="240" frameX="-35" frameY="-60" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="left0002" x="685" y="1047" width="204" height="239" frameX="-27" frameY="-59" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="left0003" x="894" y="1036" width="213" height="239" frameX="-21" frameY="-58" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="right0000" x="265" y="764" width="202" height="296" frameX="-140" frameY="-23" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="right0001" x="5" y="764" width="255" height="299" frameX="-101" frameY="-18" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="right0002" x="472" y="753" width="265" height="289" frameX="-96" frameY="-28" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="right0003" x="1000" y="367" width="266" height="274" frameX="-93" frameY="-45" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="up0000" x="1004" y="170" width="275" height="192" frameX="-50" frameY="-20" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="up0001" x="685" y="5" width="314" height="217" frameX="-24" frameY="-28" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="up0002" x="352" y="5" width="328" height="210" frameX="-14" frameY="-44" frameWidth="400" frameHeight="400"/>
+	<SubTexture name="up0003" x="5" y="138" width="333" height="208" frameX="-12" frameY="-49" frameWidth="400" frameHeight="400"/>
+</TextureAtlas>

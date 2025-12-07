@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TJE CRUDDY the one where he burns.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="The Cruds0000" x="0" y="0" width="1200" height="600"/>
+	<SubTexture name="The Cruds0001" x="1200" y="0" width="1200" height="600"/>
+	<SubTexture name="The Cruds0002" x="2400" y="0" width="1200" height="600"/>
+	<SubTexture name="The Cruds0003" x="0" y="600" width="1200" height="600"/>
+</TextureAtlas>

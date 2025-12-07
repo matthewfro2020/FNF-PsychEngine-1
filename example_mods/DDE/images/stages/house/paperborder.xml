@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="paperborder.png">
+	<!-- Created with Adobe Animate version 24.0.9.74 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="paperbottomborder0000" x="1904" y="1103" width="1878" height="1098" frameX="-27" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0001" x="1904" y="1103" width="1878" height="1098" frameX="-27" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0002" x="1904" y="1103" width="1878" height="1098" frameX="-27" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0003" x="1904" y="1103" width="1878" height="1098" frameX="-27" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0004" x="1904" y="1103" width="1878" height="1098" frameX="-27" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0005" x="1904" y="1103" width="1878" height="1098" frameX="-27" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0006" x="1912" y="1" width="1853" height="1064" frameX="-28" frameY="-37" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0007" x="1912" y="1" width="1853" height="1064" frameX="-28" frameY="-37" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0008" x="1912" y="1" width="1853" height="1064" frameX="-28" frameY="-37" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0009" x="1912" y="1" width="1853" height="1064" frameX="-28" frameY="-37" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0010" x="1912" y="1" width="1853" height="1064" frameX="-28" frameY="-37" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0011" x="1912" y="1" width="1853" height="1064" frameX="-28" frameY="-37" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0012" x="1" y="1103" width="1899" height="1098" frameX="-22" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0013" x="1" y="1103" width="1899" height="1098" frameX="-22" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0014" x="1" y="1103" width="1899" height="1098" frameX="-22" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0015" x="1" y="1103" width="1899" height="1098" frameX="-22" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0016" x="1" y="1103" width="1899" height="1098" frameX="-22" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0017" x="1" y="1103" width="1899" height="1098" frameX="-22" frameY="-15" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0018" x="1" y="1" width="1907" height="1098" frameX="0" frameY="0" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0019" x="1" y="1" width="1907" height="1098" frameX="0" frameY="0" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0020" x="1" y="1" width="1907" height="1098" frameX="0" frameY="0" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0021" x="1" y="1" width="1907" height="1098" frameX="0" frameY="0" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0022" x="1" y="1" width="1907" height="1098" frameX="0" frameY="0" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="paperbottomborder0023" x="1" y="1" width="1907" height="1098" frameX="0" frameY="0" frameWidth="1921" frameHeight="1113"/>
+	<SubTexture name="papertopborder0000" x="1" y="2205" width="1526" height="492"/>
+	<SubTexture name="papertopborder0001" x="1" y="2205" width="1526" height="492"/>
+	<SubTexture name="papertopborder0002" x="1" y="2205" width="1526" height="492"/>
+	<SubTexture name="papertopborder0003" x="1" y="2205" width="1526" height="492"/>
+	<SubTexture name="papertopborder0004" x="1" y="2205" width="1526" height="492"/>
+	<SubTexture name="papertopborder0005" x="1" y="2205" width="1526" height="492"/>
+	<SubTexture name="papertopborder0006" x="1531" y="2205" width="1431" height="460" frameX="-13" frameY="0" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0007" x="1531" y="2205" width="1431" height="460" frameX="-13" frameY="0" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0008" x="1531" y="2205" width="1431" height="460" frameX="-13" frameY="0" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0009" x="1531" y="2205" width="1431" height="460" frameX="-13" frameY="0" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0010" x="1531" y="2205" width="1431" height="460" frameX="-13" frameY="0" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0011" x="1531" y="2205" width="1431" height="460" frameX="-13" frameY="0" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0012" x="1531" y="2669" width="1447" height="446" frameX="0" frameY="-1" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0013" x="1531" y="2669" width="1447" height="446" frameX="0" frameY="-1" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0014" x="1531" y="2669" width="1447" height="446" frameX="0" frameY="-1" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0015" x="1531" y="2669" width="1447" height="446" frameX="0" frameY="-1" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0016" x="1531" y="2669" width="1447" height="446" frameX="0" frameY="-1" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0017" x="1531" y="2669" width="1447" height="446" frameX="0" frameY="-1" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0018" x="1" y="2701" width="1446" height="445" frameX="0" frameY="-13" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0019" x="1" y="2701" width="1446" height="445" frameX="0" frameY="-13" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0020" x="1" y="2701" width="1446" height="445" frameX="0" frameY="-13" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0021" x="1" y="2701" width="1446" height="445" frameX="0" frameY="-13" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0022" x="1" y="2701" width="1446" height="445" frameX="0" frameY="-13" frameWidth="1526" frameHeight="492"/>
+	<SubTexture name="papertopborder0023" x="1" y="2701" width="1446" height="445" frameX="0" frameY="-13" frameWidth="1526" frameHeight="492"/>
+</TextureAtlas>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="quit.png">
+	<!-- Created with Adobe Animate version 24.0.8.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="quitframes0000" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0001" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0002" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0003" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0004" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0005" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0006" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0007" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0008" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0009" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0010" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0011" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0012" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0013" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0014" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0015" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0016" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0017" x="301" y="297" width="80" height="105" frameX="-7" frameY="0" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0018" x="301" y="195" width="85" height="99" frameX="-5" frameY="-3" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0019" x="301" y="97" width="89" height="95" frameX="-3" frameY="-5" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0020" x="204" y="4" width="91" height="93" frameX="-2" frameY="-6" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0021" x="301" y="405" width="92" height="91" frameX="-1" frameY="-7" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0022" x="384" y="297" width="93" height="90" frameX="-1" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0023" x="389" y="195" width="93" height="90" frameX="-1" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0024" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0025" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0026" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0027" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0028" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0029" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0030" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0031" x="204" y="100" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0032" x="298" y="4" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0033" x="298" y="4" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0034" x="4" y="4" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0035" x="4" y="100" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0036" x="4" y="196" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0037" x="4" y="292" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0038" x="4" y="388" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0039" x="104" y="4" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0040" x="104" y="100" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0041" x="104" y="196" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0042" x="104" y="292" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0043" x="104" y="388" width="97" height="93" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0044" x="204" y="193" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0045" x="204" y="286" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0046" x="204" y="379" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0047" x="204" y="379" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+	<SubTexture name="quitframes0048" x="204" y="379" width="94" height="90" frameX="0" frameY="-8" frameWidth="97" frameHeight="105"/>
+</TextureAtlas>

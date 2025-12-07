@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Logan3D.png"><SubTexture name="idle0000" x="423" y="0" width="203" height="379" frameX="-65" frameY="-6" frameWidth="316" frameHeight="400" />
+<SubTexture name="right0001" x="626" y="0" width="203" height="379" frameX="-65" frameY="0" frameWidth="316" frameHeight="400" />
+<SubTexture name="left0000" x="1033" y="378" width="201" height="262" frameX="-66" frameY="-103" frameWidth="316" frameHeight="400" />
+<SubTexture name="up0000" x="0" y="389" width="203" height="379" frameX="-65" frameY="0" frameWidth="316" frameHeight="400" />
+<SubTexture name="down0000" x="203" y="389" width="203" height="379" frameX="-65" frameY="0" frameWidth="316" frameHeight="400" />
+<SubTexture name="idle0002" x="0" y="0" width="203" height="389" frameX="-65" frameY="-6" frameWidth="316" frameHeight="400" />
+<SubTexture name="right0000" x="829" y="0" width="1153" height="378" frameX="-63" frameY="-6" frameWidth="1257" frameHeight="400" />
+<SubTexture name="left0001" x="1234" y="378" width="316" height="258" frameX="0" frameY="-96" frameWidth="316" frameHeight="400" />
+<SubTexture name="up0001" x="829" y="378" width="204" height="376" frameX="-65" frameY="-7" frameWidth="316" frameHeight="400" />
+<SubTexture name="down0001" x="406" y="389" width="202" height="379" frameX="-66" frameY="-1" frameWidth="316" frameHeight="400" />
+<SubTexture name="idle0003" x="203" y="0" width="220" height="388" frameX="-58" frameY="-6" frameWidth="316" frameHeight="400" />
+<SubTexture name="right0001" x="829" y="0" width="1153" height="378" frameX="-63" frameY="-6" frameWidth="1257" frameHeight="400" />
+</TextureAtlas>

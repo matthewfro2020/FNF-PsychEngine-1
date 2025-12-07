@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "expression": "talking2",
+            "text": "Ah! You brought a friend with you!"
+        },
+        {
+            "expression": "talking2",
+            "text": "Thank you thank you thank you-"
+        },
+        {
+            "expression": "serious",
+            "text": "えっ？"
+        },
+        {
+            "expression": "confused",
+            "text": "What do you mean you're alone?"
+        },
+        {
+            "expression": "crying",
+            "text": "Ahh sorry it must've been my mind..."
+        }
+    ]
+}
